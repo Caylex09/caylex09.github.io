@@ -15,11 +15,35 @@
     <atom:link href="http://blog.cyx2009.top/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>沉石鱼惊旋 的博客</description>
-    <pubDate>Fri, 19 Dec 2025 11:09:38 GMT</pubDate>
+    <pubDate>Fri, 19 Dec 2025 12:40:09 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>[题解] 杂题选讲 1-</title>
+      <title>『置顶』[闲话] 碎碎念——16</title>
+      <link>http://blog.cyx2009.top/archives/my_essay/</link>
+      <guid>http://blog.cyx2009.top/archives/my_essay/</guid>
+      <pubDate>Fri, 19 Dec 2025 12:28:00 GMT</pubDate>
+      
+      <description>2025 快结束了呢。
+我也 16 了。
+我觉得该写下一些什么了！
+12.18 号晚上睡前和群友聊了会儿天，然后感慨万千。晚上也失眠了。恰逢 2025 即将结束，是时候在这里写下一些什么了！
+好久没写闲话了，上次是中考前照毕业照写的。最近一次写了些东西的是 NOIP2025 游记。
+可能这不太像是闲话，总感觉 16 岁…</description>
+      
+      
+      
+      
+      <category domain="http://blog.cyx2009.top/categories/Essay/">Essay</category>
+      
+      
+      
+      <comments>http://blog.cyx2009.top/archives/my_essay/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>[题解] 杂题选讲 10</title>
       <link>http://blog.cyx2009.top/archives/potpourri_10/</link>
       <guid>http://blog.cyx2009.top/archives/potpourri_10/</guid>
       <pubDate>Tue, 09 Dec 2025 13:09:00 GMT</pubDate>
@@ -468,25 +492,6 @@ cpp 提交记录：https://code…</description>
       
       
       <comments>http://blog.cyx2009.top/archives/potpourri_2/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[游记] 百度之星 2025 游记</title>
-      <link>http://blog.cyx2009.top/archives/ASTAR2025/</link>
-      <guid>http://blog.cyx2009.top/archives/ASTAR2025/</guid>
-      <pubDate>Mon, 30 Jun 2025 16:28:00 GMT</pubDate>
-      
-      <description>被制裁了。嘟嘟嘟。</description>
-      
-      
-      
-      
-      <category domain="http://blog.cyx2009.top/categories/TravelNote/">TravelNote</category>
-      
-      
-      
-      <comments>http://blog.cyx2009.top/archives/ASTAR2025/#disqus_thread</comments>
       
     </item>
     
