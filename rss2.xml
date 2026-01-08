@@ -15,8 +15,31 @@
     <atom:link href="http://blog.cyx2009.top/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>沉石鱼惊旋 的博客</description>
-    <pubDate>Wed, 31 Dec 2025 07:30:55 GMT</pubDate>
+    <pubDate>Wed, 07 Jan 2026 12:18:29 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[题解] 杂题选讲 11</title>
+      <link>http://blog.cyx2009.top/archives/potpourri_11/</link>
+      <guid>http://blog.cyx2009.top/archives/potpourri_11/</guid>
+      <pubDate>Tue, 06 Jan 2026 11:42:00 GMT</pubDate>
+      
+      <description>模拟赛 序列操作
+看过题解；思考时间：nan；已完成代码；代码时间：中；推荐指数：好题；
+这个题和 20250725 的梦熊模拟 T4 好像是一个题。
+如果 l 固定，我们可以想到连边，但是有环就炸了。
+不妨每个操作 (x,y) 开一个虚点 pi 然后 pi 作为 (x,y) 祖先，同时把 pi 颜色改成 y。这样就可…</description>
+      
+      
+      
+      
+      <category domain="http://blog.cyx2009.top/categories/Solution/">Solution</category>
+      
+      
+      
+      <comments>http://blog.cyx2009.top/archives/potpourri_11/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[题解] 杂题选讲 10</title>
@@ -468,25 +491,6 @@ cpp 提交记录：https://code…</description>
       
       
       <comments>http://blog.cyx2009.top/archives/potpourri_2/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[游记] 百度之星 2025 游记</title>
-      <link>http://blog.cyx2009.top/archives/ASTAR2025/</link>
-      <guid>http://blog.cyx2009.top/archives/ASTAR2025/</guid>
-      <pubDate>Mon, 30 Jun 2025 16:28:00 GMT</pubDate>
-      
-      <description>被制裁了。嘟嘟嘟。</description>
-      
-      
-      
-      
-      <category domain="http://blog.cyx2009.top/categories/TravelNote/">TravelNote</category>
-      
-      
-      
-      <comments>http://blog.cyx2009.top/archives/ASTAR2025/#disqus_thread</comments>
       
     </item>
     

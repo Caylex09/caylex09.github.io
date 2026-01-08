@@ -6,7 +6,7 @@
   <link href="http://blog.cyx2009.top/atom.xml" rel="self"/>
   
   <link href="http://blog.cyx2009.top/"/>
-  <updated>2025-12-31T07:30:55.477Z</updated>
+  <updated>2026-01-07T12:18:29.161Z</updated>
   <id>http://blog.cyx2009.top/</id>
   
   <author>
@@ -17,11 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>[题解] 杂题选讲 11</title>
+    <link href="http://blog.cyx2009.top/archives/potpourri_11/"/>
+    <id>http://blog.cyx2009.top/archives/potpourri_11/</id>
+    <published>2026-01-06T11:42:00.000Z</published>
+    <updated>2026-01-07T12:18:29.161Z</updated>
+    
+    
+    <summary type="html">模拟赛 序列操作
+看过题解；思考时间：nan；已完成代码；代码时间：中；推荐指数：好题；
+这个题和 20250725 的梦熊模拟 T4 好像是一个题。
+如果 l 固定，我们可以想到连边，但是有环就炸了。
+不妨每个操作 (x,y) 开一个虚点 pi 然后 pi 作为 (x,y) 祖先，同时把 pi 颜色改成 y。这样就可…</summary>
+    
+    
+    
+    <category term="Solution" scheme="http://blog.cyx2009.top/categories/Solution/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>[题解] 杂题选讲 10</title>
     <link href="http://blog.cyx2009.top/archives/potpourri_10/"/>
     <id>http://blog.cyx2009.top/archives/potpourri_10/</id>
     <published>2025-12-09T13:09:00.000Z</published>
-    <updated>2025-12-31T07:30:55.477Z</updated>
+    <updated>2026-01-05T11:19:56.774Z</updated>
     
     
     <summary type="html">CF715C Digit Tree
@@ -427,23 +448,6 @@ cpp 提交记录：https://code…</summary>
     
     
     <category term="Solution" scheme="http://blog.cyx2009.top/categories/Solution/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>[游记] 百度之星 2025 游记</title>
-    <link href="http://blog.cyx2009.top/archives/ASTAR2025/"/>
-    <id>http://blog.cyx2009.top/archives/ASTAR2025/</id>
-    <published>2025-06-30T16:28:00.000Z</published>
-    <updated>2025-07-15T10:00:05.927Z</updated>
-    
-    
-    <summary type="html">被制裁了。嘟嘟嘟。</summary>
-    
-    
-    
-    <category term="TravelNote" scheme="http://blog.cyx2009.top/categories/TravelNote/"/>
     
     
   </entry>
