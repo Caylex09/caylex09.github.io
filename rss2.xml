@@ -15,7 +15,7 @@
     <atom:link href="http://blog.cyx2009.top/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>沉石鱼惊旋 的博客</description>
-    <pubDate>Fri, 16 Jan 2026 14:14:04 GMT</pubDate>
+    <pubDate>Fri, 16 Jan 2026 14:54:49 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -24,11 +24,11 @@
       <guid>http://blog.cyx2009.top/archives/LinearProgramming/</guid>
       <pubDate>Tue, 13 Jan 2026 02:59:00 GMT</pubDate>
       
-      <description>Linear Programming
- Introduction
-给定一个基集 U，存在可行解集合 S，是 U 的一些子集形成的“集合族”，有 wi,i∈U，表示元素的价值。要找到 S∈S 最小化或最大化 w(S):=∑i∈Swi。
-一些例子：最短路问题、最小生成树问题、最大独立集、图的最大匹配、背包问题。
-几乎所有组…</description>
+      <description>参考资料：
+
+2021 年国家集训队论文 南京外国语学校 丁晓漫 再探线性规划对偶在信息学竞赛中的应用
+算法设计与分析（2024年春季学期）栗师 Linear Programming
+Summer School (July 12 — July 16, 2024) 栗师 Combinatorial Optimizatio…</description>
       
       
       

@@ -6,7 +6,7 @@
   <link href="http://blog.cyx2009.top/atom.xml" rel="self"/>
   
   <link href="http://blog.cyx2009.top/"/>
-  <updated>2026-01-16T14:14:04.242Z</updated>
+  <updated>2026-01-16T14:54:49.574Z</updated>
   <id>http://blog.cyx2009.top/</id>
   
   <author>
@@ -21,14 +21,14 @@
     <link href="http://blog.cyx2009.top/archives/LinearProgramming/"/>
     <id>http://blog.cyx2009.top/archives/LinearProgramming/</id>
     <published>2026-01-13T02:59:00.000Z</published>
-    <updated>2026-01-16T14:14:04.242Z</updated>
+    <updated>2026-01-16T14:54:49.574Z</updated>
     
     
-    <summary type="html">Linear Programming
- Introduction
-给定一个基集 U，存在可行解集合 S，是 U 的一些子集形成的“集合族”，有 wi,i∈U，表示元素的价值。要找到 S∈S 最小化或最大化 w(S):=∑i∈Swi。
-一些例子：最短路问题、最小生成树问题、最大独立集、图的最大匹配、背包问题。
-几乎所有组…</summary>
+    <summary type="html">参考资料：
+
+2021 年国家集训队论文 南京外国语学校 丁晓漫 再探线性规划对偶在信息学竞赛中的应用
+算法设计与分析（2024年春季学期）栗师 Linear Programming
+Summer School (July 12 — July 16, 2024) 栗师 Combinatorial Optimizatio…</summary>
     
     
     
@@ -134,7 +134,7 @@ down[v]-do…</summary>
     <link href="http://blog.cyx2009.top/archives/ICPC_2025_Nanjing_R/"/>
     <id>http://blog.cyx2009.top/archives/ICPC_2025_Nanjing_R/</id>
     <published>2025-11-03T06:33:00.000Z</published>
-    <updated>2025-12-10T09:29:24.079Z</updated>
+    <updated>2026-01-16T14:56:34.274Z</updated>
     
     
     <summary type="html">Day -998244353
@@ -342,7 +342,7 @@ cpp 提交记录：https://code…</summary>
     <link href="http://blog.cyx2009.top/archives/potpourri_5/"/>
     <id>http://blog.cyx2009.top/archives/potpourri_5/</id>
     <published>2025-09-14T08:44:00.000Z</published>
-    <updated>2025-12-10T09:30:00.359Z</updated>
+    <updated>2026-01-16T14:56:31.264Z</updated>
     
     
     <summary type="html">模拟赛 洛谷 2025 NOIP #15 A
@@ -362,7 +362,7 @@ cpp 提交记录：https://code…</summary>
     <link href="http://blog.cyx2009.top/archives/potpourri_4/"/>
     <id>http://blog.cyx2009.top/archives/potpourri_4/</id>
     <published>2025-08-28T08:13:00.000Z</published>
-    <updated>2025-12-10T09:29:55.399Z</updated>
+    <updated>2026-01-16T14:56:32.113Z</updated>
     
     
     <summary type="html">CF1073E Segment Sum
@@ -427,7 +427,7 @@ cpp 提交记录：https://code…</summary>
     <link href="http://blog.cyx2009.top/archives/potpourri_3/"/>
     <id>http://blog.cyx2009.top/archives/potpourri_3/</id>
     <published>2025-08-01T08:38:00.000Z</published>
-    <updated>2025-12-10T09:29:48.449Z</updated>
+    <updated>2026-01-16T14:56:32.821Z</updated>
     
     
     <summary type="html">模拟赛 梦熊 20250731 A
