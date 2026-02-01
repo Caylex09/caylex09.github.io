@@ -6,7 +6,7 @@
   <link href="http://blog.cyx2009.top/atom.xml" rel="self"/>
   
   <link href="http://blog.cyx2009.top/"/>
-  <updated>2026-01-22T05:42:09.408Z</updated>
+  <updated>2026-01-31T14:06:01.476Z</updated>
   <id>http://blog.cyx2009.top/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>[游记] WC 2025 游记</title>
+    <link href="http://blog.cyx2009.top/archives/WC2025/"/>
+    <id>http://blog.cyx2009.top/archives/WC2025/</id>
+    <published>2026-01-28T06:59:00.000Z</published>
+    <updated>2026-01-31T14:06:01.476Z</updated>
+    
+    
+    <summary type="html">Day -??? 2026/1/28
+参加了号爸在 cyyz 组织的集训营。
+早上坐火车从常州站到青岛站，还晚点了，怀疑是 ET 在车上 CS 没带耳机下包被乘务人员发现了以为有 C4。
+在车上和 ET 把这周 CS 经验刷了然后开始一起打植物大战僵尸。ET 王朝了。
+下午 14:00 到达了 yyc 那“度过了快乐童…</summary>
+    
+    
+    
+    <category term="TravelNote" scheme="http://blog.cyx2009.top/categories/TravelNote/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>[笔记] 线性规划 学习笔记</title>
@@ -48,7 +69,7 @@ Summer School (July 12 — July 16, 2024) 栗师 Combinatorial Optimizati…</su
     <link href="http://blog.cyx2009.top/archives/potpourri_11/"/>
     <id>http://blog.cyx2009.top/archives/potpourri_11/</id>
     <published>2026-01-06T11:42:00.000Z</published>
-    <updated>2026-01-27T07:41:18.199Z</updated>
+    <updated>2026-02-01T06:30:39.408Z</updated>
     
     
     <summary type="html">模拟赛 序列操作
@@ -156,7 +177,7 @@ xzy 和 zyc 找我，问我打不打南京。说徐州那边可能有学校有�
     <link href="http://blog.cyx2009.top/archives/cp_template/"/>
     <id>http://blog.cyx2009.top/archives/cp_template/</id>
     <published>2025-10-30T13:40:00.000Z</published>
-    <updated>2025-12-02T05:39:00.248Z</updated>
+    <updated>2026-02-01T00:47:33.040Z</updated>
     
     
     <summary type="html">这是我的 OI/ACM 模板库。
@@ -320,7 +341,7 @@ cpp 提交记录：https://code…</summary>
     <link href="http://blog.cyx2009.top/archives/CSP2025/"/>
     <id>http://blog.cyx2009.top/archives/CSP2025/</id>
     <published>2025-09-19T10:04:00.000Z</published>
-    <updated>2025-11-06T04:32:45.281Z</updated>
+    <updated>2026-01-28T07:00:25.025Z</updated>
     
     
     <summary type="html">初赛
@@ -433,26 +454,6 @@ cpp 提交记录：https://code…</summary>
     <summary type="html">模拟赛 梦熊 20250731 A
 考虑把 axi⊕ayi=zi 的都拎出来搜出来一个连通块，连通块内我们可以算出 au=ar⊕vu，其中 r 是连通块最小的编号。vu 是搜连通块的时候可以直接搜出来的限制。
 考虑最小化字典序等价于最小化 ar。那么我们有若干个 ar⊕vi∈[li,ri] 的限制。等价于我们把每个 y…</summary>
-    
-    
-    
-    <category term="Solution" scheme="http://blog.cyx2009.top/categories/Solution/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>[题解] P12975 疯狂星期四</title>
-    <link href="http://blog.cyx2009.top/archives/P12975/"/>
-    <id>http://blog.cyx2009.top/archives/P12975/</id>
-    <published>2025-07-18T08:35:00.000Z</published>
-    <updated>2025-07-18T08:43:05.032Z</updated>
-    
-    
-    <summary type="html">发现这题当时写的题解没保存。
-注意到有取模，并且对如此小的数取模，猜测答案循环节与 100 有点关系。
-用以下代码打 200 项的表，f(i,j) 表示填了 i 个格子，余数为 j 的方案数。直接模拟题意，枚举这个位置选了什么数，复杂度 O(nV2)。
-发现 f(101,0)=f(1,0),f(2,0)=f(102,0…</summary>
     
     
     
