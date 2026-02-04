@@ -26,7 +26,7 @@
 <meta property="og:description" content="题目翻译 有一个长度为 n 的序列 a。 A 和 B 进行决斗。 决斗指每个人在选择一个数之后删除，全部选完之后比较谁选择的数之和更大。， 一共进行 q 次，每次决斗范围是 [l,r]。也就是两人只可以用 al,al+1,…,ar−1,ar 这 r−l+1 个数。 B 先手，判断每次决斗 A 是否不会输，也就是 A 选…">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-10-05T07:48:00.000Z">
-<meta property="article:modified_time" content="2025-02-17T07:05:12.333Z">
+<meta property="article:modified_time" content="2026-02-04T10:02:07.917Z">
 <meta property="article:author" content="沉石鱼惊旋">
 <meta property="article:tag" content="哈希">
 <meta property="article:tag" content="随机">
@@ -655,7 +655,7 @@
 						
 						<div class="post-meta-detail post-meta-detail-time">
 							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2024-10-5 15:48:00 | 编辑于 2025-2-17 15:05:12">2024-10-5 15:48
+							<time title="发布于 2024-10-5 15:48:00 | 编辑于 2026-2-4 18:02:07">2024-10-5 15:48
 							</time>
 						</div>
 					
@@ -725,7 +725,7 @@
 <p>std::random_device may be implemented in terms of an implementation-defined pseudo-random number engine if a non-deterministic source (e.g. a hardware device) is not available to the implementation. In this case each std::random_device object may generate the same number sequence.</p>
 </blockquote>
 <p><s>后者是毫秒级别的。理论上后者也可以被叉掉，但是需要刻意控制时间到很精密的时刻，<s>正常人指定干不出这种事</s>。即使在本题控制 10s 的 hack 也需要 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><msup><mn>0</mn><mn>4</mn></msup></mrow><annotation encoding="application/x-tex">10^4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">4</span></span></span></span></span></span></span></span></span></span></span> 组，带上前面的 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>log</mi><mo>⁡</mo></mrow><annotation encoding="application/x-tex">\log</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span></span></span></span> 还是有点困难的。并且除了本题，有点题的 hack 规模可能不止 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>log</mi><mo>⁡</mo></mrow><annotation encoding="application/x-tex">\log</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span></span></span></span>。实在是太难卡。</s></p>
-<p>感谢 @<a href="/user/175087">Z_301</a> 提醒，后者不加限制直接调用是纳秒级别的。那么用后面的是根本不会被卡的。</p>
+<p>感谢 @<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/user/175087">Z_301</a> 提醒，后者不加限制直接调用是纳秒级别的。那么用后面的是根本不会被卡的。</p>
 <h1 id="完整代码"><a class="markdownIt-Anchor" href="#完整代码"></a> 完整代码</h1>
 <p><a target="_blank" rel="noopener" href="https://codeforces.com/contest/2014/submission/282295625">CF submission 282295625</a></p>
 <pre><code class="highlight cpp"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span>
