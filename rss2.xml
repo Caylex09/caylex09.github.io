@@ -15,8 +15,51 @@
     <atom:link href="http://blog.cyx2009.top/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>沉石鱼惊旋 的博客</description>
-    <pubDate>Tue, 10 Feb 2026 07:49:33 GMT</pubDate>
+    <pubDate>Thu, 19 Feb 2026 13:21:47 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[闲话] 2026-02-19 日记</title>
+      <link>http://blog.cyx2009.top/archives/2026-02-19/</link>
+      <guid>http://blog.cyx2009.top/archives/2026-02-19/</guid>
+      <pubDate>Thu, 19 Feb 2026 13:19:00 GMT</pubDate>
+      
+      <description>我朋友去面试，面试官大概聊了聊，问他：在100杯水里，有一杯放糖了，你如何快速的找到它？ - 知乎
+人类已经完蛋了。为什么大家会觉得 000000100000 可以使用二分搜索找到那个 1？
+这就是应试教育，完蛋玩意儿只会套公式。我更是不敢想象下面的编程话题优秀答主说只要 7 次的更是什么物种。
+这个世界的傻逼太多了，…</description>
+      
+      
+      
+      
+      <category domain="http://blog.cyx2009.top/categories/Essay/">Essay</category>
+      
+      
+      
+      <comments>http://blog.cyx2009.top/archives/2026-02-19/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>[闲话] 2026-02-18 日记</title>
+      <link>http://blog.cyx2009.top/archives/2026-02-18/</link>
+      <guid>http://blog.cyx2009.top/archives/2026-02-18/</guid>
+      <pubDate>Wed, 18 Feb 2026 15:45:00 GMT</pubDate>
+      
+      <description>18 号开的，19 号才写，哈哈。晚上在更新 QOJ-better 脚本。
+现在是 19 号，pvz2 这周无尽挑战开了。我为了无尽除夕晚上花了 100 来块搞了个二阶的芦藜药师和三阶的杜英投手。
+感觉在我还没有独立经济收入够养活自己的时候，即使是自己“赚”到的钱想充游戏也要做好久的心理斗争。小时候的我还能找到“考试考…</description>
+      
+      
+      
+      
+      <category domain="http://blog.cyx2009.top/categories/Essay/">Essay</category>
+      
+      
+      
+      <comments>http://blog.cyx2009.top/archives/2026-02-18/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[游记] WC 2026 游记</title>
@@ -457,50 +500,6 @@ cpp 提交记录：https://code…</description>
       
       
       <comments>http://blog.cyx2009.top/archives/P10206/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>『置顶』[闲话] 我的那些原创题</title>
-      <link>http://blog.cyx2009.top/archives/problems/</link>
-      <guid>http://blog.cyx2009.top/archives/problems/</guid>
-      <pubDate>Sun, 17 Aug 2025 12:39:25 GMT</pubDate>
-      
-      <description>这里是我的原创题合集。
- P12593 沉石鱼惊旋
-备注：本题本来是随手出的题，尝试贪心发现假完了，没人会做，正好这边国赛模拟缺一个简单图论题就拿来了。开 n≤8 是照顾 Python 和 Java 运行速度，以及控难度。
-去向：洛谷 蓝桥杯国赛模拟
-链接：https://www.luogu.com.cn/proble…</description>
-      
-      
-      
-      
-      <category domain="http://blog.cyx2009.top/categories/Essay/">Essay</category>
-      
-      
-      
-      <comments>http://blog.cyx2009.top/archives/problems/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[题解] 杂题选讲 3</title>
-      <link>http://blog.cyx2009.top/archives/potpourri_3/</link>
-      <guid>http://blog.cyx2009.top/archives/potpourri_3/</guid>
-      <pubDate>Fri, 01 Aug 2025 08:38:00 GMT</pubDate>
-      
-      <description>模拟赛 梦熊 20250731 A
-考虑把 axi⊕ayi=zi 的都拎出来搜出来一个连通块，连通块内我们可以算出 au=ar⊕vu，其中 r 是连通块最小的编号。vu 是搜连通块的时候可以直接搜出来的限制。
-考虑最小化字典序等价于最小化 ar。那么我们有若干个 ar⊕vi∈[li,ri] 的限制。等价于我们把每个 y…</description>
-      
-      
-      
-      
-      <category domain="http://blog.cyx2009.top/categories/Solution/">Solution</category>
-      
-      
-      
-      <comments>http://blog.cyx2009.top/archives/potpourri_3/#disqus_thread</comments>
       
     </item>
     
