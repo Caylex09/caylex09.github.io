@@ -465,7 +465,7 @@
 		
 			<p class="text-black mt-3 mb-0 opacity-8">
 				<i class="fa fa-file-o mr-1"></i>
-				196 篇文章
+				198 篇文章
 			</p>
 		
 	</div>
@@ -524,7 +524,7 @@
 							<nav class="site-state">
 								<div class="site-state-item site-state-posts">
 									<a href="/archives">
-										<span class="site-state-item-count">231</span>
+										<span class="site-state-item-count">233</span>
 										<span class="site-state-item-name">文章</span>
 									</a>
 								</div>
@@ -598,7 +598,7 @@
 				</button>
 			</div>
 			<div class="modal-body">
-				<a class="badge badge-secondary tag" href="/categories/Essay/" rel="tag">Essay <span class="tag-num">9</span></a><a class="badge badge-secondary tag" href="/categories/Solution/" rel="tag">Solution <span class="tag-num">196</span></a><a class="badge badge-secondary tag" href="/categories/StudyNote/" rel="tag">StudyNote <span class="tag-num">7</span></a><a class="badge badge-secondary tag" href="/categories/Technology/" rel="tag">Technology <span class="tag-num">3</span></a><a class="badge badge-secondary tag" href="/categories/TravelNote/" rel="tag">TravelNote <span class="tag-num">16</span></a>
+				<a class="badge badge-secondary tag" href="/categories/Essay/" rel="tag">Essay <span class="tag-num">9</span></a><a class="badge badge-secondary tag" href="/categories/Solution/" rel="tag">Solution <span class="tag-num">198</span></a><a class="badge badge-secondary tag" href="/categories/StudyNote/" rel="tag">StudyNote <span class="tag-num">7</span></a><a class="badge badge-secondary tag" href="/categories/Technology/" rel="tag">Technology <span class="tag-num">3</span></a><a class="badge badge-secondary tag" href="/categories/TravelNote/" rel="tag">TravelNote <span class="tag-num">16</span></a>
 			</div>
 		</div>
 	</div>
@@ -631,13 +631,13 @@
 	<article class="post card bg-white shadow-sm border-0 post-preview">
 	<header class="post-header text-center">
 		
-		<a class="post-title" href="/archives/potpourri_11/">[题解] 杂题选讲 11</a>
+		<a class="post-title" href="/archives/P15367/">[题解] P15367 秋季限定生成树问题</a>
 		<div class="post-meta">
 			
 						
 						<div class="post-meta-detail post-meta-detail-time">
 							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2026-1-6 19:42:00 | 编辑于 2026-2-4 17:52:54">2026-1-6 19:42
+							<time title="发布于 2026-2-23 17:22:00 | 编辑于 2026-2-24 9:43:14">2026-2-23 17:22
 							</time>
 						</div>
 					
@@ -664,7 +664,7 @@
 						
 						<div class="post-meta-detail post-meta-detail-words">
 							<i class="fa fa-file-word-o" aria-hidden="true"></i>
-							9.8k 字
+							1.6k 字
 						</div>
 					
 						
@@ -672,7 +672,137 @@
 						
 						<div class="post-meta-detail post-meta-detail-readingtime">
 							<i class="fa fa-hourglass-end" aria-hidden="true"></i>
-							42 分钟
+							7 分钟
+						</div>
+					
+		</div>
+		
+	</header>
+
+	<div class="post-content">
+		
+			
+				这里是 idea 提出人题解。感谢 @Larunatrecy 加强了做法出到了 1018！！！
+先给出结论：我们对于 [1,n−1] 的每个点 i，找最大的 j 满足 gcd⁡(i,j)=1，连这样一条边。一定能恰好连 n−1 条边形成一棵树。这棵树就是最大生成树。
+肯定是一棵树显然，你考虑每个 i 一定会往后连一条（至少可以连 i+1），这样的话...
+			
+		
+	</div>
+
+	
+</article>
+
+
+	<article class="post card bg-white shadow-sm border-0 post-preview">
+	<header class="post-header text-center">
+		
+		<a class="post-title" href="/archives/P14986/">[题解] P14986 GCD Maximum</a>
+		<div class="post-meta">
+			
+						
+						<div class="post-meta-detail post-meta-detail-time">
+							<i class="fa fa-clock-o" aria-hidden="true"></i>
+							<time title="发布于 2026-1-18 14:13:00 | 编辑于 2026-2-23 20:47:57">2026-1-18 14:13
+							</time>
+						</div>
+					
+						
+							<div class="post-meta-devide">|</div>
+						
+						<div class="post-meta-detail post-meta-detail-categories">
+							<i class="fa fa-bookmark-o" aria-hidden="true"></i>
+							<a class="post-meta-detail-catagory-link" href="/categories/Solution/">Solution</a>
+						</div>
+					
+						
+							<div class="post-meta-devide">|</div>
+						
+						<div class="post-meta-detail post-meta-detail-words">
+							<i class="fa fa-book" aria-hidden="true"></i>
+							<span id="busuanzi_container_page_pv">
+								阅读 <span id="busuanzi_value_page_pv"></span> 次
+							</span>
+						</div>
+					
+						
+							<div class="post-meta-devide">|</div>
+						
+						<div class="post-meta-detail post-meta-detail-words">
+							<i class="fa fa-file-word-o" aria-hidden="true"></i>
+							97 字
+						</div>
+					
+						
+							<div class="post-meta-devide">|</div>
+						
+						<div class="post-meta-detail post-meta-detail-readingtime">
+							<i class="fa fa-hourglass-end" aria-hidden="true"></i>
+							1 分钟
+						</div>
+					
+		</div>
+		
+	</header>
+
+	<div class="post-content">
+		
+			
+				注意到 [1,n] 中至多 ⌊n2⌋ 个数有 2 作为因子。
+故 n 为偶数时 ans=2，否则 ans=1。
+偶数的话 2,1,4,3,…,n,n−1 匹配即可。奇数 1,2,3,4,…,n−1,n 匹配即可。
+			
+		
+	</div>
+
+	
+</article>
+
+
+	<article class="post card bg-white shadow-sm border-0 post-preview">
+	<header class="post-header text-center">
+		
+		<a class="post-title" href="/archives/potpourri_11/">[题解] 杂题选讲 11</a>
+		<div class="post-meta">
+			
+						
+						<div class="post-meta-detail post-meta-detail-time">
+							<i class="fa fa-clock-o" aria-hidden="true"></i>
+							<time title="发布于 2026-1-6 19:42:00 | 编辑于 2026-2-23 17:08:36">2026-1-6 19:42
+							</time>
+						</div>
+					
+						
+							<div class="post-meta-devide">|</div>
+						
+						<div class="post-meta-detail post-meta-detail-categories">
+							<i class="fa fa-bookmark-o" aria-hidden="true"></i>
+							<a class="post-meta-detail-catagory-link" href="/categories/Solution/">Solution</a>
+						</div>
+					
+						
+							<div class="post-meta-devide">|</div>
+						
+						<div class="post-meta-detail post-meta-detail-words">
+							<i class="fa fa-book" aria-hidden="true"></i>
+							<span id="busuanzi_container_page_pv">
+								阅读 <span id="busuanzi_value_page_pv"></span> 次
+							</span>
+						</div>
+					
+						
+							<div class="post-meta-devide">|</div>
+						
+						<div class="post-meta-detail post-meta-detail-words">
+							<i class="fa fa-file-word-o" aria-hidden="true"></i>
+							11.6k 字
+						</div>
+					
+						
+							<div class="post-meta-devide">|</div>
+						
+						<div class="post-meta-detail post-meta-detail-readingtime">
+							<i class="fa fa-hourglass-end" aria-hidden="true"></i>
+							50 分钟
 						</div>
 					
 		</div>
@@ -1164,149 +1294,6 @@ q 次询问，1≤n≤1018，1≤q≤105。
  A. Equal Occurrences
 开个桶，按照元素出现次数排序，显然我们需要的是桶里的一段后缀。枚举所有数保留 ai 个元素，则可以保留 (n−i+1)×ai 个数。把这个对于所有元素取一个 max⁡ 即可。
 cpp 提交记录：https://codeforces.com/cont...
-			
-		
-	</div>
-
-	
-</article>
-
-
-	<article class="post card bg-white shadow-sm border-0 post-preview">
-	<header class="post-header text-center post-header-with-thumbnail">
-		
-				<img class='post-thumbnail lazyload' src='https://testingcf.jsdelivr.net/gh/Caylex09/img@main/images/20250914/192956686.png' data-original='https://testingcf.jsdelivr.net/gh/Caylex09/img@main/images/20250914/192956686.png' alt='thumbnail'></img>
-				<div class='post-header-text-container'>
-			
-		<a class="post-title" href="/archives/potpourri_5/">[题解] 杂题选讲 5</a>
-		<div class="post-meta">
-			
-						
-						<div class="post-meta-detail post-meta-detail-time">
-							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2025-9-14 16:44:00 | 编辑于 2026-2-4 17:46:56">2025-9-14 16:44
-							</time>
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-categories">
-							<i class="fa fa-bookmark-o" aria-hidden="true"></i>
-							<a class="post-meta-detail-catagory-link" href="/categories/Solution/">Solution</a>
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-words">
-							<i class="fa fa-book" aria-hidden="true"></i>
-							<span id="busuanzi_container_page_pv">
-								阅读 <span id="busuanzi_value_page_pv"></span> 次
-							</span>
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-words">
-							<i class="fa fa-file-word-o" aria-hidden="true"></i>
-							13.5k 字
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-readingtime">
-							<i class="fa fa-hourglass-end" aria-hidden="true"></i>
-							62 分钟
-						</div>
-					
-		</div>
-		
-				</div>
-			
-	</header>
-
-	<div class="post-content">
-		
-			
-				模拟赛 洛谷 2025 NOIP #15 A
-本题 aka https://qoj.ac/problem/3090。
-注意到，我们设 k 为第一个不满足 Xk<Xk+1 的位置，则排列需要形如，
-[val≥X1]⏟several numbers>X1,X1,[val≥X2]⏟several numbers>X2,X2,[val≥X3]⏟severa...
-			
-		
-	</div>
-
-	
-</article>
-
-
-	<article class="post card bg-white shadow-sm border-0 post-preview">
-	<header class="post-header text-center post-header-with-thumbnail">
-		
-				<img class='post-thumbnail lazyload' src='https://testingcf.jsdelivr.net/gh/Caylex09/img@main/images/20250910193602591.png' data-original='https://testingcf.jsdelivr.net/gh/Caylex09/img@main/images/20250910193602591.png' alt='thumbnail'></img>
-				<div class='post-header-text-container'>
-			
-		<a class="post-title" href="/archives/potpourri_4/">[题解] 杂题选讲 4</a>
-		<div class="post-meta">
-			
-						
-						<div class="post-meta-detail post-meta-detail-time">
-							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2025-8-28 16:13:00 | 编辑于 2026-2-4 17:13:40">2025-8-28 16:13
-							</time>
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-categories">
-							<i class="fa fa-bookmark-o" aria-hidden="true"></i>
-							<a class="post-meta-detail-catagory-link" href="/categories/Solution/">Solution</a>
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-words">
-							<i class="fa fa-book" aria-hidden="true"></i>
-							<span id="busuanzi_container_page_pv">
-								阅读 <span id="busuanzi_value_page_pv"></span> 次
-							</span>
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-words">
-							<i class="fa fa-file-word-o" aria-hidden="true"></i>
-							11k 字
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-readingtime">
-							<i class="fa fa-hourglass-end" aria-hidden="true"></i>
-							49 分钟
-						</div>
-					
-		</div>
-		
-				</div>
-			
-	</header>
-
-	<div class="post-content">
-		
-			
-				CF1073E Segment Sum
-数位 DP，fi,j 表示方案数，gi,j 表示总和，枚举下一位填什么，多出来一些方案数乘上这一位的数乘上 10 的次幂的贡献，每次转移的时候加一下就行了。
- 梦熊炼石计划 2025 #2 A
-弱智题，显然 ai=bi 的被强选了，可以证明 mex⁡ 就是这些数的 mex⁡，如果不是的话可以轻松调整。
-答案显...
 			
 		
 	</div>
