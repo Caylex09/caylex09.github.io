@@ -15,8 +15,31 @@
     <atom:link href="http://blog.cyx2009.top/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>沉石鱼惊旋 的博客</description>
-    <pubDate>Tue, 24 Feb 2026 01:43:14 GMT</pubDate>
+    <pubDate>Sun, 01 Mar 2026 04:27:39 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[闲话] 如何获得更优质的生活</title>
+      <link>http://blog.cyx2009.top/archives/better_life/</link>
+      <guid>http://blog.cyx2009.top/archives/better_life/</guid>
+      <pubDate>Sun, 01 Mar 2026 04:27:00 GMT</pubDate>
+      
+      <description>记录一些很有用的东西。
+ 邮件
+Email 可以用 gmail，一个手机注册两个号，手机上清掉浏览数据开梯子注册成功率更高。
+然后给邮箱设置一下回复，就是别的邮箱收到的发到统一邮箱里，然后也可以设置发信用什么邮箱。
+最后，下载那个网页应用 gmail，设置开机自启动，然后设置里面打开 Windows 通知就可以享受到邮…</description>
+      
+      
+      
+      
+      <category domain="http://blog.cyx2009.top/categories/Essay/">Essay</category>
+      
+      
+      
+      <comments>http://blog.cyx2009.top/archives/better_life/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[题解] P15367 秋季限定生成树问题</title>
@@ -467,28 +490,6 @@ cpp 提交记录：https://code…</description>
       
       
       <comments>http://blog.cyx2009.top/archives/CSP2025/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[题解] 杂题选讲 5</title>
-      <link>http://blog.cyx2009.top/archives/potpourri_5/</link>
-      <guid>http://blog.cyx2009.top/archives/potpourri_5/</guid>
-      <pubDate>Sun, 14 Sep 2025 08:44:00 GMT</pubDate>
-      
-      <description>模拟赛 洛谷 2025 NOIP #15 A
-本题 aka https://qoj.ac/problem/3090。
-注意到，我们设 k 为第一个不满足 Xk&lt;Xk+1 的位置，则排列需要形如，
-[val≥X1]⏟several numbers&gt;X1,X1,[val≥X2]⏟several numbers&gt;X2,X2,…</description>
-      
-      
-      
-      
-      <category domain="http://blog.cyx2009.top/categories/Solution/">Solution</category>
-      
-      
-      
-      <comments>http://blog.cyx2009.top/archives/potpourri_5/#disqus_thread</comments>
       
     </item>
     

@@ -6,7 +6,7 @@
   <link href="http://blog.cyx2009.top/atom.xml" rel="self"/>
   
   <link href="http://blog.cyx2009.top/"/>
-  <updated>2026-02-24T01:43:14.865Z</updated>
+  <updated>2026-03-01T04:27:39.819Z</updated>
   <id>http://blog.cyx2009.top/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>[闲话] 如何获得更优质的生活</title>
+    <link href="http://blog.cyx2009.top/archives/better_life/"/>
+    <id>http://blog.cyx2009.top/archives/better_life/</id>
+    <published>2026-03-01T04:27:00.000Z</published>
+    <updated>2026-03-01T04:27:39.819Z</updated>
+    
+    
+    <summary type="html">记录一些很有用的东西。
+ 邮件
+Email 可以用 gmail，一个手机注册两个号，手机上清掉浏览数据开梯子注册成功率更高。
+然后给邮箱设置一下回复，就是别的邮箱收到的发到统一邮箱里，然后也可以设置发信用什么邮箱。
+最后，下载那个网页应用 gmail，设置开机自启动，然后设置里面打开 Windows 通知就可以享受到邮…</summary>
+    
+    
+    
+    <category term="Essay" scheme="http://blog.cyx2009.top/categories/Essay/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>[题解] P15367 秋季限定生成树问题</title>
@@ -141,7 +162,7 @@ Summer School (July 12 — July 16, 2024) 栗师 Combinatorial Optimizati…</su
     <link href="http://blog.cyx2009.top/archives/potpourri_11/"/>
     <id>http://blog.cyx2009.top/archives/potpourri_11/</id>
     <published>2026-01-06T11:42:00.000Z</published>
-    <updated>2026-02-25T12:55:59.385Z</updated>
+    <updated>2026-02-28T08:59:47.262Z</updated>
     
     
     <summary type="html">模拟赛 序列操作
@@ -353,7 +374,7 @@ q 次询问，1≤n≤1018，1≤q≤105。
     <link href="http://blog.cyx2009.top/archives/potpourri_7/"/>
     <id>http://blog.cyx2009.top/archives/potpourri_7/</id>
     <published>2025-10-15T03:29:00.000Z</published>
-    <updated>2026-02-04T09:47:16.699Z</updated>
+    <updated>2026-02-28T08:57:48.065Z</updated>
     
     
     <summary type="html">CF2104G Modulo 3
@@ -426,26 +447,6 @@ cpp 提交记录：https://code…</summary>
     
     
     <category term="TravelNote" scheme="http://blog.cyx2009.top/categories/TravelNote/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>[题解] 杂题选讲 5</title>
-    <link href="http://blog.cyx2009.top/archives/potpourri_5/"/>
-    <id>http://blog.cyx2009.top/archives/potpourri_5/</id>
-    <published>2025-09-14T08:44:00.000Z</published>
-    <updated>2026-02-04T09:46:56.861Z</updated>
-    
-    
-    <summary type="html">模拟赛 洛谷 2025 NOIP #15 A
-本题 aka https://qoj.ac/problem/3090。
-注意到，我们设 k 为第一个不满足 Xk&lt;Xk+1 的位置，则排列需要形如，
-[val≥X1]⏟several numbers&gt;X1,X1,[val≥X2]⏟several numbers&gt;X2,X2,…</summary>
-    
-    
-    
-    <category term="Solution" scheme="http://blog.cyx2009.top/categories/Solution/"/>
     
     
   </entry>
