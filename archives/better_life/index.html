@@ -13,20 +13,20 @@
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/a11y-light.min.css">
 	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js"></script>
 	
-	<title>[闲话] 如何获得更优质的生活 - 沉石鱼惊旋 的博客</title>
+	<title>『置顶』[闲话] 如何获得更优质的生活 - 沉石鱼惊旋 的博客</title>
 	<meta charset="utf-8">
 	
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
 	
 	<meta name="description" content="记录一些很有用的东西。  邮件 Email 可以用 gmail，一个手机注册两个号，手机上清掉浏览数据开梯子注册成功率更高。 然后给邮箱设置一下回复，就是别的邮箱收到的发到统一邮箱里，然后也可以设置发信用什么邮箱。 最后，下载那个网页应用 gmail，设置开机自启动，然后设置里面打开 Windows 通知就可以享受到邮…">
 <meta property="og:type" content="article">
-<meta property="og:title" content="[闲话] 如何获得更优质的生活">
+<meta property="og:title" content="『置顶』[闲话] 如何获得更优质的生活">
 <meta property="og:url" content="http://blog.cyx2009.top/archives/better_life/index.html">
 <meta property="og:site_name" content="沉石鱼惊旋 的博客">
 <meta property="og:description" content="记录一些很有用的东西。  邮件 Email 可以用 gmail，一个手机注册两个号，手机上清掉浏览数据开梯子注册成功率更高。 然后给邮箱设置一下回复，就是别的邮箱收到的发到统一邮箱里，然后也可以设置发信用什么邮箱。 最后，下载那个网页应用 gmail，设置开机自启动，然后设置里面打开 Windows 通知就可以享受到邮…">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2026-03-01T04:27:00.000Z">
-<meta property="article:modified_time" content="2026-03-01T04:27:39.819Z">
+<meta property="article:modified_time" content="2026-03-01T04:33:49.867Z">
 <meta property="article:author" content="沉石鱼惊旋">
 <meta name="twitter:card" content="summary">
 
@@ -647,13 +647,13 @@
 	<article class="post post-full card bg-white shadow-sm border-0 post-preview">
 	<header class="post-header text-center">
 		
-		<a class="post-title" href="/archives/better_life/">[闲话] 如何获得更优质的生活</a>
+		<a class="post-title" href="/archives/better_life/">『置顶』[闲话] 如何获得更优质的生活</a>
 		<div class="post-meta">
 			
 						
 						<div class="post-meta-detail post-meta-detail-time">
 							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2026-3-1 12:27:00 | 编辑于 2026-3-1 12:27:39">2026-3-1 12:27
+							<time title="发布于 2026-3-1 12:27:00 | 编辑于 2026-3-1 12:33:49">2026-3-1 12:27
 							</time>
 						</div>
 					
@@ -837,6 +837,7 @@ MUSIC_DIR = <span class="string">&quot;C:\\Users\\Administrator\\Music&quot;</sp
 <p>即可添加，可以用 Mp3tag 这个软件检验或者手动添加。</p>
 <p>之后再导入 Spotify 就是对的了。</p>
 <p>然后你还可以使用 <a target="_blank" rel="noopener" href="https://github.com/jayfunc/BetterLyrics">jayfunc/BetterLyrics: An elegant and deeply customizable lyrics visualizer &amp; versatile music player, built with WinUI3/Win2D | 一款优雅且高度自定义的歌词可视化与全能音乐播放应用，基于 WinUI3/Win2D 构建</a> 这个软件添加桌面歌词功能。这个比那些播放器原生的牛多了。</p>
+<p>如果 Spotify 发电不放音乐了，可以关闭硬件加速。</p>
 <h1 id="博客"><a class="markdownIt-Anchor" href="#博客"></a> 博客</h1>
 <p>我用的 Hexo+Argon 搭建的。本地之前用 Typora，现在用 Obsidian 书写博客。</p>
 <p>有一些要解决的东西，比如 Admonition 语法支持，新建 script 文件然后使用 <code>admonition.js</code>：</p>
@@ -1019,450 +1020,450 @@ hexo.<span class="property">extend</span>.<span class="property">filter</span>.<
 <h1 id="写代码oi"><a class="markdownIt-Anchor" href="#写代码oi"></a> 写代码（OI）</h1>
 <p>OI 选手可以使用 WSL2+VSCode 编程模拟赛场环境。</p>
 <p>但是我这种懒逼有的时候油猴脚本开发也在 WSL 下面写了，这个时候会因为神秘错误导致网络连不上 Github（例如表现为 Copilot 无答应），打开梯子的允许局域网接入，然后配合下述代码添加到 <code>.bashrc</code> 里：</p>
-<pre><code class="highlight shell"><span class="meta prompt_"># </span><span class="language-bash">自动获取宿主机 IP</span>
+<pre><code class="highlight bash"><span class="comment"># 自动获取宿主机 IP</span>
 
-export WINDOWS_HOST_IP=$(ip route show default | awk &#x27;&#123;print $3&#125;&#x27;)
-
-  
-<span class="meta prompt_"></span>
-<span class="meta prompt_"># </span><span class="language-bash">设置代理 (端口 7890 请按需修改)</span>
-
-export http_proxy=&quot;http://$WINDOWS_HOST_IP:7890&quot;
-
-export https_proxy=&quot;http://$WINDOWS_HOST_IP:7890&quot;
+<span class="built_in">export</span> WINDOWS_HOST_IP=$(ip route show default | awk <span class="string">&#x27;&#123;print $3&#125;&#x27;</span>)
 
   
-<span class="meta prompt_"></span>
-<span class="meta prompt_"># </span><span class="language-bash">某些工具可能需要全大写的变量</span>
 
-export HTTP_PROXY=&quot;http://$WINDOWS_HOST_IP:7890&quot;
+<span class="comment"># 设置代理 (端口 7890 请按需修改)</span>
 
-export HTTPS_PROXY=&quot;http://$WINDOWS_HOST_IP:7890&quot;</code></pre>
+<span class="built_in">export</span> http_proxy=<span class="string">&quot;http://<span class="variable">$WINDOWS_HOST_IP</span>:7890&quot;</span>
+
+<span class="built_in">export</span> https_proxy=<span class="string">&quot;http://<span class="variable">$WINDOWS_HOST_IP</span>:7890&quot;</span>
+
+  
+
+<span class="comment"># 某些工具可能需要全大写的变量</span>
+
+<span class="built_in">export</span> HTTP_PROXY=<span class="string">&quot;http://<span class="variable">$WINDOWS_HOST_IP</span>:7890&quot;</span>
+
+<span class="built_in">export</span> HTTPS_PROXY=<span class="string">&quot;http://<span class="variable">$WINDOWS_HOST_IP</span>:7890&quot;</span></code></pre>
 <p>如果 CPH 无法抓到 Windows 浏览器发送的题目信息，可以考虑修改 WSL 网络设置，例如 NAT 类型或者 Mirrored，我也忘了，哪个能跑用哪个吧。</p>
 <p>OI 选手模拟赛要频繁测样例，可以用一个简单的脚本实现，例如在 Linux 环境下，在 <code>/usr/local/bin</code> 创建一个 <code>run.sh</code>，内容为：</p>
-<pre><code class="highlight shell"><span class="meta prompt_">#</span><span class="language-bash">!/usr/bin/env bash</span>
-set -uo pipefail
-<span class="meta prompt_"></span>
-<span class="meta prompt_"># </span><span class="language-bash">=====================================</span>
-<span class="meta prompt_"># </span><span class="language-bash">CP Local Runner (WSL2)</span>
-<span class="meta prompt_"># </span><span class="language-bash">Strict OJ (cgroup v2) + Peak RSS + Progress + Diagnostics</span>
-<span class="meta prompt_"># </span><span class="language-bash">CLI: run -SOURCE=xxx -TEST_PREFIX=roast ...</span>
-<span class="meta prompt_"># </span><span class="language-bash">=====================================</span>
-<span class="meta prompt_"></span>
-<span class="meta prompt_"># </span><span class="language-bash">-------- defaults (可被命令行覆盖) --------</span>
-SOURCE=&quot;&quot;                 # 必填：不写 .cpp
-TEST_PREFIX=&quot;a&quot;           # 默认前缀
-TIME_LIMIT=2000           # ms
-MEM_LIMIT_MB=1024         # MB
+<pre><code class="highlight bash"><span class="meta">#!/usr/bin/env bash</span>
+<span class="built_in">set</span> -uo pipefail
 
-TIME_ONLY=false
-USE_SPJ=false
-SPJ_EXEC=&quot;./spj&quot;
+<span class="comment"># =====================================</span>
+<span class="comment"># CP Local Runner (WSL2)</span>
+<span class="comment"># Strict OJ (cgroup v2) + Peak RSS + Progress + Diagnostics</span>
+<span class="comment"># CLI: run -SOURCE=xxx -TEST_PREFIX=roast ...</span>
+<span class="comment"># =====================================</span>
 
-SHOW_PROGRESS=true
+<span class="comment"># -------- defaults (可被命令行覆盖) --------</span>
+SOURCE=<span class="string">&quot;&quot;</span>                 <span class="comment"># 必填：不写 .cpp</span>
+TEST_PREFIX=<span class="string">&quot;a&quot;</span>           <span class="comment"># 默认前缀</span>
+TIME_LIMIT=2000           <span class="comment"># ms</span>
+MEM_LIMIT_MB=1024         <span class="comment"># MB</span>
 
-CXX=&quot;g++&quot;
-CXXFLAGS=&quot;-O2 -std=c++14 -static&quot; # 需要静态再加 -static
-<span class="meta prompt_"># </span><span class="language-bash">-----------------------------------------</span>
+TIME_ONLY=<span class="literal">false</span>
+USE_SPJ=<span class="literal">false</span>
+SPJ_EXEC=<span class="string">&quot;./spj&quot;</span>
 
-GREEN=&#x27;\033[0;32m&#x27;
-RED=&#x27;\033[0;31m&#x27;
-YELLOW=&#x27;\033[1;33m&#x27;
-NC=&#x27;\033[0m&#x27;
+SHOW_PROGRESS=<span class="literal">true</span>
 
-usage() &#123;
-  cat &lt;&lt;&#x27;EOF&#x27;
+CXX=<span class="string">&quot;g++&quot;</span>
+CXXFLAGS=<span class="string">&quot;-O2 -std=c++14 -static&quot;</span> <span class="comment"># 需要静态再加 -static</span>
+<span class="comment"># -----------------------------------------</span>
+
+GREEN=<span class="string">&#x27;\033[0;32m&#x27;</span>
+RED=<span class="string">&#x27;\033[0;31m&#x27;</span>
+YELLOW=<span class="string">&#x27;\033[1;33m&#x27;</span>
+NC=<span class="string">&#x27;\033[0m&#x27;</span>
+
+<span class="function"><span class="title">usage</span></span>() &#123;
+  <span class="built_in">cat</span> &lt;&lt;<span class="string">&#x27;EOF&#x27;</span>
 Usage:
   run -SOURCE=a -TEST_PREFIX=a [options]
 
 Options:
   -SOURCE &lt;name&gt;            Required. Source base name without .cpp
   -TEST_PREFIX &lt;prefix&gt;     Input file prefix, e.g. a =&gt; a1.in
-  -TIME_LIMIT &lt;ms&gt;          Time limit in ms (default: 2000)
-  -MEM_LIMIT_MB &lt;mb&gt;        Memory limit in MB (default: 1024)
-  -TIME_ONLY &lt;true|false&gt;   Only measure time, skip judging
-  -USE_SPJ &lt;true|false&gt;     Use SPJ
+  -TIME_LIMIT &lt;ms&gt;          Time <span class="built_in">limit</span> <span class="keyword">in</span> ms (default: 2000)
+  -MEM_LIMIT_MB &lt;mb&gt;        Memory <span class="built_in">limit</span> <span class="keyword">in</span> MB (default: 1024)
+  -TIME_ONLY &lt;<span class="literal">true</span>|<span class="literal">false</span>&gt;   Only measure <span class="keyword">time</span>, skip judging
+  -USE_SPJ &lt;<span class="literal">true</span>|<span class="literal">false</span>&gt;     Use SPJ
   -SPJ_EXEC &lt;path&gt;          SPJ executable path (default: ./spj)
-  -SHOW_PROGRESS &lt;true|false&gt;
+  -SHOW_PROGRESS &lt;<span class="literal">true</span>|<span class="literal">false</span>&gt;
   -CXX &lt;compiler&gt;           default: g++
-  -CXXFLAGS &lt;flags&gt;         quote it, e.g. -CXXFLAGS &quot;-O2 -std=c++14 -static&quot;
+  -CXXFLAGS &lt;flags&gt;         quote it, e.g. -CXXFLAGS <span class="string">&quot;-O2 -std=c++14 -static&quot;</span>
 
 Examples:
   run -SOURCE=a -TEST_PREFIX=a
   run -SOURCE a -TEST_PREFIX a -TIME_LIMIT 10000 -MEM_LIMIT_MB 256
 EOF
 &#125;
-<span class="meta prompt_"></span>
-<span class="meta prompt_"># </span><span class="language-bash">-------- parse args --------</span>
-<span class="meta prompt_"># </span><span class="language-bash">支持：-KEY=VAL 和 -KEY VAL</span>
-for arg in &quot;$@&quot;; do
-  case &quot;$arg&quot; in
-    -h|--help) usage; exit 0 ;;
-  esac
-done
+
+<span class="comment"># -------- parse args --------</span>
+<span class="comment"># 支持：-KEY=VAL 和 -KEY VAL</span>
+<span class="keyword">for</span> arg <span class="keyword">in</span> <span class="string">&quot;<span class="variable">$@</span>&quot;</span>; <span class="keyword">do</span>
+  <span class="keyword">case</span> <span class="string">&quot;<span class="variable">$arg</span>&quot;</span> <span class="keyword">in</span>
+    -h|--<span class="built_in">help</span>) usage; <span class="built_in">exit</span> 0 ;;
+  <span class="keyword">esac</span>
+<span class="keyword">done</span>
 
 i=1
-while (( i &lt;= $# )); do
-  a=&quot;$&#123;!i&#125;&quot;
+<span class="keyword">while</span> (( i &lt;= <span class="variable">$#</span> )); <span class="keyword">do</span>
+  a=<span class="string">&quot;<span class="variable">$&#123;!i&#125;</span>&quot;</span>
 
-  if [[ &quot;$a&quot; == -*=* ]]; then
-    key=&quot;$&#123;a%%=*&#125;&quot;
-    val=&quot;$&#123;a#*=&#125;&quot;
-    case &quot;$key&quot; in
-      -SOURCE) SOURCE=&quot;$val&quot; ;;
-      -TEST_PREFIX) TEST_PREFIX=&quot;$val&quot; ;;
-      -TIME_LIMIT) TIME_LIMIT=&quot;$val&quot; ;;
-      -MEM_LIMIT_MB) MEM_LIMIT_MB=&quot;$val&quot; ;;
-      -TIME_ONLY) TIME_ONLY=&quot;$val&quot; ;;
-      -USE_SPJ) USE_SPJ=&quot;$val&quot; ;;
-      -SPJ_EXEC) SPJ_EXEC=&quot;$val&quot; ;;
-      -SHOW_PROGRESS) SHOW_PROGRESS=&quot;$val&quot; ;;
-      -CXX) CXX=&quot;$val&quot; ;;
-      -CXXFLAGS) CXXFLAGS=&quot;$val&quot; ;;
-      *) echo -e &quot;$&#123;RED&#125;Unknown option: $key$&#123;NC&#125;&quot;; usage; exit 1 ;;
-    esac
+  <span class="keyword">if</span> [[ <span class="string">&quot;<span class="variable">$a</span>&quot;</span> == -*=* ]]; <span class="keyword">then</span>
+    key=<span class="string">&quot;<span class="variable">$&#123;a%%=*&#125;</span>&quot;</span>
+    val=<span class="string">&quot;<span class="variable">$&#123;a#*=&#125;</span>&quot;</span>
+    <span class="keyword">case</span> <span class="string">&quot;<span class="variable">$key</span>&quot;</span> <span class="keyword">in</span>
+      -SOURCE) SOURCE=<span class="string">&quot;<span class="variable">$val</span>&quot;</span> ;;
+      -TEST_PREFIX) TEST_PREFIX=<span class="string">&quot;<span class="variable">$val</span>&quot;</span> ;;
+      -TIME_LIMIT) TIME_LIMIT=<span class="string">&quot;<span class="variable">$val</span>&quot;</span> ;;
+      -MEM_LIMIT_MB) MEM_LIMIT_MB=<span class="string">&quot;<span class="variable">$val</span>&quot;</span> ;;
+      -TIME_ONLY) TIME_ONLY=<span class="string">&quot;<span class="variable">$val</span>&quot;</span> ;;
+      -USE_SPJ) USE_SPJ=<span class="string">&quot;<span class="variable">$val</span>&quot;</span> ;;
+      -SPJ_EXEC) SPJ_EXEC=<span class="string">&quot;<span class="variable">$val</span>&quot;</span> ;;
+      -SHOW_PROGRESS) SHOW_PROGRESS=<span class="string">&quot;<span class="variable">$val</span>&quot;</span> ;;
+      -CXX) CXX=<span class="string">&quot;<span class="variable">$val</span>&quot;</span> ;;
+      -CXXFLAGS) CXXFLAGS=<span class="string">&quot;<span class="variable">$val</span>&quot;</span> ;;
+      *) <span class="built_in">echo</span> -e <span class="string">&quot;<span class="variable">$&#123;RED&#125;</span>Unknown option: $key<span class="variable">$&#123;NC&#125;</span>&quot;</span>; usage; <span class="built_in">exit</span> 1 ;;
+    <span class="keyword">esac</span>
     ((i++))
-  else
-    key=&quot;$a&quot;
+  <span class="keyword">else</span>
+    key=<span class="string">&quot;<span class="variable">$a</span>&quot;</span>
     ((i++))
-    val=&quot;$&#123;!i-&#125;&quot;
-    case &quot;$key&quot; in
-      -SOURCE) SOURCE=&quot;$val&quot; ;;
-      -TEST_PREFIX) TEST_PREFIX=&quot;$val&quot; ;;
-      -TIME_LIMIT) TIME_LIMIT=&quot;$val&quot; ;;
-      -MEM_LIMIT_MB) MEM_LIMIT_MB=&quot;$val&quot; ;;
-      -TIME_ONLY) TIME_ONLY=&quot;$val&quot; ;;
-      -USE_SPJ) USE_SPJ=&quot;$val&quot; ;;
-      -SPJ_EXEC) SPJ_EXEC=&quot;$val&quot; ;;
-      -SHOW_PROGRESS) SHOW_PROGRESS=&quot;$val&quot; ;;
-      -CXX) CXX=&quot;$val&quot; ;;
-      -CXXFLAGS) CXXFLAGS=&quot;$val&quot; ;;
+    val=<span class="string">&quot;<span class="variable">$&#123;!i-&#125;</span>&quot;</span>
+    <span class="keyword">case</span> <span class="string">&quot;<span class="variable">$key</span>&quot;</span> <span class="keyword">in</span>
+      -SOURCE) SOURCE=<span class="string">&quot;<span class="variable">$val</span>&quot;</span> ;;
+      -TEST_PREFIX) TEST_PREFIX=<span class="string">&quot;<span class="variable">$val</span>&quot;</span> ;;
+      -TIME_LIMIT) TIME_LIMIT=<span class="string">&quot;<span class="variable">$val</span>&quot;</span> ;;
+      -MEM_LIMIT_MB) MEM_LIMIT_MB=<span class="string">&quot;<span class="variable">$val</span>&quot;</span> ;;
+      -TIME_ONLY) TIME_ONLY=<span class="string">&quot;<span class="variable">$val</span>&quot;</span> ;;
+      -USE_SPJ) USE_SPJ=<span class="string">&quot;<span class="variable">$val</span>&quot;</span> ;;
+      -SPJ_EXEC) SPJ_EXEC=<span class="string">&quot;<span class="variable">$val</span>&quot;</span> ;;
+      -SHOW_PROGRESS) SHOW_PROGRESS=<span class="string">&quot;<span class="variable">$val</span>&quot;</span> ;;
+      -CXX) CXX=<span class="string">&quot;<span class="variable">$val</span>&quot;</span> ;;
+      -CXXFLAGS) CXXFLAGS=<span class="string">&quot;<span class="variable">$val</span>&quot;</span> ;;
       *)
-        echo -e &quot;$&#123;RED&#125;Unknown option: $key$&#123;NC&#125;&quot;
+        <span class="built_in">echo</span> -e <span class="string">&quot;<span class="variable">$&#123;RED&#125;</span>Unknown option: $key<span class="variable">$&#123;NC&#125;</span>&quot;</span>
         usage
-        exit 1
+        <span class="built_in">exit</span> 1
         ;;
-    esac
+    <span class="keyword">esac</span>
     ((i++))
-  fi
-done
+  <span class="keyword">fi</span>
+<span class="keyword">done</span>
 
-if [[ -z &quot;$&#123;SOURCE:-&#125;&quot; ]]; then
-  echo -e &quot;$&#123;RED&#125;-SOURCE is required.$&#123;NC&#125;&quot;
+<span class="keyword">if</span> [[ -z <span class="string">&quot;<span class="variable">$&#123;SOURCE:-&#125;</span>&quot;</span> ]]; <span class="keyword">then</span>
+  <span class="built_in">echo</span> -e <span class="string">&quot;<span class="variable">$&#123;RED&#125;</span>-SOURCE is required.<span class="variable">$&#123;NC&#125;</span>&quot;</span>
   usage
-  exit 1
-fi
-<span class="meta prompt_"></span>
-<span class="meta prompt_"># </span><span class="language-bash">-------- hints (Diagnostics) --------</span>
-run_hint() &#123;
-  local run=&quot;$1&quot;
-  case &quot;$run&quot; in
-    TLE) echo &quot;time limit (algo/IO/loop)&quot; ;;
-    MLE) echo &quot;memory limit (big array/recursion)&quot; ;;
-    RE\(*SIGSEGV*\)) echo &quot;segfault (OOB/null/stack)&quot; ;;
-    RE\(*SIGABRT*\)) echo &quot;abort/assert failed&quot; ;;
-    RE\(*SIGFPE*\)) echo &quot;divide by 0 / arithmetic&quot; ;;
-    RE\(exit=*\)) echo &quot;non-zero exit&quot; ;;
-    RE\(*SIGKILL*\)) echo &quot;killed (maybe OOM/external kill)&quot; ;;
-    *) echo &quot;&quot; ;;
-  esac
-&#125;
-judge_hint() &#123;
-  local judge=&quot;$1&quot;
-  case &quot;$judge&quot; in
-    WA) echo &quot;output mismatch (format/edge)&quot; ;;
-    NO_ANS) echo &quot;missing *.out/*.ans&quot; ;;
-    *) echo &quot;&quot; ;;
-  esac
-&#125;
-<span class="meta prompt_"></span>
-<span class="meta prompt_"># </span><span class="language-bash">-------- utils --------</span>
-ms_to_timeout_arg() &#123; printf &quot;%d.%03ds&quot; $((TIME_LIMIT/1000)) $((TIME_LIMIT%1000)); &#125;
+  <span class="built_in">exit</span> 1
+<span class="keyword">fi</span>
 
-signal_name_from_code() &#123;
-  local code=&quot;$1&quot;
-  (( code &lt; 128 )) &amp;&amp; &#123; echo &quot;&quot;; return; &#125;
-  local sig=$((code - 128))
-  case &quot;$sig&quot; in
-    6) echo &quot;SIGABRT&quot; ;;
-    7) echo &quot;SIGFPE&quot; ;;
-    8) echo &quot;SIGKILL&quot; ;;
-    9) echo &quot;SIGSEGV&quot; ;;
-    10) echo &quot;SIGTERM&quot; ;;
-    *) echo &quot;SIG$&#123;sig&#125;&quot; ;;
-  esac
+<span class="comment"># -------- hints (Diagnostics) --------</span>
+<span class="function"><span class="title">run_hint</span></span>() &#123;
+  <span class="built_in">local</span> run=<span class="string">&quot;<span class="variable">$1</span>&quot;</span>
+  <span class="keyword">case</span> <span class="string">&quot;<span class="variable">$run</span>&quot;</span> <span class="keyword">in</span>
+    TLE) <span class="built_in">echo</span> <span class="string">&quot;time limit (algo/IO/loop)&quot;</span> ;;
+    MLE) <span class="built_in">echo</span> <span class="string">&quot;memory limit (big array/recursion)&quot;</span> ;;
+    RE\(*SIGSEGV*\)) <span class="built_in">echo</span> <span class="string">&quot;segfault (OOB/null/stack)&quot;</span> ;;
+    RE\(*SIGABRT*\)) <span class="built_in">echo</span> <span class="string">&quot;abort/assert failed&quot;</span> ;;
+    RE\(*SIGFPE*\)) <span class="built_in">echo</span> <span class="string">&quot;divide by 0 / arithmetic&quot;</span> ;;
+    RE\(<span class="built_in">exit</span>=*\)) <span class="built_in">echo</span> <span class="string">&quot;non-zero exit&quot;</span> ;;
+    RE\(*SIGKILL*\)) <span class="built_in">echo</span> <span class="string">&quot;killed (maybe OOM/external kill)&quot;</span> ;;
+    *) <span class="built_in">echo</span> <span class="string">&quot;&quot;</span> ;;
+  <span class="keyword">esac</span>
+&#125;
+<span class="function"><span class="title">judge_hint</span></span>() &#123;
+  <span class="built_in">local</span> judge=<span class="string">&quot;<span class="variable">$1</span>&quot;</span>
+  <span class="keyword">case</span> <span class="string">&quot;<span class="variable">$judge</span>&quot;</span> <span class="keyword">in</span>
+    WA) <span class="built_in">echo</span> <span class="string">&quot;output mismatch (format/edge)&quot;</span> ;;
+    NO_ANS) <span class="built_in">echo</span> <span class="string">&quot;missing *.out/*.ans&quot;</span> ;;
+    *) <span class="built_in">echo</span> <span class="string">&quot;&quot;</span> ;;
+  <span class="keyword">esac</span>
 &#125;
 
-bytes_to_mib_1dp() &#123; awk -v b=&quot;$1&quot; &#x27;BEGIN&#123;printf &quot;%.1f&quot;, b/1024/1024&#125;&#x27;; &#125;
+<span class="comment"># -------- utils --------</span>
+<span class="function"><span class="title">ms_to_timeout_arg</span></span>() &#123; <span class="built_in">printf</span> <span class="string">&quot;%d.%03ds&quot;</span> $((TIME_LIMIT/<span class="number">1000</span>)) $((TIME_LIMIT%<span class="number">1000</span>)); &#125;
 
-cgroup_available() &#123; [[ -f /sys/fs/cgroup/cgroup.controllers ]]; &#125;
-
-cgroup_setup() &#123;
-  local mem_bytes=&quot;$1&quot;
-  local cg=&quot;/sys/fs/cgroup/cp_runner_$&#123;SUDO_USER:-$USER&#125;_$$&quot;
-  mkdir &quot;$cg&quot; 2&gt;/dev/null || return 1
-  echo &quot;$mem_bytes&quot; &gt; &quot;$cg/memory.max&quot; 2&gt;/dev/null || return 2
-  echo 0 &gt; &quot;$cg/memory.peak&quot; 2&gt;/dev/null || true
-  echo &quot;$cg&quot;
+<span class="function"><span class="title">signal_name_from_code</span></span>() &#123;
+  <span class="built_in">local</span> code=<span class="string">&quot;<span class="variable">$1</span>&quot;</span>
+  (( code &lt; <span class="number">128</span> )) &amp;&amp; &#123; <span class="built_in">echo</span> <span class="string">&quot;&quot;</span>; <span class="built_in">return</span>; &#125;
+  <span class="built_in">local</span> sig=$((code - <span class="number">128</span>))
+  <span class="keyword">case</span> <span class="string">&quot;<span class="variable">$sig</span>&quot;</span> <span class="keyword">in</span>
+    6) <span class="built_in">echo</span> <span class="string">&quot;SIGABRT&quot;</span> ;;
+    7) <span class="built_in">echo</span> <span class="string">&quot;SIGFPE&quot;</span> ;;
+    8) <span class="built_in">echo</span> <span class="string">&quot;SIGKILL&quot;</span> ;;
+    9) <span class="built_in">echo</span> <span class="string">&quot;SIGSEGV&quot;</span> ;;
+    10) <span class="built_in">echo</span> <span class="string">&quot;SIGTERM&quot;</span> ;;
+    *) <span class="built_in">echo</span> <span class="string">&quot;SIG<span class="variable">$&#123;sig&#125;</span>&quot;</span> ;;
+  <span class="keyword">esac</span>
 &#125;
-cgroup_cleanup() &#123; rmdir &quot;$1&quot; 2&gt;/dev/null || true; &#125;
 
-cgroup_read_kv() &#123; awk -v k=&quot;$2&quot; &#x27;$1==k &#123;print $2&#125;&#x27; &quot;$1&quot; 2&gt;/dev/null || echo &quot;&quot;; &#125;
-cgroup_reset_peak() &#123; echo 0 &gt; &quot;$1/memory.peak&quot; 2&gt;/dev/null || true; &#125;
-cgroup_get_peak_bytes() &#123; cat &quot;$1/memory.peak&quot; 2&gt;/dev/null || echo &quot;0&quot;; &#125;
-<span class="meta prompt_"></span>
-<span class="meta prompt_"># </span><span class="language-bash">-------- progress --------</span>
-PROGRESS_PID=&quot;&quot;
-start_progress() &#123;
-  local label=&quot;$1&quot;
-<span class="meta prompt_">  $</span><span class="language-bash">SHOW_PROGRESS || <span class="built_in">return</span> 0</span>
+<span class="function"><span class="title">bytes_to_mib_1dp</span></span>() &#123; awk -v b=<span class="string">&quot;<span class="variable">$1</span>&quot;</span> <span class="string">&#x27;BEGIN&#123;printf &quot;%.1f&quot;, b/1024/1024&#125;&#x27;</span>; &#125;
+
+<span class="function"><span class="title">cgroup_available</span></span>() &#123; [[ -f /sys/fs/cgroup/cgroup.controllers ]]; &#125;
+
+<span class="function"><span class="title">cgroup_setup</span></span>() &#123;
+  <span class="built_in">local</span> mem_bytes=<span class="string">&quot;<span class="variable">$1</span>&quot;</span>
+  <span class="built_in">local</span> cg=<span class="string">&quot;/sys/fs/cgroup/cp_runner_<span class="variable">$&#123;SUDO_USER:-<span class="variable">$USER</span>&#125;</span>_$$&quot;</span>
+  <span class="built_in">mkdir</span> <span class="string">&quot;<span class="variable">$cg</span>&quot;</span> 2&gt;/dev/null || <span class="built_in">return</span> 1
+  <span class="built_in">echo</span> <span class="string">&quot;<span class="variable">$mem_bytes</span>&quot;</span> &gt; <span class="string">&quot;<span class="variable">$cg</span>/memory.max&quot;</span> 2&gt;/dev/null || <span class="built_in">return</span> 2
+  <span class="built_in">echo</span> 0 &gt; <span class="string">&quot;<span class="variable">$cg</span>/memory.peak&quot;</span> 2&gt;/dev/null || <span class="literal">true</span>
+  <span class="built_in">echo</span> <span class="string">&quot;<span class="variable">$cg</span>&quot;</span>
+&#125;
+<span class="function"><span class="title">cgroup_cleanup</span></span>() &#123; <span class="built_in">rmdir</span> <span class="string">&quot;<span class="variable">$1</span>&quot;</span> 2&gt;/dev/null || <span class="literal">true</span>; &#125;
+
+<span class="function"><span class="title">cgroup_read_kv</span></span>() &#123; awk -v k=<span class="string">&quot;<span class="variable">$2</span>&quot;</span> <span class="string">&#x27;$1==k &#123;print $2&#125;&#x27;</span> <span class="string">&quot;<span class="variable">$1</span>&quot;</span> 2&gt;/dev/null || <span class="built_in">echo</span> <span class="string">&quot;&quot;</span>; &#125;
+<span class="function"><span class="title">cgroup_reset_peak</span></span>() &#123; <span class="built_in">echo</span> 0 &gt; <span class="string">&quot;<span class="variable">$1</span>/memory.peak&quot;</span> 2&gt;/dev/null || <span class="literal">true</span>; &#125;
+<span class="function"><span class="title">cgroup_get_peak_bytes</span></span>() &#123; <span class="built_in">cat</span> <span class="string">&quot;<span class="variable">$1</span>/memory.peak&quot;</span> 2&gt;/dev/null || <span class="built_in">echo</span> <span class="string">&quot;0&quot;</span>; &#125;
+
+<span class="comment"># -------- progress --------</span>
+PROGRESS_PID=<span class="string">&quot;&quot;</span>
+<span class="function"><span class="title">start_progress</span></span>() &#123;
+  <span class="built_in">local</span> label=<span class="string">&quot;<span class="variable">$1</span>&quot;</span>
+  <span class="variable">$SHOW_PROGRESS</span> || <span class="built_in">return</span> 0
   (
-    local t=0
-    while true; do
-      awk -v tenths=&quot;$t&quot; -v lab=&quot;$label&quot; &#x27;BEGIN&#123;
-        printf(&quot;\rRunning %-15s  Elapsed: %.1fs&quot;, lab, tenths/10.0);
-        fflush();
-      &#125;&#x27; 1&gt;&amp;2
-      t=$((t+1))
-      sleep 0.1
-    done
+    <span class="built_in">local</span> t=0
+    <span class="keyword">while</span> <span class="literal">true</span>; <span class="keyword">do</span>
+      awk -v tenths=<span class="string">&quot;<span class="variable">$t</span>&quot;</span> -v lab=<span class="string">&quot;<span class="variable">$label</span>&quot;</span> <span class="string">&#x27;BEGIN&#123;</span>
+<span class="string">        printf(&quot;\rRunning %-15s  Elapsed: %.1fs&quot;, lab, tenths/10.0);</span>
+<span class="string">        fflush();</span>
+<span class="string">      &#125;&#x27;</span> 1&gt;&amp;2
+      t=$((t+<span class="number">1</span>))
+      <span class="built_in">sleep</span> 0.1
+    <span class="keyword">done</span>
   ) &amp;
   PROGRESS_PID=$!
 &#125;
-stop_progress() &#123;
-<span class="meta prompt_">  $</span><span class="language-bash">SHOW_PROGRESS || <span class="built_in">return</span> 0</span>
-  if [[ -n &quot;$&#123;PROGRESS_PID:-&#125;&quot; ]]; then
-    kill &quot;$PROGRESS_PID&quot; 2&gt;/dev/null || true
-    wait &quot;$PROGRESS_PID&quot; 2&gt;/dev/null || true
-    PROGRESS_PID=&quot;&quot;
-    printf &quot;\r%*s\r&quot; 80 &quot;&quot; 1&gt;&amp;2
-  fi
+<span class="function"><span class="title">stop_progress</span></span>() &#123;
+  <span class="variable">$SHOW_PROGRESS</span> || <span class="built_in">return</span> 0
+  <span class="keyword">if</span> [[ -n <span class="string">&quot;<span class="variable">$&#123;PROGRESS_PID:-&#125;</span>&quot;</span> ]]; <span class="keyword">then</span>
+    <span class="built_in">kill</span> <span class="string">&quot;<span class="variable">$PROGRESS_PID</span>&quot;</span> 2&gt;/dev/null || <span class="literal">true</span>
+    <span class="built_in">wait</span> <span class="string">&quot;<span class="variable">$PROGRESS_PID</span>&quot;</span> 2&gt;/dev/null || <span class="literal">true</span>
+    PROGRESS_PID=<span class="string">&quot;&quot;</span>
+    <span class="built_in">printf</span> <span class="string">&quot;\r%*s\r&quot;</span> 80 <span class="string">&quot;&quot;</span> 1&gt;&amp;2
+  <span class="keyword">fi</span>
 &#125;
-<span class="meta prompt_"></span>
-<span class="meta prompt_"># </span><span class="language-bash">run_one: status time_ms run_reason peak_bytes oom_kill_delta</span>
-run_one() &#123;
-  local cg=&quot;$1&quot; infile=&quot;$2&quot; tmp_out=&quot;$3&quot;
-  local t_arg; t_arg=&quot;$(ms_to_timeout_arg)&quot;
-  local start_ns end_ns time_used status sig reason
-  local oom_before oom_after oom_delta peak
 
-  oom_before=&quot;$(cgroup_read_kv &quot;$cg/memory.events&quot; &quot;oom_kill&quot;)&quot;; [[ -z &quot;$oom_before&quot; ]] &amp;&amp; oom_before=0
-  cgroup_reset_peak &quot;$cg&quot;
+<span class="comment"># run_one: status time_ms run_reason peak_bytes oom_kill_delta</span>
+<span class="function"><span class="title">run_one</span></span>() &#123;
+  <span class="built_in">local</span> cg=<span class="string">&quot;<span class="variable">$1</span>&quot;</span> infile=<span class="string">&quot;<span class="variable">$2</span>&quot;</span> tmp_out=<span class="string">&quot;<span class="variable">$3</span>&quot;</span>
+  <span class="built_in">local</span> t_arg; t_arg=<span class="string">&quot;<span class="subst">$(ms_to_timeout_arg)</span>&quot;</span>
+  <span class="built_in">local</span> start_ns end_ns time_used status sig reason
+  <span class="built_in">local</span> oom_before oom_after oom_delta peak
 
-  start_ns=$(date +%s%N)
-  start_progress &quot;$infile&quot;
+  oom_before=<span class="string">&quot;<span class="subst">$(cgroup_read_kv <span class="string">&quot;<span class="variable">$cg</span>/memory.events&quot;</span> <span class="string">&quot;oom_kill&quot;</span>)</span>&quot;</span>; [[ -z <span class="string">&quot;<span class="variable">$oom_before</span>&quot;</span> ]] &amp;&amp; oom_before=0
+  cgroup_reset_peak <span class="string">&quot;<span class="variable">$cg</span>&quot;</span>
 
-  ( timeout &quot;$t_arg&quot; bash -c &quot;exec $EXEC &lt; &#x27;$infile&#x27; &gt; &#x27;$tmp_out&#x27; 2&gt;/dev/null&quot; ) &amp;
-  local pid=$!
-  echo &quot;$pid&quot; &gt; &quot;$cg/cgroup.procs&quot; 2&gt;/dev/null || true
-  wait &quot;$pid&quot;
+  start_ns=$(<span class="built_in">date</span> +%s%N)
+  start_progress <span class="string">&quot;<span class="variable">$infile</span>&quot;</span>
+
+  ( <span class="built_in">timeout</span> <span class="string">&quot;<span class="variable">$t_arg</span>&quot;</span> bash -c <span class="string">&quot;exec <span class="variable">$EXEC</span> &lt; &#x27;<span class="variable">$infile</span>&#x27; &gt; &#x27;<span class="variable">$tmp_out</span>&#x27; 2&gt;/dev/null&quot;</span> ) &amp;
+  <span class="built_in">local</span> pid=$!
+  <span class="built_in">echo</span> <span class="string">&quot;<span class="variable">$pid</span>&quot;</span> &gt; <span class="string">&quot;<span class="variable">$cg</span>/cgroup.procs&quot;</span> 2&gt;/dev/null || <span class="literal">true</span>
+  <span class="built_in">wait</span> <span class="string">&quot;<span class="variable">$pid</span>&quot;</span>
   status=$?
 
-  end_ns=$(date +%s%N)
-  time_used=$(( (end_ns - start_ns) / 1000000 ))
+  end_ns=$(<span class="built_in">date</span> +%s%N)
+  time_used=$(( (end_ns - start_ns) / <span class="number">1000000</span> ))
 
   stop_progress
 
-  oom_after=&quot;$(cgroup_read_kv &quot;$cg/memory.events&quot; &quot;oom_kill&quot;)&quot;; [[ -z &quot;$oom_after&quot; ]] &amp;&amp; oom_after=&quot;$oom_before&quot;
+  oom_after=<span class="string">&quot;<span class="subst">$(cgroup_read_kv <span class="string">&quot;<span class="variable">$cg</span>/memory.events&quot;</span> <span class="string">&quot;oom_kill&quot;</span>)</span>&quot;</span>; [[ -z <span class="string">&quot;<span class="variable">$oom_after</span>&quot;</span> ]] &amp;&amp; oom_after=<span class="string">&quot;<span class="variable">$oom_before</span>&quot;</span>
   oom_delta=$((oom_after - oom_before))
-  peak=&quot;$(cgroup_get_peak_bytes &quot;$cg&quot;)&quot;; [[ -z &quot;$peak&quot; ]] &amp;&amp; peak=0
+  peak=<span class="string">&quot;<span class="subst">$(cgroup_get_peak_bytes <span class="string">&quot;<span class="variable">$cg</span>&quot;</span>)</span>&quot;</span>; [[ -z <span class="string">&quot;<span class="variable">$peak</span>&quot;</span> ]] &amp;&amp; peak=0
 
-  if [[ $status -eq 124 ]]; then
-    reason=&quot;TLE&quot;
-  elif (( oom_delta &gt; 0 )); then
-    reason=&quot;MLE&quot;
-  else
-    sig=&quot;$(signal_name_from_code &quot;$status&quot;)&quot;
-    if [[ -n &quot;$sig&quot; ]]; then
-      reason=&quot;RE($&#123;sig&#125;)&quot;
-    elif [[ $status -ne 0 ]]; then
-      reason=&quot;RE(exit=$status)&quot;
-    else
-      reason=&quot;OK&quot;
-    fi
-  fi
+  <span class="keyword">if</span> [[ <span class="variable">$status</span> -eq 124 ]]; <span class="keyword">then</span>
+    reason=<span class="string">&quot;TLE&quot;</span>
+  <span class="keyword">elif</span> (( oom_delta &gt; <span class="number">0</span> )); <span class="keyword">then</span>
+    reason=<span class="string">&quot;MLE&quot;</span>
+  <span class="keyword">else</span>
+    sig=<span class="string">&quot;<span class="subst">$(signal_name_from_code <span class="string">&quot;<span class="variable">$status</span>&quot;</span>)</span>&quot;</span>
+    <span class="keyword">if</span> [[ -n <span class="string">&quot;<span class="variable">$sig</span>&quot;</span> ]]; <span class="keyword">then</span>
+      reason=<span class="string">&quot;RE(<span class="variable">$&#123;sig&#125;</span>)&quot;</span>
+    <span class="keyword">elif</span> [[ <span class="variable">$status</span> -ne 0 ]]; <span class="keyword">then</span>
+      reason=<span class="string">&quot;RE(exit=<span class="variable">$status</span>)&quot;</span>
+    <span class="keyword">else</span>
+      reason=<span class="string">&quot;OK&quot;</span>
+    <span class="keyword">fi</span>
+  <span class="keyword">fi</span>
 
-  echo &quot;$status $time_used $reason $peak $oom_delta&quot;
+  <span class="built_in">echo</span> <span class="string">&quot;<span class="variable">$status</span> <span class="variable">$time_used</span> <span class="variable">$reason</span> <span class="variable">$peak</span> <span class="variable">$oom_delta</span>&quot;</span>
 &#125;
-<span class="meta prompt_"></span>
-<span class="meta prompt_"># </span><span class="language-bash">-------- compile &amp; run --------</span>
-SRC_FILE=&quot;$&#123;SOURCE&#125;.cpp&quot;
-EXEC=&quot;./$&#123;SOURCE&#125;&quot;
 
-if [[ ! -f &quot;$SRC_FILE&quot; ]]; then
-  echo -e &quot;$&#123;RED&#125;Source file $SRC_FILE not found in current directory.$&#123;NC&#125;&quot;
-  exit 1
-fi
+<span class="comment"># -------- compile &amp; run --------</span>
+SRC_FILE=<span class="string">&quot;<span class="variable">$&#123;SOURCE&#125;</span>.cpp&quot;</span>
+EXEC=<span class="string">&quot;./<span class="variable">$&#123;SOURCE&#125;</span>&quot;</span>
 
-echo &quot;Compiling $SRC_FILE ...&quot;
-<span class="meta prompt_">$</span><span class="language-bash">CXX <span class="variable">$CXXFLAGS</span> <span class="string">&quot;<span class="variable">$SRC_FILE</span>&quot;</span> -o <span class="string">&quot;<span class="variable">$&#123;EXEC#./&#125;</span>&quot;</span></span>
-if [[ $? -ne 0 ]]; then
-  echo -e &quot;$&#123;RED&#125;Compile Error$&#123;NC&#125;&quot;
-  exit 1
-fi
-echo -e &quot;$&#123;GREEN&#125;Compile Success$&#123;NC&#125;&quot;
-echo
+<span class="keyword">if</span> [[ ! -f <span class="string">&quot;<span class="variable">$SRC_FILE</span>&quot;</span> ]]; <span class="keyword">then</span>
+  <span class="built_in">echo</span> -e <span class="string">&quot;<span class="variable">$&#123;RED&#125;</span>Source file <span class="variable">$SRC_FILE</span> not found in current directory.<span class="variable">$&#123;NC&#125;</span>&quot;</span>
+  <span class="built_in">exit</span> 1
+<span class="keyword">fi</span>
 
-INPUT_REGEX=&quot;^(ex_)?$&#123;TEST_PREFIX&#125;[0-9]+\.in$&quot;
-mapfile -t INPUT_FILES &lt; &lt;(ls 2&gt;/dev/null | grep -E &quot;$INPUT_REGEX&quot; | sort -V)
-if [[ $&#123;#INPUT_FILES[@]&#125; -eq 0 ]]; then
-  echo &quot;No input files found.&quot;
-  exit 1
-fi
+<span class="built_in">echo</span> <span class="string">&quot;Compiling <span class="variable">$SRC_FILE</span> ...&quot;</span>
+<span class="variable">$CXX</span> <span class="variable">$CXXFLAGS</span> <span class="string">&quot;<span class="variable">$SRC_FILE</span>&quot;</span> -o <span class="string">&quot;<span class="variable">$&#123;EXEC#./&#125;</span>&quot;</span>
+<span class="keyword">if</span> [[ $? -ne 0 ]]; <span class="keyword">then</span>
+  <span class="built_in">echo</span> -e <span class="string">&quot;<span class="variable">$&#123;RED&#125;</span>Compile Error<span class="variable">$&#123;NC&#125;</span>&quot;</span>
+  <span class="built_in">exit</span> 1
+<span class="keyword">fi</span>
+<span class="built_in">echo</span> -e <span class="string">&quot;<span class="variable">$&#123;GREEN&#125;</span>Compile Success<span class="variable">$&#123;NC&#125;</span>&quot;</span>
+<span class="built_in">echo</span>
 
-if ! cgroup_available; then
-  echo -e &quot;$&#123;RED&#125;cgroup v2 not available.$&#123;NC&#125;&quot;
-  exit 1
-fi
+INPUT_REGEX=<span class="string">&quot;^(ex_)?<span class="variable">$&#123;TEST_PREFIX&#125;</span>[0-9]+\.in$&quot;</span>
+<span class="built_in">mapfile</span> -t INPUT_FILES &lt; &lt;(<span class="built_in">ls</span> 2&gt;/dev/null | grep -E <span class="string">&quot;<span class="variable">$INPUT_REGEX</span>&quot;</span> | <span class="built_in">sort</span> -V)
+<span class="keyword">if</span> [[ <span class="variable">$&#123;#INPUT_FILES[@]&#125;</span> -eq 0 ]]; <span class="keyword">then</span>
+  <span class="built_in">echo</span> <span class="string">&quot;No input files found.&quot;</span>
+  <span class="built_in">exit</span> 1
+<span class="keyword">fi</span>
 
-CGROUP_PATH=&quot;$(cgroup_setup $((MEM_LIMIT_MB*1024*1024)) 2&gt;/dev/null || true)&quot;
-if [[ -z &quot;$CGROUP_PATH&quot; ]]; then
-  echo -e &quot;$&#123;RED&#125;Cannot create cgroup. For strict OJ limits, run:$&#123;NC&#125; sudo run ...&quot;
-  exit 1
-fi
+<span class="keyword">if</span> ! cgroup_available; <span class="keyword">then</span>
+  <span class="built_in">echo</span> -e <span class="string">&quot;<span class="variable">$&#123;RED&#125;</span>cgroup v2 not available.<span class="variable">$&#123;NC&#125;</span>&quot;</span>
+  <span class="built_in">exit</span> 1
+<span class="keyword">fi</span>
 
-printf &quot;%-15s %-10s %-12s %-10s %-10s\n&quot; &quot;Testcase&quot; &quot;Time(ms)&quot; &quot;Peak(MiB)&quot; &quot;Run&quot; &quot;Judge&quot;
-printf &quot;%-15s %-10s %-12s %-10s %-10s\n&quot; &quot;--------&quot; &quot;--------&quot; &quot;--------&quot; &quot;--------&quot; &quot;--------&quot;
+CGROUP_PATH=<span class="string">&quot;<span class="subst">$(cgroup_setup $((MEM_LIMIT_MB*1024*1024)</span>) 2&gt;/dev/null || true)&quot;</span>
+<span class="keyword">if</span> [[ -z <span class="string">&quot;<span class="variable">$CGROUP_PATH</span>&quot;</span> ]]; <span class="keyword">then</span>
+  <span class="built_in">echo</span> -e <span class="string">&quot;<span class="variable">$&#123;RED&#125;</span>Cannot create cgroup. For strict OJ limits, run:<span class="variable">$&#123;NC&#125;</span> sudo run ...&quot;</span>
+  <span class="built_in">exit</span> 1
+<span class="keyword">fi</span>
+
+<span class="built_in">printf</span> <span class="string">&quot;%-15s %-10s %-12s %-10s %-10s\n&quot;</span> <span class="string">&quot;Testcase&quot;</span> <span class="string">&quot;Time(ms)&quot;</span> <span class="string">&quot;Peak(MiB)&quot;</span> <span class="string">&quot;Run&quot;</span> <span class="string">&quot;Judge&quot;</span>
+<span class="built_in">printf</span> <span class="string">&quot;%-15s %-10s %-12s %-10s %-10s\n&quot;</span> <span class="string">&quot;--------&quot;</span> <span class="string">&quot;--------&quot;</span> <span class="string">&quot;--------&quot;</span> <span class="string">&quot;--------&quot;</span> <span class="string">&quot;--------&quot;</span>
 
 TOTAL=0
 PASS=0
 
-declare -a DIAG_CASE DIAG_RUN DIAG_JUDGE DIAG_MSG
+<span class="built_in">declare</span> -a DIAG_CASE DIAG_RUN DIAG_JUDGE DIAG_MSG
 DIAG_CASE=(); DIAG_RUN=(); DIAG_JUDGE=(); DIAG_MSG=()
 
-for infile in &quot;$&#123;INPUT_FILES[@]&#125;&quot;; do
+<span class="keyword">for</span> infile <span class="keyword">in</span> <span class="string">&quot;<span class="variable">$&#123;INPUT_FILES[@]&#125;</span>&quot;</span>; <span class="keyword">do</span>
   ((TOTAL++))
-  base=&quot;$&#123;infile%.in&#125;&quot;
+  base=<span class="string">&quot;<span class="variable">$&#123;infile%.in&#125;</span>&quot;</span>
 
-  ans=&quot;&quot;
-  [[ -f &quot;$&#123;base&#125;.out&quot; ]] &amp;&amp; ans=&quot;$&#123;base&#125;.out&quot;
-  [[ -z &quot;$ans&quot; &amp;&amp; -f &quot;$&#123;base&#125;.ans&quot; ]] &amp;&amp; ans=&quot;$&#123;base&#125;.ans&quot;
+  ans=<span class="string">&quot;&quot;</span>
+  [[ -f <span class="string">&quot;<span class="variable">$&#123;base&#125;</span>.out&quot;</span> ]] &amp;&amp; ans=<span class="string">&quot;<span class="variable">$&#123;base&#125;</span>.out&quot;</span>
+  [[ -z <span class="string">&quot;<span class="variable">$ans</span>&quot;</span> &amp;&amp; -f <span class="string">&quot;<span class="variable">$&#123;base&#125;</span>.ans&quot;</span> ]] &amp;&amp; ans=<span class="string">&quot;<span class="variable">$&#123;base&#125;</span>.ans&quot;</span>
 
-  tmp_out=&quot;tmp_$&#123;base&#125;.out&quot;
-  rm -f &quot;$tmp_out&quot; 2&gt;/dev/null || true
+  tmp_out=<span class="string">&quot;tmp_<span class="variable">$&#123;base&#125;</span>.out&quot;</span>
+  <span class="built_in">rm</span> -f <span class="string">&quot;<span class="variable">$tmp_out</span>&quot;</span> 2&gt;/dev/null || <span class="literal">true</span>
 
-  read -r status time_used run_reason peak_bytes oom_delta &lt; &lt;(run_one &quot;$CGROUP_PATH&quot; &quot;$infile&quot; &quot;$tmp_out&quot;)
-  peak_mib=&quot;$(bytes_to_mib_1dp &quot;$&#123;peak_bytes:-0&#125;&quot;)&quot;
+  <span class="built_in">read</span> -r status time_used run_reason peak_bytes oom_delta &lt; &lt;(run_one <span class="string">&quot;<span class="variable">$CGROUP_PATH</span>&quot;</span> <span class="string">&quot;<span class="variable">$infile</span>&quot;</span> <span class="string">&quot;<span class="variable">$tmp_out</span>&quot;</span>)
+  peak_mib=<span class="string">&quot;<span class="subst">$(bytes_to_mib_1dp <span class="string">&quot;<span class="variable">$&#123;peak_bytes:-0&#125;</span>&quot;</span>)</span>&quot;</span>
 
-  if [[ &quot;$run_reason&quot; != &quot;OK&quot; ]]; then
-    printf &quot;%-15s %-10s %-12s $&#123;RED&#125;%-10s$&#123;NC&#125; %-10s\n&quot; \
-      &quot;$infile&quot; &quot;$time_used&quot; &quot;$peak_mib&quot; &quot;$run_reason&quot; &quot;-&quot;
+  <span class="keyword">if</span> [[ <span class="string">&quot;<span class="variable">$run_reason</span>&quot;</span> != <span class="string">&quot;OK&quot;</span> ]]; <span class="keyword">then</span>
+    <span class="built_in">printf</span> <span class="string">&quot;%-15s %-10s %-12s <span class="variable">$&#123;RED&#125;</span>%-10s<span class="variable">$&#123;NC&#125;</span> %-10s\n&quot;</span> \
+      <span class="string">&quot;<span class="variable">$infile</span>&quot;</span> <span class="string">&quot;<span class="variable">$time_used</span>&quot;</span> <span class="string">&quot;<span class="variable">$peak_mib</span>&quot;</span> <span class="string">&quot;<span class="variable">$run_reason</span>&quot;</span> <span class="string">&quot;-&quot;</span>
 
-    msg=&quot;$(run_hint &quot;$run_reason&quot;)&quot;
-    DIAG_CASE+=(&quot;$infile&quot;); DIAG_RUN+=(&quot;$run_reason&quot;); DIAG_JUDGE+=(&quot;-&quot;); DIAG_MSG+=(&quot;$&#123;msg:-runtime failure&#125;&quot;)
+    msg=<span class="string">&quot;<span class="subst">$(run_hint <span class="string">&quot;<span class="variable">$run_reason</span>&quot;</span>)</span>&quot;</span>
+    DIAG_CASE+=(<span class="string">&quot;<span class="variable">$infile</span>&quot;</span>); DIAG_RUN+=(<span class="string">&quot;<span class="variable">$run_reason</span>&quot;</span>); DIAG_JUDGE+=(<span class="string">&quot;-&quot;</span>); DIAG_MSG+=(<span class="string">&quot;<span class="variable">$&#123;msg:-runtime failure&#125;</span>&quot;</span>)
 
-    rm -f &quot;$tmp_out&quot; 2&gt;/dev/null || true
-    continue
-  fi
+    <span class="built_in">rm</span> -f <span class="string">&quot;<span class="variable">$tmp_out</span>&quot;</span> 2&gt;/dev/null || <span class="literal">true</span>
+    <span class="built_in">continue</span>
+  <span class="keyword">fi</span>
 
-  if $TIME_ONLY; then
+  <span class="keyword">if</span> <span class="variable">$TIME_ONLY</span>; <span class="keyword">then</span>
     ((PASS++))
-    printf &quot;%-15s %-10s %-12s $&#123;YELLOW&#125;%-10s$&#123;NC&#125; %-10s\n&quot; \
-      &quot;$infile&quot; &quot;$time_used&quot; &quot;$peak_mib&quot; &quot;TIME&quot; &quot;-&quot;
-    rm -f &quot;$tmp_out&quot; 2&gt;/dev/null || true
-    continue
-  fi
+    <span class="built_in">printf</span> <span class="string">&quot;%-15s %-10s %-12s <span class="variable">$&#123;YELLOW&#125;</span>%-10s<span class="variable">$&#123;NC&#125;</span> %-10s\n&quot;</span> \
+      <span class="string">&quot;<span class="variable">$infile</span>&quot;</span> <span class="string">&quot;<span class="variable">$time_used</span>&quot;</span> <span class="string">&quot;<span class="variable">$peak_mib</span>&quot;</span> <span class="string">&quot;TIME&quot;</span> <span class="string">&quot;-&quot;</span>
+    <span class="built_in">rm</span> -f <span class="string">&quot;<span class="variable">$tmp_out</span>&quot;</span> 2&gt;/dev/null || <span class="literal">true</span>
+    <span class="built_in">continue</span>
+  <span class="keyword">fi</span>
 
-  judge=&quot;-&quot;
-  judge_color=$GREEN
-  if $USE_SPJ; then
-    if [[ -z &quot;$ans&quot; ]]; then
-      judge=&quot;NO_ANS&quot;; judge_color=$YELLOW
-    else
-      $SPJ_EXEC &quot;$infile&quot; &quot;$tmp_out&quot; &quot;$ans&quot;
-      if [[ $? -eq 0 ]]; then
-        judge=&quot;AC&quot;; judge_color=$GREEN; ((PASS++))
-      else
-        judge=&quot;WA&quot;; judge_color=$RED
-      fi
-    fi
-  else
-    if [[ -z &quot;$ans&quot; ]]; then
-      judge=&quot;NO_ANS&quot;; judge_color=$YELLOW
-    elif diff -Z -B &quot;$tmp_out&quot; &quot;$ans&quot; &gt;/dev/null; then
-      judge=&quot;AC&quot;; judge_color=$GREEN; ((PASS++))
-    else
-      judge=&quot;WA&quot;; judge_color=$RED
-    fi
-  fi
+  judge=<span class="string">&quot;-&quot;</span>
+  judge_color=<span class="variable">$GREEN</span>
+  <span class="keyword">if</span> <span class="variable">$USE_SPJ</span>; <span class="keyword">then</span>
+    <span class="keyword">if</span> [[ -z <span class="string">&quot;<span class="variable">$ans</span>&quot;</span> ]]; <span class="keyword">then</span>
+      judge=<span class="string">&quot;NO_ANS&quot;</span>; judge_color=<span class="variable">$YELLOW</span>
+    <span class="keyword">else</span>
+      <span class="variable">$SPJ_EXEC</span> <span class="string">&quot;<span class="variable">$infile</span>&quot;</span> <span class="string">&quot;<span class="variable">$tmp_out</span>&quot;</span> <span class="string">&quot;<span class="variable">$ans</span>&quot;</span>
+      <span class="keyword">if</span> [[ $? -eq 0 ]]; <span class="keyword">then</span>
+        judge=<span class="string">&quot;AC&quot;</span>; judge_color=<span class="variable">$GREEN</span>; ((PASS++))
+      <span class="keyword">else</span>
+        judge=<span class="string">&quot;WA&quot;</span>; judge_color=<span class="variable">$RED</span>
+      <span class="keyword">fi</span>
+    <span class="keyword">fi</span>
+  <span class="keyword">else</span>
+    <span class="keyword">if</span> [[ -z <span class="string">&quot;<span class="variable">$ans</span>&quot;</span> ]]; <span class="keyword">then</span>
+      judge=<span class="string">&quot;NO_ANS&quot;</span>; judge_color=<span class="variable">$YELLOW</span>
+    <span class="keyword">elif</span> diff -Z -B <span class="string">&quot;<span class="variable">$tmp_out</span>&quot;</span> <span class="string">&quot;<span class="variable">$ans</span>&quot;</span> &gt;/dev/null; <span class="keyword">then</span>
+      judge=<span class="string">&quot;AC&quot;</span>; judge_color=<span class="variable">$GREEN</span>; ((PASS++))
+    <span class="keyword">else</span>
+      judge=<span class="string">&quot;WA&quot;</span>; judge_color=<span class="variable">$RED</span>
+    <span class="keyword">fi</span>
+  <span class="keyword">fi</span>
 
-  printf &quot;%-15s %-10s %-12s $&#123;GREEN&#125;%-10s$&#123;NC&#125; $&#123;judge_color&#125;%-10s$&#123;NC&#125;\n&quot; \
-    &quot;$infile&quot; &quot;$time_used&quot; &quot;$peak_mib&quot; &quot;OK&quot; &quot;$judge&quot;
+  <span class="built_in">printf</span> <span class="string">&quot;%-15s %-10s %-12s <span class="variable">$&#123;GREEN&#125;</span>%-10s<span class="variable">$&#123;NC&#125;</span> <span class="variable">$&#123;judge_color&#125;</span>%-10s<span class="variable">$&#123;NC&#125;</span>\n&quot;</span> \
+    <span class="string">&quot;<span class="variable">$infile</span>&quot;</span> <span class="string">&quot;<span class="variable">$time_used</span>&quot;</span> <span class="string">&quot;<span class="variable">$peak_mib</span>&quot;</span> <span class="string">&quot;OK&quot;</span> <span class="string">&quot;<span class="variable">$judge</span>&quot;</span>
 
-  if [[ &quot;$judge&quot; != &quot;AC&quot; ]]; then
-    msg=&quot;$(judge_hint &quot;$judge&quot;)&quot;
-    DIAG_CASE+=(&quot;$infile&quot;); DIAG_RUN+=(&quot;OK&quot;); DIAG_JUDGE+=(&quot;$judge&quot;); DIAG_MSG+=(&quot;$&#123;msg:-judge failed&#125;&quot;)
-  fi
+  <span class="keyword">if</span> [[ <span class="string">&quot;<span class="variable">$judge</span>&quot;</span> != <span class="string">&quot;AC&quot;</span> ]]; <span class="keyword">then</span>
+    msg=<span class="string">&quot;<span class="subst">$(judge_hint <span class="string">&quot;<span class="variable">$judge</span>&quot;</span>)</span>&quot;</span>
+    DIAG_CASE+=(<span class="string">&quot;<span class="variable">$infile</span>&quot;</span>); DIAG_RUN+=(<span class="string">&quot;OK&quot;</span>); DIAG_JUDGE+=(<span class="string">&quot;<span class="variable">$judge</span>&quot;</span>); DIAG_MSG+=(<span class="string">&quot;<span class="variable">$&#123;msg:-judge failed&#125;</span>&quot;</span>)
+  <span class="keyword">fi</span>
 
-  rm -f &quot;$tmp_out&quot; 2&gt;/dev/null || true
-done
+  <span class="built_in">rm</span> -f <span class="string">&quot;<span class="variable">$tmp_out</span>&quot;</span> 2&gt;/dev/null || <span class="literal">true</span>
+<span class="keyword">done</span>
 
-echo
-echo &quot;======================================&quot;
-echo -e &quot;Passed: $&#123;PASS&#125;/$&#123;TOTAL&#125;&quot;
-echo &quot;======================================&quot;
+<span class="built_in">echo</span>
+<span class="built_in">echo</span> <span class="string">&quot;======================================&quot;</span>
+<span class="built_in">echo</span> -e <span class="string">&quot;Passed: <span class="variable">$&#123;PASS&#125;</span>/<span class="variable">$&#123;TOTAL&#125;</span>&quot;</span>
+<span class="built_in">echo</span> <span class="string">&quot;======================================&quot;</span>
 
-if (( $&#123;#DIAG_CASE[@]&#125; &gt; 0 )); then
-  echo
-  echo &quot;Diagnostics:&quot;
-  for i in &quot;$&#123;!DIAG_CASE[@]&#125;&quot;; do
-    echo &quot;- $&#123;DIAG_CASE[$i]&#125;: Run=$&#123;DIAG_RUN[$i]&#125; Judge=$&#123;DIAG_JUDGE[$i]&#125;  ($&#123;DIAG_MSG[$i]&#125;)&quot;
-  done
-fi
+<span class="keyword">if</span> (( <span class="variable">$&#123;#DIAG_CASE[@]&#125;</span> &gt; <span class="number">0</span> )); <span class="keyword">then</span>
+  <span class="built_in">echo</span>
+  <span class="built_in">echo</span> <span class="string">&quot;Diagnostics:&quot;</span>
+  <span class="keyword">for</span> i <span class="keyword">in</span> <span class="string">&quot;<span class="variable">$&#123;!DIAG_CASE[@]&#125;</span>&quot;</span>; <span class="keyword">do</span>
+    <span class="built_in">echo</span> <span class="string">&quot;- <span class="variable">$&#123;DIAG_CASE[$i]&#125;</span>: Run=<span class="variable">$&#123;DIAG_RUN[$i]&#125;</span> Judge=<span class="variable">$&#123;DIAG_JUDGE[$i]&#125;</span>  (<span class="variable">$&#123;DIAG_MSG[$i]&#125;</span>)&quot;</span>
+  <span class="keyword">done</span>
+<span class="keyword">fi</span>
 
-cgroup_cleanup &quot;$CGROUP_PATH&quot;</code></pre>
+cgroup_cleanup <span class="string">&quot;<span class="variable">$CGROUP_PATH</span>&quot;</span></code></pre>
 <p>然后创建一个叫 <code>run</code> 的软链接：</p>
-<pre><code class="highlight shell">sudo ln -sf /usr/local/bin/run.sh /usr/local/bin/run</code></pre>
+<pre><code class="highlight bash"><span class="built_in">sudo</span> <span class="built_in">ln</span> -sf /usr/local/bin/run.sh /usr/local/bin/run</code></pre>
 <p>就可以使用 <code>run</code> 快速测样例了。如果你忘了怎么用：</p>
-<pre><code class="highlight shell">run -h
-run --help
+<pre><code class="highlight bash">run -h
+run --<span class="built_in">help</span>
 run</code></pre>
 <p>都可以显示 usage。</p>
 <p>另外推一下我的 Github 和小仓库：<a target="_blank" rel="noopener" href="https://github.com/Caylex09">Caylex09 (Yuxuan Chen)</a> 和 <a target="_blank" rel="noopener" href="https://lab.cyx2009.top/">CYX Lab Tools</a>。里面有一些我写的辅助小工具。</p>
 <p>如果是在考场上，可以使用这段代码添加到 <code>.bashrc</code> 里设置空间并快速编译或者开启 fsanitize 调试：</p>
-<pre><code class="highlight shell">ulimit -s 4194304
-<span class="meta prompt_"></span>
-<span class="meta prompt_"># </span><span class="language-bash"><span class="built_in">ulimit</span> -v 4194304</span>
-<span class="meta prompt_"></span>
-<span class="meta prompt_"># </span><span class="language-bash"><span class="built_in">ulimit</span> -v 2097152</span>
+<pre><code class="highlight bash"><span class="built_in">ulimit</span> -s 4194304
+
+<span class="comment"># ulimit -v 4194304</span>
+
+<span class="comment"># ulimit -v 2097152</span>
 
   
 
-com()
+<span class="function"><span class="title">com</span></span>()
 
 &#123;
 
-    g++ $1.cpp -o $1 -O2 -std=c++14
+    g++ <span class="variable">$1</span>.cpp -o <span class="variable">$1</span> -O2 -std=c++14
 
 &#125;
 
   
 
-deb()
+<span class="function"><span class="title">deb</span></span>()
 
 &#123;
 
-    g++ $1.cpp -o $1 -O2 -std=c++14 -fsanitize=address,undefined -Wall -Wextra -Wshadow -Wconversion -DLOCAL_DEBUG
+    g++ <span class="variable">$1</span>.cpp -o <span class="variable">$1</span> -O2 -std=c++14 -fsanitize=address,undefined -Wall -Wextra -Wshadow -Wconversion -DLOCAL_DEBUG
 
 &#125;
 
   
 
-com20()
+<span class="function"><span class="title">com20</span></span>()
 
 &#123;
 
-    g++ $1.cpp -o $1 -O2 -std=c++20
+    g++ <span class="variable">$1</span>.cpp -o <span class="variable">$1</span> -O2 -std=c++20
 
 &#125;
 
   
 
-deb20()
+<span class="function"><span class="title">deb20</span></span>()
 
 &#123;
 
-    g++ $1.cpp -o $1 -O2 -std=c++20 -fsanitize=address,undefined -Wall -Wextra -Wshadow -Wconversion -DLOCAL_DEBUG
+    g++ <span class="variable">$1</span>.cpp -o <span class="variable">$1</span> -O2 -std=c++20 -fsanitize=address,undefined -Wall -Wextra -Wshadow -Wconversion -DLOCAL_DEBUG
 
 &#125;</code></pre>
 <h1 id="github-学生认证"><a class="markdownIt-Anchor" href="#github-学生认证"></a> Github 学生认证</h1>
@@ -1621,7 +1622,7 @@ btn.addEventListener("click", () => {
 				<span class="btn-inner--icon"><i class="fa fa-twitter"></i></span>
 			</button>
 		</a>
-		<a target="_blank" class="no-pjax icon-telegram" href="https://telegram.me/share/url?url=http://blog.cyx2009.top/archives/better_life/&text=[闲话] 如何获得更优质的生活" tooltip="分享到 Telegram">
+		<a target="_blank" class="no-pjax icon-telegram" href="https://telegram.me/share/url?url=http://blog.cyx2009.top/archives/better_life/&text=『置顶』[闲话] 如何获得更优质的生活" tooltip="分享到 Telegram">
 			<button class="btn btn-icon btn-primary" style="background: #42a5f5;border: none;">
 				<span class="btn-inner--icon"><i class="fa fa-telegram"></i></span>
 			</button>
@@ -1638,7 +1639,7 @@ btn.addEventListener("click", () => {
 </div>
 <script type="text/javascript">
 	socialShare("#share", {
-	    title : `[闲话] 如何获得更优质的生活`,
+	    title : `『置顶』[闲话] 如何获得更优质的生活`,
 	    description : `记录一些很有用的东西。
  邮件
 Email 可以用 gmail，一个手机注册两个号，手机上清掉浏览数...`,
