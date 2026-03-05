@@ -6,7 +6,7 @@
   <link href="http://blog.cyx2009.top/atom.xml" rel="self"/>
   
   <link href="http://blog.cyx2009.top/"/>
-  <updated>2026-03-01T04:33:49.867Z</updated>
+  <updated>2026-03-05T14:44:22.631Z</updated>
   <id>http://blog.cyx2009.top/</id>
   
   <author>
@@ -17,11 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>[游记] 江苏省选 2026 游记</title>
+    <link href="http://blog.cyx2009.top/archives/JSOI2026/"/>
+    <id>http://blog.cyx2009.top/archives/JSOI2026/</id>
+    <published>2026-03-05T14:20:00.000Z</published>
+    <updated>2026-03-05T14:44:22.631Z</updated>
+    
+    
+    <summary type="html">Day -1
+开了这篇游记。
+额啊哦嗯。
+虽然省选打咋样好像都不会改变省队类型了。但是还是得努力一下。
+目标：过两天签到。</summary>
+    
+    
+    
+    <category term="TravelNote" scheme="http://blog.cyx2009.top/categories/TravelNote/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>『置顶』[闲话] 如何获得更优质的生活</title>
     <link href="http://blog.cyx2009.top/archives/better_life/"/>
     <id>http://blog.cyx2009.top/archives/better_life/</id>
     <published>2026-03-01T04:27:00.000Z</published>
-    <updated>2026-03-01T04:33:49.867Z</updated>
+    <updated>2026-03-04T06:16:34.553Z</updated>
     
     
     <summary type="html">记录一些很有用的东西。
@@ -162,7 +183,7 @@ Summer School (July 12 — July 16, 2024) 栗师 Combinatorial Optimizati…</su
     <link href="http://blog.cyx2009.top/archives/potpourri_11/"/>
     <id>http://blog.cyx2009.top/archives/potpourri_11/</id>
     <published>2026-01-06T11:42:00.000Z</published>
-    <updated>2026-02-28T08:59:47.262Z</updated>
+    <updated>2026-03-04T02:34:53.003Z</updated>
     
     
     <summary type="html">模拟赛 序列操作
@@ -184,7 +205,7 @@ https://www.luogu.com.cn/problem/T718067
     <link href="http://blog.cyx2009.top/archives/potpourri_10/"/>
     <id>http://blog.cyx2009.top/archives/potpourri_10/</id>
     <published>2025-12-09T13:09:00.000Z</published>
-    <updated>2026-02-04T09:29:18.828Z</updated>
+    <updated>2026-03-02T11:45:29.573Z</updated>
     
     
     <summary type="html">CF715C Digit Tree
@@ -425,28 +446,6 @@ cpp 提交记录：https://code…</summary>
     
     
     <category term="Solution" scheme="http://blog.cyx2009.top/categories/Solution/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>[游记] CSP 2025 游记</title>
-    <link href="http://blog.cyx2009.top/archives/CSP2025/"/>
-    <id>http://blog.cyx2009.top/archives/CSP2025/</id>
-    <published>2025-09-19T10:04:00.000Z</published>
-    <updated>2026-02-04T09:35:38.159Z</updated>
-    
-    
-    <summary type="html">初赛
- Day -(1e9+7)
-该从什么时候开始写呢……
-暑假去了代码源 NOI 集训，然后回家做了两天题，打打洛谷 NOIP 模拟赛，然后去了一下梦熊，去完梦熊回家就去了 sxz。
-在 sxz 给小朋友讲了若干套初赛卷子，晚上在宿舍挑灯夜战做初赛题，憋憋。
-关于梦熊的信息学奥赛满分之路还是啥来着的一个初赛书，我只能…</summary>
-    
-    
-    
-    <category term="TravelNote" scheme="http://blog.cyx2009.top/categories/TravelNote/"/>
     
     
   </entry>

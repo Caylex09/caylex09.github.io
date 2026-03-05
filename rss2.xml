@@ -15,8 +15,31 @@
     <atom:link href="http://blog.cyx2009.top/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>沉石鱼惊旋 的博客</description>
-    <pubDate>Sun, 01 Mar 2026 04:33:49 GMT</pubDate>
+    <pubDate>Thu, 05 Mar 2026 14:44:22 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[游记] 江苏省选 2026 游记</title>
+      <link>http://blog.cyx2009.top/archives/JSOI2026/</link>
+      <guid>http://blog.cyx2009.top/archives/JSOI2026/</guid>
+      <pubDate>Thu, 05 Mar 2026 14:20:00 GMT</pubDate>
+      
+      <description>Day -1
+开了这篇游记。
+额啊哦嗯。
+虽然省选打咋样好像都不会改变省队类型了。但是还是得努力一下。
+目标：过两天签到。</description>
+      
+      
+      
+      
+      <category domain="http://blog.cyx2009.top/categories/TravelNote/">TravelNote</category>
+      
+      
+      
+      <comments>http://blog.cyx2009.top/archives/JSOI2026/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>『置顶』[闲话] 如何获得更优质的生活</title>
@@ -466,30 +489,6 @@ cpp 提交记录：https://code…</description>
       
       
       <comments>http://blog.cyx2009.top/archives/CF2146/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[游记] CSP 2025 游记</title>
-      <link>http://blog.cyx2009.top/archives/CSP2025/</link>
-      <guid>http://blog.cyx2009.top/archives/CSP2025/</guid>
-      <pubDate>Fri, 19 Sep 2025 10:04:00 GMT</pubDate>
-      
-      <description>初赛
- Day -(1e9+7)
-该从什么时候开始写呢……
-暑假去了代码源 NOI 集训，然后回家做了两天题，打打洛谷 NOIP 模拟赛，然后去了一下梦熊，去完梦熊回家就去了 sxz。
-在 sxz 给小朋友讲了若干套初赛卷子，晚上在宿舍挑灯夜战做初赛题，憋憋。
-关于梦熊的信息学奥赛满分之路还是啥来着的一个初赛书，我只能…</description>
-      
-      
-      
-      
-      <category domain="http://blog.cyx2009.top/categories/TravelNote/">TravelNote</category>
-      
-      
-      
-      <comments>http://blog.cyx2009.top/archives/CSP2025/#disqus_thread</comments>
       
     </item>
     

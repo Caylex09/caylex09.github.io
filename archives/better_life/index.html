@@ -26,7 +26,7 @@
 <meta property="og:description" content="记录一些很有用的东西。  邮件 Email 可以用 gmail，一个手机注册两个号，手机上清掉浏览数据开梯子注册成功率更高。 然后给邮箱设置一下回复，就是别的邮箱收到的发到统一邮箱里，然后也可以设置发信用什么邮箱。 最后，下载那个网页应用 gmail，设置开机自启动，然后设置里面打开 Windows 通知就可以享受到邮…">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2026-03-01T04:27:00.000Z">
-<meta property="article:modified_time" content="2026-03-01T04:33:49.867Z">
+<meta property="article:modified_time" content="2026-03-04T06:16:34.553Z">
 <meta property="article:author" content="沉石鱼惊旋">
 <meta name="twitter:card" content="summary">
 
@@ -543,7 +543,7 @@
 							<nav class="site-state">
 								<div class="site-state-item site-state-posts">
 									<a href="/archives">
-										<span class="site-state-item-count">234</span>
+										<span class="site-state-item-count">235</span>
 										<span class="site-state-item-name">文章</span>
 									</a>
 								</div>
@@ -617,7 +617,7 @@
 				</button>
 			</div>
 			<div class="modal-body">
-				<a class="badge badge-secondary tag" href="/categories/Essay/" rel="tag">Essay <span class="tag-num">10</span></a><a class="badge badge-secondary tag" href="/categories/Solution/" rel="tag">Solution <span class="tag-num">198</span></a><a class="badge badge-secondary tag" href="/categories/StudyNote/" rel="tag">StudyNote <span class="tag-num">7</span></a><a class="badge badge-secondary tag" href="/categories/Technology/" rel="tag">Technology <span class="tag-num">3</span></a><a class="badge badge-secondary tag" href="/categories/TravelNote/" rel="tag">TravelNote <span class="tag-num">16</span></a>
+				<a class="badge badge-secondary tag" href="/categories/Essay/" rel="tag">Essay <span class="tag-num">10</span></a><a class="badge badge-secondary tag" href="/categories/Solution/" rel="tag">Solution <span class="tag-num">198</span></a><a class="badge badge-secondary tag" href="/categories/StudyNote/" rel="tag">StudyNote <span class="tag-num">7</span></a><a class="badge badge-secondary tag" href="/categories/Technology/" rel="tag">Technology <span class="tag-num">3</span></a><a class="badge badge-secondary tag" href="/categories/TravelNote/" rel="tag">TravelNote <span class="tag-num">17</span></a>
 			</div>
 		</div>
 	</div>
@@ -653,7 +653,7 @@
 						
 						<div class="post-meta-detail post-meta-detail-time">
 							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2026-3-1 12:27:00 | 编辑于 2026-3-1 12:33:49">2026-3-1 12:27
+							<time title="发布于 2026-3-1 12:27:00 | 编辑于 2026-3-4 14:16:34">2026-3-1 12:27
 							</time>
 						</div>
 					
@@ -680,7 +680,7 @@
 						
 						<div class="post-meta-detail post-meta-detail-words">
 							<i class="fa fa-file-word-o" aria-hidden="true"></i>
-							4.4k 字
+							4.9k 字
 						</div>
 					
 						
@@ -688,7 +688,7 @@
 						
 						<div class="post-meta-detail post-meta-detail-readingtime">
 							<i class="fa fa-hourglass-end" aria-hidden="true"></i>
-							24 分钟
+							26 分钟
 						</div>
 					
 		</div>
@@ -702,7 +702,7 @@
 <p>然后给邮箱设置一下回复，就是别的邮箱收到的发到统一邮箱里，然后也可以设置发信用什么邮箱。</p>
 <p>最后，下载那个网页应用 gmail，设置开机自启动，然后设置里面打开 Windows 通知就可以享受到邮件提醒了。手机上下载 gmail 不开梯子也能收到提醒。</p>
 <h1 id="音乐"><a class="markdownIt-Anchor" href="#音乐"></a> 音乐</h1>
-<p>平台版权太烦了，使用 Spotify 本地功能即可。Spotify 出了名的不要氪金，不氪金只有 eps 的广告，不过 Spotify 不一定有所有歌，本地播放即可。</p>
+<p>平台版权太烦了，Spotify 本地播放即可。</p>
 <p>网易云的下载下来，可以用 <a target="_blank" rel="noopener" href="https://github.com/AthBe1337/ncmdump-web">AthBe1337/ncmdump-web: 适用于Web页面的网易云加密格式NCM解密工具，直接在前端转换，无需后端交互。</a> 这个工具。直接访问 <a target="_blank" rel="noopener" href="https://tools.athbe.cn/ncm/">NCM 解密工具</a> 即可。然后导入到 Spotify 里就好了。</p>
 <p>QQ 音乐有点麻烦，首先得下载到本地，获得 .mflac 格式，然后用 <a target="_blank" rel="noopener" href="https://github.com/Acooldog/QQMusic-mflac-to-flac">Acooldog/QQMusic-mflac-to-flac</a> 这个工具转成 .flac。然后你导入 Spotify 会发现缺失了专辑图片，很丑。为了解决这个问题，我们先运行 <code>clear_images.py</code>：</p>
 <pre><code class="highlight python"><span class="keyword">import</span> os
@@ -746,7 +746,12 @@
 <pre><code class="highlight python"><span class="keyword">import</span> os
 <span class="keyword">import</span> time
 <span class="keyword">import</span> requests
+
 <span class="keyword">from</span> mutagen.flac <span class="keyword">import</span> FLAC, Picture
+
+<span class="keyword">from</span> mutagen.mp3 <span class="keyword">import</span> MP3
+<span class="keyword">from</span> mutagen.id3 <span class="keyword">import</span> ID3, APIC, ID3NoHeaderError
+
 
 MUSIC_DIR = <span class="string">&quot;C:\\Users\\Administrator\\Music&quot;</span>
 
@@ -764,80 +769,140 @@ MUSIC_DIR = <span class="string">&quot;C:\\Users\\Administrator\\Music&quot;</sp
         <span class="string">&quot;User-Agent&quot;</span>: <span class="string">&quot;Mozilla/5.0&quot;</span>
     &#125;
 
-    r = requests.get(url, params=params, headers=headers)
+    r = requests.get(url, params=params, headers=headers, timeout=<span class="number">10</span>)
     data = r.json()
 
     <span class="keyword">try</span>:
         <span class="keyword">return</span> data[<span class="string">&quot;data&quot;</span>][<span class="string">&quot;song&quot;</span>][<span class="string">&quot;list&quot;</span>][<span class="number">0</span>][<span class="string">&quot;albummid&quot;</span>]
-    <span class="keyword">except</span>:
+    <span class="keyword">except</span> Exception:
         <span class="keyword">return</span> <span class="literal">None</span>
 
 
 <span class="keyword">def</span> <span class="title function_">download_cover</span>(<span class="params">album_mid</span>):
     url = <span class="string">f&quot;https://y.qq.com/music/photo_new/T002R300x300M000<span class="subst">&#123;album_mid&#125;</span>_2.jpg?max_age=2592000&quot;</span>
-
-    r = requests.get(url)
+    r = requests.get(url, timeout=<span class="number">15</span>)
 
     <span class="built_in">print</span>(<span class="string">&quot;  状态:&quot;</span>, r.status_code)
     <span class="built_in">print</span>(<span class="string">&quot;  类型:&quot;</span>, r.headers.get(<span class="string">&quot;Content-Type&quot;</span>))
     <span class="built_in">print</span>(<span class="string">&quot;  大小:&quot;</span>, <span class="built_in">len</span>(r.content))
 
-    <span class="keyword">if</span> r.status_code == <span class="number">200</span> <span class="keyword">and</span> \
-       <span class="string">&quot;image&quot;</span> <span class="keyword">in</span> <span class="built_in">str</span>(r.headers.get(<span class="string">&quot;Content-Type&quot;</span>)) <span class="keyword">and</span> \
-       <span class="built_in">len</span>(r.content) &gt; <span class="number">1000</span>:
+    <span class="keyword">if</span> (
+        r.status_code == <span class="number">200</span>
+        <span class="keyword">and</span> <span class="string">&quot;image&quot;</span> <span class="keyword">in</span> <span class="built_in">str</span>(r.headers.get(<span class="string">&quot;Content-Type&quot;</span>))
+        <span class="keyword">and</span> <span class="built_in">len</span>(r.content) &gt; <span class="number">1000</span>
+    ):
         <span class="keyword">return</span> r.content
-
     <span class="keyword">return</span> <span class="literal">None</span>
 
 
-<span class="keyword">def</span> <span class="title function_">embed_cover</span>(<span class="params">flac_path, image_data</span>):
+<span class="keyword">def</span> <span class="title function_">embed_cover_flac</span>(<span class="params">flac_path, image_data</span>):
     audio = FLAC(flac_path)
     audio.clear_pictures()
 
     picture = Picture()
     picture.data = image_data
-    picture.<span class="built_in">type</span> = <span class="number">0</span>
+    picture.<span class="built_in">type</span> = <span class="number">3</span>  <span class="comment"># 3 = Cover (front)；你之前写 0 也能用，但 3 更标准</span>
     picture.mime = <span class="string">&quot;image/jpeg&quot;</span>
     picture.desc = <span class="string">&quot;Cover&quot;</span>
 
     audio.add_picture(picture)
     audio.save()
 
-    audio = FLAC(flac_path)
-    <span class="built_in">print</span>(<span class="string">&quot;  写入后封面数量:&quot;</span>, <span class="built_in">len</span>(audio.pictures))
+    audio2 = FLAC(flac_path)
+    <span class="built_in">print</span>(<span class="string">&quot;  写入后封面数量:&quot;</span>, <span class="built_in">len</span>(audio2.pictures))
+
+
+<span class="keyword">def</span> <span class="title function_">embed_cover_mp3</span>(<span class="params">mp3_path, image_data</span>):
+    <span class="comment"># 先确保有 ID3 tag</span>
+    <span class="keyword">try</span>:
+        id3 = ID3(mp3_path)
+    <span class="keyword">except</span> ID3NoHeaderError:
+        id3 = ID3()
+
+    <span class="comment"># 删除旧封面（APIC）</span>
+    <span class="keyword">for</span> key <span class="keyword">in</span> <span class="built_in">list</span>(id3.keys()):
+        <span class="keyword">if</span> key.startswith(<span class="string">&quot;APIC&quot;</span>):
+            <span class="keyword">del</span> id3[key]
+
+    <span class="comment"># 添加新封面</span>
+    id3.add(
+        APIC(
+            encoding=<span class="number">3</span>,        <span class="comment"># 3 = UTF-8</span>
+            mime=<span class="string">&quot;image/jpeg&quot;</span>, <span class="comment"># 你的链接是 jpg</span>
+            <span class="built_in">type</span>=<span class="number">3</span>,            <span class="comment"># 3 = front cover</span>
+            desc=<span class="string">&quot;Cover&quot;</span>,
+            data=image_data
+        )
+    )
+
+    id3.save(mp3_path)
+
+    <span class="comment"># 验证一下</span>
+    audio = MP3(mp3_path)
+    apics = audio.tags.getall(<span class="string">&quot;APIC&quot;</span>) <span class="keyword">if</span> audio.tags <span class="keyword">else</span> []
+    <span class="built_in">print</span>(<span class="string">&quot;  写入后封面数量:&quot;</span>, <span class="built_in">len</span>(apics))
 
 
 <span class="keyword">for</span> file <span class="keyword">in</span> os.listdir(MUSIC_DIR):
-    <span class="keyword">if</span> file.endswith(<span class="string">&quot;.flac&quot;</span>):
-        path = os.path.join(MUSIC_DIR, file)
-        audio = FLAC(path)
+    path = os.path.join(MUSIC_DIR, file)
 
+    <span class="keyword">if</span> file.lower().endswith(<span class="string">&quot;.flac&quot;</span>):
+        audio = FLAC(path)
         artist = audio.get(<span class="string">&quot;artist&quot;</span>, [<span class="string">&quot;&quot;</span>])[<span class="number">0</span>]
         title = audio.get(<span class="string">&quot;title&quot;</span>, [<span class="string">&quot;&quot;</span>])[<span class="number">0</span>]
 
-        <span class="built_in">print</span>(<span class="string">&quot;\n处理:&quot;</span>, artist, <span class="string">&quot;-&quot;</span>, title)
+        <span class="built_in">print</span>(<span class="string">&quot;\n处理(FLAC):&quot;</span>, artist, <span class="string">&quot;-&quot;</span>, title)
 
         album_mid = search_qq_album_mid(artist, title)
-
         <span class="keyword">if</span> <span class="keyword">not</span> album_mid:
             <span class="built_in">print</span>(<span class="string">&quot;  ❌ 找不到 albumMid&quot;</span>)
             <span class="keyword">continue</span>
 
         image_data = download_cover(album_mid)
-
         <span class="keyword">if</span> <span class="keyword">not</span> image_data:
             <span class="built_in">print</span>(<span class="string">&quot;  ❌ 下载失败&quot;</span>)
             <span class="keyword">continue</span>
 
-        embed_cover(path, image_data)
+        embed_cover_flac(path, image_data)
+        time.sleep(<span class="number">0.8</span>)
 
+    <span class="keyword">elif</span> file.lower().endswith(<span class="string">&quot;.mp3&quot;</span>):
+        audio = MP3(path)
+        tags = audio.tags
+
+        <span class="comment"># MP3 的 artist/title 可能在 ID3 里：TPE1 / TIT2</span>
+        artist = <span class="string">&quot;&quot;</span>
+        title = <span class="string">&quot;&quot;</span>
+        <span class="keyword">if</span> tags:
+            <span class="keyword">if</span> <span class="string">&quot;TPE1&quot;</span> <span class="keyword">in</span> tags <span class="keyword">and</span> tags[<span class="string">&quot;TPE1&quot;</span>].text:
+                artist = tags[<span class="string">&quot;TPE1&quot;</span>].text[<span class="number">0</span>]
+            <span class="keyword">if</span> <span class="string">&quot;TIT2&quot;</span> <span class="keyword">in</span> tags <span class="keyword">and</span> tags[<span class="string">&quot;TIT2&quot;</span>].text:
+                title = tags[<span class="string">&quot;TIT2&quot;</span>].text[<span class="number">0</span>]
+
+        <span class="built_in">print</span>(<span class="string">&quot;\n处理(MP3):&quot;</span>, artist, <span class="string">&quot;-&quot;</span>, title)
+
+        album_mid = search_qq_album_mid(artist, title)
+        <span class="keyword">if</span> <span class="keyword">not</span> album_mid:
+            <span class="built_in">print</span>(<span class="string">&quot;  ❌ 找不到 albumMid&quot;</span>)
+            <span class="keyword">continue</span>
+
+        image_data = download_cover(album_mid)
+        <span class="keyword">if</span> <span class="keyword">not</span> image_data:
+            <span class="built_in">print</span>(<span class="string">&quot;  ❌ 下载失败&quot;</span>)
+            <span class="keyword">continue</span>
+
+        embed_cover_mp3(path, image_data)
         time.sleep(<span class="number">0.8</span>)
 
 <span class="built_in">print</span>(<span class="string">&quot;\n全部完成&quot;</span>)</code></pre>
 <p>即可添加，可以用 Mp3tag 这个软件检验或者手动添加。</p>
-<p>之后再导入 Spotify 就是对的了。</p>
+<p>之后再导入 Spotify 就是对的了。如果还不对，Mp3tag 里选 ID3v2 啥的保存覆盖一遍。格式必须是 <code>ID3v2.3 (ID3v1 ID3v2.3)</code>，很魔怔。</p>
 <p>然后你还可以使用 <a target="_blank" rel="noopener" href="https://github.com/jayfunc/BetterLyrics">jayfunc/BetterLyrics: An elegant and deeply customizable lyrics visualizer &amp; versatile music player, built with WinUI3/Win2D | 一款优雅且高度自定义的歌词可视化与全能音乐播放应用，基于 WinUI3/Win2D 构建</a> 这个软件添加桌面歌词功能。这个比那些播放器原生的牛多了。</p>
-<p>如果 Spotify 发电不放音乐了，可以关闭硬件加速。</p>
+<p>如果 Spotify 发电不放音乐了，可以关闭硬件加速还有无缝播放等设置。感觉很魔怔，随便关几个设置运行就正常了。</p>
+<p>以及还可以找一下 48kHz 的文件：</p>
+<pre><code class="highlight bat"><span class="keyword">for</span> %i <span class="keyword">in</span> (*.mp3 *.flac *.m4a *.wav) <span class="keyword">do</span> @<span class="keyword">for</span> /f %a <span class="keyword">in</span> (&#x27;ffprobe -v error -select_streams a:<span class="number">0</span> -show_entries stream^=sample_rate -of default^=noprint_wrappers^=<span class="number">1</span>:nokey^=<span class="number">1</span> &quot;%i&quot; <span class="number">2</span>^&gt;<span class="built_in">nul</span>&#x27;) <span class="keyword">do</span> @<span class="keyword">if</span> <span class="keyword">not</span> &quot;%a&quot;==&quot;<span class="number">44100</span>&quot; <span class="built_in">echo</span> %i
+<span class="keyword">for</span> %i <span class="keyword">in</span> (*.mp3 *.flac *.m4a *.wav) <span class="keyword">do</span> @<span class="keyword">for</span> /f %a <span class="keyword">in</span> (&#x27;ffprobe -v error -select_streams a:<span class="number">0</span> -show_entries stream^=sample_rate -of default^=noprint_wrappers^=<span class="number">1</span>:nokey^=<span class="number">1</span> &quot;%i&quot; <span class="number">2</span>^&gt;<span class="built_in">nul</span>&#x27;) <span class="keyword">do</span> @<span class="keyword">if</span> <span class="keyword">not</span> &quot;%a&quot;==&quot;<span class="number">44100</span>&quot; (ffmpeg -i &quot;%i&quot; -ar <span class="number">44100</span> -b:a <span class="number">320</span>k &quot;<span class="variable">%i.temp%</span>~xi&quot; &amp;&amp; <span class="built_in">del</span> &quot;%i&quot; &amp;&amp; <span class="built_in">ren</span> &quot;<span class="variable">%i.temp%</span>~xi&quot; &quot;%~nxi&quot;)</code></pre>
+<p>如果耳机放歌偶尔突然爆音或者没声，电脑的 Type-C 插口有专门的充电口的，看看是不是插错口了。。。鬼知道我被这个困扰了多久啊，还以为新耳机质量不行。</p>
 <h1 id="博客"><a class="markdownIt-Anchor" href="#博客"></a> 博客</h1>
 <p>我用的 Hexo+Argon 搭建的。本地之前用 Typora，现在用 Obsidian 书写博客。</p>
 <p>有一些要解决的东西，比如 Admonition 语法支持，新建 script 文件然后使用 <code>admonition.js</code>：</p>
@@ -1711,7 +1776,7 @@ Email 可以用 gmail，一个手机注册两个号，手机上清掉浏览数..
 
 
 
-<div class="post-navigation card shadow-sm"><div class="post-navigation-item post-navigation-pre"></div><div class="post-navigation-item post-navigation-next"><span class="page-navigation-extra-text">下一篇 <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></span><a href="/archives/P15367/" rel="next"> [题解] P15367 秋季限定生成树问题</a></div></div>
+<div class="post-navigation card shadow-sm"><div class="post-navigation-item post-navigation-pre"><span class="page-navigation-extra-text"><i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i>上一篇</span><a href="/archives/JSOI2026/" rel="prev"> [游记] 江苏省选 2026 游记</a></div><div class="post-navigation-item post-navigation-next"><span class="page-navigation-extra-text">下一篇 <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></span><a href="/archives/P15367/" rel="next"> [题解] P15367 秋季限定生成树问题</a></div></div>
 
 
 
