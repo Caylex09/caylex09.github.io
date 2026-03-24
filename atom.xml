@@ -6,7 +6,7 @@
   <link href="http://blog.cyx2009.top/atom.xml" rel="self"/>
   
   <link href="http://blog.cyx2009.top/"/>
-  <updated>2026-03-05T14:44:22.631Z</updated>
+  <updated>2026-03-24T12:48:19.141Z</updated>
   <id>http://blog.cyx2009.top/</id>
   
   <author>
@@ -17,18 +17,78 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>[闲话] 2026-03-24 日记</title>
+    <link href="http://blog.cyx2009.top/archives/2026-03-24/"/>
+    <id>http://blog.cyx2009.top/archives/2026-03-24/</id>
+    <published>2026-03-24T12:47:00.000Z</published>
+    <updated>2026-03-24T12:48:19.141Z</updated>
+    
+    
+    <summary>有东西被加密了，请输入密码查看。</summary>
+    
+    
+    
+    <category term="Essay" scheme="http://blog.cyx2009.top/categories/Essay/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>[闲话] 2026-03-21 日记</title>
+    <link href="http://blog.cyx2009.top/archives/2026-03-21/"/>
+    <id>http://blog.cyx2009.top/archives/2026-03-21/</id>
+    <published>2026-03-21T03:23:00.000Z</published>
+    <updated>2026-03-21T03:52:11.724Z</updated>
+    
+    
+    <summary>有东西被加密了，请输入密码查看。</summary>
+    
+    
+    
+    <category term="Essay" scheme="http://blog.cyx2009.top/categories/Essay/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>[题解] 杂题选讲 12</title>
+    <link href="http://blog.cyx2009.top/archives/potpourri_12/"/>
+    <id>http://blog.cyx2009.top/archives/potpourri_12/</id>
+    <published>2026-03-18T00:50:00.000Z</published>
+    <updated>2026-03-24T12:44:13.031Z</updated>
+    
+    
+    <summary type="html">AGC049E Increment Decrement
+因为只会 ±1，所以每 1 划一层，可以认为层之间独立。那么原问题先编一个值域 01 的做法。
+fi,0/1 表示 DP 到 i，前面是否有一段区间 +1 延续过来了。转移也可以轻松 O(1)。
+然后回归原问题，值域划分成 O(nm) 段。gi,fi,0,fi,1…</summary>
+    
+    
+    
+    <category term="Solution" scheme="http://blog.cyx2009.top/categories/Solution/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>[游记] 江苏省选 2026 游记</title>
     <link href="http://blog.cyx2009.top/archives/JSOI2026/"/>
     <id>http://blog.cyx2009.top/archives/JSOI2026/</id>
     <published>2026-03-05T14:20:00.000Z</published>
-    <updated>2026-03-05T14:44:22.631Z</updated>
+    <updated>2026-03-12T13:17:25.306Z</updated>
     
     
     <summary type="html">Day -1
 开了这篇游记。
 额啊哦嗯。
 虽然省选打咋样好像都不会改变省队类型了。但是还是得努力一下。
-目标：过两天签到。</summary>
+目标：过两天签到。
+ Day 0
+中午吃的拉面。
+报道，准考证 JS-085，比去年大了 14，哈哈哈我真菜。
+试机，电脑速度还不赖。快读怎么写来着。
+晚上吃的鸭血粉丝汤，好吃。
+你码扫了为什么有人半夜开摩的还是什么…</summary>
     
     
     
@@ -42,7 +102,7 @@
     <link href="http://blog.cyx2009.top/archives/better_life/"/>
     <id>http://blog.cyx2009.top/archives/better_life/</id>
     <published>2026-03-01T04:27:00.000Z</published>
-    <updated>2026-03-04T06:16:34.553Z</updated>
+    <updated>2026-03-10T03:48:07.072Z</updated>
     
     
     <summary type="html">记录一些很有用的东西。
@@ -183,7 +243,7 @@ Summer School (July 12 — July 16, 2024) 栗师 Combinatorial Optimizati…</su
     <link href="http://blog.cyx2009.top/archives/potpourri_11/"/>
     <id>http://blog.cyx2009.top/archives/potpourri_11/</id>
     <published>2026-01-06T11:42:00.000Z</published>
-    <updated>2026-03-04T02:34:53.003Z</updated>
+    <updated>2026-03-22T10:57:06.217Z</updated>
     
     
     <summary type="html">模拟赛 序列操作
@@ -205,7 +265,7 @@ https://www.luogu.com.cn/problem/T718067
     <link href="http://blog.cyx2009.top/archives/potpourri_10/"/>
     <id>http://blog.cyx2009.top/archives/potpourri_10/</id>
     <published>2025-12-09T13:09:00.000Z</published>
-    <updated>2026-03-02T11:45:29.573Z</updated>
+    <updated>2026-03-06T08:16:48.858Z</updated>
     
     
     <summary type="html">CF715C Digit Tree
@@ -291,7 +351,7 @@ xzy 和 zyc 找我，问我打不打南京。说徐州那边可能有学校有�
     <link href="http://blog.cyx2009.top/archives/cp_template/"/>
     <id>http://blog.cyx2009.top/archives/cp_template/</id>
     <published>2025-10-30T13:40:00.000Z</published>
-    <updated>2026-02-04T09:32:16.626Z</updated>
+    <updated>2026-03-06T05:33:27.325Z</updated>
     
     
     <summary type="html">这是我的 OI/ACM 模板库。
@@ -386,66 +446,6 @@ q 次询问，1≤n≤1018，1≤q≤105。
     
     
     <category term="StudyNote" scheme="http://blog.cyx2009.top/categories/StudyNote/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>[题解] 杂题选讲 7</title>
-    <link href="http://blog.cyx2009.top/archives/potpourri_7/"/>
-    <id>http://blog.cyx2009.top/archives/potpourri_7/</id>
-    <published>2025-10-15T03:29:00.000Z</published>
-    <updated>2026-02-28T08:57:48.065Z</updated>
-    
-    
-    <summary type="html">CF2104G Modulo 3
-独立想出；思考时间：中偏长；已完成代码；代码时间：中；推荐指数：还可以；
-考虑不带修求答案怎么求。一个环最后一定是一个颜色，所以答案是缩点之后的点数为 c 则答案为 kc mod 3。而 c 其实就是 n−∑(leni−1)，其中 leni 是每个环的环长。
-根据费马小定理，只需要知道…</summary>
-    
-    
-    
-    <category term="Solution" scheme="http://blog.cyx2009.top/categories/Solution/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>[题解] 杂题选讲 6</title>
-    <link href="http://blog.cyx2009.top/archives/potpourri_6/"/>
-    <id>http://blog.cyx2009.top/archives/potpourri_6/</id>
-    <published>2025-09-30T07:43:00.000Z</published>
-    <updated>2026-02-04T09:47:00.266Z</updated>
-    
-    
-    <summary type="html">模拟赛 梦熊 20250930 A
-本题 aka https://qoj.ac/problem/670。
-简单题，注意到我们比较字典序由于字母互不相同，所以只关心首字母。
-枚举给定字符串应该出现在哪里，就是出现在 p 的有 n−p+1 的排名代价。对于首字母比他小的 DP 一下，首字母比他大的随便选乘上阶乘。DP 设 …</summary>
-    
-    
-    
-    <category term="Solution" scheme="http://blog.cyx2009.top/categories/Solution/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>[题解] CF2146 验题人题解</title>
-    <link href="http://blog.cyx2009.top/archives/CF2146/"/>
-    <id>http://blog.cyx2009.top/archives/CF2146/</id>
-    <published>2025-09-21T13:44:00.000Z</published>
-    <updated>2025-09-21T23:45:25.636Z</updated>
-    
-    
-    <summary type="html">虽然 date 是写的 21:44，但是是完赛才公布的。
- A. Equal Occurrences
-开个桶，按照元素出现次数排序，显然我们需要的是桶里的一段后缀。枚举所有数保留 ai 个元素，则可以保留 (n−i+1)×ai 个数。把这个对于所有元素取一个 max⁡ 即可。
-cpp 提交记录：https://code…</summary>
-    
-    
-    
-    <category term="Solution" scheme="http://blog.cyx2009.top/categories/Solution/"/>
     
     
   </entry>
