@@ -6,7 +6,7 @@
   <link href="http://blog.cyx2009.top/atom.xml" rel="self"/>
   
   <link href="http://blog.cyx2009.top/"/>
-  <updated>2026-03-24T12:48:19.141Z</updated>
+  <updated>2026-04-05T13:02:55.758Z</updated>
   <id>http://blog.cyx2009.top/</id>
   
   <author>
@@ -17,11 +17,47 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>[笔记] Cypher 游玩笔记 &amp; 密码学入门</title>
+    <link href="http://blog.cyx2009.top/archives/cypher/"/>
+    <id>http://blog.cyx2009.top/archives/cypher/</id>
+    <published>2026-04-05T12:36:00.000Z</published>
+    <updated>2026-04-05T13:02:55.758Z</updated>
+    
+    
+    <summary type="html">https://store.steampowered.com/app/746710/Cypher/ 只要 22 块钱，史低 6 块钱。
+ 序言
+隐藏内容</summary>
+    
+    
+    
+    <category term="StudyNote" scheme="http://blog.cyx2009.top/categories/StudyNote/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>[闲话] 2026-03-25 日记</title>
+    <link href="http://blog.cyx2009.top/archives/2026-03-25/"/>
+    <id>http://blog.cyx2009.top/archives/2026-03-25/</id>
+    <published>2026-03-25T10:48:00.000Z</published>
+    <updated>2026-03-25T10:49:29.894Z</updated>
+    
+    
+    <summary>有东西被加密了，请输入密码查看。</summary>
+    
+    
+    
+    <category term="Essay" scheme="http://blog.cyx2009.top/categories/Essay/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>[闲话] 2026-03-24 日记</title>
     <link href="http://blog.cyx2009.top/archives/2026-03-24/"/>
     <id>http://blog.cyx2009.top/archives/2026-03-24/</id>
     <published>2026-03-24T12:47:00.000Z</published>
-    <updated>2026-03-24T12:48:19.141Z</updated>
+    <updated>2026-03-25T10:49:56.374Z</updated>
     
     
     <summary>有东西被加密了，请输入密码查看。</summary>
@@ -55,7 +91,7 @@
     <link href="http://blog.cyx2009.top/archives/potpourri_12/"/>
     <id>http://blog.cyx2009.top/archives/potpourri_12/</id>
     <published>2026-03-18T00:50:00.000Z</published>
-    <updated>2026-03-24T12:44:13.031Z</updated>
+    <updated>2026-03-29T02:38:18.660Z</updated>
     
     
     <summary type="html">AGC049E Increment Decrement
@@ -402,50 +438,6 @@ t1 是不是，加起来为 2^k 则必须是 0xxxx 1yyyyyy，然后你找到这�
     
     
     <category term="Solution" scheme="http://blog.cyx2009.top/categories/Solution/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>[题解] MX-J27 题解</title>
-    <link href="http://blog.cyx2009.top/archives/MXJ27/"/>
-    <id>http://blog.cyx2009.top/archives/MXJ27/</id>
-    <published>2025-10-25T03:25:00.000Z</published>
-    <updated>2026-02-04T09:36:01.370Z</updated>
-    
-    
-    <summary type="html">讲评 PDF 在 MX-J27.pdf。
-免责声明：本篇题解在比赛结束前属于私有状态，仅保存在本地。
- A. 分块
- 题意
-给定 n，询问有多少个 1≤x≤n 满足 ⌊x⌋ 是 x 的因子。
-q 次询问，1≤n≤1018，1≤q≤105。
- 部分分 40
-对于一次询问，我们肯定可以直接暴力遍历所有的 1≤x≤n 进行判…</summary>
-    
-    
-    
-    <category term="Solution" scheme="http://blog.cyx2009.top/categories/Solution/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>[笔记] 关于正交拉丁方的构造与应用</title>
-    <link href="http://blog.cyx2009.top/archives/OLS/"/>
-    <id>http://blog.cyx2009.top/archives/OLS/</id>
-    <published>2025-10-24T10:00:00.000Z</published>
-    <updated>2025-12-10T09:29:42.314Z</updated>
-    
-    
-    <summary type="html">定义
-拉丁方阵（英语：Latin square）是一种 n×n 的方阵，在这种 n×n 的方阵里，恰有 n 种不同的元素，每一种不同的元素在同一行或同一列里只出现一次。以下是两个拉丁方阵举例：
-[123231312][abdcbcadcdbadacb]
-拉丁方阵有此名称是因为瑞士数学家和物理学家欧拉使用拉丁字母来做为拉…</summary>
-    
-    
-    
-    <category term="StudyNote" scheme="http://blog.cyx2009.top/categories/StudyNote/"/>
     
     
   </entry>
