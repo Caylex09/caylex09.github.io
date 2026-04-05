@@ -1305,5 +1305,15 @@ AKIHABARA 中只出现了 4 次 A ，所以，我们枚举所有可能，每个�
 
 
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".heimu").forEach(el => {
+    el.addEventListener("click", () => {
+      el.classList.toggle("revealed");
+    });
+  });
+});
+</script>
+
 </html>
 

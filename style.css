@@ -10423,3 +10423,19 @@ pre code.language-plain {
   opacity: 0;
   z-index: 9999;
 }
+
+.heimu {
+  background-color: black;
+  color: transparent;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.heimu:hover {
+  color: white;
+}
+
+/* 可选：点击显示（适配移动端） */
+.heimu.revealed {
+  color: white;
+}

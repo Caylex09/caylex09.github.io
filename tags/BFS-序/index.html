@@ -1024,5 +1024,15 @@ k 个黑点，构成长度为 k 的链的充要条件是，恰好存在 k−2 �
 
 
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".heimu").forEach(el => {
+    el.addEventListener("click", () => {
+      el.classList.toggle("revealed");
+    });
+  });
+});
+</script>
+
 </html>
 

@@ -18,15 +18,15 @@
 	
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
 	
-	<meta name="description" content="https:&#x2F;&#x2F;store.steampowered.com&#x2F;app&#x2F;746710&#x2F;Cypher&#x2F; 只要 22 块钱，史低 6 块钱。  序言 隐藏内容">
+	<meta name="description" content="https:&#x2F;&#x2F;store.steampowered.com&#x2F;app&#x2F;746710&#x2F;Cypher&#x2F; 只要 22 块钱，史低 6 块钱。 但是这个好像对英文水平要求比较高，我这种人做起来就有点坐牢。 这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很…">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[笔记] Cypher 游玩笔记 &amp; 密码学入门">
 <meta property="og:url" content="http://blog.cyx2009.top/archives/cypher/index.html">
 <meta property="og:site_name" content="沉石鱼惊旋 的博客">
-<meta property="og:description" content="https:&#x2F;&#x2F;store.steampowered.com&#x2F;app&#x2F;746710&#x2F;Cypher&#x2F; 只要 22 块钱，史低 6 块钱。  序言 隐藏内容">
+<meta property="og:description" content="https:&#x2F;&#x2F;store.steampowered.com&#x2F;app&#x2F;746710&#x2F;Cypher&#x2F; 只要 22 块钱，史低 6 块钱。 但是这个好像对英文水平要求比较高，我这种人做起来就有点坐牢。 这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很…">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2026-04-05T12:36:00.000Z">
-<meta property="article:modified_time" content="2026-04-05T13:02:55.758Z">
+<meta property="article:modified_time" content="2026-04-05T13:47:37.335Z">
 <meta property="article:author" content="沉石鱼惊旋">
 <meta name="twitter:card" content="summary">
 
@@ -653,7 +653,7 @@
 						
 						<div class="post-meta-detail post-meta-detail-time">
 							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2026-4-5 20:36:00 | 编辑于 2026-4-5 21:02:55">2026-4-5 20:36
+							<time title="发布于 2026-4-5 20:36:00 | 编辑于 2026-4-5 21:47:37">2026-4-5 20:36
 							</time>
 						</div>
 					
@@ -680,7 +680,7 @@
 						
 						<div class="post-meta-detail post-meta-detail-words">
 							<i class="fa fa-file-word-o" aria-hidden="true"></i>
-							23 字
+							911 字
 						</div>
 					
 						
@@ -688,7 +688,7 @@
 						
 						<div class="post-meta-detail post-meta-detail-readingtime">
 							<i class="fa fa-hourglass-end" aria-hidden="true"></i>
-							1 分钟
+							3 分钟
 						</div>
 					
 		</div>
@@ -697,8 +697,35 @@
 
 	<div class="post-content" id="post_content">
 		<p><a target="_blank" rel="noopener" href="https://store.steampowered.com/app/746710/Cypher/">https://store.steampowered.com/app/746710/Cypher/</a> 只要 22 块钱，史低 6 块钱。</p>
-<h1 id="序言"><a class="markdownIt-Anchor" href="#序言"></a> 序言</h1>
-<p><span class="heimu">隐藏内容</span></p>
+<p>但是这个好像对英文水平要求比较高，我这种人做起来就有点坐牢。</p>
+<p>这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。</p>
+<p>至于为什么这里要出现这么多个无意义废话，是因为博客摘要会渲染答案，多写一点无意义摘要就没有了。</p>
+<h1 id="introduction-to-cryptography-密码学简介"><a class="markdownIt-Anchor" href="#introduction-to-cryptography-密码学简介"></a> INTRODUCTION TO CRYPTOGRAPHY 密码学简介</h1>
+<p><span class="heimu">显然有若干个字符高亮了。提取之后答案是 GOLDENKEY。</span></p>
+<p>这关自己做出来了，比较简单。</p>
+<p>简介的大意为：</p>
+<blockquote>
+<p>密码学是研究秘密信息的学科。</p>
+<p>纵观历史，密码学一直被用作交换私人通信的手段，例如私人信件、重要的军事通讯以及金融信息。</p>
+<p>这在设计日益复杂密码的<strong>密码学家</strong>与试图破解它们的<strong>密码破译者</strong>之间，引发了一场持续不断的竞赛。</p>
+<p>接下来的六个房间展示了一系列谜题，旨在向你介绍一些最常见的密码及其破译技术。这些谜题大致按照复杂程度由浅入深排列。</p>
+<p>密码分析可能是一项耗时的任务，需要耐心和专注。接下来的谜题很大程度上需要依靠你的创造力来解决，但所有需要的线索都已准备在房间之中。</p>
+<p>所以，拿起纸和笔，祝你好运！</p>
+</blockquote>
+<h1 id="steganography-隐写术"><a class="markdownIt-Anchor" href="#steganography-隐写术"></a> Steganography 隐写术</h1>
+<p>隐写术是一种较弱的形式，内容没有被加密，而是依赖于没有人发现他有问题。这种的解密过程一般要关注其对齐方式、间距、词汇选择。</p>
+<h2 id="room-1"><a class="markdownIt-Anchor" href="#room-1"></a> Room 1</h2>
+<h3 id="puzzle-1"><a class="markdownIt-Anchor" href="#puzzle-1"></a> Puzzle 1</h3>
+<p>这一关是比较简单的，<span class="heimu">注意到藏头诗的形式，提取每一行大写的首字母得到 SPYSUSPECTED</span>。</p>
+<h3 id="puzzle-2"><a class="markdownIt-Anchor" href="#puzzle-2"></a> Puzzle 2</h3>
+<p>这一关太阴了，英语不好真做不了。首先，这是 Edgar Allan Poe 的一首叙事诗 The Raven。</p>
+<p>然后关键在于<span class="heimu">注意到有些单词拼写错误</span>，把这些<span class="heimu">拼写错误的单词（whille、foregotten、suddely、dooor、mutterred、chambere）的错误部分修正，得到了 LENORE</span>。</p>
+<p><span class="heimu">而我不知道 Tis 是什么意思，一直在加 h。彩蛋是这个名字恰好为本诗歌的叙述者一生挚爱却已死去的恋人。同时这位作者也还有一首叫做 Lenore 的诗歌</span>。</p>
+<h3 id="puzzle-3"><a class="markdownIt-Anchor" href="#puzzle-3"></a> Puzzle 3</h3>
+<p>这一关是简单的送的。<span class="heimu">注意到两行间距不正常，凑上前查看，可以发现有两行字，正常视角下看不到，贴过去才能看到，是 INVISIBLEINK 提交即可</span>。</p>
+<h3 id="puzzle-4"><a class="markdownIt-Anchor" href="#puzzle-4"></a> Puzzle 4</h3>
+<p>这一关还好。<span class="heimu">首先斜体是容易注意到的。TOO、ONE、FOR、FREE。</span>。直接提交无法通过，说明<span class="heimu">这些内容有别的含义</span>。</p>
+<p>考虑到<span class="heimu">谐音</span>，于是可以想到<span class="heimu">他们的谐音分别对应了 2143，提交即可通过</span>。其实文字和<span class="heimu">时间</span>强相关，考虑到<span class="heimu">时间</span>这个因素也可以往<span class="heimu">4 个数字</span>等方向上思考。</p>
 
 	</div>
 <div style="text-align: center; position: relative;">
@@ -1254,6 +1281,16 @@ btn.addEventListener("click", () => {
 </body>
 
 
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".heimu").forEach(el => {
+    el.addEventListener("click", () => {
+      el.classList.toggle("revealed");
+    });
+  });
+});
+</script>
 
 </html>
 

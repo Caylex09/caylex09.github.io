@@ -1081,5 +1081,15 @@ A 会选什么位置，我们不用考虑，因为题目求所有情况，不是
 
 
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".heimu").forEach(el => {
+    el.addEventListener("click", () => {
+      el.classList.toggle("revealed");
+    });
+  });
+});
+</script>
+
 </html>
 

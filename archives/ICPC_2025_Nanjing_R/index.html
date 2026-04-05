@@ -1370,5 +1370,15 @@ xzy 和 zyc 找我，问我打不打南京。说徐州那边可能有学校有�
 
 
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".heimu").forEach(el => {
+    el.addEventListener("click", () => {
+      el.classList.toggle("revealed");
+    });
+  });
+});
+</script>
+
 </html>
 

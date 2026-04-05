@@ -1648,5 +1648,15 @@ Boruvka 大致流程是维护联通块，每一轮把联通块之间最短的边
 
 
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".heimu").forEach(el => {
+    el.addEventListener("click", () => {
+      el.classList.toggle("revealed");
+    });
+  });
+});
+</script>
+
 </html>
 

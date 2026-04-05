@@ -1173,5 +1173,15 @@ n 个数 ai，每次可以选择 ai←ai×2 或者 ai←⌊ai2⌋。
 
 
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".heimu").forEach(el => {
+    el.addEventListener("click", () => {
+      el.classList.toggle("revealed");
+    });
+  });
+});
+</script>
+
 </html>
 

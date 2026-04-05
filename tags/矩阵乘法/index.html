@@ -1026,5 +1026,15 @@ q 次修改，每次给出 x,t 表示 sx←t。修改是永久的。在所有修
 
 
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".heimu").forEach(el => {
+    el.addEventListener("click", () => {
+      el.classList.toggle("revealed");
+    });
+  });
+});
+</script>
+
 </html>
 

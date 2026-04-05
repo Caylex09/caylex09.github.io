@@ -1170,5 +1170,15 @@ n×m 的网格，有若干个老鼠 R。墙是 X。普通地面是 .。选择两
 
 
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".heimu").forEach(el => {
+    el.addEventListener("click", () => {
+      el.classList.toggle("revealed");
+    });
+  });
+});
+</script>
+
 </html>
 

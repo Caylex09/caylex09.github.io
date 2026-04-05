@@ -1466,5 +1466,15 @@ PS：可惜了，几年前的手机拍照延迟过高，大头照没拍到几张
 
 
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".heimu").forEach(el => {
+    el.addEventListener("click", () => {
+      el.classList.toggle("revealed");
+    });
+  });
+});
+</script>
+
 </html>
 
