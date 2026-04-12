@@ -6,7 +6,7 @@
   <link href="http://blog.cyx2009.top/atom.xml" rel="self"/>
   
   <link href="http://blog.cyx2009.top/"/>
-  <updated>2026-04-06T14:24:52.286Z</updated>
+  <updated>2026-04-12T13:00:24.743Z</updated>
   <id>http://blog.cyx2009.top/</id>
   
   <author>
@@ -17,11 +17,41 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>[游记] 2026 ICPC 深圳 邀请赛 游记</title>
+    <link href="http://blog.cyx2009.top/archives/ICPC_2026_Shenzhen_I/"/>
+    <id>http://blog.cyx2009.top/archives/ICPC_2026_Shenzhen_I/</id>
+    <published>2026-04-10T07:56:00.000Z</published>
+    <updated>2026-04-12T13:00:24.743Z</updated>
+    
+    
+    <summary type="html">省流：金牌，也拿到本赛季各赛站的第一发 AC。
+队友是 wrk 和 zgn。et 和 zyf 被 thu 拐走了。
+ Day -1
+报道日，上午去无锡硕放机场坐飞机。
+我发现我忘记打印板子了，问题不大，相信队友。
+起飞颠簸好吓人（？）飞机餐一般。
+快下降的时候耳朵聋了半天，下飞机打了个嗝就好了。
+入住酒店房间号 131…</summary>
+    
+    
+    
+    <category term="Essay" scheme="http://blog.cyx2009.top/categories/Essay/"/>
+    
+    
+    <category term="ICPC" scheme="http://blog.cyx2009.top/tags/ICPC/"/>
+    
+    <category term="Shenzhen" scheme="http://blog.cyx2009.top/tags/Shenzhen/"/>
+    
+    <category term="Invitation" scheme="http://blog.cyx2009.top/tags/Invitation/"/>
+    
+  </entry>
+  
+  <entry>
     <title>[笔记] Cypher 游玩笔记 &amp; 密码学入门</title>
     <link href="http://blog.cyx2009.top/archives/cypher/"/>
     <id>http://blog.cyx2009.top/archives/cypher/</id>
     <published>2026-04-05T12:36:00.000Z</published>
-    <updated>2026-04-06T14:24:52.286Z</updated>
+    <updated>2026-04-09T12:03:39.257Z</updated>
     
     
     <summary type="html">https://store.steampowered.com/app/746710/Cypher/ 只要 22 块钱，史低 6 块钱。
@@ -91,7 +121,7 @@
     <link href="http://blog.cyx2009.top/archives/potpourri_12/"/>
     <id>http://blog.cyx2009.top/archives/potpourri_12/</id>
     <published>2026-03-18T00:50:00.000Z</published>
-    <updated>2026-03-29T02:38:18.660Z</updated>
+    <updated>2026-04-09T05:04:31.819Z</updated>
     
     
     <summary type="html">AGC049E Increment Decrement
@@ -365,7 +395,7 @@ down[v]-do…</summary>
     <link href="http://blog.cyx2009.top/archives/ICPC_2025_Nanjing_R/"/>
     <id>http://blog.cyx2009.top/archives/ICPC_2025_Nanjing_R/</id>
     <published>2025-11-03T06:33:00.000Z</published>
-    <updated>2026-02-04T09:36:00.029Z</updated>
+    <updated>2026-04-10T07:57:34.322Z</updated>
     
     
     <summary type="html">Day -998244353
@@ -379,6 +409,12 @@ xzy 和 zyc 找我，问我打不打南京。说徐州那边可能有学校有�
     
     <category term="TravelNote" scheme="http://blog.cyx2009.top/categories/TravelNote/"/>
     
+    
+    <category term="ICPC" scheme="http://blog.cyx2009.top/tags/ICPC/"/>
+    
+    <category term="Regional" scheme="http://blog.cyx2009.top/tags/Regional/"/>
+    
+    <category term="Nanjing" scheme="http://blog.cyx2009.top/tags/Nanjing/"/>
     
   </entry>
   
@@ -414,30 +450,6 @@ LG 244333098
     
     
     <category term="StudyNote" scheme="http://blog.cyx2009.top/categories/StudyNote/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>[题解] 杂题选讲 8</title>
-    <link href="http://blog.cyx2009.top/archives/potpourri_8/"/>
-    <id>http://blog.cyx2009.top/archives/potpourri_8/</id>
-    <published>2025-10-29T12:57:00.000Z</published>
-    <updated>2026-02-04T09:25:52.871Z</updated>
-    
-    
-    <summary type="html">模拟赛 ZR20251028 T1
-
-  WARNING
-  未完成代码。
-独立想出；思考时间：短；未完成代码；代码时间：nan；推荐指数：好题；
-
-
-t1 是不是，加起来为 2^k 则必须是 0xxxx 1yyyyyy，然后你找到这个区间里第一个 1000000，然后劈成两半，左边选了什么，右边对应会 ban 掉一个…</summary>
-    
-    
-    
-    <category term="Solution" scheme="http://blog.cyx2009.top/categories/Solution/"/>
     
     
   </entry>
