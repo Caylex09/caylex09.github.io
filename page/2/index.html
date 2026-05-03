@@ -510,7 +510,7 @@
 							<nav class="site-state">
 								<div class="site-state-item site-state-posts">
 									<a href="/archives">
-										<span class="site-state-item-count">241</span>
+										<span class="site-state-item-count">242</span>
 										<span class="site-state-item-name">文章</span>
 									</a>
 								</div>
@@ -610,6 +610,72 @@
 	<main id="main" class="site-main" role="main">
 		
 			
+	<article class="post card bg-white shadow-sm border-0 post-preview">
+	<header class="post-header text-center">
+		
+		<a class="post-title" href="/archives/potpourri_12/">[题解] 杂题选讲 12</a>
+		<div class="post-meta">
+			
+						
+						<div class="post-meta-detail post-meta-detail-time">
+							<i class="fa fa-clock-o" aria-hidden="true"></i>
+							<time title="发布于 2026-3-18 8:50:00 | 编辑于 2026-4-29 21:59:05">2026-3-18 8:50
+							</time>
+						</div>
+					
+						
+							<div class="post-meta-devide">|</div>
+						
+						<div class="post-meta-detail post-meta-detail-categories">
+							<i class="fa fa-bookmark-o" aria-hidden="true"></i>
+							<a class="post-meta-detail-catagory-link" href="/categories/Solution/">Solution</a>
+						</div>
+					
+						
+							<div class="post-meta-devide">|</div>
+						
+						<div class="post-meta-detail post-meta-detail-words">
+							<i class="fa fa-book" aria-hidden="true"></i>
+							<span id="busuanzi_container_page_pv">
+								阅读 <span id="busuanzi_value_page_pv"></span> 次
+							</span>
+						</div>
+					
+						
+							<div class="post-meta-devide">|</div>
+						
+						<div class="post-meta-detail post-meta-detail-words">
+							<i class="fa fa-file-word-o" aria-hidden="true"></i>
+							14.6k 字
+						</div>
+					
+						
+							<div class="post-meta-devide">|</div>
+						
+						<div class="post-meta-detail post-meta-detail-readingtime">
+							<i class="fa fa-hourglass-end" aria-hidden="true"></i>
+							62 分钟
+						</div>
+					
+		</div>
+		
+	</header>
+
+	<div class="post-content">
+		
+			
+				AGC049E Increment Decrement
+因为只会 ±1，所以每 1 划一层，可以认为层之间独立。那么原问题先编一个值域 01 的做法。
+fi,0/1 表示 DP 到 i，前面是否有一段区间 +1 延续过来了。转移也可以轻松 O(1)。
+然后回归原问题，值域划分成 O(nm) 段。gi,fi,0,fi,1 表示 DP 到 i，目前 f...
+			
+		
+	</div>
+
+	
+</article>
+
+
 	<article class="post card bg-white shadow-sm border-0 post-preview">
 	<header class="post-header text-center">
 		
@@ -1218,73 +1284,6 @@ https://www.luogu.com.cn/problem/T718067
 (up[u]-up[lca])/pw10[dep[lca]-1]
 爬下来的部分是：
 down[v]-down[lca]*pw10[de...
-			
-		
-	</div>
-
-	
-</article>
-
-
-	<article class="post card bg-white shadow-sm border-0 post-preview">
-	<header class="post-header text-center">
-		
-		<a class="post-title" href="/archives/NOIP2025/">[游记] NOIP 2025 游记</a>
-		<div class="post-meta">
-			
-						
-						<div class="post-meta-detail post-meta-detail-time">
-							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2025-11-27 20:04:00 | 编辑于 2025-12-3 21:42:54">2025-11-27 20:04
-							</time>
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-categories">
-							<i class="fa fa-bookmark-o" aria-hidden="true"></i>
-							<a class="post-meta-detail-catagory-link" href="/categories/TravelNote/">TravelNote</a>
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-words">
-							<i class="fa fa-book" aria-hidden="true"></i>
-							<span id="busuanzi_container_page_pv">
-								阅读 <span id="busuanzi_value_page_pv"></span> 次
-							</span>
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-words">
-							<i class="fa fa-file-word-o" aria-hidden="true"></i>
-							1.2k 字
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-readingtime">
-							<i class="fa fa-hourglass-end" aria-hidden="true"></i>
-							4 分钟
-						</div>
-					
-		</div>
-		
-	</header>
-
-	<div class="post-content">
-		
-			
-				兄弟，什么都不想写了，反正 NOIP 除了收了 xlw 的徽章屁事没干。
-开场十五分钟过了 T1 优势在我，而且发现了前缀和超过 m 的情况判掉了，我王朝了。
-做了一小时 T2 没做明白，然后想了几个充要条件发现假了，去上厕所想出了真的充要条件，我此时以为自己还有赢的机会。
-然后写了个四次方的玉玉症了调不出来了贡献死活算不清楚。
-闹麻了，最后紧急开...
 			
 		
 	</div>

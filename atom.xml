@@ -6,7 +6,7 @@
   <link href="http://blog.cyx2009.top/atom.xml" rel="self"/>
   
   <link href="http://blog.cyx2009.top/"/>
-  <updated>2026-04-12T13:00:24.743Z</updated>
+  <updated>2026-04-30T13:29:52.606Z</updated>
   <id>http://blog.cyx2009.top/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://blog.cyx2009.top/archives/ICPC_2026_Xian_I/"/>
+    <id>http://blog.cyx2009.top/archives/ICPC_2026_Xian_I/</id>
+    <published>2026-04-20T06:53:20.282Z</published>
+    <updated>2026-04-30T13:29:52.606Z</updated>
+    
+    
+    <summary type="html">title: &quot;[题解] 2026 ICPC 西安 邀请赛 题解&quot;
+categories: Solution
+date: 2026-04-20 14:54
+tags:
+  - ICPC
+  - Xi&#39;an
+  - Invitation
+没去，但是 tester。
+vp 的时候没队友也没榜，单挑 8 个题，过题顺序也是纯…</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>[游记] 2026 ICPC 深圳 邀请赛 游记</title>
@@ -121,7 +144,7 @@
     <link href="http://blog.cyx2009.top/archives/potpourri_12/"/>
     <id>http://blog.cyx2009.top/archives/potpourri_12/</id>
     <published>2026-03-18T00:50:00.000Z</published>
-    <updated>2026-04-27T13:15:40.407Z</updated>
+    <updated>2026-04-29T13:59:05.559Z</updated>
     
     
     <summary type="html">AGC049E Increment Decrement
@@ -415,42 +438,6 @@ xzy 和 zyc 找我，问我打不打南京。说徐州那边可能有学校有�
     <category term="Regional" scheme="http://blog.cyx2009.top/tags/Regional/"/>
     
     <category term="Nanjing" scheme="http://blog.cyx2009.top/tags/Nanjing/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>『置顶』[笔记] 模板列表</title>
-    <link href="http://blog.cyx2009.top/archives/cp_template/"/>
-    <id>http://blog.cyx2009.top/archives/cp_template/</id>
-    <published>2025-10-30T13:40:00.000Z</published>
-    <updated>2026-03-06T05:33:27.325Z</updated>
-    
-    
-    <summary type="html">这是我的 OI/ACM 模板库。
-
-
-
-题目链接
-备注
-标准代码
-默写代码（CSP2025）
-
-
-
-
-快速读入
-虽然前缀和在 int 范围里，但是输出 -2147483648 取相反数输出会寄。
-LG 169229997
-LG 244333098
-
-
-同余方程（exgcd）
-洛谷的 exgcd 板子太糖了，拿这个当 e…</summary>
-    
-    
-    
-    <category term="StudyNote" scheme="http://blog.cyx2009.top/categories/StudyNote/"/>
-    
     
   </entry>
   
