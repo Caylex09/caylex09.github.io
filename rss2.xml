@@ -15,28 +15,32 @@
     <atom:link href="http://blog.cyx2009.top/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>沉石鱼惊旋 的博客</description>
-    <pubDate>Thu, 30 Apr 2026 13:29:52 GMT</pubDate>
+    <pubDate>Sun, 03 May 2026 05:51:32 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title></title>
+      <title>[题解] 2026 ICPC 西安 邀请赛 题解</title>
       <link>http://blog.cyx2009.top/archives/ICPC_2026_Xian_I/</link>
       <guid>http://blog.cyx2009.top/archives/ICPC_2026_Xian_I/</guid>
-      <pubDate>Mon, 20 Apr 2026 06:53:20 GMT</pubDate>
+      <pubDate>Mon, 20 Apr 2026 06:54:00 GMT</pubDate>
       
-      <description>title: &quot;[题解] 2026 ICPC 西安 邀请赛 题解&quot;
-categories: Solution
-date: 2026-04-20 14:54
-tags:
-  - ICPC
-  - Xi&#39;an
-  - Invitation
-没去，但是 tester。
-vp 的时候没队友也没榜，单挑 8 个题，过题顺序也是纯…</description>
+      <description>没去，但是 tester。
+vp 的时候没队友也没榜，单挑 8 个题，过题顺序也是纯随机。体感是 E&lt;A=J&lt;B=D=I&lt;C&lt;K。当然这不是过题顺序。后面也还加了个题。
+ A. North and South
+North and South - Problem - QOJ.ac
+设 s=∑ain，若 s 不是整数直接无…</description>
       
       
       
       
+      <category domain="http://blog.cyx2009.top/categories/Solution/">Solution</category>
+      
+      
+      <category domain="http://blog.cyx2009.top/tags/ICPC/">ICPC</category>
+      
+      <category domain="http://blog.cyx2009.top/tags/Invitation/">Invitation</category>
+      
+      <category domain="http://blog.cyx2009.top/tags/%E8%A5%BF%E5%AE%89/">西安</category>
       
       
       <comments>http://blog.cyx2009.top/archives/ICPC_2026_Xian_I/#disqus_thread</comments>
@@ -66,9 +70,9 @@ vp 的时候没队友也没榜，单挑 8 个题，过题顺序也是纯…</des
       
       <category domain="http://blog.cyx2009.top/tags/ICPC/">ICPC</category>
       
-      <category domain="http://blog.cyx2009.top/tags/Shenzhen/">Shenzhen</category>
-      
       <category domain="http://blog.cyx2009.top/tags/Invitation/">Invitation</category>
+      
+      <category domain="http://blog.cyx2009.top/tags/%E6%B7%B1%E5%9C%B3/">深圳</category>
       
       
       <comments>http://blog.cyx2009.top/archives/ICPC_2026_Shenzhen_I/#disqus_thread</comments>
@@ -476,7 +480,7 @@ xzy 和 zyc 找我，问我打不打南京。说徐州那边可能有学校有�
       
       <category domain="http://blog.cyx2009.top/tags/Regional/">Regional</category>
       
-      <category domain="http://blog.cyx2009.top/tags/Nanjing/">Nanjing</category>
+      <category domain="http://blog.cyx2009.top/tags/%E5%8D%97%E4%BA%AC/">南京</category>
       
       
       <comments>http://blog.cyx2009.top/archives/ICPC_2025_Nanjing_R/#disqus_thread</comments>

@@ -6,7 +6,7 @@
   <link href="http://blog.cyx2009.top/atom.xml" rel="self"/>
   
   <link href="http://blog.cyx2009.top/"/>
-  <updated>2026-04-30T13:29:52.606Z</updated>
+  <updated>2026-05-03T05:51:32.451Z</updated>
   <id>http://blog.cyx2009.top/</id>
   
   <author>
@@ -17,25 +17,29 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>[题解] 2026 ICPC 西安 邀请赛 题解</title>
     <link href="http://blog.cyx2009.top/archives/ICPC_2026_Xian_I/"/>
     <id>http://blog.cyx2009.top/archives/ICPC_2026_Xian_I/</id>
-    <published>2026-04-20T06:53:20.282Z</published>
-    <updated>2026-04-30T13:29:52.606Z</updated>
+    <published>2026-04-20T06:54:00.000Z</published>
+    <updated>2026-05-03T05:51:32.451Z</updated>
     
     
-    <summary type="html">title: &quot;[题解] 2026 ICPC 西安 邀请赛 题解&quot;
-categories: Solution
-date: 2026-04-20 14:54
-tags:
-  - ICPC
-  - Xi&#39;an
-  - Invitation
-没去，但是 tester。
-vp 的时候没队友也没榜，单挑 8 个题，过题顺序也是纯…</summary>
+    <summary type="html">没去，但是 tester。
+vp 的时候没队友也没榜，单挑 8 个题，过题顺序也是纯随机。体感是 E&lt;A=J&lt;B=D=I&lt;C&lt;K。当然这不是过题顺序。后面也还加了个题。
+ A. North and South
+North and South - Problem - QOJ.ac
+设 s=∑ain，若 s 不是整数直接无…</summary>
     
     
     
+    <category term="Solution" scheme="http://blog.cyx2009.top/categories/Solution/"/>
+    
+    
+    <category term="ICPC" scheme="http://blog.cyx2009.top/tags/ICPC/"/>
+    
+    <category term="Invitation" scheme="http://blog.cyx2009.top/tags/Invitation/"/>
+    
+    <category term="西安" scheme="http://blog.cyx2009.top/tags/%E8%A5%BF%E5%AE%89/"/>
     
   </entry>
   
@@ -44,7 +48,7 @@ vp 的时候没队友也没榜，单挑 8 个题，过题顺序也是纯…</sum
     <link href="http://blog.cyx2009.top/archives/ICPC_2026_Shenzhen_I/"/>
     <id>http://blog.cyx2009.top/archives/ICPC_2026_Shenzhen_I/</id>
     <published>2026-04-10T07:56:00.000Z</published>
-    <updated>2026-04-12T13:00:24.743Z</updated>
+    <updated>2026-05-03T05:51:40.237Z</updated>
     
     
     <summary type="html">省流：金牌，也拿到本赛季各赛站的第一发 AC。
@@ -63,9 +67,9 @@ vp 的时候没队友也没榜，单挑 8 个题，过题顺序也是纯…</sum
     
     <category term="ICPC" scheme="http://blog.cyx2009.top/tags/ICPC/"/>
     
-    <category term="Shenzhen" scheme="http://blog.cyx2009.top/tags/Shenzhen/"/>
-    
     <category term="Invitation" scheme="http://blog.cyx2009.top/tags/Invitation/"/>
+    
+    <category term="深圳" scheme="http://blog.cyx2009.top/tags/%E6%B7%B1%E5%9C%B3/"/>
     
   </entry>
   
@@ -418,7 +422,7 @@ down[v]-do…</summary>
     <link href="http://blog.cyx2009.top/archives/ICPC_2025_Nanjing_R/"/>
     <id>http://blog.cyx2009.top/archives/ICPC_2025_Nanjing_R/</id>
     <published>2025-11-03T06:33:00.000Z</published>
-    <updated>2026-04-10T07:57:34.322Z</updated>
+    <updated>2026-05-03T05:51:44.399Z</updated>
     
     
     <summary type="html">Day -998244353
@@ -437,7 +441,7 @@ xzy 和 zyc 找我，问我打不打南京。说徐州那边可能有学校有�
     
     <category term="Regional" scheme="http://blog.cyx2009.top/tags/Regional/"/>
     
-    <category term="Nanjing" scheme="http://blog.cyx2009.top/tags/Nanjing/"/>
+    <category term="南京" scheme="http://blog.cyx2009.top/tags/%E5%8D%97%E4%BA%AC/"/>
     
   </entry>
   
