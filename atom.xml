@@ -6,7 +6,7 @@
   <link href="http://blog.cyx2009.top/atom.xml" rel="self"/>
   
   <link href="http://blog.cyx2009.top/"/>
-  <updated>2026-05-03T05:51:32.451Z</updated>
+  <updated>2026-05-11T13:04:03.338Z</updated>
   <id>http://blog.cyx2009.top/</id>
   
   <author>
@@ -15,6 +15,51 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>[题解] AtCoder Regular Contest-- 219 题解</title>
+    <link href="http://blog.cyx2009.top/archives/ARC219/"/>
+    <id>http://blog.cyx2009.top/archives/ARC219/</id>
+    <published>2026-05-11T05:27:00.000Z</published>
+    <updated>2026-05-11T13:04:03.338Z</updated>
+    
+    
+    <summary type="html">大家都在打 APIO，我依旧美美偷分。
+ ARC219A Similarity
+https://atcoder.jp/contests/arc219/tasks/arc219_a
+限制等价于给出了 n 个被 ban 掉的答案，就是那 n 个输入字符串的逐位取反后得到的 n 个字符串。
+我们只要找到一个长度为 m 的字符…</summary>
+    
+    
+    
+    <category term="Solution" scheme="http://blog.cyx2009.top/categories/Solution/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>[题解] 杂题选讲 13</title>
+    <link href="http://blog.cyx2009.top/archives/potpourri_13/"/>
+    <id>http://blog.cyx2009.top/archives/potpourri_13/</id>
+    <published>2026-05-09T12:18:00.000Z</published>
+    <updated>2026-05-10T06:52:29.486Z</updated>
+    
+    
+    <summary type="html">P4747 [CERC2017] Intrinsic Interval
+懒得写了。注意到以下性质：
+
+好区间只要满足 max⁡−min⁡=r−l。
+好区间的交也是好区间，好区间的并也是好区间。
+一个区间的对应极小合法好区间，一定唯一，并且其他所有合法好区间都包含他。否则随便拿两个取交肯定更优。
+
+于是我们只想知道，每个…</summary>
+    
+    
+    
+    <category term="Solution" scheme="http://blog.cyx2009.top/categories/Solution/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>[题解] 2026 ICPC 西安 邀请赛 题解</title>
@@ -148,7 +193,7 @@ North and South - Problem - QOJ.ac
     <link href="http://blog.cyx2009.top/archives/potpourri_12/"/>
     <id>http://blog.cyx2009.top/archives/potpourri_12/</id>
     <published>2026-03-18T00:50:00.000Z</published>
-    <updated>2026-04-29T13:59:05.559Z</updated>
+    <updated>2026-05-09T12:17:58.548Z</updated>
     
     
     <summary type="html">AGC049E Increment Decrement
@@ -393,55 +438,6 @@ down[v]-do…</summary>
     
     <category term="TravelNote" scheme="http://blog.cyx2009.top/categories/TravelNote/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>[题解] 杂题选讲 9</title>
-    <link href="http://blog.cyx2009.top/archives/potpourri_9/"/>
-    <id>http://blog.cyx2009.top/archives/potpourri_9/</id>
-    <published>2025-11-17T03:17:00.000Z</published>
-    <updated>2026-02-04T09:47:50.704Z</updated>
-    
-    
-    <summary type="html">CF2165B Marble Council
-场切；思考时间：中；已完成代码；代码时间：中；推荐指数：好题；
-考虑一种数如果出现了，出现几次都无所谓，我们把他单独开若干个集合就好了。
-但是如果一种数没出现，我们就得看看有多少情况使得它没出现了。
-没出现的话，每个集合我都可以塞『众数出现次数』个它。由于我们出现的话是单开…</summary>
-    
-    
-    
-    <category term="Solution" scheme="http://blog.cyx2009.top/categories/Solution/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>[游记] 2025 ICPC 南京 区域赛 游记</title>
-    <link href="http://blog.cyx2009.top/archives/ICPC_2025_Nanjing_R/"/>
-    <id>http://blog.cyx2009.top/archives/ICPC_2025_Nanjing_R/</id>
-    <published>2025-11-03T06:33:00.000Z</published>
-    <updated>2026-05-03T05:51:44.399Z</updated>
-    
-    
-    <summary type="html">Day -998244353
-xzy 和 zyc 找我，问我打不打南京。说徐州那边可能有学校有名额，但是差一个人。
-于是和他们组了一队，保险起见在洛谷那边也要了打星名额。
-事实上，最后用的是洛谷的名额（
-不过更准确说是 Hydro 的名额，不过没事洛谷 Hydro 一家亲。洛谷的给了马老师他们队。
-最后我们的队名在自己…</summary>
-    
-    
-    
-    <category term="TravelNote" scheme="http://blog.cyx2009.top/categories/TravelNote/"/>
-    
-    
-    <category term="ICPC" scheme="http://blog.cyx2009.top/tags/ICPC/"/>
-    
-    <category term="Regional" scheme="http://blog.cyx2009.top/tags/Regional/"/>
-    
-    <category term="南京" scheme="http://blog.cyx2009.top/tags/%E5%8D%97%E4%BA%AC/"/>
     
   </entry>
   
