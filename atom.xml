@@ -6,7 +6,7 @@
   <link href="http://blog.cyx2009.top/atom.xml" rel="self"/>
   
   <link href="http://blog.cyx2009.top/"/>
-  <updated>2026-05-11T13:04:03.338Z</updated>
+  <updated>2026-05-18T11:47:33.406Z</updated>
   <id>http://blog.cyx2009.top/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>[题解] PKUCPC2026 题解</title>
+    <link href="http://blog.cyx2009.top/archives/PKUCPC2026/"/>
+    <id>http://blog.cyx2009.top/archives/PKUCPC2026/</id>
+    <published>2026-05-18T04:49:00.000Z</published>
+    <updated>2026-05-18T11:47:33.406Z</updated>
+    
+    
+    <summary type="html">题目在 http://poj.openjudge.cn/campus2026/ 上。好像非小组成员能看但是不能提交。
+ C
+枚举答案为 x 则分 ≤x 和 &gt;x 的讨论，再分奇偶性。注意到 +2 的话缩得很快，所以最优解肯定是在某个 [ai−1,ai+1] 范围内的，枚举一下 check 即可。
+瓶颈在排序的 O(nl…</summary>
+    
+    
+    
+    <category term="Solution" scheme="http://blog.cyx2009.top/categories/Solution/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>[题解] AtCoder Regular Contest-- 219 题解</title>
     <link href="http://blog.cyx2009.top/archives/ARC219/"/>
     <id>http://blog.cyx2009.top/archives/ARC219/</id>
     <published>2026-05-11T05:27:00.000Z</published>
-    <updated>2026-05-11T13:04:03.338Z</updated>
+    <updated>2026-05-13T05:21:59.091Z</updated>
     
     
     <summary type="html">大家都在打 APIO，我依旧美美偷分。
@@ -42,7 +62,7 @@ https://atcoder.jp/contests/arc219/tasks/arc219_a
     <link href="http://blog.cyx2009.top/archives/potpourri_13/"/>
     <id>http://blog.cyx2009.top/archives/potpourri_13/</id>
     <published>2026-05-09T12:18:00.000Z</published>
-    <updated>2026-05-10T06:52:29.486Z</updated>
+    <updated>2026-05-19T08:17:06.479Z</updated>
     
     
     <summary type="html">P4747 [CERC2017] Intrinsic Interval
@@ -240,7 +260,7 @@ fi,0/1 表示 DP 到 i，前面是否有一段区间 +1 延续过来了。转移
     <link href="http://blog.cyx2009.top/archives/better_life/"/>
     <id>http://blog.cyx2009.top/archives/better_life/</id>
     <published>2026-03-01T04:27:00.000Z</published>
-    <updated>2026-03-10T03:48:07.072Z</updated>
+    <updated>2026-05-16T07:10:49.305Z</updated>
     
     
     <summary type="html">记录一些很有用的东西。
@@ -314,7 +334,7 @@ Email 可以用 gmail，一个手机注册两个号，手机上清掉浏览数�
     <link href="http://blog.cyx2009.top/archives/WC2026/"/>
     <id>http://blog.cyx2009.top/archives/WC2026/</id>
     <published>2026-01-28T06:59:00.000Z</published>
-    <updated>2026-04-24T05:53:45.059Z</updated>
+    <updated>2026-05-12T01:59:56.524Z</updated>
     
     
     <summary type="html">Day -??? 2026/1/28
@@ -381,7 +401,7 @@ Summer School (July 12 — July 16, 2024) 栗师 Combinatorial Optimizati…</su
     <link href="http://blog.cyx2009.top/archives/potpourri_11/"/>
     <id>http://blog.cyx2009.top/archives/potpourri_11/</id>
     <published>2026-01-06T11:42:00.000Z</published>
-    <updated>2026-03-22T10:57:06.217Z</updated>
+    <updated>2026-05-18T05:14:22.853Z</updated>
     
     
     <summary type="html">模拟赛 序列操作
@@ -417,26 +437,6 @@ down[v]-do…</summary>
     
     
     <category term="Solution" scheme="http://blog.cyx2009.top/categories/Solution/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>[游记] NOIP 2025 游记</title>
-    <link href="http://blog.cyx2009.top/archives/NOIP2025/"/>
-    <id>http://blog.cyx2009.top/archives/NOIP2025/</id>
-    <published>2025-11-27T12:04:00.000Z</published>
-    <updated>2025-12-03T13:42:54.064Z</updated>
-    
-    
-    <summary type="html">兄弟，什么都不想写了，反正 NOIP 除了收了 xlw 的徽章屁事没干。
-开场十五分钟过了 T1 优势在我，而且发现了前缀和超过 m 的情况判掉了，我王朝了。
-做了一小时 T2 没做明白，然后想了几个充要条件发现假了，去上厕所想出了真的充要条件，我此时以为自己还有赢的机会。
-然后写了个四次方的玉玉症了调不出来了贡献死活…</summary>
-    
-    
-    
-    <category term="TravelNote" scheme="http://blog.cyx2009.top/categories/TravelNote/"/>
     
     
   </entry>

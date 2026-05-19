@@ -26,7 +26,7 @@
 <meta property="og:description" content="记录一些很有用的东西。  邮件 Email 可以用 gmail，一个手机注册两个号，手机上清掉浏览数据开梯子注册成功率更高。 然后给邮箱设置一下回复，就是别的邮箱收到的发到统一邮箱里，然后也可以设置发信用什么邮箱。 最后，下载那个网页应用 gmail，设置开机自启动，然后设置里面打开 Windows 通知就可以享受到邮…">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2026-03-01T04:27:00.000Z">
-<meta property="article:modified_time" content="2026-03-10T03:48:07.072Z">
+<meta property="article:modified_time" content="2026-05-16T07:10:49.305Z">
 <meta property="article:author" content="沉石鱼惊旋">
 <meta name="twitter:card" content="summary">
 
@@ -543,7 +543,7 @@
 							<nav class="site-state">
 								<div class="site-state-item site-state-posts">
 									<a href="/archives">
-										<span class="site-state-item-count">244</span>
+										<span class="site-state-item-count">245</span>
 										<span class="site-state-item-name">文章</span>
 									</a>
 								</div>
@@ -617,7 +617,7 @@
 				</button>
 			</div>
 			<div class="modal-body">
-				<a class="badge badge-secondary tag" href="/categories/Essay/" rel="tag">Essay <span class="tag-num">14</span></a><a class="badge badge-secondary tag" href="/categories/Solution/" rel="tag">Solution <span class="tag-num">202</span></a><a class="badge badge-secondary tag" href="/categories/StudyNote/" rel="tag">StudyNote <span class="tag-num">8</span></a><a class="badge badge-secondary tag" href="/categories/Technology/" rel="tag">Technology <span class="tag-num">3</span></a><a class="badge badge-secondary tag" href="/categories/TravelNote/" rel="tag">TravelNote <span class="tag-num">17</span></a>
+				<a class="badge badge-secondary tag" href="/categories/Essay/" rel="tag">Essay <span class="tag-num">14</span></a><a class="badge badge-secondary tag" href="/categories/Solution/" rel="tag">Solution <span class="tag-num">203</span></a><a class="badge badge-secondary tag" href="/categories/StudyNote/" rel="tag">StudyNote <span class="tag-num">8</span></a><a class="badge badge-secondary tag" href="/categories/Technology/" rel="tag">Technology <span class="tag-num">3</span></a><a class="badge badge-secondary tag" href="/categories/TravelNote/" rel="tag">TravelNote <span class="tag-num">17</span></a>
 			</div>
 		</div>
 	</div>
@@ -653,7 +653,7 @@
 						
 						<div class="post-meta-detail post-meta-detail-time">
 							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2026-3-1 12:27:00 | 编辑于 2026-3-10 11:48:07">2026-3-1 12:27
+							<time title="发布于 2026-3-1 12:27:00 | 编辑于 2026-5-16 15:10:49">2026-3-1 12:27
 							</time>
 						</div>
 					
@@ -680,7 +680,7 @@
 						
 						<div class="post-meta-detail post-meta-detail-words">
 							<i class="fa fa-file-word-o" aria-hidden="true"></i>
-							4.9k 字
+							5.5k 字
 						</div>
 					
 						
@@ -688,7 +688,7 @@
 						
 						<div class="post-meta-detail post-meta-detail-readingtime">
 							<i class="fa fa-hourglass-end" aria-hidden="true"></i>
-							27 分钟
+							30 分钟
 						</div>
 					
 		</div>
@@ -909,6 +909,177 @@ MUSIC_DIR = <span class="string">&quot;C:\\Users\\Administrator\\Music&quot;</sp
 <pre><code class="highlight bat"><span class="keyword">for</span> %i <span class="keyword">in</span> (*.mp3 *.flac *.m4a *.wav) <span class="keyword">do</span> @<span class="keyword">for</span> /f %a <span class="keyword">in</span> (&#x27;ffprobe -v error -select_streams a:<span class="number">0</span> -show_entries stream^=sample_rate -of default^=noprint_wrappers^=<span class="number">1</span>:nokey^=<span class="number">1</span> &quot;%i&quot; <span class="number">2</span>^&gt;<span class="built_in">nul</span>&#x27;) <span class="keyword">do</span> @<span class="keyword">if</span> <span class="keyword">not</span> &quot;%a&quot;==&quot;<span class="number">44100</span>&quot; <span class="built_in">echo</span> %i
 <span class="keyword">for</span> %i <span class="keyword">in</span> (*.mp3 *.flac *.m4a *.wav) <span class="keyword">do</span> @<span class="keyword">for</span> /f %a <span class="keyword">in</span> (&#x27;ffprobe -v error -select_streams a:<span class="number">0</span> -show_entries stream^=sample_rate -of default^=noprint_wrappers^=<span class="number">1</span>:nokey^=<span class="number">1</span> &quot;%i&quot; <span class="number">2</span>^&gt;<span class="built_in">nul</span>&#x27;) <span class="keyword">do</span> @<span class="keyword">if</span> <span class="keyword">not</span> &quot;%a&quot;==&quot;<span class="number">44100</span>&quot; (ffmpeg -i &quot;%i&quot; -ar <span class="number">44100</span> -b:a <span class="number">320</span>k &quot;<span class="variable">%i.temp%</span>~xi&quot; &amp;&amp; <span class="built_in">del</span> &quot;%i&quot; &amp;&amp; <span class="built_in">ren</span> &quot;<span class="variable">%i.temp%</span>~xi&quot; &quot;%~nxi&quot;)</code></pre>
 <p>如果耳机放歌偶尔突然爆音或者没声，电脑的 Type-C 插口有专门的充电口的，看看是不是插错口了。。。鬼知道我被这个困扰了多久啊，还以为新耳机质量不行。</p>
+<p>然后那个 ncm 转 mp3 会带下划线，用这个 <code>rename_mp3.py</code> 修复即可：</p>
+<pre><code class="highlight python"><span class="keyword">import</span> os
+
+<span class="keyword">import</span> shutil
+
+<span class="keyword">import</span> sys
+
+  
+
+<span class="keyword">def</span> <span class="title function_">rename_mp3_files_in_directory</span>(<span class="params">directory</span>):
+
+    <span class="string">&quot;&quot;&quot;</span>
+<span class="string"></span>
+<span class="string">    重命名指定目录下的 MP3 文件，移除文件名中的下划线 &#x27;_&#x27;,</span>
+<span class="string"></span>
+<span class="string">    使其与对应的 LRC 文件名匹配（LRC 文件名不含下划线）。</span>
+<span class="string"></span>
+<span class="string">  </span>
+<span class="string"></span>
+<span class="string">    例如：</span>
+<span class="string"></span>
+<span class="string">    - 如果存在 &quot;歌手_-_歌曲名.mp3&quot; 和 &quot;歌手 - 歌曲名.lrc&quot;，</span>
+<span class="string"></span>
+<span class="string">    - MP3 文件将被重命名为 &quot;歌手 - 歌曲名.mp3&quot;。</span>
+<span class="string"></span>
+<span class="string">    &quot;&quot;&quot;</span>
+
+    <span class="comment"># 检查目录是否存在</span>
+
+    <span class="keyword">if</span> <span class="keyword">not</span> os.path.isdir(directory):
+
+        <span class="built_in">print</span>(<span class="string">f&quot;错误：目录 &#x27;<span class="subst">&#123;directory&#125;</span>&#x27; 不存在或不是一个有效的目录。&quot;</span>)
+
+        <span class="keyword">return</span>
+
+  
+
+    <span class="built_in">print</span>(<span class="string">f&quot;正在扫描目录: &#x27;<span class="subst">&#123;directory&#125;</span>&#x27;&quot;</span>)
+
+    <span class="comment"># 获取目录下所有 .mp3 和 .lrc 文件</span>
+
+    <span class="keyword">try</span>:
+
+        all_files = os.listdir(directory)
+
+    <span class="keyword">except</span> Exception <span class="keyword">as</span> e:
+
+        <span class="built_in">print</span>(<span class="string">f&quot;错误：无法读取目录内容: <span class="subst">&#123;e&#125;</span>&quot;</span>)
+
+        <span class="keyword">return</span>
+
+  
+
+    mp3_files = &#123;f <span class="keyword">for</span> f <span class="keyword">in</span> all_files <span class="keyword">if</span> f.lower().endswith(<span class="string">&#x27;.mp3&#x27;</span>)&#125;
+
+    lrc_files_basenames = &#123;os.path.splitext(f)[<span class="number">0</span>] <span class="keyword">for</span> f <span class="keyword">in</span> all_files <span class="keyword">if</span> f.lower().endswith(<span class="string">&#x27;.lrc&#x27;</span>)&#125;
+
+  
+
+    <span class="keyword">if</span> <span class="keyword">not</span> mp3_files:
+
+        <span class="built_in">print</span>(<span class="string">&quot;未在该目录中找到任何 .mp3 文件。&quot;</span>)
+
+        <span class="keyword">return</span>
+
+  
+
+    <span class="built_in">print</span>(<span class="string">&quot;开始扫描并重命名文件...&quot;</span>)
+
+    renamed_count = <span class="number">0</span>
+
+    skipped_count = <span class="number">0</span>
+
+  
+
+    <span class="keyword">for</span> mp3_filename <span class="keyword">in</span> mp3_files:
+
+        mp3_basename = os.path.splitext(mp3_filename)[<span class="number">0</span>]
+
+  
+
+        <span class="keyword">if</span> <span class="string">&#x27;_&#x27;</span> <span class="keyword">not</span> <span class="keyword">in</span> mp3_basename:
+
+            <span class="keyword">continue</span>
+
+  
+
+        target_basename = mp3_basename.replace(<span class="string">&#x27;_&#x27;</span>, <span class="string">&#x27; &#x27;</span>)
+
+        <span class="keyword">if</span> target_basename <span class="keyword">in</span> lrc_files_basenames:
+
+            target_mp3_filename = target_basename + <span class="string">&#x27;.mp3&#x27;</span>
+
+            source_path = os.path.join(directory, mp3_filename)
+
+            target_path = os.path.join(directory, target_mp3_filename)
+
+  
+
+            <span class="keyword">if</span> os.path.exists(target_path):
+
+                <span class="built_in">print</span>(<span class="string">f&quot;跳过: 目标文件 &#x27;<span class="subst">&#123;target_mp3_filename&#125;</span>&#x27; 已存在。&quot;</span>)
+
+                skipped_count += <span class="number">1</span>
+
+                <span class="keyword">continue</span>
+
+  
+
+            <span class="keyword">try</span>:
+
+                shutil.move(source_path, target_path)
+
+                <span class="built_in">print</span>(<span class="string">f&quot;成功: &#x27;<span class="subst">&#123;mp3_filename&#125;</span>&#x27;  -&gt;  &#x27;<span class="subst">&#123;target_mp3_filename&#125;</span>&#x27;&quot;</span>)
+
+                renamed_count += <span class="number">1</span>
+
+            <span class="keyword">except</span> Exception <span class="keyword">as</span> e:
+
+                <span class="built_in">print</span>(<span class="string">f&quot;错误: 重命名 &#x27;<span class="subst">&#123;mp3_filename&#125;</span>&#x27; 时发生错误: <span class="subst">&#123;e&#125;</span>&quot;</span>)
+
+                skipped_count += <span class="number">1</span>
+
+  
+
+    <span class="built_in">print</span>(<span class="string">&quot;\n--- 处理结果 ---&quot;</span>)
+
+    <span class="keyword">if</span> renamed_count == <span class="number">0</span> <span class="keyword">and</span> skipped_count == <span class="number">0</span>:
+
+        <span class="built_in">print</span>(<span class="string">&quot;扫描完成，没有文件需要被重命名。&quot;</span>)
+
+    <span class="keyword">else</span>:
+
+        <span class="built_in">print</span>(<span class="string">f&quot;成功重命名: <span class="subst">&#123;renamed_count&#125;</span> 个文件&quot;</span>)
+
+        <span class="built_in">print</span>(<span class="string">f&quot;跳过或失败: <span class="subst">&#123;skipped_count&#125;</span> 个文件&quot;</span>)
+
+        <span class="built_in">print</span>(<span class="string">&quot;处理完毕！&quot;</span>)
+
+  
+  
+
+<span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:
+
+    <span class="comment"># 检查是否通过命令行参数提供了路径</span>
+
+    <span class="keyword">if</span> <span class="built_in">len</span>(sys.argv) &gt; <span class="number">1</span>:
+
+        <span class="comment"># 使用命令行第一个参数作为目录路径</span>
+
+        target_directory = sys.argv[<span class="number">1</span>]
+
+    <span class="keyword">else</span>:
+
+        <span class="comment"># 如果没有提供参数，则提示用户输入</span>
+
+        target_directory = <span class="built_in">input</span>(<span class="string">&quot;请输入音乐文件所在的文件夹路径，然后按回车：\n&quot;</span>)
+
+  
+
+    <span class="comment"># 去除路径两端可能存在的引号和空格</span>
+
+    target_directory = target_directory.strip().strip(<span class="string">&#x27;&quot;\&#x27;&#x27;</span>)
+
+    rename_mp3_files_in_directory(target_directory)
+
+    <span class="comment"># 在windows上运行时，防止命令行窗口自动关闭</span>
+
+    <span class="keyword">if</span> sys.platform == <span class="string">&quot;win32&quot;</span>:
+
+        os.system(<span class="string">&quot;pause&quot;</span>)</code></pre>
 <h1 id="博客"><a class="markdownIt-Anchor" href="#博客"></a> 博客</h1>
 <p>我用的 Hexo+Argon 搭建的。本地之前用 Typora，现在用 Obsidian 书写博客。</p>
 <p>有一些要解决的东西，比如 Admonition 语法支持，新建 script 文件然后使用 <code>admonition.js</code>：</p>
