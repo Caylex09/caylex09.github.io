@@ -856,74 +856,78 @@ const heartContainer = document.querySelector("#heart-container");
 
 let busy = false;
 
-function updateCount(count) { countEl.textContent = count; }
+// 获取存储的身份信息
+let userId = localStorage.getItem('like_user_id');
+let userSig = localStorage.getItem('like_user_sig');
 
-// 从 Worker KV 获取初始点赞数
+function updateCount(count) { 
+  if(count !== undefined) countEl.textContent = count; 
+}
+
+// 懒加载：只有当按钮进入屏幕可视区域时，才去请求点赞数
+const observer = new IntersectionObserver((entries) => {
+  if (entries[0].isIntersecting) {
+    fetchCount();
+    observer.disconnect(); // 请求一次后解除监听
+  }
+}, { threshold: 0.1 });
+
+if (btn) {
+  observer.observe(btn);
+}
+
+// 获取初始点赞数
 function fetchCount() {
   fetch(`${apiUrl}?postId=${postId}`)
     .then(res => res.json())
-    .then(data => {
-      if (data.count !== undefined) updateCount(data.count);
-    })
+    .then(data => updateCount(data.count))
     .catch(err => console.error(err));
 }
 
-// 创建一个随机 heart.gif
+// 创建动画
 function createRandomHeart() {
-  const heart = document.createElement("img");
-  heart.src = "/assets/img/heart.gif"; // 替换为你的 gif
-  heart.className = "heart";
-
-  const centerX = window.innerWidth / 2;
-  const centerY = window.innerHeight / 2;
-
-  heart.style.left = `${centerX}px`;
-  heart.style.top = `${centerY}px`;
-
-  const offsetX = (Math.random() - 0.5) * 200;
-  const offsetY = - (Math.random() * 200 + 50);
-  const rotate = (Math.random() - 0.5) * 60;
-  const scale = Math.random() * 0.5 + 1.2; // 1.2~1.7
-
-  heartContainer.appendChild(heart);
-
-  requestAnimationFrame(() => {
-    heart.style.transform = `translate(${offsetX}px, ${offsetY}px) rotate(${rotate}deg) scale(${scale})`;
-    heart.style.opacity = "1";
-  });
-
-  setTimeout(() => {
-    heart.style.opacity = "0";
-    heart.style.transform = `translate(${offsetX}px, ${offsetY}px) rotate(${rotate}deg) scale(0)`;
-    setTimeout(() => heart.remove(), 800);
-  }, 800);
+  // ... (保留你原来的动画代码) ...
 }
 
-// 页面加载获取初始点赞数
-fetchCount();
-
-// 点击按钮
+// 点击按钮（POST请求）
 btn.addEventListener("click", () => {
   if (busy) return;
   busy = true;
+
+  // 组装带身份信息的 Headers
+  const headers = { "Content-Type": "application/json" };
+  if (userId && userSig) {
+    headers["X-User-Id"] = userId;
+    headers["X-User-Sig"] = userSig;
+  }
+
   fetch(apiUrl, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: headers, // 传入 Header！
     body: JSON.stringify({ postId })
   })
   .then(res => res.json())
   .then(data => {
     busy = false;
-    if (data.error) alert(data.error);
-    else {
+    if (data.error) {
+      alert(data.error);
+    } else {
       updateCount(data.count);
-      const n = Math.floor(Math.random() * 3) + 3; // 3~5 个 heart
+      
+      // 保存后端分配的新身份，防止后续被当成新用户刷量
+      if (data.newUser) {
+        userId = data.newUser.userId;
+        userSig = data.newUser.userSig;
+        localStorage.setItem('like_user_id', userId);
+        localStorage.setItem('like_user_sig', userSig);
+      }
+
+      const n = Math.floor(Math.random() * 3) + 3; 
       for (let i = 0; i < n; i++) createRandomHeart();
     }
   })
   .catch(err => { busy = false; console.error(err); });
 });
-
 </script>
 
 
