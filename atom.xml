@@ -6,7 +6,7 @@
   <link href="http://blog.cyx2009.top/atom.xml" rel="self"/>
   
   <link href="http://blog.cyx2009.top/"/>
-  <updated>2026-05-18T11:47:33.406Z</updated>
+  <updated>2026-05-20T06:05:38.571Z</updated>
   <id>http://blog.cyx2009.top/</id>
   
   <author>
@@ -21,13 +21,14 @@
     <link href="http://blog.cyx2009.top/archives/PKUCPC2026/"/>
     <id>http://blog.cyx2009.top/archives/PKUCPC2026/</id>
     <published>2026-05-18T04:49:00.000Z</published>
-    <updated>2026-05-18T11:47:33.406Z</updated>
+    <updated>2026-05-20T06:05:38.571Z</updated>
     
     
     <summary type="html">题目在 http://poj.openjudge.cn/campus2026/ 上。好像非小组成员能看但是不能提交。
- C
-枚举答案为 x 则分 ≤x 和 &gt;x 的讨论，再分奇偶性。注意到 +2 的话缩得很快，所以最优解肯定是在某个 [ai−1,ai+1] 范围内的，枚举一下 check 即可。
-瓶颈在排序的 O(nl…</summary>
+ A
+rt(x)={x mod 9=09x mod 9≠0x mod 9
+一个不能过的想法是维护区间长度模 ϕ(9) 的结果，可能还得单独维护 len=1 的。合并复杂度可能 63×63 了爆干净了。
+…</summary>
     
     
     
@@ -62,7 +63,7 @@ https://atcoder.jp/contests/arc219/tasks/arc219_a
     <link href="http://blog.cyx2009.top/archives/potpourri_13/"/>
     <id>http://blog.cyx2009.top/archives/potpourri_13/</id>
     <published>2026-05-09T12:18:00.000Z</published>
-    <updated>2026-05-19T08:17:06.479Z</updated>
+    <updated>2026-05-21T11:53:32.406Z</updated>
     
     
     <summary type="html">P4747 [CERC2017] Intrinsic Interval

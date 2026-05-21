@@ -15,7 +15,7 @@
     <atom:link href="http://blog.cyx2009.top/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>沉石鱼惊旋 的博客</description>
-    <pubDate>Mon, 18 May 2026 11:47:33 GMT</pubDate>
+    <pubDate>Wed, 20 May 2026 06:05:38 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -25,9 +25,10 @@
       <pubDate>Mon, 18 May 2026 04:49:00 GMT</pubDate>
       
       <description>题目在 http://poj.openjudge.cn/campus2026/ 上。好像非小组成员能看但是不能提交。
- C
-枚举答案为 x 则分 ≤x 和 &gt;x 的讨论，再分奇偶性。注意到 +2 的话缩得很快，所以最优解肯定是在某个 [ai−1,ai+1] 范围内的，枚举一下 check 即可。
-瓶颈在排序的 O(nl…</description>
+ A
+rt(x)={x mod 9=09x mod 9≠0x mod 9
+一个不能过的想法是维护区间长度模 ϕ(9) 的结果，可能还得单独维护 len=1 的。合并复杂度可能 63×63 了爆干净了。
+…</description>
       
       
       
