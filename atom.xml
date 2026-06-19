@@ -6,7 +6,7 @@
   <link href="http://blog.cyx2009.top/atom.xml" rel="self"/>
   
   <link href="http://blog.cyx2009.top/"/>
-  <updated>2026-05-22T07:29:16.781Z</updated>
+  <updated>2026-06-19T15:36:23.691Z</updated>
   <id>http://blog.cyx2009.top/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>[闲话] 2026-06-19 日记</title>
+    <link href="http://blog.cyx2009.top/archives/2026-06-19/"/>
+    <id>http://blog.cyx2009.top/archives/2026-06-19/</id>
+    <published>2026-06-19T14:22:00.000Z</published>
+    <updated>2026-06-19T15:36:23.691Z</updated>
+    
+    
+    <summary>有东西被加密了，请输入密码查看。</summary>
+    
+    
+    
+    <category term="Essay" scheme="http://blog.cyx2009.top/categories/Essay/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>[题解] PKUCPC2026 题解</title>
@@ -63,7 +80,7 @@ https://atcoder.jp/contests/arc219/tasks/arc219_a
     <link href="http://blog.cyx2009.top/archives/potpourri_13/"/>
     <id>http://blog.cyx2009.top/archives/potpourri_13/</id>
     <published>2026-05-09T12:18:00.000Z</published>
-    <updated>2026-05-25T10:58:35.951Z</updated>
+    <updated>2026-06-19T07:11:02.724Z</updated>
     
     
     <summary type="html">P4747 [CERC2017] Intrinsic Interval
@@ -411,29 +428,6 @@ https://www.luogu.com.cn/problem/T718067
 这个题和 20250725 的梦熊模拟 T4 好像是一个题。
 如果 l 固定，我们可以想到连边，但是有环就炸了。
 不妨每个操作 (x,y) 开一个虚…</summary>
-    
-    
-    
-    <category term="Solution" scheme="http://blog.cyx2009.top/categories/Solution/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>[题解] 杂题选讲 10</title>
-    <link href="http://blog.cyx2009.top/archives/potpourri_10/"/>
-    <id>http://blog.cyx2009.top/archives/potpourri_10/</id>
-    <published>2025-12-09T13:09:00.000Z</published>
-    <updated>2026-03-06T08:16:48.858Z</updated>
-    
-    
-    <summary type="html">CF715C Digit Tree
-独立想出；思考时间：中；已完成代码；代码时间：中偏长；推荐指数：还可以；
-先把式子拆开，设 ui 表示 i→1 爬上去的数。di 表示 1→i 爬下来的数。
-那么爬上去的部分是：
-(up[u]-up[lca])/pw10[dep[lca]-1]
-爬下来的部分是：
-down[v]-do…</summary>
     
     
     

@@ -15,8 +15,27 @@
     <atom:link href="http://blog.cyx2009.top/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>沉石鱼惊旋 的博客</description>
-    <pubDate>Fri, 22 May 2026 07:29:16 GMT</pubDate>
+    <pubDate>Fri, 19 Jun 2026 15:36:23 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[闲话] 2026-06-19 日记</title>
+      <link>http://blog.cyx2009.top/archives/2026-06-19/</link>
+      <guid>http://blog.cyx2009.top/archives/2026-06-19/</guid>
+      <pubDate>Fri, 19 Jun 2026 14:22:00 GMT</pubDate>
+      
+      <description><![CDATA[有东西被加密了，请输入密码查看。]]></description>
+      
+      
+      
+      
+      <category domain="http://blog.cyx2009.top/categories/Essay/">Essay</category>
+      
+      
+      
+      <comments>http://blog.cyx2009.top/archives/2026-06-19/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[题解] PKUCPC2026 题解</title>
@@ -456,31 +475,6 @@ https://www.luogu.com.cn/problem/T718067
       
       
       <comments>http://blog.cyx2009.top/archives/potpourri_11/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[题解] 杂题选讲 10</title>
-      <link>http://blog.cyx2009.top/archives/potpourri_10/</link>
-      <guid>http://blog.cyx2009.top/archives/potpourri_10/</guid>
-      <pubDate>Tue, 09 Dec 2025 13:09:00 GMT</pubDate>
-      
-      <description>CF715C Digit Tree
-独立想出；思考时间：中；已完成代码；代码时间：中偏长；推荐指数：还可以；
-先把式子拆开，设 ui 表示 i→1 爬上去的数。di 表示 1→i 爬下来的数。
-那么爬上去的部分是：
-(up[u]-up[lca])/pw10[dep[lca]-1]
-爬下来的部分是：
-down[v]-do…</description>
-      
-      
-      
-      
-      <category domain="http://blog.cyx2009.top/categories/Solution/">Solution</category>
-      
-      
-      
-      <comments>http://blog.cyx2009.top/archives/potpourri_10/#disqus_thread</comments>
       
     </item>
     
