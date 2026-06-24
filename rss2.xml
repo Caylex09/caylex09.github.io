@@ -15,8 +15,29 @@
     <atom:link href="http://blog.cyx2009.top/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>沉石鱼惊旋 的博客</description>
-    <pubDate>Fri, 19 Jun 2026 15:36:23 GMT</pubDate>
+    <pubDate>Wed, 24 Jun 2026 02:07:08 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[闲话] 词元一词从何而来？</title>
+      <link>http://blog.cyx2009.top/archives/where_ciyuan/</link>
+      <guid>http://blog.cyx2009.top/archives/where_ciyuan/</guid>
+      <pubDate>Wed, 24 Jun 2026 00:37:00 GMT</pubDate>
+      
+      <description>最近在玩无悔华夏。昨日发现官方公众号爆料了 【名臣新玩法】宋词——酒肆歌楼唱新声，一曲词韵入大宋。
+作为古诗词爱好者，我阅读了本文，但是对于本文中词元一词的使用，略感诧异。在无悔华夏的大唐时代中唐诗玩法，收集到的名臣诗词可以得到诗意这一属性的。而在大宋时代的宋词玩法中，这一相对应的概念使用了词元一次。
+近段时间，词元一…</description>
+      
+      
+      
+      
+      <category domain="http://blog.cyx2009.top/categories/Essay/">Essay</category>
+      
+      
+      
+      <comments>http://blog.cyx2009.top/archives/where_ciyuan/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[闲话] 2026-06-19 日记</title>
@@ -451,30 +472,6 @@ Summer School (July 12 — July 16, 2024) 栗师 Combinatorial Optimizati…</de
       
       
       <comments>http://blog.cyx2009.top/archives/LinearProgramming/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[题解] 杂题选讲 11</title>
-      <link>http://blog.cyx2009.top/archives/potpourri_11/</link>
-      <guid>http://blog.cyx2009.top/archives/potpourri_11/</guid>
-      <pubDate>Tue, 06 Jan 2026 11:42:00 GMT</pubDate>
-      
-      <description>模拟赛 序列操作
-看过题解；思考时间：nan；已完成代码；代码时间：中；推荐指数：好题；
-https://www.luogu.com.cn/problem/T718067
-这个题和 20250725 的梦熊模拟 T4 好像是一个题。
-如果 l 固定，我们可以想到连边，但是有环就炸了。
-不妨每个操作 (x,y) 开一个虚…</description>
-      
-      
-      
-      
-      <category domain="http://blog.cyx2009.top/categories/Solution/">Solution</category>
-      
-      
-      
-      <comments>http://blog.cyx2009.top/archives/potpourri_11/#disqus_thread</comments>
       
     </item>
     
