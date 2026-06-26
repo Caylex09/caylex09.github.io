@@ -15,7 +15,7 @@
     <atom:link href="http://blog.cyx2009.top/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>沉石鱼惊旋 的博客</description>
-    <pubDate>Fri, 26 Jun 2026 10:46:23 GMT</pubDate>
+    <pubDate>Fri, 26 Jun 2026 11:10:30 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -25,7 +25,10 @@
       <pubDate>Fri, 26 Jun 2026 10:45:00 GMT</pubDate>
       
       <description>AGC012F Prefix Median
-#atcoder</description>
+考虑一个序列合法的充要条件，不妨倒着生成 b，看作是每次删两个数后再求中位数。
+
+首先需要满足 bi∈[an−i+1,an+i−1]，因为中位数移动每次最多移动一位。
+需要满足不存在 j&lt;i 满足 bi∈(bj,bj+1) 或 bi∈(bj+1,bj)。这是因为，中位数至多移…</description>
       
       
       

@@ -6,7 +6,7 @@
   <link href="http://blog.cyx2009.top/atom.xml" rel="self"/>
   
   <link href="http://blog.cyx2009.top/"/>
-  <updated>2026-06-26T10:46:23.991Z</updated>
+  <updated>2026-06-26T11:10:30.812Z</updated>
   <id>http://blog.cyx2009.top/</id>
   
   <author>
@@ -21,11 +21,14 @@
     <link href="http://blog.cyx2009.top/archives/potpourri_14/"/>
     <id>http://blog.cyx2009.top/archives/potpourri_14/</id>
     <published>2026-06-26T10:45:00.000Z</published>
-    <updated>2026-06-26T10:46:23.991Z</updated>
+    <updated>2026-06-26T11:10:30.812Z</updated>
     
     
     <summary type="html">AGC012F Prefix Median
-#atcoder</summary>
+考虑一个序列合法的充要条件，不妨倒着生成 b，看作是每次删两个数后再求中位数。
+
+首先需要满足 bi∈[an−i+1,an+i−1]，因为中位数移动每次最多移动一位。
+需要满足不存在 j&lt;i 满足 bi∈(bj,bj+1) 或 bi∈(bj+1,bj)。这是因为，中位数至多移…</summary>
     
     
     
