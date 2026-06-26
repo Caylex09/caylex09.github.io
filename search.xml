@@ -323,6 +323,12 @@
       </categories>
       
       
+        <tags>
+            
+            <tag> 数论 </tag>
+            
+        </tags>
+      
     </entry>
     
     
@@ -608,6 +614,12 @@
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> 代数几何 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -2501,11 +2513,11 @@
             
             <tag> 模拟赛 </tag>
             
+            <tag> 分块 </tag>
+            
             <tag> 平衡树 </tag>
             
             <tag> 树状数组 </tag>
-            
-            <tag> 分块 </tag>
             
         </tags>
       
@@ -3582,11 +3594,11 @@
             
             <tag> 数论 </tag>
             
+            <tag> 双向搜索 </tag>
+            
             <tag> 随机 </tag>
             
             <tag> 生日悖论 </tag>
-            
-            <tag> 双向搜索 </tag>
             
         </tags>
       
