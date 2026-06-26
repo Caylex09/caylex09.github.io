@@ -657,14 +657,14 @@
 						</div>
 					
 						
-							<div class="post-meta-devide">|</div>
+							<!-- <div class="post-meta-devide">|</div> -->
 						
-						<div class="post-meta-detail post-meta-detail-words">
+						<!-- <div class="post-meta-detail post-meta-detail-words">
 							<i class="fa fa-book" aria-hidden="true"></i>
 							<span id="busuanzi_container_page_pv">
-								阅读 <span id="busuanzi_value_page_pv"></span> 次
+								阅读<span id="busuanzi_value_page_pv"></span>次
 							</span>
-						</div>
+						</div> -->
 					
 						
 							<div class="post-meta-devide">|</div>
@@ -732,14 +732,14 @@
 						</div>
 					
 						
-							<div class="post-meta-devide">|</div>
+							<!-- <div class="post-meta-devide">|</div> -->
 						
-						<div class="post-meta-detail post-meta-detail-words">
+						<!-- <div class="post-meta-detail post-meta-detail-words">
 							<i class="fa fa-book" aria-hidden="true"></i>
 							<span id="busuanzi_container_page_pv">
-								阅读 <span id="busuanzi_value_page_pv"></span> 次
+								阅读<span id="busuanzi_value_page_pv"></span>次
 							</span>
-						</div>
+						</div> -->
 					
 						
 							<div class="post-meta-devide">|</div>
@@ -765,7 +765,7 @@
 		
 			
 				题目翻译
-定义字符串的费用是 (i,j) 的个数满足 1≤i<j≤n,si=sj,si+1=sj+1。
+定义字符串的费用是 (i,j) 的个数满足 1≤i&lt;j≤n,si=sj,si+1=sj+1。
 给定 n≤2×105 和字符集大小 k(k≤26)，用字母表前 k 个小写字母组成的长度为 n 的字符串中，找任意一种费用最小的字符串。
  题目思路
 字符集大小为 k 的长度为 2 的本质不同的字符串有 k2 个。对于 n≤k2+1，我们都可以构...
@@ -804,14 +804,14 @@
 						</div>
 					
 						
-							<div class="post-meta-devide">|</div>
+							<!-- <div class="post-meta-devide">|</div> -->
 						
-						<div class="post-meta-detail post-meta-detail-words">
+						<!-- <div class="post-meta-detail post-meta-detail-words">
 							<i class="fa fa-book" aria-hidden="true"></i>
 							<span id="busuanzi_container_page_pv">
-								阅读 <span id="busuanzi_value_page_pv"></span> 次
+								阅读<span id="busuanzi_value_page_pv"></span>次
 							</span>
-						</div>
+						</div> -->
 					
 						
 							<div class="post-meta-devide">|</div>
@@ -840,11 +840,11 @@
 从交换相邻这里，我们可以明显看出来，这有些类似冒泡排序。
 但是，我们要来思考一下怎样情况输出 NO。
 我们就用冒泡排序的代码来分析一下。为了方便分析，就用 for 循环版的。
-for(int i=1;i<=n-1;i++)
+for(int i=1;i&lt;=n-1;i++)
 {
-	for(int j=1;j<=n-i;j++)
+	for(int j=1;j&lt;=n-i;j++)
 	{
-		if(a[j]<a[j+1])
+		if(a[j]&lt;a[j+1])
 		{
 			swa...
 			
