@@ -156,6 +156,13 @@
 <script src="/assets/vendor/smoothscroll/smoothscroll1.js"></script>
 
 	
+	<style>
+		/* 修复固定顶栏遮挡锚点跳转，用 scroll-padding-top 全局偏移，避免被 headroom 动态显隐影响 */
+		html { scroll-padding-top: 75px; }
+		@media screen and (max-width: 900px) {
+			html { scroll-padding-top: 60px; }
+		}
+	</style>
 <meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="沉石鱼惊旋 的博客" type="application/atom+xml">
 <link rel="alternate" href="/rss2.xml" title="沉石鱼惊旋 的博客" type="application/rss+xml">
 </head>
@@ -532,7 +539,7 @@
 							<nav class="site-state">
 								<div class="site-state-item site-state-posts">
 									<a href="/archives">
-										<span class="site-state-item-count">248</span>
+										<span class="site-state-item-count">249</span>
 										<span class="site-state-item-name">文章</span>
 									</a>
 								</div>
@@ -606,7 +613,7 @@
 				</button>
 			</div>
 			<div class="modal-body">
-				<a class="badge badge-secondary tag" href="/categories/Essay/" rel="tag">Essay <span class="tag-num">16</span></a><a class="badge badge-secondary tag" href="/categories/Solution/" rel="tag">Solution <span class="tag-num">204</span></a><a class="badge badge-secondary tag" href="/categories/StudyNote/" rel="tag">StudyNote <span class="tag-num">8</span></a><a class="badge badge-secondary tag" href="/categories/Technology/" rel="tag">Technology <span class="tag-num">3</span></a><a class="badge badge-secondary tag" href="/categories/TravelNote/" rel="tag">TravelNote <span class="tag-num">17</span></a>
+				<a class="badge badge-secondary tag" href="/categories/Essay/" rel="tag">Essay <span class="tag-num">16</span></a><a class="badge badge-secondary tag" href="/categories/Solution/" rel="tag">Solution <span class="tag-num">204</span></a><a class="badge badge-secondary tag" href="/categories/StudyNote/" rel="tag">StudyNote <span class="tag-num">9</span></a><a class="badge badge-secondary tag" href="/categories/Technology/" rel="tag">Technology <span class="tag-num">3</span></a><a class="badge badge-secondary tag" href="/categories/TravelNote/" rel="tag">TravelNote <span class="tag-num">17</span></a>
 			</div>
 		</div>
 	</div>
@@ -639,13 +646,13 @@
 	<article class="post card bg-white shadow-sm border-0 post-preview">
 	<header class="post-header text-center">
 		
-		<a class="post-title" href="/archives/20220819_mock/">[题解] 20220819 | CSP2022 考前模拟赛 做题笔记</a>
+		<a class="post-title" href="/archives/20220812_mock/">[题解] 20220812 | CSP2022 考前模拟赛 做题笔记</a>
 		<div class="post-meta">
 			
 						
 						<div class="post-meta-detail post-meta-detail-time">
 							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2022-8-23 19:52:00 | 编辑于 2026-6-26 20:25:26">2022-8-23 19:52
+							<time title="发布于 2022-8-23 19:52:00 | 编辑于 2026-6-26 20:25:24">2022-8-23 19:52
 							</time>
 						</div>
 					
@@ -672,7 +679,7 @@
 						
 						<div class="post-meta-detail post-meta-detail-words">
 							<i class="fa fa-file-word-o" aria-hidden="true"></i>
-							975 字
+							3.7k 字
 						</div>
 					
 						
@@ -680,7 +687,7 @@
 						
 						<div class="post-meta-detail post-meta-detail-readingtime">
 							<i class="fa fa-hourglass-end" aria-hidden="true"></i>
-							5 分钟
+							21 分钟
 						</div>
 					
 		</div>
@@ -690,14 +697,20 @@
 	<div class="post-content">
 		
 			
-				乒乓比赛
-考虑到最好的方法，是两人一起反向移动（即 A 去贴贴 B，B 去贴贴 A）。
-但中间桌子数为奇数时无法贴贴，考虑改变奇偶性。
-所以肯定有一人到最前或最后，然后再反向移动去贴贴。
+				呜呜呜卞宇轩等巨佬出的太毒瘤了呜呜呜
+ cube
+模拟。
+真就模拟。
+好好想咋模拟。
+不然和我一样瞎写。
+我瞎写写了 7 KB 的模拟。
+我太菜了只会这种一点一点转。
+不像 爬不？立刻！ 巨佬一样 5 min 爆切。
 #include&lt;bits/stdc++.h&gt;
-#define endl '\n'
-#define S(x) scanf("%lld",&amp;x);
-#define ...
+using namespace std;
+int t;
+int a[130];
+bo...
 			
 		
 	</div>

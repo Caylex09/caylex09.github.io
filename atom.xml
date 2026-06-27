@@ -6,7 +6,7 @@
   <link href="http://blog.cyx2009.top/atom.xml" rel="self"/>
   
   <link href="http://blog.cyx2009.top/"/>
-  <updated>2026-06-26T11:10:30.812Z</updated>
+  <updated>2026-06-27T10:44:16.952Z</updated>
   <id>http://blog.cyx2009.top/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>[笔记] 中国古代文学史</title>
+    <link href="http://blog.cyx2009.top/archives/classical-chinese-literature/"/>
+    <id>http://blog.cyx2009.top/archives/classical-chinese-literature/</id>
+    <published>2026-06-27T02:12:00.000Z</published>
+    <updated>2026-06-27T10:44:16.952Z</updated>
+    
+    
+    <summary type="html">昨天刷到了
+
+
+
+
+  
+这样一个视频。应该是 2009 年北师大的中国古代文学史公开课。
+感觉有点厉害，昨天看了一下第一集，看了一下目录非常全，应当好好学习。
+于是开一篇这样的笔记当上课笔记本。
+不太一定是连续的人话，可能就记一点关键信息。
+ 先秦文学
+ 先秦文学概论
+周朝建立，政治文化变革，称为制礼作乐。礼就是在政…</summary>
+    
+    
+    
+    <category term="StudyNote" scheme="http://blog.cyx2009.top/categories/StudyNote/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>[题解] 杂题选讲 14</title>
@@ -406,25 +435,6 @@ Email 可以用 gmail，一个手机注册两个号，手机上清掉浏览数�
     
     
     <category term="TravelNote" scheme="http://blog.cyx2009.top/categories/TravelNote/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>[题解] P14986 GCD Maximum</title>
-    <link href="http://blog.cyx2009.top/archives/P14986/"/>
-    <id>http://blog.cyx2009.top/archives/P14986/</id>
-    <published>2026-01-18T06:13:00.000Z</published>
-    <updated>2026-02-23T12:47:57.835Z</updated>
-    
-    
-    <summary type="html">注意到 [1,n] 中至多 ⌊n2⌋ 个数有 2 作为因子。
-故 n 为偶数时 ans=2，否则 ans=1。
-偶数的话 2,1,4,3,…,n,n−1 匹配即可。奇数 1,2,3,4,…,n−1,n 匹配即可。</summary>
-    
-    
-    
-    <category term="Solution" scheme="http://blog.cyx2009.top/categories/Solution/"/>
     
     
   </entry>
