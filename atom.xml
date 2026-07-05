@@ -6,7 +6,7 @@
   <link href="http://blog.cyx2009.top/atom.xml" rel="self"/>
   
   <link href="http://blog.cyx2009.top/"/>
-  <updated>2026-06-27T14:15:35.018Z</updated>
+  <updated>2026-07-05T12:42:34.893Z</updated>
   <id>http://blog.cyx2009.top/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>[游记] NOI 2026 游记</title>
+    <link href="http://blog.cyx2009.top/archives/NOI2026/"/>
+    <id>http://blog.cyx2009.top/archives/NOI2026/</id>
+    <published>2026-07-05T12:39:00.000Z</published>
+    <updated>2026-07-05T12:42:34.893Z</updated>
+    
+    
+    <summary type="html">其实我都不知道这篇文章应该算游记还是算闲话。
+别死。
+ 2026.07.05
+开了游记。今天做了一下 potpourri_14 里的 CF2241G Summmon 发现这个题真的很深刻，我一直没有学会过单调栈。</summary>
+    
+    
+    
+    <category term="TravelNote" scheme="http://blog.cyx2009.top/categories/TravelNote/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>[笔记] 中国古代文学史</title>
     <link href="http://blog.cyx2009.top/archives/classical-chinese-literature/"/>
     <id>http://blog.cyx2009.top/archives/classical-chinese-literature/</id>
     <published>2026-06-27T02:12:00.000Z</published>
-    <updated>2026-06-27T14:15:35.018Z</updated>
+    <updated>2026-07-04T12:35:27.049Z</updated>
     
     
     <summary type="html">昨天刷到了
@@ -50,7 +70,7 @@
     <link href="http://blog.cyx2009.top/archives/potpourri_14/"/>
     <id>http://blog.cyx2009.top/archives/potpourri_14/</id>
     <published>2026-06-26T10:45:00.000Z</published>
-    <updated>2026-07-04T07:49:42.564Z</updated>
+    <updated>2026-07-05T12:31:29.328Z</updated>
     
     
     <summary type="html">AGC012F Prefix Median
@@ -414,27 +434,6 @@ Email 可以用 gmail，一个手机注册两个号，手机上清掉浏览数�
     
     
     <category term="Essay" scheme="http://blog.cyx2009.top/categories/Essay/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>[游记] WC 2026 游记</title>
-    <link href="http://blog.cyx2009.top/archives/WC2026/"/>
-    <id>http://blog.cyx2009.top/archives/WC2026/</id>
-    <published>2026-01-28T06:59:00.000Z</published>
-    <updated>2026-05-12T01:59:56.524Z</updated>
-    
-    
-    <summary type="html">Day -??? 2026/1/28
-参加了号爸在 cyyz 组织的集训营。
-早上坐火车从常州站到青岛站，还晚点了，怀疑是 ET 在车上 CS 没带耳机下包被乘务人员发现了以为有 C4。
-在车上和 ET 把这周 CS 经验刷了然后开始一起打植物大战僵尸。ET 王朝了。
-下午 14:00 到达了 yyc 那“度过了快乐童…</summary>
-    
-    
-    
-    <category term="TravelNote" scheme="http://blog.cyx2009.top/categories/TravelNote/"/>
     
     
   </entry>
