@@ -26,7 +26,7 @@
 <meta property="og:description" content="AGC012F Prefix Median 考虑一个序列合法的充要条件，不妨倒着生成 b，看作是每次删两个数后再求中位数。  首先需要满足 bi∈[an−i+1,an+i−1]，因为中位数移动每次最多移动一位。 需要满足不存在 j">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2026-06-26T10:45:00.000Z">
-<meta property="article:modified_time" content="2026-07-10T06:31:22.526Z">
+<meta property="article:modified_time" content="2026-07-10T07:20:46.807Z">
 <meta property="article:author" content="沉石鱼惊旋">
 <meta name="twitter:card" content="summary">
 
@@ -668,7 +668,7 @@
 						
 						<div class="post-meta-detail post-meta-detail-time">
 							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2026-6-26 18:45:00 | 编辑于 2026-7-10 14:31:22">2026-6-26 18:45
+							<time title="发布于 2026-6-26 18:45:00 | 编辑于 2026-7-10 15:20:46">2026-6-26 18:45
 							</time>
 						</div>
 					
@@ -695,7 +695,7 @@
 						
 						<div class="post-meta-detail post-meta-detail-words">
 							<i class="fa fa-file-word-o" aria-hidden="true"></i>
-							4.7k 字
+							5k 字
 						</div>
 					
 						
@@ -703,7 +703,7 @@
 						
 						<div class="post-meta-detail post-meta-detail-readingtime">
 							<i class="fa fa-hourglass-end" aria-hidden="true"></i>
-							20 分钟
+							21 分钟
 						</div>
 					
 		</div>
@@ -811,6 +811,15 @@
 <p>口胡的，没写代码。</p>
 <p>二维偏序的先随便删一删。显然新的警员只会出现在上凸包上面，然后考察凸包两条邻边，总之这里的点都可以对应的一段凸包的区间。然后就转到序列上面做。</p>
 <p>序列上面就是选若干个点消掉若干个包含他的区间，最小化选的点数量加上没消掉的区间数量。这个也就随便贪心一下或者 DP 一下应该也就好了。</p>
+<h1 id="cf1491g-switch-and-flip"><a class="markdownIt-Anchor" href="#cf1491g-switch-and-flip"></a> CF1491G Switch and Flip</h1>
+<p>口胡的，没写代码。</p>
+<p>应该是完全复述 cmd 的博客。<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/article/xc0b6wq5">https://www.luogu.com.cn/article/xc0b6wq5</a>。这个有点牛。</p>
+<p>没有 flip 操作就是对着置换环随便做做，有 flip 的话，考察每个点的状态发现把一个环拆掉之后会产生 2 个被 flip 的自环。对每个环这样做次数限制就爆了，那两个点还得找个过渡的给放回去。</p>
+<p>但是如果把环拼一起，本来就两个元素被 flip 了（因为两个元素用来把环接起来），这样刚刚好。</p>
+<p>所以如果有 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>k</mi></mrow><annotation encoding="application/x-tex">2k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span></span></span></span> 个环，两两拼一起做就行了。</p>
+<p>如果有 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>k</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">2k+1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 个环，最后一个环前面随便找一个自环拼过去就行了。</p>
+<p>如果只有恰好一个环，注意到可以 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>3</mn><mo separator="true">,</mo><mn>1</mn><mo separator="true">,</mo><mn>2</mn><mo stretchy="false">)</mo><mo>→</mo><mo stretchy="false">(</mo><mtext>−</mtext><mn>1</mn><mo separator="true">,</mo><mtext>−</mtext><mn>3</mn><mo separator="true">,</mo><mn>2</mn><mo stretchy="false">)</mo><mo>→</mo><mo stretchy="false">(</mo><mo>−</mo><mn>2</mn><mo separator="true">,</mo><mo>−</mo><mn>3</mn><mo separator="true">,</mo><mn>1</mn><mo stretchy="false">)</mo><mo>→</mo><mo stretchy="false">(</mo><mo>−</mo><mn>2</mn><mo separator="true">,</mo><mo>−</mo><mn>1</mn><mo separator="true">,</mo><mn>3</mn><mo stretchy="false">)</mo><mo>→</mo><mo stretchy="false">(</mo><mn>1</mn><mo separator="true">,</mo><mn>2</mn><mo separator="true">,</mo><mn>3</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(3,1,2)\to (−1,−3,2)\to (-2,-3,1)\to (-2,-1,3)\to (1,2,3)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">3</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">2</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">−</span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">−</span><span class="mord">3</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">2</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">−</span><span class="mord">2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">−</span><span class="mord">3</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">−</span><span class="mord">2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">−</span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">3</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">3</span><span class="mclose">)</span></span></span></span>。长度大于 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn></mrow><annotation encoding="application/x-tex">3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">3</span></span></span></span> 的环，可以先断掉变成两个环做，其中一个环只剩两个点的时候就是 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mo>−</mo><mn>1</mn><mo separator="true">,</mo><mo>−</mo><mn>3</mn><mo separator="true">,</mo><mn>2</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(-1,-3,2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">−</span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">−</span><span class="mord">3</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">2</span><span class="mclose">)</span></span></span></span> 的情况。对着上面这个步骤做就好了。</p>
+<p>太厉害了额额。</p>
 
 	</div>
 <!-- <div style="text-align: center; position: relative;">
