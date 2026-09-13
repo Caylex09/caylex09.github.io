@@ -15,8 +15,31 @@
     <atom:link href="http://blog.cyx2009.top/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>沉石鱼惊旋 的博客</description>
-    <pubDate>Mon, 06 Jul 2026 06:54:06 GMT</pubDate>
+    <pubDate>Sun, 13 Sep 2026 05:19:27 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[题解] 杂题选讲 15</title>
+      <link>http://blog.cyx2009.top/archives/potpourri_15/</link>
+      <guid>http://blog.cyx2009.top/archives/potpourri_15/</guid>
+      <pubDate>Sat, 05 Sep 2026 12:20:00 GMT</pubDate>
+      
+      <description>CF2247F Paths on a Grid
+注意到限制等价于，经过的路径集合完全相同。而集合完全相同可以用哈希刻画出现集合路径的元素，路径用权值乘起来表示，集合用路径权值加起来表示，这些都是可以轻松 DP 出来的。
+然后做完了。。？显然一个等价类除了空集随便选。。。
+ 模拟赛 代码源 蜗蜗的温控舱
+https://…</description>
+      
+      
+      
+      
+      <category domain="http://blog.cyx2009.top/categories/Solution/">Solution</category>
+      
+      
+      
+      <comments>http://blog.cyx2009.top/archives/potpourri_15/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[闲话] 2026-07-06 日记</title>
@@ -458,25 +481,6 @@ Email …</description>
       
       
       <comments>http://blog.cyx2009.top/archives/P15367/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[闲话] 2026-02-19 日记</title>
-      <link>http://blog.cyx2009.top/archives/2026-02-19/</link>
-      <guid>http://blog.cyx2009.top/archives/2026-02-19/</guid>
-      <pubDate>Thu, 19 Feb 2026 13:19:00 GMT</pubDate>
-      
-      <description><![CDATA[有东西被加密了，请输入密码查看。]]></description>
-      
-      
-      
-      
-      <category domain="http://blog.cyx2009.top/categories/Essay/">Essay</category>
-      
-      
-      
-      <comments>http://blog.cyx2009.top/archives/2026-02-19/#disqus_thread</comments>
       
     </item>
     

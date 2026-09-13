@@ -26,7 +26,7 @@
 <meta property="og:description" content="这里是我的原创题合集。  P12593 沉石鱼惊旋 备注：本题本来是随手出的题，尝试贪心发现假完了，没人会做，正好这边国赛模拟缺一个简单图论题就拿来了。开 n≤8 是照顾 Python 和 Java 运行速度，以及控难度。 去向：洛谷 蓝桥杯国赛模拟 链接：https:&#x2F;&#x2F;www.luogu.com.cn&#x2F;proble…">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-08-17T12:39:25.919Z">
-<meta property="article:modified_time" content="2026-02-23T12:49:03.958Z">
+<meta property="article:modified_time" content="2026-09-13T06:46:45.623Z">
 <meta property="article:author" content="沉石鱼惊旋">
 <meta name="twitter:card" content="summary">
 
@@ -558,7 +558,7 @@
 							<nav class="site-state">
 								<div class="site-state-item site-state-posts">
 									<a href="/archives">
-										<span class="site-state-item-count">251</span>
+										<span class="site-state-item-count">252</span>
 										<span class="site-state-item-name">文章</span>
 									</a>
 								</div>
@@ -632,7 +632,7 @@
 				</button>
 			</div>
 			<div class="modal-body">
-				<a class="badge badge-secondary tag" href="/categories/Essay/" rel="tag">Essay <span class="tag-num">17</span></a><a class="badge badge-secondary tag" href="/categories/Solution/" rel="tag">Solution <span class="tag-num">204</span></a><a class="badge badge-secondary tag" href="/categories/StudyNote/" rel="tag">StudyNote <span class="tag-num">9</span></a><a class="badge badge-secondary tag" href="/categories/Technology/" rel="tag">Technology <span class="tag-num">3</span></a><a class="badge badge-secondary tag" href="/categories/TravelNote/" rel="tag">TravelNote <span class="tag-num">18</span></a>
+				<a class="badge badge-secondary tag" href="/categories/Essay/" rel="tag">Essay <span class="tag-num">17</span></a><a class="badge badge-secondary tag" href="/categories/Solution/" rel="tag">Solution <span class="tag-num">205</span></a><a class="badge badge-secondary tag" href="/categories/StudyNote/" rel="tag">StudyNote <span class="tag-num">9</span></a><a class="badge badge-secondary tag" href="/categories/Technology/" rel="tag">Technology <span class="tag-num">3</span></a><a class="badge badge-secondary tag" href="/categories/TravelNote/" rel="tag">TravelNote <span class="tag-num">18</span></a>
 			</div>
 		</div>
 	</div>
@@ -668,7 +668,7 @@
 						
 						<div class="post-meta-detail post-meta-detail-time">
 							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2025-8-17 20:39:25 | 编辑于 2026-2-23 20:49:03">2025-8-17 20:39
+							<time title="发布于 2025-8-17 20:39:25 | 编辑于 2026-9-13 14:46:45">2025-8-17 20:39
 							</time>
 						</div>
 					
@@ -695,7 +695,7 @@
 						
 						<div class="post-meta-detail post-meta-detail-words">
 							<i class="fa fa-file-word-o" aria-hidden="true"></i>
-							454 字
+							1.4k 字
 						</div>
 					
 						
@@ -703,7 +703,7 @@
 						
 						<div class="post-meta-detail post-meta-detail-readingtime">
 							<i class="fa fa-hourglass-end" aria-hidden="true"></i>
-							1 分钟
+							5 分钟
 						</div>
 					
 		</div>
@@ -727,7 +727,34 @@
 <p>去向：云斗学院 2026 省选计划系列模拟赛 #3</p>
 <p>链接：<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P15367">https://www.luogu.com.cn/problem/P15367</a> / <a target="_blank" rel="noopener" href="https://www.yundouxueyuan.com/p/jsy2">https://www.yundouxueyuan.com/p/jsy2</a></p>
 <p>题解：<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/article/5cmm3pjo">https://www.luogu.com.cn/article/5cmm3pjo</a> / <a  href="/archives/P15367/">P15367</a></p>
+<h1 id="three-colors"><a class="markdownIt-Anchor" href="#three-colors"></a> Three Colors</h1>
+<p>备注：和 zyf 打模拟赛的时候做到的，原题是 <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P3590">P3590 [POI 2015 R2] 三座塔 Three towers</a> 和 <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P12765">P12765 [POI 2018 R3] 三座塔 2 Three towers 2</a>，加了个多次询问。</p>
+<p>去向：2026“钉耙编程”中国大学生算法设计暑期联赛（6）</p>
+<p>链接：<a target="_blank" rel="noopener" href="https://acm.hdu.edu.cn/contest/problem?cid=1234&amp;pid=1004">https://acm.hdu.edu.cn/contest/problem?cid=1234&amp;pid=1004</a></p>
+<p>题解：</p>
+<pre><code class="highlight none">先考虑一个简化的，$q=1$ 怎么做？
 
+这个时候有很多的 polylog 做法，各种神秘数据结构还有类似 THUWC2025 D1T2 的做法。不过为了做多次查询，应该考虑一个比较快的做法。
+
+注意到一个很强的性质：若存在一个合法串 $S$，前面添加 $\geq 3$ 个字符后面添加 $\geq 3$ 个字符，则一定可以扩展到更长的合法串。
+
+证明考虑一个合法串 $S$，不妨设出现次数分别为 $a,b,c$，且 $a\lt b\lt c$，考虑怎么让这个字符串不能被扩展：显然左右应该分别放一个 $\texttt&#123;A&#125;$ 一个 $\texttt&#123;B&#125;$，不这么放的话一步就扩展结束了。继续分析，发现两边第二个元素也不能放 $\textttt&#123;C&#125;$，否则只选 $\texttt&#123;AC&#125;+S+\texttt&#123;B&#125;$ 或 $\texttt&#123;AB&#125;+S+\texttt&#123;C&#125;$ 也完成扩展了。最后可以推得，必须是 $\texttt&#123;AAB&#125;+S+\texttt&#123;BAA&#125;$ 的结构，但是这种形式只要全选就被扩展了。
+
+所以我们只需要检查一个字符串的 $l\in [1,3]$ 和 $r\in [n-2,n]$ 的 $6$ 种情况，枚举另一个端点即可。
+
+这个还是太慢了，考虑固定左端点之后怎么找到最远的右端点（固定右端点同理）。
+
+考虑从一个 $[l,r]$ 往里缩。我们定义三种状态：$\&#123;a,a,a\&#125;$，$\&#123;a,a,b\&#125;$ 和 $\&#123;a,b,b\&#125;$，分别表示出现次数为 $a=a=a$，$a=a\lt b$ 和 $a\lt b=b$ 三种情况。
+
+- 若为 $\&#123;a,a,a\&#125;$，则连续往前跳长度为 $3$ 的小段，满足 $3$ 个元素互不相同。接下来遇到的长度为 $3$ 的小段，一定是包含两种颜色或者只包含一种。包含两种的话扣掉这三个即为合法段，否则的话会进入形如 $\&#123;a-3,a,a\&#125;$ 的 case，后文讨论。
+
+- 若为 $\&#123;a,b,b\&#125;$，找到目前末尾连续的 $a$，跳过去。此时一定形如 $\&#123;a-k,b,b\&#125;$。若 $k\neq 0$，则往前再走一步变成 $\&#123;a-k,b-1,b\&#125;$ 一定合法（因为 $a\lt b$）。若 $k=0$，只有 $a=b-1$ 的时候 $\&#123;a-k,b-1,b\&#125;$ 不会合法。此时再跳一次，若跳的元素为 $a-k$ 或者 $b-1$ 则直接合法，若跳的是 $b$ 本质又进入了 $\&#123;a,a,a\&#125;$ 的情况。根据上文的讨论，这种情况预处理跳长度为 $3$ 的元素互不相同小段后，只需要跳 $\mathcal O(1)$ 次。
+
+- 若为 $\&#123;a,a,b\&#125;$，找到目前末尾连续的 $b$，跳过去。若跳的过程中经过了 $\&#123;a,a,b-k=a\&#125;$ 的情况，就又形成了第一种 case。否则，代表跳完连续的 $b$ 后形成了 $\&#123;a,a,b-k\gt a\&#125;$，此时面前一定是一个 $a$，跳过去即可形成 $\&#123;a-1,a,\gt a\&#125;$，形成合法段。
+
+因此，我们只需要预处理某个颜色 $i$ 的最后一次在 $[1,j]$ 内出现的位置，以及 $i$ 向前缩掉长度为 $3$ 的互不相同小段后跳到什么位置，即可枚举 $\leq 3$ 个左端点并 $\mathcal O(1)$ 求得最大合法右端点。这些信息都是可以直接扫一遍序列预处理的。对于固定右端点求最小左端点也同理。
+
+时间复杂度 $\mathcal O(n+q)$，空间复杂度 $\mathcal O(n)$。</code></pre>
 	</div>
 <!-- <div style="text-align: center; position: relative;">
   <button id="like-btn" class="like-btn">
