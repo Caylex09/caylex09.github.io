@@ -6,7 +6,7 @@
   <link href="http://blog.cyx2009.top/atom.xml" rel="self"/>
   
   <link href="http://blog.cyx2009.top/"/>
-  <updated>2026-09-19T12:26:06.101Z</updated>
+  <updated>2026-09-19T12:31:30.413Z</updated>
   <id>http://blog.cyx2009.top/</id>
   
   <author>
@@ -21,12 +21,12 @@
     <link href="http://blog.cyx2009.top/archives/CSP2026/"/>
     <id>http://blog.cyx2009.top/archives/CSP2026/</id>
     <published>2026-09-19T11:33:00.000Z</published>
-    <updated>2026-09-19T12:26:06.101Z</updated>
+    <updated>2026-09-19T12:31:30.413Z</updated>
     
     
-    <summary type="html">20260919
+    <summary type="html">20260919 初赛
 今天初赛，想起来还没开游记，开一下。今年根本没准备，就在机房陪其他老哥做了一套卷子，然后去考场路上看了会儿笔记。今天之后我再也不用背这些东西了，赢。
-其实我今天查了 OI Wiki 才知道快速排序怎么是这么个写法的，我之前以为的快速排序根本不是快速排序，或者说实现细节根本不同。难怪是不稳定排序，今天想…</summary>
+其实我今天查了 OI Wiki 才知道快速排序怎么是这么个写法的，我之前以为的快速排序根本不是快速排序，或者说实现细节根本不同。难怪是不稳定排序，…</summary>
     
     
     
