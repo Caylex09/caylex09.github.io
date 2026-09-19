@@ -6,7 +6,7 @@
   <link href="http://blog.cyx2009.top/atom.xml" rel="self"/>
   
   <link href="http://blog.cyx2009.top/"/>
-  <updated>2026-09-13T05:19:27.519Z</updated>
+  <updated>2026-09-19T12:26:06.101Z</updated>
   <id>http://blog.cyx2009.top/</id>
   
   <author>
@@ -17,11 +17,30 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>[游记] CSP 2026 游记</title>
+    <link href="http://blog.cyx2009.top/archives/CSP2026/"/>
+    <id>http://blog.cyx2009.top/archives/CSP2026/</id>
+    <published>2026-09-19T11:33:00.000Z</published>
+    <updated>2026-09-19T12:26:06.101Z</updated>
+    
+    
+    <summary type="html">20260919
+今天初赛，想起来还没开游记，开一下。今年根本没准备，就在机房陪其他老哥做了一套卷子，然后去考场路上看了会儿笔记。今天之后我再也不用背这些东西了，赢。
+其实我今天查了 OI Wiki 才知道快速排序怎么是这么个写法的，我之前以为的快速排序根本不是快速排序，或者说实现细节根本不同。难怪是不稳定排序，今天想…</summary>
+    
+    
+    
+    <category term="TravelNote" scheme="http://blog.cyx2009.top/categories/TravelNote/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>[题解] 杂题选讲 15</title>
     <link href="http://blog.cyx2009.top/archives/potpourri_15/"/>
     <id>http://blog.cyx2009.top/archives/potpourri_15/</id>
     <published>2026-09-05T12:20:00.000Z</published>
-    <updated>2026-09-13T05:19:27.519Z</updated>
+    <updated>2026-09-16T12:22:35.858Z</updated>
     
     
     <summary type="html">CF2247F Paths on a Grid
@@ -418,27 +437,6 @@ Email …</summary>
     
     <category term="Essay" scheme="http://blog.cyx2009.top/categories/Essay/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>[题解] P15367 秋季限定生成树问题</title>
-    <link href="http://blog.cyx2009.top/archives/P15367/"/>
-    <id>http://blog.cyx2009.top/archives/P15367/</id>
-    <published>2026-02-23T09:22:00.000Z</published>
-    <updated>2026-06-26T12:24:51.122Z</updated>
-    
-    
-    <summary type="html">这里是 idea 提出人题解。感谢 @Larunatrecy 加强了做法出到了 1018！！！
-先给出结论：我们对于 [1,n−1] 的每个点 i，找最大的 j 满足 gcd⁡(i,j)=1，连这样一条边。一定能恰好连 n−1 条边形成一棵树。这棵树就是最大生成树。
-肯定是一棵树显然，你考虑每个 i 一定会往后连一条（…</summary>
-    
-    
-    
-    <category term="Solution" scheme="http://blog.cyx2009.top/categories/Solution/"/>
-    
-    
-    <category term="数论" scheme="http://blog.cyx2009.top/tags/%E6%95%B0%E8%AE%BA/"/>
     
   </entry>
   
