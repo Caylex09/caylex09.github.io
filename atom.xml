@@ -6,7 +6,7 @@
   <link href="http://blog.cyx2009.top/atom.xml" rel="self"/>
   
   <link href="http://blog.cyx2009.top/"/>
-  <updated>2026-09-19T12:57:57.341Z</updated>
+  <updated>2026-09-25T09:28:41.107Z</updated>
   <id>http://blog.cyx2009.top/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>[题解] 杂题选讲 16</title>
+    <link href="http://blog.cyx2009.top/archives/potpourri_16/"/>
+    <id>http://blog.cyx2009.top/archives/potpourri_16/</id>
+    <published>2026-09-22T12:45:00.000Z</published>
+    <updated>2026-09-25T09:28:41.107Z</updated>
+    
+    
+    <summary type="html">模拟赛 代码源 中位数
+https://newoj.daimayuan.top/p/5762?tid=6aaa1da0cc9d2bef7bcca7c5
+本题 aka https://qoj.ac/problem/19968。
+显然第一个串要取整个串删去前导零。第二个串为了想办法让异或最大，第一个串开头连续 1 后面的连…</summary>
+    
+    
+    
+    <category term="Solution" scheme="http://blog.cyx2009.top/categories/Solution/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>[游记] CSP 2026 游记</title>
@@ -40,7 +60,7 @@
     <link href="http://blog.cyx2009.top/archives/potpourri_15/"/>
     <id>http://blog.cyx2009.top/archives/potpourri_15/</id>
     <published>2026-09-05T12:20:00.000Z</published>
-    <updated>2026-09-16T12:22:35.858Z</updated>
+    <updated>2026-09-21T11:06:11.895Z</updated>
     
     
     <summary type="html">CF2247F Paths on a Grid
@@ -227,7 +247,7 @@ https://atcoder.jp/contests/arc219/tasks/arc219_a
     <link href="http://blog.cyx2009.top/archives/potpourri_13/"/>
     <id>http://blog.cyx2009.top/archives/potpourri_13/</id>
     <published>2026-05-09T12:18:00.000Z</published>
-    <updated>2026-06-25T11:54:59.626Z</updated>
+    <updated>2026-09-21T04:01:46.883Z</updated>
     
     
     <summary type="html">P4747 [CERC2017] Intrinsic Interval
@@ -416,26 +436,6 @@ fi,0/1 表示 DP 到 i，前面是否有一段区间 +1 延续过来了。转移
     
     
     <category term="TravelNote" scheme="http://blog.cyx2009.top/categories/TravelNote/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>『置顶』[闲话] 如何获得更优质的生活</title>
-    <link href="http://blog.cyx2009.top/archives/better_life/"/>
-    <id>http://blog.cyx2009.top/archives/better_life/</id>
-    <published>2026-03-01T04:27:00.000Z</published>
-    <updated>2026-07-17T12:35:33.915Z</updated>
-    
-    
-    <summary type="html">upd：我发现 BetterLyrics 把这篇文章收录到了『开发者引用 &amp; 独立博客』评价里！！！BetterLyrics 真的很好用！！！欢迎使用 https://github.com/jayfunc/BetterLyrics！！！居然真的有人会看我的博客，真的很激动。
-记录一些很有用的东西。
- 邮件
-Email …</summary>
-    
-    
-    
-    <category term="Essay" scheme="http://blog.cyx2009.top/categories/Essay/"/>
     
     
   </entry>

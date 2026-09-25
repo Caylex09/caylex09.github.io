@@ -525,7 +525,7 @@
 							<nav class="site-state">
 								<div class="site-state-item site-state-posts">
 									<a href="/archives">
-										<span class="site-state-item-count">253</span>
+										<span class="site-state-item-count">254</span>
 										<span class="site-state-item-name">文章</span>
 									</a>
 								</div>
@@ -599,7 +599,7 @@
 				</button>
 			</div>
 			<div class="modal-body">
-				<a class="badge badge-secondary tag" href="/categories/Essay/" rel="tag">Essay <span class="tag-num">17</span></a><a class="badge badge-secondary tag" href="/categories/Solution/" rel="tag">Solution <span class="tag-num">205</span></a><a class="badge badge-secondary tag" href="/categories/StudyNote/" rel="tag">StudyNote <span class="tag-num">9</span></a><a class="badge badge-secondary tag" href="/categories/Technology/" rel="tag">Technology <span class="tag-num">3</span></a><a class="badge badge-secondary tag" href="/categories/TravelNote/" rel="tag">TravelNote <span class="tag-num">19</span></a>
+				<a class="badge badge-secondary tag" href="/categories/Essay/" rel="tag">Essay <span class="tag-num">17</span></a><a class="badge badge-secondary tag" href="/categories/Solution/" rel="tag">Solution <span class="tag-num">206</span></a><a class="badge badge-secondary tag" href="/categories/StudyNote/" rel="tag">StudyNote <span class="tag-num">9</span></a><a class="badge badge-secondary tag" href="/categories/Technology/" rel="tag">Technology <span class="tag-num">3</span></a><a class="badge badge-secondary tag" href="/categories/TravelNote/" rel="tag">TravelNote <span class="tag-num">19</span></a>
 			</div>
 		</div>
 	</div>
@@ -843,6 +843,72 @@ LG 14...
 
 
 	<article class="post card bg-white shadow-sm border-0 post-preview">
+	<header class="post-header text-center">
+		
+		<a class="post-title" href="/archives/potpourri_16/">[题解] 杂题选讲 16</a>
+		<div class="post-meta">
+			
+						
+						<div class="post-meta-detail post-meta-detail-time">
+							<i class="fa fa-clock-o" aria-hidden="true"></i>
+							<time title="发布于 2026-9-22 20:45:00 | 编辑于 2026-9-25 17:28:41">2026-9-22 20:45
+							</time>
+						</div>
+					
+						
+							<div class="post-meta-devide">|</div>
+						
+						<div class="post-meta-detail post-meta-detail-categories">
+							<i class="fa fa-bookmark-o" aria-hidden="true"></i>
+							<a class="post-meta-detail-catagory-link" href="/categories/Solution/">Solution</a>
+						</div>
+					
+						
+							<!-- <div class="post-meta-devide">|</div> -->
+						
+						<!-- <div class="post-meta-detail post-meta-detail-words">
+							<i class="fa fa-book" aria-hidden="true"></i>
+							<span id="busuanzi_container_page_pv">
+								阅读<span id="busuanzi_value_page_pv"></span>次
+							</span>
+						</div> -->
+					
+						
+							<div class="post-meta-devide">|</div>
+						
+						<div class="post-meta-detail post-meta-detail-words">
+							<i class="fa fa-file-word-o" aria-hidden="true"></i>
+							3.4k 字
+						</div>
+					
+						
+							<div class="post-meta-devide">|</div>
+						
+						<div class="post-meta-detail post-meta-detail-readingtime">
+							<i class="fa fa-hourglass-end" aria-hidden="true"></i>
+							14 分钟
+						</div>
+					
+		</div>
+		
+	</header>
+
+	<div class="post-content">
+		
+			
+				模拟赛 代码源 中位数
+https://newoj.daimayuan.top/p/5762?tid=6aaa1da0cc9d2bef7bcca7c5
+本题 aka https://qoj.ac/problem/19968。
+显然第一个串要取整个串删去前导零。第二个串为了想办法让异或最大，第一个串开头连续 1 后面的连续 0 要想办法填上，而只能用...
+			
+		
+	</div>
+
+	
+</article>
+
+
+	<article class="post card bg-white shadow-sm border-0 post-preview">
 	<header class="post-header text-center post-header-with-thumbnail">
 		
 				<img class='post-thumbnail lazyload' src='https://testingcf.jsdelivr.net/gh/Caylex09/img@main/images/20260919/202319880.png' data-original='https://testingcf.jsdelivr.net/gh/Caylex09/img@main/images/20260919/202319880.png' alt='thumbnail'></img>
@@ -921,7 +987,7 @@ LG 14...
 						
 						<div class="post-meta-detail post-meta-detail-time">
 							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2026-9-5 20:20:00 | 编辑于 2026-9-16 20:22:35">2026-9-5 20:20
+							<time title="发布于 2026-9-5 20:20:00 | 编辑于 2026-9-21 19:06:11">2026-9-5 20:20
 							</time>
 						</div>
 					
@@ -948,7 +1014,7 @@ LG 14...
 						
 						<div class="post-meta-detail post-meta-detail-words">
 							<i class="fa fa-file-word-o" aria-hidden="true"></i>
-							12.4k 字
+							14k 字
 						</div>
 					
 						
@@ -956,7 +1022,7 @@ LG 14...
 						
 						<div class="post-meta-detail post-meta-detail-readingtime">
 							<i class="fa fa-hourglass-end" aria-hidden="true"></i>
-							54 分钟
+							60 分钟
 						</div>
 					
 		</div>
@@ -1252,76 +1318,6 @@ https://newoj.daimayuan...
 
 首先需要满足 bi∈[an−i+1,an+i−1]，因为中位数移动每次最多移动一位。
 需要满足不存在 j&lt;i 满足 bi∈(bj,bj+1) 或 bi∈(bj+1,bj)。这是因为，中位数至多移动一位，如果移动一次迈的步子很...
-			
-		
-	</div>
-
-	
-</article>
-
-
-	<article class="post card bg-white shadow-sm border-0 post-preview">
-	<header class="post-header text-center post-header-with-thumbnail">
-		
-				<img class='post-thumbnail lazyload' src='https://testingcf.jsdelivr.net/gh/Caylex09/img@main/images/20260624/085823761.png' data-original='https://testingcf.jsdelivr.net/gh/Caylex09/img@main/images/20260624/085823761.png' alt='thumbnail'></img>
-				<div class='post-header-text-container'>
-			
-		<a class="post-title" href="/archives/where_ciyuan/">[闲话] 词元一词从何而来？</a>
-		<div class="post-meta">
-			
-						
-						<div class="post-meta-detail post-meta-detail-time">
-							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2026-6-24 8:37:00 | 编辑于 2026-6-24 10:07:08">2026-6-24 8:37
-							</time>
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-categories">
-							<i class="fa fa-bookmark-o" aria-hidden="true"></i>
-							<a class="post-meta-detail-catagory-link" href="/categories/Essay/">Essay</a>
-						</div>
-					
-						
-							<!-- <div class="post-meta-devide">|</div> -->
-						
-						<!-- <div class="post-meta-detail post-meta-detail-words">
-							<i class="fa fa-book" aria-hidden="true"></i>
-							<span id="busuanzi_container_page_pv">
-								阅读<span id="busuanzi_value_page_pv"></span>次
-							</span>
-						</div> -->
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-words">
-							<i class="fa fa-file-word-o" aria-hidden="true"></i>
-							1.2k 字
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-readingtime">
-							<i class="fa fa-hourglass-end" aria-hidden="true"></i>
-							4 分钟
-						</div>
-					
-		</div>
-		
-				</div>
-			
-	</header>
-
-	<div class="post-content">
-		
-			
-				最近在玩无悔华夏。昨日发现官方公众号爆料了 【名臣新玩法】宋词——酒肆歌楼唱新声，一曲词韵入大宋。
-作为古诗词爱好者，我阅读了本文，但是对于本文中词元一词的使用，略感诧异。在无悔华夏的大唐时代中唐诗玩法，收集到的名臣诗词可以得到诗意这一属性的。而在大宋时代的宋词玩法中，这一相对应的概念使用了词元一次。
-近段时间，词元一词被作为大模型的 token ...
 			
 		
 	</div>

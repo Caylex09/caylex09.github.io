@@ -15,8 +15,30 @@
     <atom:link href="http://blog.cyx2009.top/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>沉石鱼惊旋 的博客</description>
-    <pubDate>Sat, 19 Sep 2026 12:57:57 GMT</pubDate>
+    <pubDate>Fri, 25 Sep 2026 09:28:41 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[题解] 杂题选讲 16</title>
+      <link>http://blog.cyx2009.top/archives/potpourri_16/</link>
+      <guid>http://blog.cyx2009.top/archives/potpourri_16/</guid>
+      <pubDate>Tue, 22 Sep 2026 12:45:00 GMT</pubDate>
+      
+      <description>模拟赛 代码源 中位数
+https://newoj.daimayuan.top/p/5762?tid=6aaa1da0cc9d2bef7bcca7c5
+本题 aka https://qoj.ac/problem/19968。
+显然第一个串要取整个串删去前导零。第二个串为了想办法让异或最大，第一个串开头连续 1 后面的连…</description>
+      
+      
+      
+      
+      <category domain="http://blog.cyx2009.top/categories/Solution/">Solution</category>
+      
+      
+      
+      <comments>http://blog.cyx2009.top/archives/potpourri_16/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[游记] CSP 2026 游记</title>
@@ -457,28 +479,6 @@ fi,0/1 表示 DP 到 i，前面是否有一段区间 +1 延续过来了。转移
       
       
       <comments>http://blog.cyx2009.top/archives/JSOI2026/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>『置顶』[闲话] 如何获得更优质的生活</title>
-      <link>http://blog.cyx2009.top/archives/better_life/</link>
-      <guid>http://blog.cyx2009.top/archives/better_life/</guid>
-      <pubDate>Sun, 01 Mar 2026 04:27:00 GMT</pubDate>
-      
-      <description>upd：我发现 BetterLyrics 把这篇文章收录到了『开发者引用 &amp; 独立博客』评价里！！！BetterLyrics 真的很好用！！！欢迎使用 https://github.com/jayfunc/BetterLyrics！！！居然真的有人会看我的博客，真的很激动。
-记录一些很有用的东西。
- 邮件
-Email …</description>
-      
-      
-      
-      
-      <category domain="http://blog.cyx2009.top/categories/Essay/">Essay</category>
-      
-      
-      
-      <comments>http://blog.cyx2009.top/archives/better_life/#disqus_thread</comments>
       
     </item>
     
