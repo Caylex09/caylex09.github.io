@@ -15,8 +15,57 @@
     <atom:link href="http://blog.cyx2009.top/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>沉石鱼惊旋 的博客</description>
-    <pubDate>Thu, 01 Oct 2026 09:44:52 GMT</pubDate>
+    <pubDate>Thu, 15 Oct 2026 05:07:13 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[闲话] 20261015 鲜花 | Physics?!?!</title>
+      <link>http://blog.cyx2009.top/archives/20261015_essay/</link>
+      <guid>http://blog.cyx2009.top/archives/20261015_essay/</guid>
+      <pubDate>Thu, 15 Oct 2026 01:18:00 GMT</pubDate>
+      
+      <description>Statement &amp; Answer
+
+如图所示，一个可以自由运动的圆形线圈水平放置并通有电流 I，电流方向俯视为顺时针方向，一根固定的竖直放置直导线通有向上的电流 I，线圈将（）。
+在这个图里正确答案是线圈 y 负半轴这半边会向上（z 轴正半轴）翻，正半轴会向下翻。并且线圈会向左移动。
+
+ Solution
+ 左手定…</description>
+      
+      
+      
+      
+      <category domain="http://blog.cyx2009.top/categories/Essay/">Essay</category>
+      
+      
+      
+      <comments>http://blog.cyx2009.top/archives/20261015_essay/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>[题解] 杂题选讲 17</title>
+      <link>http://blog.cyx2009.top/archives/potpourri_17/</link>
+      <guid>http://blog.cyx2009.top/archives/potpourri_17/</guid>
+      <pubDate>Fri, 09 Oct 2026 11:32:00 GMT</pubDate>
+      
+      <description>CF1209F Koala and Notebook
+xyc 太菜比了。
+我会暴力！可持久化线段树维护 Dijkstra 过程。
+我会拆边！一条边拆成不超过 log⁡10(V) 条边，然后问题是最短路里面字典序最小的。建出最短路 DAG 之后，每次走最小的出边，每个点搜到第一次即可。
+ 模拟赛 代码源 今汐的巡防分区
+…</description>
+      
+      
+      
+      
+      <category domain="http://blog.cyx2009.top/categories/Solution/">Solution</category>
+      
+      
+      
+      <comments>http://blog.cyx2009.top/archives/potpourri_17/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[题解] 杂题选讲 16</title>
@@ -428,57 +477,6 @@ North and South - Problem - QOJ.ac
       
       
       <comments>http://blog.cyx2009.top/archives/2026-03-21/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[题解] 杂题选讲 12</title>
-      <link>http://blog.cyx2009.top/archives/potpourri_12/</link>
-      <guid>http://blog.cyx2009.top/archives/potpourri_12/</guid>
-      <pubDate>Wed, 18 Mar 2026 00:50:00 GMT</pubDate>
-      
-      <description>AGC049E Increment Decrement
-因为只会 ±1，所以每 1 划一层，可以认为层之间独立。那么原问题先编一个值域 01 的做法。
-fi,0/1 表示 DP 到 i，前面是否有一段区间 +1 延续过来了。转移也可以轻松 O(1)。
-然后回归原问题，值域划分成 O(nm) 段。gi,fi,0,fi,1…</description>
-      
-      
-      
-      
-      <category domain="http://blog.cyx2009.top/categories/Solution/">Solution</category>
-      
-      
-      
-      <comments>http://blog.cyx2009.top/archives/potpourri_12/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[游记] 江苏省选 2026 游记</title>
-      <link>http://blog.cyx2009.top/archives/JSOI2026/</link>
-      <guid>http://blog.cyx2009.top/archives/JSOI2026/</guid>
-      <pubDate>Thu, 05 Mar 2026 14:20:00 GMT</pubDate>
-      
-      <description>Day -1
-开了这篇游记。
-额啊哦嗯。
-虽然省选打咋样好像都不会改变省队类型了。但是还是得努力一下。
-目标：过两天签到。
- Day 0
-中午吃的拉面。
-报道，准考证 JS-085，比去年大了 14，哈哈哈我真菜。
-试机，电脑速度还不赖。快读怎么写来着。
-晚上吃的鸭血粉丝汤，好吃。
-你码扫了为什么有人半夜开摩的还是什么…</description>
-      
-      
-      
-      
-      <category domain="http://blog.cyx2009.top/categories/TravelNote/">TravelNote</category>
-      
-      
-      
-      <comments>http://blog.cyx2009.top/archives/JSOI2026/#disqus_thread</comments>
       
     </item>
     
