@@ -36,7 +36,7 @@
 <meta property="og:image" content="https://testingcf.jsdelivr.net/gh/Caylex09/img@main/images/20261015/121628382.png">
 <meta property="og:image" content="https://testingcf.jsdelivr.net/gh/Caylex09/img@main/images/20261015/121728646.png">
 <meta property="article:published_time" content="2026-10-15T01:18:00.000Z">
-<meta property="article:modified_time" content="2026-10-15T05:07:13.952Z">
+<meta property="article:modified_time" content="2026-10-15T10:26:23.165Z">
 <meta property="article:author" content="沉石鱼惊旋">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://testingcf.jsdelivr.net/gh/Caylex09/img@main/images/20261015/092609272.png">
@@ -682,7 +682,7 @@
 						
 						<div class="post-meta-detail post-meta-detail-time">
 							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2026-10-15 9:18:00 | 编辑于 2026-10-15 13:07:13">2026-10-15 9:18
+							<time title="发布于 2026-10-15 9:18:00 | 编辑于 2026-10-15 18:26:23">2026-10-15 9:18
 							</time>
 						</div>
 					
@@ -923,7 +923,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
 <p>因此，除了少数特殊位置外，每一对电流元的水平合力都严格向左。</p>
 <p>整个圆环上的电流元都可以如此配对，故 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>x</mi></msub><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">F_x\lt 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">x</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span>，即整个圆环受到的水平合力向左。</p>
 <h1 id="afterword"><a class="markdownIt-Anchor" href="#afterword"></a> Afterword</h1>
-<p>关于文中一些图，可以如此复原：</p>
+<p>关于文中一些图，可以在 Geogebra 3D 中输入下面的命令复原。并且将一些角度值设为滑动条即可看到这个过程的动态变化。</p>
 <pre><code class="highlight none">Execute(&#123;&quot;R = 4&quot;,&quot;d = 1.5&quot;,&quot;alpha = 0°&quot;,&quot;O = (0, 0, 0)&quot;,&quot;W = (d, 0, 0)&quot;,&quot;Wire = Segment((d, 0, -4.5), (d, 0, 4.5))&quot;,&quot;NearArc = Curve(R*cos(t), -R*sin(t)*cos(alpha), R*sin(t)*sin(alpha), t, 0, pi)&quot;,&quot;FarArc = Curve(R*cos(t), -R*sin(t)*cos(alpha), R*sin(t)*sin(alpha), t, pi, 2*pi)&quot;,&quot;A = (0, -R*cos(alpha), R*sin(alpha))&quot;,&quot;B = (0, R*cos(alpha), -R*sin(alpha))&quot;,&quot;Ia = Vector(A, A + (-1.5, 0, 0))&quot;,&quot;Ib = Vector(B, B + (1.5, 0, 0))&quot;,&quot;Ba = Vector(A, A + (1.5*R*cos(alpha)/sqrt(R^2*cos(alpha)^2+d^2), -1.5*d/sqrt(R^2*cos(alpha)^2+d^2), 0))&quot;,&quot;Bb = Vector(B, B + (-1.5*R*cos(alpha)/sqrt(R^2*cos(alpha)^2+d^2), -1.5*d/sqrt(R^2*cos(alpha)^2+d^2), 0))&quot;,&quot;Fa = Vector(A, A + (0, 0, 1.5))&quot;,&quot;Fb = Vector(B, B + (0, 0, -1.5))&quot;,&quot;SetColor(Wire, 0.8118, 0.3020, 0.2078)&quot;,&quot;SetColor(NearArc, 0.8941, 0.5137, 0.1412)&quot;,&quot;SetColor(FarArc, 0.1882, 0.2471, 0.3216)&quot;,&quot;SetColor(Ia, 0.8941, 0.5137, 0.1412)&quot;,&quot;SetColor(Ib, 0.8941, 0.5137, 0.1412)&quot;,&quot;SetColor(Ba, 0.1451, 0.4588, 0.7804)&quot;,&quot;SetColor(Bb, 0.1451, 0.4588, 0.7804)&quot;,&quot;SetColor(Fa, 0.1412, 0.5373, 0.3333)&quot;,&quot;SetColor(Fb, 0.1412, 0.5373, 0.3333)&quot;,&quot;SetLineThickness(NearArc, 8)&quot;,&quot;SetLineThickness(FarArc, 8)&quot;,&quot;SetLineThickness(Wire, 8)&quot;&#125;)
 
 Execute(&#123;
