@@ -6,7 +6,7 @@
   <link href="http://blog.cyx2009.top/atom.xml" rel="self"/>
   
   <link href="http://blog.cyx2009.top/"/>
-  <updated>2026-10-15T10:26:23.165Z</updated>
+  <updated>2026-11-09T00:45:46.013Z</updated>
   <id>http://blog.cyx2009.top/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>[游记] 2026 ICPC 南京 区域赛 游记 | 你有一个真正的 rk3 吗？</title>
+    <link href="http://blog.cyx2009.top/archives/ICPC_2026_Nanjing_R/"/>
+    <id>http://blog.cyx2009.top/archives/ICPC_2026_Nanjing_R/</id>
+    <published>2026-11-07T11:03:00.000Z</published>
+    <updated>2026-11-09T00:45:46.013Z</updated>
+    
+    
+    <summary type="html">省流：热身赛 rk2 4/128，正式赛 rk3 11/2195。
+队友是 MatrixGroup 和 zhuzhu2891。
+截止写这篇文章的时候整个队伍 CF 最高 Rating 2453+3035+3252，累计 NOI Cu 1 块 Ag 2 块 Au 4 块。我说虽然只有一个红名但是也有捧杯风险（x）。
+我的…</summary>
+    
+    
+    
+    <category term="TravelNote" scheme="http://blog.cyx2009.top/categories/TravelNote/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>[题解] 杂题选讲 18</title>
+    <link href="http://blog.cyx2009.top/archives/potpourri_18/"/>
+    <id>http://blog.cyx2009.top/archives/potpourri_18/</id>
+    <published>2026-11-03T01:01:00.000Z</published>
+    <updated>2026-11-05T11:05:32.713Z</updated>
+    
+    
+    <summary type="html">HTOJ GP29286 将军棋
+https://htoj.com.cn/cpp/oj/problem/detail?pid=22957280878464&amp;cid=22957355728512&amp;gid=22935790336000
+本题 aka https://qoj.ac/problem/964。
+显然答案为 max…</summary>
+    
+    
+    
+    <category term="Solution" scheme="http://blog.cyx2009.top/categories/Solution/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>[闲话] 20261015 鲜花 | Physics?!?!</title>
@@ -44,7 +84,7 @@
     <link href="http://blog.cyx2009.top/archives/potpourri_17/"/>
     <id>http://blog.cyx2009.top/archives/potpourri_17/</id>
     <published>2026-10-09T11:32:00.000Z</published>
-    <updated>2026-10-30T08:50:06.437Z</updated>
+    <updated>2026-11-03T01:09:53.837Z</updated>
     
     
     <summary type="html">CF1209F Koala and Notebook
@@ -86,7 +126,7 @@ https://newoj.daimayuan.top/p/5762?tid=6aaa1da0cc9d2bef7bcca7c5
     <link href="http://blog.cyx2009.top/archives/CSP2026/"/>
     <id>http://blog.cyx2009.top/archives/CSP2026/</id>
     <published>2026-09-19T11:33:00.000Z</published>
-    <updated>2026-09-19T12:57:57.341Z</updated>
+    <updated>2026-11-05T10:56:43.750Z</updated>
     
     
     <summary type="html">20260919 初赛
@@ -393,40 +433,6 @@ North and South - Problem - QOJ.ac
     <id>http://blog.cyx2009.top/archives/2026-03-25/</id>
     <published>2026-03-25T10:48:00.000Z</published>
     <updated>2026-03-25T10:49:29.894Z</updated>
-    
-    
-    <summary>有东西被加密了，请输入密码查看。</summary>
-    
-    
-    
-    <category term="Essay" scheme="http://blog.cyx2009.top/categories/Essay/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>[闲话] 2026-03-24 日记</title>
-    <link href="http://blog.cyx2009.top/archives/2026-03-24/"/>
-    <id>http://blog.cyx2009.top/archives/2026-03-24/</id>
-    <published>2026-03-24T12:47:00.000Z</published>
-    <updated>2026-03-25T10:49:56.374Z</updated>
-    
-    
-    <summary>有东西被加密了，请输入密码查看。</summary>
-    
-    
-    
-    <category term="Essay" scheme="http://blog.cyx2009.top/categories/Essay/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>[闲话] 2026-03-21 日记</title>
-    <link href="http://blog.cyx2009.top/archives/2026-03-21/"/>
-    <id>http://blog.cyx2009.top/archives/2026-03-21/</id>
-    <published>2026-03-21T03:23:00.000Z</published>
-    <updated>2026-03-21T03:52:11.724Z</updated>
     
     
     <summary>有东西被加密了，请输入密码查看。</summary>

@@ -15,8 +15,52 @@
     <atom:link href="http://blog.cyx2009.top/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>沉石鱼惊旋 的博客</description>
-    <pubDate>Thu, 15 Oct 2026 10:26:23 GMT</pubDate>
+    <pubDate>Mon, 09 Nov 2026 00:45:46 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[游记] 2026 ICPC 南京 区域赛 游记 | 你有一个真正的 rk3 吗？</title>
+      <link>http://blog.cyx2009.top/archives/ICPC_2026_Nanjing_R/</link>
+      <guid>http://blog.cyx2009.top/archives/ICPC_2026_Nanjing_R/</guid>
+      <pubDate>Sat, 07 Nov 2026 11:03:00 GMT</pubDate>
+      
+      <description>省流：热身赛 rk2 4/128，正式赛 rk3 11/2195。
+队友是 MatrixGroup 和 zhuzhu2891。
+截止写这篇文章的时候整个队伍 CF 最高 Rating 2453+3035+3252，累计 NOI Cu 1 块 Ag 2 块 Au 4 块。我说虽然只有一个红名但是也有捧杯风险（x）。
+我的…</description>
+      
+      
+      
+      
+      <category domain="http://blog.cyx2009.top/categories/TravelNote/">TravelNote</category>
+      
+      
+      
+      <comments>http://blog.cyx2009.top/archives/ICPC_2026_Nanjing_R/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>[题解] 杂题选讲 18</title>
+      <link>http://blog.cyx2009.top/archives/potpourri_18/</link>
+      <guid>http://blog.cyx2009.top/archives/potpourri_18/</guid>
+      <pubDate>Tue, 03 Nov 2026 01:01:00 GMT</pubDate>
+      
+      <description>HTOJ GP29286 将军棋
+https://htoj.com.cn/cpp/oj/problem/detail?pid=22957280878464&amp;cid=22957355728512&amp;gid=22935790336000
+本题 aka https://qoj.ac/problem/964。
+显然答案为 max…</description>
+      
+      
+      
+      
+      <category domain="http://blog.cyx2009.top/categories/Solution/">Solution</category>
+      
+      
+      
+      <comments>http://blog.cyx2009.top/archives/potpourri_18/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[闲话] 20261015 鲜花 | Physics?!?!</title>
@@ -439,44 +483,6 @@ North and South - Problem - QOJ.ac
       
       
       <comments>http://blog.cyx2009.top/archives/2026-03-25/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[闲话] 2026-03-24 日记</title>
-      <link>http://blog.cyx2009.top/archives/2026-03-24/</link>
-      <guid>http://blog.cyx2009.top/archives/2026-03-24/</guid>
-      <pubDate>Tue, 24 Mar 2026 12:47:00 GMT</pubDate>
-      
-      <description><![CDATA[有东西被加密了，请输入密码查看。]]></description>
-      
-      
-      
-      
-      <category domain="http://blog.cyx2009.top/categories/Essay/">Essay</category>
-      
-      
-      
-      <comments>http://blog.cyx2009.top/archives/2026-03-24/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[闲话] 2026-03-21 日记</title>
-      <link>http://blog.cyx2009.top/archives/2026-03-21/</link>
-      <guid>http://blog.cyx2009.top/archives/2026-03-21/</guid>
-      <pubDate>Sat, 21 Mar 2026 03:23:00 GMT</pubDate>
-      
-      <description><![CDATA[有东西被加密了，请输入密码查看。]]></description>
-      
-      
-      
-      
-      <category domain="http://blog.cyx2009.top/categories/Essay/">Essay</category>
-      
-      
-      
-      <comments>http://blog.cyx2009.top/archives/2026-03-21/#disqus_thread</comments>
       
     </item>
     
