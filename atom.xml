@@ -6,7 +6,7 @@
   <link href="http://blog.cyx2009.top/atom.xml" rel="self"/>
   
   <link href="http://blog.cyx2009.top/"/>
-  <updated>2026-11-17T06:59:57.330Z</updated>
+  <updated>2026-11-17T07:02:11.196Z</updated>
   <id>http://blog.cyx2009.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://blog.cyx2009.top/archives/elegant_square_again/"/>
     <id>http://blog.cyx2009.top/archives/elegant_square_again/</id>
     <published>2026-11-17T06:50:00.000Z</published>
-    <updated>2026-11-17T06:59:57.330Z</updated>
+    <updated>2026-11-17T07:02:11.196Z</updated>
     
     
     <summary type="html">我们之前在 [笔记] 关于正交拉丁方的构造与应用 - 沉石鱼惊旋 的博客 里写到：本题使用一对正交拉丁方的构造，一组填质数一组填 Square-Free 的数，就能做到一个很优的解。在本题 n=30 时，最大元素只有 8878。

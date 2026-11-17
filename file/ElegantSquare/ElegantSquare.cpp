@@ -1,3 +1,5 @@
+#include <vector>
+#include <iostream>
 const std::vector<std::vector<int>> Squares[31] = {
     {},
     {},
@@ -521,3 +523,17 @@ const std::vector<std::vector<int>> Squares[31] = {
         {2318, 1677, 2145, 3145, 1273, 2006, 1633, 2679, 2134, 3485, 290, 385, 258, 1085, 219, 1771, 1691, 62, 6, 2255, 4747, 2730, 2407, 4029, 4017, 4033, 1498, 4186, 742, 174},
     },
 };
+int main()
+{
+    int n;
+    std::cin >> n;
+    auto &S = Squares[n];
+    for (auto &row : S)
+    {
+        for (auto &x : row)
+            std::cout << x << ' ';
+        std::cout << '\n';
+    }
+    std::cout << std::endl;
+    return 0;
+}
