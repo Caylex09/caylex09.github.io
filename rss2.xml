@@ -15,7 +15,7 @@
     <atom:link href="http://blog.cyx2009.top/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>沉石鱼惊旋 的博客</description>
-    <pubDate>Tue, 17 Nov 2026 07:02:11 GMT</pubDate>
+    <pubDate>Tue, 17 Nov 2026 08:40:08 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -24,8 +24,11 @@
       <guid>http://blog.cyx2009.top/archives/elegant_square_again/</guid>
       <pubDate>Tue, 17 Nov 2026 06:50:00 GMT</pubDate>
       
-      <description>我们之前在 [笔记] 关于正交拉丁方的构造与应用 - 沉石鱼惊旋 的博客 里写到：本题使用一对正交拉丁方的构造，一组填质数一组填 Square-Free 的数，就能做到一个很优的解。在本题 n=30 时，最大元素只有 8878。
-但是这不是最优的解。甚至我们可以找到一个疑似下界的值，搭配一些强力搜索，可以构造得到下界。…</description>
+      <description>前言
+人类玩的太差了。
+本文为 Elegant Square - Problem - QOJ.ac 的数据范围下最优构造题解。
+ 正文
+我们之前在 [笔记] 关于正交拉丁方的构造与应用 - 沉石鱼惊旋 的博客 里写到：本题使用一对正交拉丁方的构造，一组填质数一组填 Square-Free 的数，就能做到一个很优的解。在…</description>
       
       
       
