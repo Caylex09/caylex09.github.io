@@ -6,7 +6,7 @@
   <link href="http://blog.cyx2009.top/atom.xml" rel="self"/>
   
   <link href="http://blog.cyx2009.top/"/>
-  <updated>2026-11-09T00:48:42.227Z</updated>
+  <updated>2026-11-17T06:59:57.330Z</updated>
   <id>http://blog.cyx2009.top/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>[题解] 时隔一年，再谈 Elegant Square</title>
+    <link href="http://blog.cyx2009.top/archives/elegant_square_again/"/>
+    <id>http://blog.cyx2009.top/archives/elegant_square_again/</id>
+    <published>2026-11-17T06:50:00.000Z</published>
+    <updated>2026-11-17T06:59:57.330Z</updated>
+    
+    
+    <summary type="html">我们之前在 [笔记] 关于正交拉丁方的构造与应用 - 沉石鱼惊旋 的博客 里写到：本题使用一对正交拉丁方的构造，一组填质数一组填 Square-Free 的数，就能做到一个很优的解。在本题 n=30 时，最大元素只有 8878。
+但是这不是最优的解。甚至我们可以找到一个疑似下界的值，搭配一些强力搜索，可以构造得到下界。…</summary>
+    
+    
+    
+    <category term="Solution" scheme="http://blog.cyx2009.top/categories/Solution/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>[游记] 2026 ICPC 南京 区域赛 游记 | 你有一个真正的 rk3 吗？</title>
@@ -41,7 +59,7 @@
     <link href="http://blog.cyx2009.top/archives/potpourri_18/"/>
     <id>http://blog.cyx2009.top/archives/potpourri_18/</id>
     <published>2026-11-03T01:01:00.000Z</published>
-    <updated>2026-11-11T06:31:40.400Z</updated>
+    <updated>2026-11-16T15:06:57.440Z</updated>
     
     
     <summary type="html">HTOJ GP29286 将军棋
@@ -145,7 +163,7 @@ https://newoj.daimayuan.top/p/5762?tid=6aaa1da0cc9d2bef7bcca7c5
     <link href="http://blog.cyx2009.top/archives/potpourri_15/"/>
     <id>http://blog.cyx2009.top/archives/potpourri_15/</id>
     <published>2026-09-05T12:20:00.000Z</published>
-    <updated>2026-09-21T11:06:11.895Z</updated>
+    <updated>2026-11-15T01:29:24.056Z</updated>
     
     
     <summary type="html">CF2247F Paths on a Grid
@@ -423,23 +441,6 @@ North and South - Problem - QOJ.ac
     
     
     <category term="StudyNote" scheme="http://blog.cyx2009.top/categories/StudyNote/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>[闲话] 2026-03-25 日记</title>
-    <link href="http://blog.cyx2009.top/archives/2026-03-25/"/>
-    <id>http://blog.cyx2009.top/archives/2026-03-25/</id>
-    <published>2026-03-25T10:48:00.000Z</published>
-    <updated>2026-03-25T10:49:29.894Z</updated>
-    
-    
-    <summary>有东西被加密了，请输入密码查看。</summary>
-    
-    
-    
-    <category term="Essay" scheme="http://blog.cyx2009.top/categories/Essay/"/>
     
     
   </entry>

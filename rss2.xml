@@ -15,8 +15,28 @@
     <atom:link href="http://blog.cyx2009.top/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>沉石鱼惊旋 的博客</description>
-    <pubDate>Mon, 09 Nov 2026 00:48:42 GMT</pubDate>
+    <pubDate>Tue, 17 Nov 2026 06:59:57 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[题解] 时隔一年，再谈 Elegant Square</title>
+      <link>http://blog.cyx2009.top/archives/elegant_square_again/</link>
+      <guid>http://blog.cyx2009.top/archives/elegant_square_again/</guid>
+      <pubDate>Tue, 17 Nov 2026 06:50:00 GMT</pubDate>
+      
+      <description>我们之前在 [笔记] 关于正交拉丁方的构造与应用 - 沉石鱼惊旋 的博客 里写到：本题使用一对正交拉丁方的构造，一组填质数一组填 Square-Free 的数，就能做到一个很优的解。在本题 n=30 时，最大元素只有 8878。
+但是这不是最优的解。甚至我们可以找到一个疑似下界的值，搭配一些强力搜索，可以构造得到下界。…</description>
+      
+      
+      
+      
+      <category domain="http://blog.cyx2009.top/categories/Solution/">Solution</category>
+      
+      
+      
+      <comments>http://blog.cyx2009.top/archives/elegant_square_again/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[游记] 2026 ICPC 南京 区域赛 游记 | 你有一个真正的 rk3 吗？</title>
@@ -464,25 +484,6 @@ North and South - Problem - QOJ.ac
       
       
       <comments>http://blog.cyx2009.top/archives/cypher/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[闲话] 2026-03-25 日记</title>
-      <link>http://blog.cyx2009.top/archives/2026-03-25/</link>
-      <guid>http://blog.cyx2009.top/archives/2026-03-25/</guid>
-      <pubDate>Wed, 25 Mar 2026 10:48:00 GMT</pubDate>
-      
-      <description><![CDATA[有东西被加密了，请输入密码查看。]]></description>
-      
-      
-      
-      
-      <category domain="http://blog.cyx2009.top/categories/Essay/">Essay</category>
-      
-      
-      
-      <comments>http://blog.cyx2009.top/archives/2026-03-25/#disqus_thread</comments>
       
     </item>
     
