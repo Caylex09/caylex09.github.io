@@ -6,7 +6,7 @@
   <link href="http://blog.cyx2009.top/atom.xml" rel="self"/>
   
   <link href="http://blog.cyx2009.top/"/>
-  <updated>2026-11-17T09:47:50.401Z</updated>
+  <updated>2026-11-20T12:48:27.325Z</updated>
   <id>http://blog.cyx2009.top/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>[题解] 杂题选讲 19</title>
+    <link href="http://blog.cyx2009.top/archives/potpourri_19/"/>
+    <id>http://blog.cyx2009.top/archives/potpourri_19/</id>
+    <published>2026-11-20T12:48:00.000Z</published>
+    <updated>2026-11-20T12:48:27.325Z</updated>
+    
+    
+    <summary type="html">HTOJ GP30352 修路 (street)
+https://htoj.com.cn/cpp/oj/problem/detail?pid=22977274684288&amp;cid=22977276163840&amp;gid=22935790336000&amp;tab=1
+把操作写成 (a,b−a) 前者是需求后者是增量。那么 (N…</summary>
+    
+    
+    
+    <category term="Solution" scheme="http://blog.cyx2009.top/categories/Solution/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>[题解] 时隔一年，再谈 Elegant Square</title>
@@ -62,7 +81,7 @@
     <link href="http://blog.cyx2009.top/archives/potpourri_18/"/>
     <id>http://blog.cyx2009.top/archives/potpourri_18/</id>
     <published>2026-11-03T01:01:00.000Z</published>
-    <updated>2026-11-17T10:53:02.047Z</updated>
+    <updated>2026-11-20T12:47:53.938Z</updated>
     
     
     <summary type="html">HTOJ GP29286 将军棋
@@ -426,25 +445,6 @@ North and South - Problem - QOJ.ac
     <category term="Invitation" scheme="http://blog.cyx2009.top/tags/Invitation/"/>
     
     <category term="深圳" scheme="http://blog.cyx2009.top/tags/%E6%B7%B1%E5%9C%B3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>[笔记] Cypher 游玩笔记 &amp; 密码学入门</title>
-    <link href="http://blog.cyx2009.top/archives/cypher/"/>
-    <id>http://blog.cyx2009.top/archives/cypher/</id>
-    <published>2026-04-05T12:36:00.000Z</published>
-    <updated>2026-06-22T09:47:40.144Z</updated>
-    
-    
-    <summary type="html">https://store.steampowered.com/app/746710/Cypher/ 只要 22 块钱，史低 6 块钱。
-但是这个好像对英文水平要求比较高，我这种人做起来就有点坐牢。
-这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很…</summary>
-    
-    
-    
-    <category term="StudyNote" scheme="http://blog.cyx2009.top/categories/StudyNote/"/>
-    
     
   </entry>
   

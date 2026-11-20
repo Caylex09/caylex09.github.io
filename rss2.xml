@@ -15,8 +15,29 @@
     <atom:link href="http://blog.cyx2009.top/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>沉石鱼惊旋 的博客</description>
-    <pubDate>Tue, 17 Nov 2026 09:47:50 GMT</pubDate>
+    <pubDate>Fri, 20 Nov 2026 12:48:27 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[题解] 杂题选讲 19</title>
+      <link>http://blog.cyx2009.top/archives/potpourri_19/</link>
+      <guid>http://blog.cyx2009.top/archives/potpourri_19/</guid>
+      <pubDate>Fri, 20 Nov 2026 12:48:00 GMT</pubDate>
+      
+      <description>HTOJ GP30352 修路 (street)
+https://htoj.com.cn/cpp/oj/problem/detail?pid=22977274684288&amp;cid=22977276163840&amp;gid=22935790336000&amp;tab=1
+把操作写成 (a,b−a) 前者是需求后者是增量。那么 (N…</description>
+      
+      
+      
+      
+      <category domain="http://blog.cyx2009.top/categories/Solution/">Solution</category>
+      
+      
+      
+      <comments>http://blog.cyx2009.top/archives/potpourri_19/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>[题解] 时隔一年，再谈 Elegant Square</title>
@@ -466,27 +487,6 @@ North and South - Problem - QOJ.ac
       
       
       <comments>http://blog.cyx2009.top/archives/ICPC_2026_Shenzhen_I/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>[笔记] Cypher 游玩笔记 &amp; 密码学入门</title>
-      <link>http://blog.cyx2009.top/archives/cypher/</link>
-      <guid>http://blog.cyx2009.top/archives/cypher/</guid>
-      <pubDate>Sun, 05 Apr 2026 12:36:00 GMT</pubDate>
-      
-      <description>https://store.steampowered.com/app/746710/Cypher/ 只要 22 块钱，史低 6 块钱。
-但是这个好像对英文水平要求比较高，我这种人做起来就有点坐牢。
-这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很…</description>
-      
-      
-      
-      
-      <category domain="http://blog.cyx2009.top/categories/StudyNote/">StudyNote</category>
-      
-      
-      
-      <comments>http://blog.cyx2009.top/archives/cypher/#disqus_thread</comments>
       
     </item>
     
