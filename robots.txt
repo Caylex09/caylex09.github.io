@@ -30,3 +30,5 @@ Allow: /
 
 User-agent: *
 Disallow: /
+
+Sitemap: https://blog.cyx2009.top/sitemap.xml

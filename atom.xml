@@ -1,450 +1,370 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>沉石鱼惊旋 的博客</title>
-  <icon>http://blog.cyx2009.top/favicon.ico</icon>
-  <subtitle>CYX 很菜的!</subtitle>
-  <link href="http://blog.cyx2009.top/atom.xml" rel="self"/>
+  <title>&#x6c89;&#x77f3;&#x9c7c;&#x60ca;&#x65cb; &#x7684;&#x535a;&#x5ba2;</title>
+  <icon>https://blog.cyx2009.top/assets/img/avatar/favicon-32.png</icon>
+  <subtitle>CYX &#x5f88;&#x83dc;&#x7684;!</subtitle>
+  <link href="https://blog.cyx2009.top/atom.xml" rel="self"/>
   
-  <link href="http://blog.cyx2009.top/"/>
-  <updated>2026-11-20T12:48:27.325Z</updated>
-  <id>http://blog.cyx2009.top/</id>
+  <link href="https://blog.cyx2009.top/"/>
+  <updated>2026-11-21T03:35:23.432Z</updated>
+  <id>https://blog.cyx2009.top/</id>
   
   <author>
-    <name>沉石鱼惊旋</name>
+    <name>&#x6c89;&#x77f3;&#x9c7c;&#x60ca;&#x65cb;</name>
     
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>[题解] 杂题选讲 19</title>
-    <link href="http://blog.cyx2009.top/archives/potpourri_19/"/>
-    <id>http://blog.cyx2009.top/archives/potpourri_19/</id>
+    <title>[&#x9898;&#x89e3;] &#x6742;&#x9898;&#x9009;&#x8bb2; 19</title>
+    <link href="https://blog.cyx2009.top/archives/potpourri_19/"/>
+    <id>https://blog.cyx2009.top/archives/potpourri_19/</id>
     <published>2026-11-20T12:48:00.000Z</published>
-    <updated>2026-11-20T12:48:27.325Z</updated>
+    <updated>2026-11-21T03:35:23.432Z</updated>
     
     
-    <summary type="html">HTOJ GP30352 修路 (street)
-https://htoj.com.cn/cpp/oj/problem/detail?pid=22977274684288&amp;cid=22977276163840&amp;gid=22935790336000&amp;tab=1
-把操作写成 (a,b−a) 前者是需求后者是增量。那么 (N…</summary>
+    <summary type="html">HTOJ GP30352 &#x4fee;&#x8def; (street) https://htoj.com.cn/cpp/oj/problem/detail?pid=22977274684288&amp;cid=22977276163840&amp;gid=22935790336000&amp;tab=1 &#x628a;&#x64cd;&#x4f5c;&#x5199;&#x6210; (a,b&#x2212;a) &#x524d;&#x8005;&#x662f;&#x9700;&#x6c42;&#x540e;&#x8005;&#x662f;&#x589e;&#x91cf;&#x3002;&#x90a3;&#x4e48; (N&#x2026;</summary>
     
     
     
-    <category term="Solution" scheme="http://blog.cyx2009.top/categories/Solution/"/>
+    <category term="Solution" scheme="https://blog.cyx2009.top/categories/Solution/"/>
     
     
   </entry>
   
   <entry>
-    <title>[题解] 时隔一年，再谈 Elegant Square</title>
-    <link href="http://blog.cyx2009.top/archives/elegant_square_again/"/>
-    <id>http://blog.cyx2009.top/archives/elegant_square_again/</id>
+    <title>[&#x9898;&#x89e3;] &#x65f6;&#x9694;&#x4e00;&#x5e74;&#xff0c;&#x518d;&#x8c08; Elegant Square</title>
+    <link href="https://blog.cyx2009.top/archives/elegant_square_again/"/>
+    <id>https://blog.cyx2009.top/archives/elegant_square_again/</id>
     <published>2026-11-17T06:50:00.000Z</published>
     <updated>2026-11-17T09:47:50.401Z</updated>
     
     
-    <summary type="html">前言
-人类玩的太差了。
-本文为 Elegant Square - Problem - QOJ.ac 的数据范围下最优构造题解。
- 正文
-我们之前在 [笔记] 关于正交拉丁方的构造与应用 - 沉石鱼惊旋 的博客 里写到：本题使用一对正交拉丁方的构造，一组填质数一组填 Square-Free 的数，就能做到一个很优的解。在…</summary>
+    <summary type="html">&#x524d;&#x8a00; &#x4eba;&#x7c7b;&#x73a9;&#x7684;&#x592a;&#x5dee;&#x4e86;&#x3002; &#x672c;&#x6587;&#x4e3a; Elegant Square - Problem - QOJ.ac &#x7684;&#x6570;&#x636e;&#x8303;&#x56f4;&#x4e0b;&#x6700;&#x4f18;&#x6784;&#x9020;&#x9898;&#x89e3;&#x3002; &#x6b63;&#x6587; &#x6211;&#x4eec;&#x4e4b;&#x524d;&#x5728; [&#x7b14;&#x8bb0;] &#x5173;&#x4e8e;&#x6b63;&#x4ea4;&#x62c9;&#x4e01;&#x65b9;&#x7684;&#x6784;&#x9020;&#x4e0e;&#x5e94;&#x7528; - &#x6c89;&#x77f3;&#x9c7c;&#x60ca;&#x65cb; &#x7684;&#x535a;&#x5ba2; &#x91cc;&#x5199;&#x5230;&#xff1a;&#x672c;&#x9898;&#x4f7f;&#x7528;&#x4e00;&#x5bf9;&#x6b63;&#x4ea4;&#x62c9;&#x4e01;&#x65b9;&#x7684;&#x6784;&#x9020;&#xff0c;&#x4e00;&#x7ec4;&#x586b;&#x8d28;&#x6570;&#x4e00;&#x7ec4;&#x586b; Square-Free &#x7684;&#x6570;&#xff0c;&#x5c31;&#x80fd;&#x505a;&#x5230;&#x4e00;&#x4e2a;&#x5f88;&#x4f18;&#x7684;&#x89e3;&#x3002;&#x5728;&#x672c;&#x2026;</summary>
     
     
     
-    <category term="Solution" scheme="http://blog.cyx2009.top/categories/Solution/"/>
+    <category term="Solution" scheme="https://blog.cyx2009.top/categories/Solution/"/>
     
     
   </entry>
   
   <entry>
-    <title>[游记] 2026 ICPC 南京 区域赛 游记 | 你有一个真正的 rk3 吗？</title>
-    <link href="http://blog.cyx2009.top/archives/ICPC_2026_Nanjing_R/"/>
-    <id>http://blog.cyx2009.top/archives/ICPC_2026_Nanjing_R/</id>
+    <title>[&#x6e38;&#x8bb0;] 2026 ICPC &#x5357;&#x4eac; &#x533a;&#x57df;&#x8d5b; &#x6e38;&#x8bb0; | &#x4f60;&#x6709;&#x4e00;&#x4e2a;&#x771f;&#x6b63;&#x7684; rk3 &#x5417;&#xff1f;</title>
+    <link href="https://blog.cyx2009.top/archives/ICPC_2026_Nanjing_R/"/>
+    <id>https://blog.cyx2009.top/archives/ICPC_2026_Nanjing_R/</id>
     <published>2026-11-07T11:03:00.000Z</published>
     <updated>2026-11-09T00:48:42.227Z</updated>
     
     
-    <summary type="html">省流：热身赛 rk2 4/128，正式赛 rk3 11/2195。
-队友是 MatrixGroup 和 zhuzhu2891。
-截止写这篇文章的时候整个队伍 CF 最高 Rating 2453+3035+3252，累计 NOI Cu 1 块 Ag 2 块 Au 4 块。我说虽然只有一个红名但是也有捧杯风险（x）。
-我的…</summary>
+    <summary type="html">&#x7701;&#x6d41;&#xff1a;&#x70ed;&#x8eab;&#x8d5b; rk2 4/128&#xff0c;&#x6b63;&#x5f0f;&#x8d5b; rk3 11/2195&#x3002; &#x961f;&#x53cb;&#x662f; MatrixGroup &#x548c; zhuzhu2891&#x3002; &#x622a;&#x6b62;&#x5199;&#x8fd9;&#x7bc7;&#x6587;&#x7ae0;&#x7684;&#x65f6;&#x5019;&#x6574;&#x4e2a;&#x961f;&#x4f0d; CF &#x6700;&#x9ad8; Rating 2453+3035+3252&#xff0c;&#x7d2f;&#x8ba1; NOI Cu 1 &#x5757; Ag 2 &#x5757; Au 4 &#x5757;&#x3002;&#x6211;&#x8bf4;&#x867d;&#x7136;&#x53ea;&#x6709;&#x4e00;&#x4e2a;&#x7ea2;&#x540d;&#x4f46;&#x662f;&#x4e5f;&#x6709;&#x6367;&#x676f;&#x98ce;&#x9669;&#xff08;x&#xff09;&#x3002; &#x6211;&#x7684;&#x2026;</summary>
     
     
     
-    <category term="TravelNote" scheme="http://blog.cyx2009.top/categories/TravelNote/"/>
+    <category term="TravelNote" scheme="https://blog.cyx2009.top/categories/TravelNote/"/>
     
     
   </entry>
   
   <entry>
-    <title>[题解] 杂题选讲 18</title>
-    <link href="http://blog.cyx2009.top/archives/potpourri_18/"/>
-    <id>http://blog.cyx2009.top/archives/potpourri_18/</id>
+    <title>[&#x9898;&#x89e3;] &#x6742;&#x9898;&#x9009;&#x8bb2; 18</title>
+    <link href="https://blog.cyx2009.top/archives/potpourri_18/"/>
+    <id>https://blog.cyx2009.top/archives/potpourri_18/</id>
     <published>2026-11-03T01:01:00.000Z</published>
     <updated>2026-11-20T12:47:53.938Z</updated>
     
     
-    <summary type="html">HTOJ GP29286 将军棋
-https://htoj.com.cn/cpp/oj/problem/detail?pid=22957280878464&amp;cid=22957355728512&amp;gid=22935790336000
-本题 aka https://qoj.ac/problem/964。
-显然答案为 max…</summary>
+    <summary type="html">HTOJ GP29286 &#x5c06;&#x519b;&#x68cb; https://htoj.com.cn/cpp/oj/problem/detail?pid=22957280878464&amp;cid=22957355728512&amp;gid=22935790336000 &#x672c;&#x9898; aka https://qoj.ac/problem/964&#x3002; &#x663e;&#x7136;&#x7b54;&#x6848;&#x4e3a; max&#x2026;</summary>
     
     
     
-    <category term="Solution" scheme="http://blog.cyx2009.top/categories/Solution/"/>
+    <category term="Solution" scheme="https://blog.cyx2009.top/categories/Solution/"/>
     
     
   </entry>
   
   <entry>
-    <title>[闲话] 20261015 鲜花 | Physics?!?!</title>
-    <link href="http://blog.cyx2009.top/archives/20261015_essay/"/>
-    <id>http://blog.cyx2009.top/archives/20261015_essay/</id>
+    <title>[&#x95f2;&#x8bdd;] 20261015 &#x9c9c;&#x82b1; | Physics?!?!</title>
+    <link href="https://blog.cyx2009.top/archives/20261015_essay/"/>
+    <id>https://blog.cyx2009.top/archives/20261015_essay/</id>
     <published>2026-10-15T01:18:00.000Z</published>
     <updated>2026-10-15T10:26:23.165Z</updated>
     
     
-    <summary type="html">Statement &amp; Answer
-
-如图所示，一个可以自由运动的圆形线圈水平放置并通有电流 I，电流方向俯视为顺时针方向，一根固定的竖直放置直导线通有向上的电流 I，线圈将（）。
-在这个图里正确答案是线圈 y 负半轴这半边会向上（z 轴正半轴）翻，正半轴会向下翻。并且线圈会向左移动。
-
- Solution
- 左手定…</summary>
+    <summary type="html">Statement &amp; Answer &#x5982;&#x56fe;&#x6240;&#x793a;&#xff0c;&#x4e00;&#x4e2a;&#x53ef;&#x4ee5;&#x81ea;&#x7531;&#x8fd0;&#x52a8;&#x7684;&#x5706;&#x5f62;&#x7ebf;&#x5708;&#x6c34;&#x5e73;&#x653e;&#x7f6e;&#x5e76;&#x901a;&#x6709;&#x7535;&#x6d41; I&#xff0c;&#x7535;&#x6d41;&#x65b9;&#x5411;&#x4fef;&#x89c6;&#x4e3a;&#x987a;&#x65f6;&#x9488;&#x65b9;&#x5411;&#xff0c;&#x4e00;&#x6839;&#x56fa;&#x5b9a;&#x7684;&#x7ad6;&#x76f4;&#x653e;&#x7f6e;&#x76f4;&#x5bfc;&#x7ebf;&#x901a;&#x6709;&#x5411;&#x4e0a;&#x7684;&#x7535;&#x6d41; I&#xff0c;&#x7ebf;&#x5708;&#x5c06;&#xff08;&#xff09;&#x3002; &#x5728;&#x8fd9;&#x4e2a;&#x56fe;&#x91cc;&#x6b63;&#x786e;&#x7b54;&#x6848;&#x662f;&#x7ebf;&#x5708; y &#x8d1f;&#x534a;&#x8f74;&#x8fd9;&#x534a;&#x8fb9;&#x4f1a;&#x5411;&#x4e0a;&#xff08;z &#x8f74;&#x6b63;&#x534a;&#x8f74;&#xff09;&#x7ffb;&#xff0c;&#x6b63;&#x534a;&#x8f74;&#x4f1a;&#x5411;&#x4e0b;&#x7ffb;&#x3002;&#x5e76;&#x4e14;&#x7ebf;&#x5708;&#x4f1a;&#x5411;&#x5de6;&#x79fb;&#x52a8;&#x3002; Solution &#x5de6;&#x624b;&#x5b9a;&#x5219;&#x5224;&#x65ad;&#x7ebf;&#x2026;</summary>
     
     
     
-    <category term="Essay" scheme="http://blog.cyx2009.top/categories/Essay/"/>
+    <category term="Essay" scheme="https://blog.cyx2009.top/categories/Essay/"/>
     
     
   </entry>
   
   <entry>
-    <title>[题解] 杂题选讲 17</title>
-    <link href="http://blog.cyx2009.top/archives/potpourri_17/"/>
-    <id>http://blog.cyx2009.top/archives/potpourri_17/</id>
+    <title>[&#x9898;&#x89e3;] &#x6742;&#x9898;&#x9009;&#x8bb2; 17</title>
+    <link href="https://blog.cyx2009.top/archives/potpourri_17/"/>
+    <id>https://blog.cyx2009.top/archives/potpourri_17/</id>
     <published>2026-10-09T11:32:00.000Z</published>
     <updated>2026-11-03T01:09:53.837Z</updated>
     
     
-    <summary type="html">CF1209F Koala and Notebook
-xyc 太菜比了。
-我会暴力！可持久化线段树维护 Dijkstra 过程。
-我会拆边！一条边拆成不超过 log⁡10(V) 条边，然后问题是最短路里面字典序最小的。建出最短路 DAG 之后，每次走最小的出边，每个点搜到第一次即可。
- 模拟赛 代码源 今汐的巡防分区
-…</summary>
+    <summary type="html">CF1209F Koala and Notebook xyc &#x592a;&#x83dc;&#x6bd4;&#x4e86;&#x3002; &#x6211;&#x4f1a;&#x66b4;&#x529b;&#xff01;&#x53ef;&#x6301;&#x4e45;&#x5316;&#x7ebf;&#x6bb5;&#x6811;&#x7ef4;&#x62a4; Dijkstra &#x8fc7;&#x7a0b;&#x3002; &#x6211;&#x4f1a;&#x62c6;&#x8fb9;&#xff01;&#x4e00;&#x6761;&#x8fb9;&#x62c6;&#x6210;&#x4e0d;&#x8d85;&#x8fc7; log&#x2061;10(V) &#x6761;&#x8fb9;&#xff0c;&#x7136;&#x540e;&#x95ee;&#x9898;&#x662f;&#x6700;&#x77ed;&#x8def;&#x91cc;&#x9762;&#x5b57;&#x5178;&#x5e8f;&#x6700;&#x5c0f;&#x7684;&#x3002;&#x5efa;&#x51fa;&#x6700;&#x77ed;&#x8def; DAG &#x4e4b;&#x540e;&#xff0c;&#x6bcf;&#x6b21;&#x8d70;&#x6700;&#x5c0f;&#x7684;&#x51fa;&#x8fb9;&#xff0c;&#x6bcf;&#x4e2a;&#x70b9;&#x641c;&#x5230;&#x7b2c;&#x4e00;&#x6b21;&#x5373;&#x53ef;&#x3002; &#x6a21;&#x62df;&#x8d5b; &#x4ee3;&#x7801;&#x6e90; &#x4eca;&#x6c50;&#x7684;&#x5de1;&#x9632;&#x5206;&#x533a; h&#x2026;</summary>
     
     
     
-    <category term="Solution" scheme="http://blog.cyx2009.top/categories/Solution/"/>
+    <category term="Solution" scheme="https://blog.cyx2009.top/categories/Solution/"/>
     
     
   </entry>
   
   <entry>
-    <title>[题解] 杂题选讲 16</title>
-    <link href="http://blog.cyx2009.top/archives/potpourri_16/"/>
-    <id>http://blog.cyx2009.top/archives/potpourri_16/</id>
+    <title>[&#x9898;&#x89e3;] &#x6742;&#x9898;&#x9009;&#x8bb2; 16</title>
+    <link href="https://blog.cyx2009.top/archives/potpourri_16/"/>
+    <id>https://blog.cyx2009.top/archives/potpourri_16/</id>
     <published>2026-09-22T12:45:00.000Z</published>
     <updated>2026-10-15T01:20:44.670Z</updated>
     
     
-    <summary type="html">模拟赛 代码源 中位数
-https://newoj.daimayuan.top/p/5762?tid=6aaa1da0cc9d2bef7bcca7c5
-本题 aka https://qoj.ac/problem/19968。
-显然第一个串要取整个串删去前导零。第二个串为了想办法让异或最大，第一个串开头连续 1 后面的连…</summary>
+    <summary type="html">&#x6a21;&#x62df;&#x8d5b; &#x4ee3;&#x7801;&#x6e90; &#x4e2d;&#x4f4d;&#x6570; https://newoj.daimayuan.top/p/5762?tid=6aaa1da0cc9d2bef7bcca7c5 &#x672c;&#x9898; aka https://qoj.ac/problem/19968&#x3002; &#x663e;&#x7136;&#x7b2c;&#x4e00;&#x4e2a;&#x4e32;&#x8981;&#x53d6;&#x6574;&#x4e2a;&#x4e32;&#x5220;&#x53bb;&#x524d;&#x5bfc;&#x96f6;&#x3002;&#x7b2c;&#x4e8c;&#x4e2a;&#x4e32;&#x4e3a;&#x4e86;&#x60f3;&#x529e;&#x6cd5;&#x8ba9;&#x5f02;&#x6216;&#x6700;&#x5927;&#xff0c;&#x7b2c;&#x4e00;&#x4e2a;&#x4e32;&#x5f00;&#x5934;&#x8fde;&#x7eed; 1 &#x540e;&#x9762;&#x7684;&#x8fde;&#x2026;</summary>
     
     
     
-    <category term="Solution" scheme="http://blog.cyx2009.top/categories/Solution/"/>
+    <category term="Solution" scheme="https://blog.cyx2009.top/categories/Solution/"/>
     
     
   </entry>
   
   <entry>
-    <title>[游记] CSP 2026 游记</title>
-    <link href="http://blog.cyx2009.top/archives/CSP2026/"/>
-    <id>http://blog.cyx2009.top/archives/CSP2026/</id>
+    <title>[&#x6e38;&#x8bb0;] CSP 2026 &#x6e38;&#x8bb0;</title>
+    <link href="https://blog.cyx2009.top/archives/CSP2026/"/>
+    <id>https://blog.cyx2009.top/archives/CSP2026/</id>
     <published>2026-09-19T11:33:00.000Z</published>
     <updated>2026-11-05T10:56:43.750Z</updated>
     
     
-    <summary type="html">20260919 初赛
-今天初赛，想起来还没开游记，开一下。今年根本没准备，就在机房陪其他老哥做了一套卷子，然后去考场路上看了会儿笔记。今天之后我再也不用背这些东西了，赢。
-其实我今天查了 OI Wiki 才知道快速排序怎么是这么个写法的，我之前以为的快速排序根本不是快速排序，或者说实现细节根本不同。难怪是不稳定排序，…</summary>
+    <summary type="html">20260919 &#x521d;&#x8d5b; &#x4eca;&#x5929;&#x521d;&#x8d5b;&#xff0c;&#x60f3;&#x8d77;&#x6765;&#x8fd8;&#x6ca1;&#x5f00;&#x6e38;&#x8bb0;&#xff0c;&#x5f00;&#x4e00;&#x4e0b;&#x3002;&#x4eca;&#x5e74;&#x6839;&#x672c;&#x6ca1;&#x51c6;&#x5907;&#xff0c;&#x5c31;&#x5728;&#x673a;&#x623f;&#x966a;&#x5176;&#x4ed6;&#x8001;&#x54e5;&#x505a;&#x4e86;&#x4e00;&#x5957;&#x5377;&#x5b50;&#xff0c;&#x7136;&#x540e;&#x53bb;&#x8003;&#x573a;&#x8def;&#x4e0a;&#x770b;&#x4e86;&#x4f1a;&#x513f;&#x7b14;&#x8bb0;&#x3002;&#x4eca;&#x5929;&#x4e4b;&#x540e;&#x6211;&#x518d;&#x4e5f;&#x4e0d;&#x7528;&#x80cc;&#x8fd9;&#x4e9b;&#x4e1c;&#x897f;&#x4e86;&#xff0c;&#x8d62;&#x3002; &#x5176;&#x5b9e;&#x6211;&#x4eca;&#x5929;&#x67e5;&#x4e86; OI Wiki &#x624d;&#x77e5;&#x9053;&#x5feb;&#x901f;&#x6392;&#x5e8f;&#x600e;&#x4e48;&#x662f;&#x8fd9;&#x4e48;&#x4e2a;&#x5199;&#x6cd5;&#x7684;&#xff0c;&#x6211;&#x4e4b;&#x524d;&#x4ee5;&#x4e3a;&#x7684;&#x5feb;&#x901f;&#x6392;&#x5e8f;&#x6839;&#x672c;&#x4e0d;&#x662f;&#x5feb;&#x901f;&#x6392;&#x5e8f;&#xff0c;&#x6216;&#x8005;&#x8bf4;&#x5b9e;&#x73b0;&#x7ec6;&#x8282;&#x6839;&#x672c;&#x4e0d;&#x540c;&#x3002;&#x96be;&#x602a;&#x662f;&#x4e0d;&#x7a33;&#x5b9a;&#x6392;&#x5e8f;&#xff0c;&#x2026;</summary>
     
     
     
-    <category term="TravelNote" scheme="http://blog.cyx2009.top/categories/TravelNote/"/>
+    <category term="TravelNote" scheme="https://blog.cyx2009.top/categories/TravelNote/"/>
     
     
   </entry>
   
   <entry>
-    <title>[题解] 杂题选讲 15</title>
-    <link href="http://blog.cyx2009.top/archives/potpourri_15/"/>
-    <id>http://blog.cyx2009.top/archives/potpourri_15/</id>
+    <title>[&#x9898;&#x89e3;] &#x6742;&#x9898;&#x9009;&#x8bb2; 15</title>
+    <link href="https://blog.cyx2009.top/archives/potpourri_15/"/>
+    <id>https://blog.cyx2009.top/archives/potpourri_15/</id>
     <published>2026-09-05T12:20:00.000Z</published>
     <updated>2026-11-15T01:29:24.056Z</updated>
     
     
-    <summary type="html">CF2247F Paths on a Grid
-注意到限制等价于，经过的路径集合完全相同。而集合完全相同可以用哈希刻画出现集合路径的元素，路径用权值乘起来表示，集合用路径权值加起来表示，这些都是可以轻松 DP 出来的。
-然后做完了。。？显然一个等价类除了空集随便选。。。
- 模拟赛 代码源 蜗蜗的温控舱
-https://…</summary>
+    <summary type="html">CF2247F Paths on a Grid &#x6ce8;&#x610f;&#x5230;&#x9650;&#x5236;&#x7b49;&#x4ef7;&#x4e8e;&#xff0c;&#x7ecf;&#x8fc7;&#x7684;&#x8def;&#x5f84;&#x96c6;&#x5408;&#x5b8c;&#x5168;&#x76f8;&#x540c;&#x3002;&#x800c;&#x96c6;&#x5408;&#x5b8c;&#x5168;&#x76f8;&#x540c;&#x53ef;&#x4ee5;&#x7528;&#x54c8;&#x5e0c;&#x523b;&#x753b;&#x51fa;&#x73b0;&#x96c6;&#x5408;&#x8def;&#x5f84;&#x7684;&#x5143;&#x7d20;&#xff0c;&#x8def;&#x5f84;&#x7528;&#x6743;&#x503c;&#x4e58;&#x8d77;&#x6765;&#x8868;&#x793a;&#xff0c;&#x96c6;&#x5408;&#x7528;&#x8def;&#x5f84;&#x6743;&#x503c;&#x52a0;&#x8d77;&#x6765;&#x8868;&#x793a;&#xff0c;&#x8fd9;&#x4e9b;&#x90fd;&#x662f;&#x53ef;&#x4ee5;&#x8f7b;&#x677e; DP &#x51fa;&#x6765;&#x7684;&#x3002; &#x7136;&#x540e;&#x505a;&#x5b8c;&#x4e86;&#x3002;&#x3002;&#xff1f;&#x663e;&#x7136;&#x4e00;&#x4e2a;&#x7b49;&#x4ef7;&#x7c7b;&#x9664;&#x4e86;&#x7a7a;&#x96c6;&#x968f;&#x4fbf;&#x9009;&#x3002;&#x3002;&#x3002; &#x6a21;&#x62df;&#x8d5b; &#x4ee3;&#x7801;&#x6e90; &#x8717;&#x8717;&#x7684;&#x6e29;&#x63a7;&#x8231; https://n&#x2026;</summary>
     
     
     
-    <category term="Solution" scheme="http://blog.cyx2009.top/categories/Solution/"/>
+    <category term="Solution" scheme="https://blog.cyx2009.top/categories/Solution/"/>
     
     
   </entry>
   
   <entry>
-    <title>[闲话] 2026-07-06 日记</title>
-    <link href="http://blog.cyx2009.top/archives/2026-07-06/"/>
-    <id>http://blog.cyx2009.top/archives/2026-07-06/</id>
+    <title>[&#x95f2;&#x8bdd;] 2026-07-06 &#x65e5;&#x8bb0;</title>
+    <link href="https://blog.cyx2009.top/archives/2026-07-06/"/>
+    <id>https://blog.cyx2009.top/archives/2026-07-06/</id>
     <published>2026-07-06T06:54:00.000Z</published>
     <updated>2026-07-06T06:54:06.992Z</updated>
     
     
-    <summary>有东西被加密了，请输入密码查看。</summary>
+    <summary type="html">&#x672c;&#x6587;&#x5df2;&#x52a0;&#x5bc6;&#xff0c;&#x8bf7;&#x8fdb;&#x5165;&#x6587;&#x7ae0;&#x67e5;&#x770b;&#x3002;</summary>
     
     
     
-    <category term="Essay" scheme="http://blog.cyx2009.top/categories/Essay/"/>
+    <category term="Essay" scheme="https://blog.cyx2009.top/categories/Essay/"/>
     
     
   </entry>
   
   <entry>
-    <title>[游记] NOI 2026 游记</title>
-    <link href="http://blog.cyx2009.top/archives/NOI2026/"/>
-    <id>http://blog.cyx2009.top/archives/NOI2026/</id>
+    <title>[&#x6e38;&#x8bb0;] NOI 2026 &#x6e38;&#x8bb0;</title>
+    <link href="https://blog.cyx2009.top/archives/NOI2026/"/>
+    <id>https://blog.cyx2009.top/archives/NOI2026/</id>
     <published>2026-07-05T12:39:00.000Z</published>
     <updated>2026-07-24T13:04:17.249Z</updated>
     
     
-    <summary type="html">大了，差 5 分银牌，这我找谁说理去。
-伏笔了。我赛前经常提到 Starrykiller 的 Ag 最后一名的事实。所有人都在指出：我没有 A+5，所以我无法复刻。现在我复刻了前面的所有过程，差 5 分 Ag。那我的 A+5 哪里领取。
-
-其实我都不知道这篇文章应该算游记还是算闲话。NOI 前的一些想法也都记进来了。
-…</summary>
+    <summary type="html">&#x5927;&#x4e86;&#xff0c;&#x5dee; 5 &#x5206;&#x94f6;&#x724c;&#xff0c;&#x8fd9;&#x6211;&#x627e;&#x8c01;&#x8bf4;&#x7406;&#x53bb;&#x3002; &#x4f0f;&#x7b14;&#x4e86;&#x3002;&#x6211;&#x8d5b;&#x524d;&#x7ecf;&#x5e38;&#x63d0;&#x5230; Starrykiller &#x7684; Ag &#x6700;&#x540e;&#x4e00;&#x540d;&#x7684;&#x4e8b;&#x5b9e;&#x3002;&#x6240;&#x6709;&#x4eba;&#x90fd;&#x5728;&#x6307;&#x51fa;&#xff1a;&#x6211;&#x6ca1;&#x6709; A+5&#xff0c;&#x6240;&#x4ee5;&#x6211;&#x65e0;&#x6cd5;&#x590d;&#x523b;&#x3002;&#x73b0;&#x5728;&#x6211;&#x590d;&#x523b;&#x4e86;&#x524d;&#x9762;&#x7684;&#x6240;&#x6709;&#x8fc7;&#x7a0b;&#xff0c;&#x5dee; 5 &#x5206; Ag&#x3002;&#x90a3;&#x6211;&#x7684; A+5 &#x54ea;&#x91cc;&#x9886;&#x53d6;&#x3002; &#x5176;&#x5b9e;&#x6211;&#x90fd;&#x4e0d;&#x77e5;&#x9053;&#x8fd9;&#x7bc7;&#x6587;&#x7ae0;&#x5e94;&#x8be5;&#x7b97;&#x6e38;&#x8bb0;&#x8fd8;&#x662f;&#x7b97;&#x95f2;&#x8bdd;&#x3002;NOI &#x524d;&#x7684;&#x4e00;&#x4e9b;&#x60f3;&#x6cd5;&#x4e5f;&#x90fd;&#x8bb0;&#x8fdb;&#x6765;&#x4e86;&#x3002; &#x522b;&#x2026;</summary>
     
     
     
-    <category term="TravelNote" scheme="http://blog.cyx2009.top/categories/TravelNote/"/>
+    <category term="TravelNote" scheme="https://blog.cyx2009.top/categories/TravelNote/"/>
     
     
   </entry>
   
   <entry>
-    <title>[笔记] 中国古代文学史</title>
-    <link href="http://blog.cyx2009.top/archives/classical-chinese-literature/"/>
-    <id>http://blog.cyx2009.top/archives/classical-chinese-literature/</id>
+    <title>[&#x7b14;&#x8bb0;] &#x4e2d;&#x56fd;&#x53e4;&#x4ee3;&#x6587;&#x5b66;&#x53f2;</title>
+    <link href="https://blog.cyx2009.top/archives/classical-chinese-literature/"/>
+    <id>https://blog.cyx2009.top/archives/classical-chinese-literature/</id>
     <published>2026-06-27T02:12:00.000Z</published>
     <updated>2026-07-04T12:35:27.049Z</updated>
     
     
-    <summary type="html">昨天刷到了
-
-
-
-
-  
-这样一个视频。应该是 2009 年北师大的中国古代文学史公开课。
-感觉有点厉害，昨天看了一下第一集，看了一下目录非常全，应当好好学习。
-于是开一篇这样的笔记当上课笔记本。
-不太一定是连续的人话，可能就记一点关键信息。
- 先秦文学
- 先秦文学概论
-周朝建立，政治文化变革，称为制礼作乐。礼就是在政…</summary>
+    <summary type="html">&#x6628;&#x5929;&#x5237;&#x5230;&#x4e86; &#x8fd9;&#x6837;&#x4e00;&#x4e2a;&#x89c6;&#x9891;&#x3002;&#x5e94;&#x8be5;&#x662f; 2009 &#x5e74;&#x5317;&#x5e08;&#x5927;&#x7684;&#x4e2d;&#x56fd;&#x53e4;&#x4ee3;&#x6587;&#x5b66;&#x53f2;&#x516c;&#x5f00;&#x8bfe;&#x3002; &#x611f;&#x89c9;&#x6709;&#x70b9;&#x5389;&#x5bb3;&#xff0c;&#x6628;&#x5929;&#x770b;&#x4e86;&#x4e00;&#x4e0b;&#x7b2c;&#x4e00;&#x96c6;&#xff0c;&#x770b;&#x4e86;&#x4e00;&#x4e0b;&#x76ee;&#x5f55;&#x975e;&#x5e38;&#x5168;&#xff0c;&#x5e94;&#x5f53;&#x597d;&#x597d;&#x5b66;&#x4e60;&#x3002; &#x4e8e;&#x662f;&#x5f00;&#x4e00;&#x7bc7;&#x8fd9;&#x6837;&#x7684;&#x7b14;&#x8bb0;&#x5f53;&#x4e0a;&#x8bfe;&#x7b14;&#x8bb0;&#x672c;&#x3002; &#x4e0d;&#x592a;&#x4e00;&#x5b9a;&#x662f;&#x8fde;&#x7eed;&#x7684;&#x4eba;&#x8bdd;&#xff0c;&#x53ef;&#x80fd;&#x5c31;&#x8bb0;&#x4e00;&#x70b9;&#x5173;&#x952e;&#x4fe1;&#x606f;&#x3002; &#x5148;&#x79e6;&#x6587;&#x5b66; &#x5148;&#x79e6;&#x6587;&#x5b66;&#x6982;&#x8bba; &#x5468;&#x671d;&#x5efa;&#x7acb;&#xff0c;&#x653f;&#x6cbb;&#x6587;&#x5316;&#x53d8;&#x9769;&#xff0c;&#x79f0;&#x4e3a;&#x5236;&#x793c;&#x4f5c;&#x4e50;&#x3002;&#x793c;&#x5c31;&#x662f;&#x5728;&#x653f;&#x6cbb;&#x65b9;&#x9762;&#x7684;&#x53d8;&#x9769;&#x3002; &#x5b54;&#x2026;</summary>
     
     
     
-    <category term="StudyNote" scheme="http://blog.cyx2009.top/categories/StudyNote/"/>
+    <category term="StudyNote" scheme="https://blog.cyx2009.top/categories/StudyNote/"/>
     
     
   </entry>
   
   <entry>
-    <title>[题解] 杂题选讲 14</title>
-    <link href="http://blog.cyx2009.top/archives/potpourri_14/"/>
-    <id>http://blog.cyx2009.top/archives/potpourri_14/</id>
+    <title>[&#x9898;&#x89e3;] &#x6742;&#x9898;&#x9009;&#x8bb2; 14</title>
+    <link href="https://blog.cyx2009.top/archives/potpourri_14/"/>
+    <id>https://blog.cyx2009.top/archives/potpourri_14/</id>
     <published>2026-06-26T10:45:00.000Z</published>
     <updated>2026-09-04T07:14:52.045Z</updated>
     
     
-    <summary type="html">AGC012F Prefix Median
-考虑一个序列合法的充要条件，不妨倒着生成 b，看作是每次删两个数后再求中位数。
-
-首先需要满足 bi∈[an−i+1,an+i−1]，因为中位数移动每次最多移动一位。
-需要满足不存在 j&lt;i 满足 bi∈(bj,bj+1) 或 bi∈(bj+1,bj)。这是因为，中位数至多移…</summary>
+    <summary type="html">AGC012F Prefix Median &#x8003;&#x8651;&#x4e00;&#x4e2a;&#x5e8f;&#x5217;&#x5408;&#x6cd5;&#x7684;&#x5145;&#x8981;&#x6761;&#x4ef6;&#xff0c;&#x4e0d;&#x59a8;&#x5012;&#x7740;&#x751f;&#x6210; b&#xff0c;&#x770b;&#x4f5c;&#x662f;&#x6bcf;&#x6b21;&#x5220;&#x4e24;&#x4e2a;&#x6570;&#x540e;&#x518d;&#x6c42;&#x4e2d;&#x4f4d;&#x6570;&#x3002; &#x9996;&#x5148;&#x9700;&#x8981;&#x6ee1;&#x8db3; bi&#x2208;[an&#x2212;i+1,an+i&#x2212;1]&#xff0c;&#x56e0;&#x4e3a;&#x4e2d;&#x4f4d;&#x6570;&#x79fb;&#x52a8;&#x6bcf;&#x6b21;&#x6700;&#x591a;&#x79fb;&#x52a8;&#x4e00;&#x4f4d;&#x3002; &#x9700;&#x8981;&#x6ee1;&#x8db3;&#x4e0d;&#x5b58;&#x5728; j&lt;i &#x6ee1;&#x8db3; bi&#x2208;(bj,bj+1) &#x6216; bi&#x2208;(bj+1,bj)&#x3002;&#x8fd9;&#x662f;&#x56e0;&#x4e3a;&#xff0c;&#x4e2d;&#x4f4d;&#x6570;&#x81f3;&#x591a;&#x79fb;&#x52a8;&#x2026;</summary>
     
     
     
-    <category term="Solution" scheme="http://blog.cyx2009.top/categories/Solution/"/>
+    <category term="Solution" scheme="https://blog.cyx2009.top/categories/Solution/"/>
     
     
   </entry>
   
   <entry>
-    <title>[闲话] 词元一词从何而来？</title>
-    <link href="http://blog.cyx2009.top/archives/where_ciyuan/"/>
-    <id>http://blog.cyx2009.top/archives/where_ciyuan/</id>
+    <title>[&#x95f2;&#x8bdd;] &#x8bcd;&#x5143;&#x4e00;&#x8bcd;&#x4ece;&#x4f55;&#x800c;&#x6765;&#xff1f;</title>
+    <link href="https://blog.cyx2009.top/archives/where_ciyuan/"/>
+    <id>https://blog.cyx2009.top/archives/where_ciyuan/</id>
     <published>2026-06-24T00:37:00.000Z</published>
     <updated>2026-06-24T02:07:08.690Z</updated>
     
     
-    <summary type="html">最近在玩无悔华夏。昨日发现官方公众号爆料了 【名臣新玩法】宋词——酒肆歌楼唱新声，一曲词韵入大宋。
-作为古诗词爱好者，我阅读了本文，但是对于本文中词元一词的使用，略感诧异。在无悔华夏的大唐时代中唐诗玩法，收集到的名臣诗词可以得到诗意这一属性的。而在大宋时代的宋词玩法中，这一相对应的概念使用了词元一次。
-近段时间，词元一…</summary>
+    <summary type="html">&#x6700;&#x8fd1;&#x5728;&#x73a9;&#x65e0;&#x6094;&#x534e;&#x590f;&#x3002;&#x6628;&#x65e5;&#x53d1;&#x73b0;&#x5b98;&#x65b9;&#x516c;&#x4f17;&#x53f7;&#x7206;&#x6599;&#x4e86; &#x3010;&#x540d;&#x81e3;&#x65b0;&#x73a9;&#x6cd5;&#x3011;&#x5b8b;&#x8bcd;&#x2014;&#x2014;&#x9152;&#x8086;&#x6b4c;&#x697c;&#x5531;&#x65b0;&#x58f0;&#xff0c;&#x4e00;&#x66f2;&#x8bcd;&#x97f5;&#x5165;&#x5927;&#x5b8b;&#x3002; &#x4f5c;&#x4e3a;&#x53e4;&#x8bd7;&#x8bcd;&#x7231;&#x597d;&#x8005;&#xff0c;&#x6211;&#x9605;&#x8bfb;&#x4e86;&#x672c;&#x6587;&#xff0c;&#x4f46;&#x662f;&#x5bf9;&#x4e8e;&#x672c;&#x6587;&#x4e2d;&#x8bcd;&#x5143;&#x4e00;&#x8bcd;&#x7684;&#x4f7f;&#x7528;&#xff0c;&#x7565;&#x611f;&#x8be7;&#x5f02;&#x3002;&#x5728;&#x65e0;&#x6094;&#x534e;&#x590f;&#x7684;&#x5927;&#x5510;&#x65f6;&#x4ee3;&#x4e2d;&#x5510;&#x8bd7;&#x73a9;&#x6cd5;&#xff0c;&#x6536;&#x96c6;&#x5230;&#x7684;&#x540d;&#x81e3;&#x8bd7;&#x8bcd;&#x53ef;&#x4ee5;&#x5f97;&#x5230;&#x8bd7;&#x610f;&#x8fd9;&#x4e00;&#x5c5e;&#x6027;&#x7684;&#x3002;&#x800c;&#x5728;&#x5927;&#x5b8b;&#x65f6;&#x4ee3;&#x7684;&#x5b8b;&#x8bcd;&#x73a9;&#x6cd5;&#x4e2d;&#xff0c;&#x8fd9;&#x4e00;&#x76f8;&#x5bf9;&#x5e94;&#x7684;&#x6982;&#x5ff5;&#x4f7f;&#x7528;&#x4e86;&#x8bcd;&#x5143;&#x4e00;&#x6b21;&#x3002; &#x8fd1;&#x6bb5;&#x65f6;&#x95f4;&#xff0c;&#x8bcd;&#x5143;&#x4e00;&#x2026;</summary>
     
     
     
-    <category term="Essay" scheme="http://blog.cyx2009.top/categories/Essay/"/>
+    <category term="Essay" scheme="https://blog.cyx2009.top/categories/Essay/"/>
     
     
   </entry>
   
   <entry>
-    <title>[闲话] 2026-06-19 日记</title>
-    <link href="http://blog.cyx2009.top/archives/2026-06-19/"/>
-    <id>http://blog.cyx2009.top/archives/2026-06-19/</id>
+    <title>[&#x95f2;&#x8bdd;] 2026-06-19 &#x65e5;&#x8bb0;</title>
+    <link href="https://blog.cyx2009.top/archives/2026-06-19/"/>
+    <id>https://blog.cyx2009.top/archives/2026-06-19/</id>
     <published>2026-06-19T14:22:00.000Z</published>
     <updated>2026-06-19T15:36:23.691Z</updated>
     
     
-    <summary>有东西被加密了，请输入密码查看。</summary>
+    <summary type="html">&#x672c;&#x6587;&#x5df2;&#x52a0;&#x5bc6;&#xff0c;&#x8bf7;&#x8fdb;&#x5165;&#x6587;&#x7ae0;&#x67e5;&#x770b;&#x3002;</summary>
     
     
     
-    <category term="Essay" scheme="http://blog.cyx2009.top/categories/Essay/"/>
+    <category term="Essay" scheme="https://blog.cyx2009.top/categories/Essay/"/>
     
     
   </entry>
   
   <entry>
-    <title>[题解] PKUCPC2026 题解</title>
-    <link href="http://blog.cyx2009.top/archives/PKUCPC2026/"/>
-    <id>http://blog.cyx2009.top/archives/PKUCPC2026/</id>
+    <title>[&#x9898;&#x89e3;] PKUCPC2026 &#x9898;&#x89e3;</title>
+    <link href="https://blog.cyx2009.top/archives/PKUCPC2026/"/>
+    <id>https://blog.cyx2009.top/archives/PKUCPC2026/</id>
     <published>2026-05-18T04:49:00.000Z</published>
     <updated>2026-05-22T07:29:16.781Z</updated>
     
     
-    <summary type="html">题目在 http://poj.openjudge.cn/campus2026/ 上。好像非小组成员能看但是不能提交。
- A
-rt(x)={x mod 9=09x mod 9≠0x mod 9
-一个不能过的想法是维护区间长度模 ϕ(9) 的结果，可能还得单独维护 len=1 的。合并复杂度可能 63×63 了爆干净了。
-…</summary>
+    <summary type="html">&#x9898;&#x76ee;&#x5728; http://poj.openjudge.cn/campus2026/ &#x4e0a;&#x3002;&#x597d;&#x50cf;&#x975e;&#x5c0f;&#x7ec4;&#x6210;&#x5458;&#x80fd;&#x770b;&#x4f46;&#x662f;&#x4e0d;&#x80fd;&#x63d0;&#x4ea4;&#x3002; A rt(x)={x mod 9=09x mod 9&#x2260;0x mod 9 &#x4e00;&#x4e2a;&#x4e0d;&#x80fd;&#x8fc7;&#x7684;&#x60f3;&#x6cd5;&#x662f;&#x7ef4;&#x62a4;&#x533a;&#x95f4;&#x957f;&#x5ea6;&#x6a21; &#x3d5;(9) &#x7684;&#x7ed3;&#x679c;&#xff0c;&#x53ef;&#x80fd;&#x8fd8;&#x5f97;&#x5355;&#x72ec;&#x7ef4;&#x62a4; len=1 &#x7684;&#x3002;&#x5408;&#x5e76;&#x590d;&#x6742;&#x5ea6;&#x53ef;&#x80fd; 63&#xd7;63 &#x4e86;&#x7206;&#x5e72;&#x51c0;&#x4e86;&#x3002; &#x7ef4;&#x2026;</summary>
     
     
     
-    <category term="Solution" scheme="http://blog.cyx2009.top/categories/Solution/"/>
+    <category term="Solution" scheme="https://blog.cyx2009.top/categories/Solution/"/>
     
     
   </entry>
   
   <entry>
-    <title>[题解] AtCoder Regular Contest-- 219 题解</title>
-    <link href="http://blog.cyx2009.top/archives/ARC219/"/>
-    <id>http://blog.cyx2009.top/archives/ARC219/</id>
+    <title>[&#x9898;&#x89e3;] AtCoder Regular Contest-- 219 &#x9898;&#x89e3;</title>
+    <link href="https://blog.cyx2009.top/archives/ARC219/"/>
+    <id>https://blog.cyx2009.top/archives/ARC219/</id>
     <published>2026-05-11T05:27:00.000Z</published>
     <updated>2026-05-13T05:21:59.091Z</updated>
     
     
-    <summary type="html">大家都在打 APIO，我依旧美美偷分。
- ARC219A Similarity
-https://atcoder.jp/contests/arc219/tasks/arc219_a
-限制等价于给出了 n 个被 ban 掉的答案，就是那 n 个输入字符串的逐位取反后得到的 n 个字符串。
-我们只要找到一个长度为 m 的字符…</summary>
+    <summary type="html">&#x5927;&#x5bb6;&#x90fd;&#x5728;&#x6253; APIO&#xff0c;&#x6211;&#x4f9d;&#x65e7;&#x7f8e;&#x7f8e;&#x5077;&#x5206;&#x3002; ARC219A Similarity https://atcoder.jp/contests/arc219/tasks/arc219_a &#x9650;&#x5236;&#x7b49;&#x4ef7;&#x4e8e;&#x7ed9;&#x51fa;&#x4e86; n &#x4e2a;&#x88ab; ban &#x6389;&#x7684;&#x7b54;&#x6848;&#xff0c;&#x5c31;&#x662f;&#x90a3; n &#x4e2a;&#x8f93;&#x5165;&#x5b57;&#x7b26;&#x4e32;&#x7684;&#x9010;&#x4f4d;&#x53d6;&#x53cd;&#x540e;&#x5f97;&#x5230;&#x7684; n &#x4e2a;&#x5b57;&#x7b26;&#x4e32;&#x3002; &#x6211;&#x4eec;&#x53ea;&#x8981;&#x627e;&#x5230;&#x4e00;&#x4e2a;&#x957f;&#x5ea6;&#x4e3a; m &#x7684;&#x5b57;&#x7b26;&#x4e32;&#x2026;</summary>
     
     
     
-    <category term="Solution" scheme="http://blog.cyx2009.top/categories/Solution/"/>
+    <category term="Solution" scheme="https://blog.cyx2009.top/categories/Solution/"/>
     
     
   </entry>
   
   <entry>
-    <title>[题解] 杂题选讲 13</title>
-    <link href="http://blog.cyx2009.top/archives/potpourri_13/"/>
-    <id>http://blog.cyx2009.top/archives/potpourri_13/</id>
+    <title>[&#x9898;&#x89e3;] &#x6742;&#x9898;&#x9009;&#x8bb2; 13</title>
+    <link href="https://blog.cyx2009.top/archives/potpourri_13/"/>
+    <id>https://blog.cyx2009.top/archives/potpourri_13/</id>
     <published>2026-05-09T12:18:00.000Z</published>
     <updated>2026-09-21T04:01:46.883Z</updated>
     
     
-    <summary type="html">P4747 [CERC2017] Intrinsic Interval
-懒得写了。注意到以下性质：
-
-好区间只要满足 max⁡−min⁡=r−l。
-好区间的交也是好区间，好区间的并也是好区间。
-一个区间的对应极小合法好区间，一定唯一，并且其他所有合法好区间都包含他。否则随便拿两个取交肯定更优。
-
-于是我们只想知道，每个…</summary>
+    <summary type="html">P4747 [CERC2017] Intrinsic Interval &#x61d2;&#x5f97;&#x5199;&#x4e86;&#x3002;&#x6ce8;&#x610f;&#x5230;&#x4ee5;&#x4e0b;&#x6027;&#x8d28;&#xff1a; &#x597d;&#x533a;&#x95f4;&#x53ea;&#x8981;&#x6ee1;&#x8db3; max&#x2061;&#x2212;min&#x2061;=r&#x2212;l&#x3002; &#x597d;&#x533a;&#x95f4;&#x7684;&#x4ea4;&#x4e5f;&#x662f;&#x597d;&#x533a;&#x95f4;&#xff0c;&#x597d;&#x533a;&#x95f4;&#x7684;&#x5e76;&#x4e5f;&#x662f;&#x597d;&#x533a;&#x95f4;&#x3002; &#x4e00;&#x4e2a;&#x533a;&#x95f4;&#x7684;&#x5bf9;&#x5e94;&#x6781;&#x5c0f;&#x5408;&#x6cd5;&#x597d;&#x533a;&#x95f4;&#xff0c;&#x4e00;&#x5b9a;&#x552f;&#x4e00;&#xff0c;&#x5e76;&#x4e14;&#x5176;&#x4ed6;&#x6240;&#x6709;&#x5408;&#x6cd5;&#x597d;&#x533a;&#x95f4;&#x90fd;&#x5305;&#x542b;&#x4ed6;&#x3002;&#x5426;&#x5219;&#x968f;&#x4fbf;&#x62ff;&#x4e24;&#x4e2a;&#x53d6;&#x4ea4;&#x80af;&#x5b9a;&#x66f4;&#x4f18;&#x3002; &#x4e8e;&#x662f;&#x6211;&#x4eec;&#x53ea;&#x60f3;&#x77e5;&#x9053;&#xff0c;&#x6bcf;&#x4e2a;&#x5de6;&#x7aef;&#x2026;</summary>
     
     
     
-    <category term="Solution" scheme="http://blog.cyx2009.top/categories/Solution/"/>
+    <category term="Solution" scheme="https://blog.cyx2009.top/categories/Solution/"/>
     
     
   </entry>
   
   <entry>
-    <title>[题解] 2026 ICPC 西安 邀请赛 题解</title>
-    <link href="http://blog.cyx2009.top/archives/ICPC_2026_Xian_I/"/>
-    <id>http://blog.cyx2009.top/archives/ICPC_2026_Xian_I/</id>
+    <title>[&#x9898;&#x89e3;] 2026 ICPC &#x897f;&#x5b89; &#x9080;&#x8bf7;&#x8d5b; &#x9898;&#x89e3;</title>
+    <link href="https://blog.cyx2009.top/archives/ICPC_2026_Xian_I/"/>
+    <id>https://blog.cyx2009.top/archives/ICPC_2026_Xian_I/</id>
     <published>2026-04-20T06:54:00.000Z</published>
     <updated>2026-08-28T00:12:29.431Z</updated>
     
     
-    <summary type="html">没去，但是 tester。
-vp 的时候没队友也没榜，单挑 8 个题，过题顺序也是纯随机。体感是 E&lt;A=J&lt;B=D=I&lt;C&lt;K。当然这不是过题顺序。后面也还加了个题。
- A. North and South
-North and South - Problem - QOJ.ac
-设 s=∑ain，若 s 不是整数直接无…</summary>
+    <summary type="html">&#x6ca1;&#x53bb;&#xff0c;&#x4f46;&#x662f; tester&#x3002; vp &#x7684;&#x65f6;&#x5019;&#x6ca1;&#x961f;&#x53cb;&#x4e5f;&#x6ca1;&#x699c;&#xff0c;&#x5355;&#x6311; 8 &#x4e2a;&#x9898;&#xff0c;&#x8fc7;&#x9898;&#x987a;&#x5e8f;&#x4e5f;&#x662f;&#x7eaf;&#x968f;&#x673a;&#x3002;&#x4f53;&#x611f;&#x662f; E&lt;A=J&lt;B=D=I&lt;C&lt;K&#x3002;&#x5f53;&#x7136;&#x8fd9;&#x4e0d;&#x662f;&#x8fc7;&#x9898;&#x987a;&#x5e8f;&#x3002;&#x540e;&#x9762;&#x4e5f;&#x8fd8;&#x52a0;&#x4e86;&#x4e2a;&#x9898;&#x3002; A. North and South North and South - Problem - QOJ.ac &#x8bbe; s=&#x2211;ain&#xff0c;&#x82e5; s &#x4e0d;&#x662f;&#x6574;&#x6570;&#x76f4;&#x63a5;&#x65e0;&#x89e3;&#x2026;</summary>
     
     
     
-    <category term="Solution" scheme="http://blog.cyx2009.top/categories/Solution/"/>
+    <category term="Solution" scheme="https://blog.cyx2009.top/categories/Solution/"/>
     
     
-    <category term="ICPC" scheme="http://blog.cyx2009.top/tags/ICPC/"/>
+    <category term="ICPC" scheme="https://blog.cyx2009.top/tags/ICPC/"/>
     
-    <category term="Invitation" scheme="http://blog.cyx2009.top/tags/Invitation/"/>
+    <category term="Invitation" scheme="https://blog.cyx2009.top/tags/Invitation/"/>
     
-    <category term="西安" scheme="http://blog.cyx2009.top/tags/%E8%A5%BF%E5%AE%89/"/>
+    <category term="&#x897f;&#x5b89;" scheme="https://blog.cyx2009.top/tags/%E8%A5%BF%E5%AE%89/"/>
     
   </entry>
   
   <entry>
-    <title>[游记] 2026 ICPC 深圳 邀请赛 游记</title>
-    <link href="http://blog.cyx2009.top/archives/ICPC_2026_Shenzhen_I/"/>
-    <id>http://blog.cyx2009.top/archives/ICPC_2026_Shenzhen_I/</id>
+    <title>[&#x6e38;&#x8bb0;] 2026 ICPC &#x6df1;&#x5733; &#x9080;&#x8bf7;&#x8d5b; &#x6e38;&#x8bb0;</title>
+    <link href="https://blog.cyx2009.top/archives/ICPC_2026_Shenzhen_I/"/>
+    <id>https://blog.cyx2009.top/archives/ICPC_2026_Shenzhen_I/</id>
     <published>2026-04-10T07:56:00.000Z</published>
     <updated>2026-05-03T05:51:40.237Z</updated>
     
     
-    <summary type="html">省流：金牌，也拿到本赛季各赛站的第一发 AC。
-队友是 wrk 和 zgn。et 和 zyf 被 thu 拐走了。
- Day -1
-报道日，上午去无锡硕放机场坐飞机。
-我发现我忘记打印板子了，问题不大，相信队友。
-起飞颠簸好吓人（？）飞机餐一般。
-快下降的时候耳朵聋了半天，下飞机打了个嗝就好了。
-入住酒店房间号 131…</summary>
+    <summary type="html">&#x7701;&#x6d41;&#xff1a;&#x91d1;&#x724c;&#xff0c;&#x4e5f;&#x62ff;&#x5230;&#x672c;&#x8d5b;&#x5b63;&#x5404;&#x8d5b;&#x7ad9;&#x7684;&#x7b2c;&#x4e00;&#x53d1; AC&#x3002; &#x961f;&#x53cb;&#x662f; wrk &#x548c; zgn&#x3002;et &#x548c; zyf &#x88ab; thu &#x62d0;&#x8d70;&#x4e86;&#x3002; Day -1 &#x62a5;&#x9053;&#x65e5;&#xff0c;&#x4e0a;&#x5348;&#x53bb;&#x65e0;&#x9521;&#x7855;&#x653e;&#x673a;&#x573a;&#x5750;&#x98de;&#x673a;&#x3002; &#x6211;&#x53d1;&#x73b0;&#x6211;&#x5fd8;&#x8bb0;&#x6253;&#x5370;&#x677f;&#x5b50;&#x4e86;&#xff0c;&#x95ee;&#x9898;&#x4e0d;&#x5927;&#xff0c;&#x76f8;&#x4fe1;&#x961f;&#x53cb;&#x3002; &#x8d77;&#x98de;&#x98a0;&#x7c38;&#x597d;&#x5413;&#x4eba;&#xff08;&#xff1f;&#xff09;&#x98de;&#x673a;&#x9910;&#x4e00;&#x822c;&#x3002; &#x5feb;&#x4e0b;&#x964d;&#x7684;&#x65f6;&#x5019;&#x8033;&#x6735;&#x804b;&#x4e86;&#x534a;&#x5929;&#xff0c;&#x4e0b;&#x98de;&#x673a;&#x6253;&#x4e86;&#x4e2a;&#x55dd;&#x5c31;&#x597d;&#x4e86;&#x3002; &#x5165;&#x4f4f;&#x9152;&#x5e97;&#x623f;&#x95f4;&#x53f7; 1318&#x2026;</summary>
     
     
     
-    <category term="Essay" scheme="http://blog.cyx2009.top/categories/Essay/"/>
+    <category term="Essay" scheme="https://blog.cyx2009.top/categories/Essay/"/>
     
     
-    <category term="ICPC" scheme="http://blog.cyx2009.top/tags/ICPC/"/>
+    <category term="ICPC" scheme="https://blog.cyx2009.top/tags/ICPC/"/>
     
-    <category term="Invitation" scheme="http://blog.cyx2009.top/tags/Invitation/"/>
+    <category term="Invitation" scheme="https://blog.cyx2009.top/tags/Invitation/"/>
     
-    <category term="深圳" scheme="http://blog.cyx2009.top/tags/%E6%B7%B1%E5%9C%B3/"/>
+    <category term="&#x6df1;&#x5733;" scheme="https://blog.cyx2009.top/tags/%E6%B7%B1%E5%9C%B3/"/>
     
   </entry>
   

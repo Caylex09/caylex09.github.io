@@ -4,6 +4,9 @@ if (typeof(argonConfig) == "undefined"){
 if (typeof(argonConfig.wp_path) == "undefined"){
 	argonConfig.wp_path = "/";
 }
+function argonPjaxAvailable(){
+	return argonConfig.disable_pjax != true && typeof $.pjax == "function" && typeof $.fn.pjax == "function";
+}
 /* Cookies 操作 */
 function setCookie(cname, cvalue, exdays) {
 	var d = new Date();
@@ -271,6 +274,10 @@ $(document).on("keydown" , "#navbar_search_input_container #navbar_search_input"
 		$("#navbar_search_input_container").blur();
 		return;
 	}
+	if (!argonPjaxAvailable()){
+		window.location.assign(argonConfig.wp_path + "?s=" + encodeURI(word));
+		return;
+	}
 	let scrolltop = $(document).scrollTop();
 	$.pjax({
 		url: argonConfig.wp_path + "?s=" + encodeURI(word)
@@ -298,6 +305,10 @@ $(document).on("keydown" , "#leftbar_search_input" , function(e){
 		return;
 	}
 	$("html").removeClass("leftbar-opened");
+	if (!argonPjaxAvailable()){
+		window.location.assign(argonConfig.wp_path + "?s=" + encodeURI(word));
+		return;
+	}
 	$.pjax({
 		url: argonConfig.wp_path + "?s=" + encodeURI(word)
 	});
@@ -536,6 +547,7 @@ if (argonConfig.headroom){
 }();
 /* 需要密码的文章加载 */
 $(document).on("submit" , ".post-password-form" , function(){
+	if (!argonPjaxAvailable() || typeof $.pjax.form != "function") return true;
 	$("input[type='submit']", this).attr("disabled", "disabled");
 	let url = $(this).attr("action");
 	$.pjax.form(this, {
@@ -616,7 +628,7 @@ lazyloadInit();
 
 /* Pangu.js */
 function panguInit(){
-	if (argonConfig.pangu == true){
+	if (argonConfig.pangu === true || argonConfig.pangu === "true"){
 		pangu.spacingElementById('post_content');
 	}
 }
@@ -631,6 +643,7 @@ function clampInit(){
 clampInit();
 
 /* Pjax */
+if (argonPjaxAvailable()){
 $.pjax.defaults.timeout = 10000;
 $.pjax.defaults.container = ['#primary', '#leftbar_part1_menu', '#leftbar_part2_inner', '.page-information-card-container', '#wpadminbar'];
 $.pjax.defaults.fragment = ['#primary', '#leftbar_part1_menu', '#leftbar_part2_inner', '.page-information-card-container', '#wpadminbar'];
@@ -707,6 +720,7 @@ $(document).pjax("a[href]:not([no-pjax]):not(.no-pjax):not([target='_blank']):no
 }).on('pjax:end', function() {
 	lazyloadInit();
 });
+}
 
 
 /* Tags Dialog pjax 加载后自动关闭 */
@@ -1306,105 +1320,7 @@ setInterval(function(){
 	calcHumanTimesOnPage()
 }, 15000);
 
-/* 搜索 */
-// https://github.com/PaicHyperionDev/hexo-generator-search
-var searchFunc = function(path, search_id, content_id) {
-	'use strict';
-	$.ajax({
-		url: path,
-		dataType: "xml",
-		success: function( xmlResponse ) {
-			var datas = $( "entry", xmlResponse ).map(function() {
-				return {
-					title: $( "title", this ).text(),
-					content: $("content",this).text(),
-					url: $( "url" , this).text()
-				};
-			}).get();
-			var $input = document.getElementById(search_id);
-			if (!$input) return;
-			var $resultContent = document.getElementById(content_id);
-			if ($("#local-search-input").length > 0) {
-				$input.addEventListener('input', function () {
-					var str = '<ul class=\"search-result-list\">';
-					var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-					$resultContent.innerHTML = "";
-					if (this.value.trim().length <= 0) {
-						return;
-					}
-					datas.forEach(function (data) {
-						var isMatch = true;
-						var content_index = [];
-						if (!data.title || data.title.trim() === '') {
-							data.title = "Untitled";
-						}
-						var data_title = data.title.trim().toLowerCase();
-						var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
-						var data_url = data.url;
-						var index_title = -1;
-						var index_content = -1;
-						var first_occur = -1;
-						if (data_content !== '') {
-							keywords.forEach(function (keyword, i) {
-								index_title = data_title.indexOf(keyword);
-								index_content = data_content.indexOf(keyword);
-
-								if (index_title < 0 && index_content < 0) {
-									isMatch = false;
-								} else {
-									if (index_content < 0) {
-										index_content = 0;
-									}
-									if (i == 0) {
-										first_occur = index_content;
-									}
-								}
-							});
-						} else {
-							isMatch = false;
-						}
-						if (isMatch) {
-							str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
-							var content = data.content.trim().replace(/<[^>]+>/g, "");
-							if (first_occur >= 0) {
-								var start = first_occur - 20;
-								var end = first_occur + 80;
-								if (start < 0) {
-									start = 0;
-								}
-								if (start == 0) {
-									end = 100;
-								}
-								if (end > content.length) {
-									end = content.length;
-								}
-								var match_content = content.substring(start, end);
-								keywords.forEach(function (keyword) {
-									var regS = new RegExp(keyword, "gi");
-									match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
-								});
-								str += "<p class=\"search-result\">" + match_content + "...</p>"
-							}
-							str += "</li>";
-						}
-					});
-					str += "</ul>";
-					$resultContent.innerHTML = str;
-				});
-			}
-		}
-	});
-}
-var search_path = $("#local-search-input").data("search.path");
-if (search_path.length == 0) {
-	search_path = "search.xml";
-}
-searchFunc($("#local-search-input").data("config.root") + search_path, 'local-search-input', 'local-search-result');
-
-$(document).on("click" , ".search-result-title" , function(){
-	$("#argon_search_modal button[data-dismiss='modal']").click();
-});
-
+/* 搜索逻辑已拆分至 local-search.js，弹窗打开时才加载索引。 */
 
 /* Console */
 !function(){

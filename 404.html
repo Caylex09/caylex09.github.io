@@ -1,48 +1,46 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Not Found</title>
-	<!-- Fonts -->
-	<link rel="dns-prefetch" href="//fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-	<!-- Styles -->
-	<style>
-		html, body {
-			background-color: #fff;
-			color: #636b6f;
-			font-family: 'Nunito', sans-serif;
-			font-weight: 100;
-			height: 100vh;
-			margin: 0;
-		}
-		.full-height {
-			height: 100vh;
-		}
-		.flex-center {
-			align-items: center;
-			display: flex;
-			justify-content: center;
-		}
-		.position-ref {
-			position: relative;
-		}
-		.code {
-			border-right: 2px solid;
-			font-size: 26px;
-			padding: 0 15px 0 15px;
-			text-align: center;
-		}
-		.message {
-			font-size: 18px;
-			text-align: center;
-		}
-	</style>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#5e72e4">
+  <title>页面未找到 - 沉石鱼惊旋 的博客</title>
+  <link rel="icon" type="image/x-icon" sizes="256x256" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/avatar/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/avatar/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/img/avatar/favicon-48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <style>
+    :root { color-scheme: light dark; --accent: #5e72e4; --ink: #27324d; --muted: #63708a; --paper: #fff; --background: #f4f6fc; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; min-height: 100svh; display: grid; place-items: center; padding: 1.5rem; background: var(--background); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; line-height: 1.8; }
+    main { width: 100%; max-width: 38rem; padding: clamp(1.75rem, 6vw, 3.5rem); background: var(--paper); border-radius: 15px; box-shadow: 0 8px 32px rgb(39 50 77 / 6%); }
+    .site-name { color: var(--muted); font-size: 1rem; text-decoration: none; }
+    .status { margin: 1.5rem 0 0; color: var(--accent); font-size: clamp(3.5rem, 12vw, 5rem); font-weight: 700; line-height: 1.2; }
+    h1 { margin: .65rem 0; font-size: clamp(1.5rem, 4vw, 1.9rem); }
+    p { margin: .75rem 0 1.75rem; color: var(--muted); font-size: 1rem; }
+    nav { display: flex; flex-wrap: wrap; gap: .75rem; }
+    nav a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: .5rem 1rem; border: 1px solid #dce1f5; border-radius: 8px; color: var(--accent); text-decoration: none; font-size: 1rem; font-weight: 600; }
+    nav a:first-child { color: #fff; background: var(--accent); border-color: var(--accent); }
+    a:hover { text-decoration: underline; text-underline-offset: .25em; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+    @media (max-width: 400px) { nav a { flex: 1 1 40%; } }
+    @media (prefers-color-scheme: dark) { :root { --accent: #9ba8ff; --ink: #edf0ff; --muted: #b2bcd3; --paper: #242a39; --background: #1a1e2b; } nav a { border-color: #465273; } nav a:first-child { color: #1a1e2b; } }
+  </style>
 </head>
 <body>
-	<div class="flex-center position-ref full-height">
-		<div class="code">404</div>
-		<div class="message" style="padding: 10px;">Not Found</div>
-	</div>
+  <main>
+    <a class="site-name" href="/">沉石鱼惊旋 的博客</a>
+    <div class="status" aria-hidden="true">404</div>
+    <h1>这个页面暂时找不到了</h1>
+    <p>链接可能已经变更。可以回到首页继续阅读，或通过归档和搜索找到文章。</p>
+    <nav aria-label="继续浏览博客">
+      <a href="/">返回首页</a>
+      <a href="/archives/">查看归档</a>
+      <a href="/#search">搜索文章</a>
+    </nav>
+  </main>
 </body>
 </html>

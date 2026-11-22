@@ -1,35 +1,29 @@
 <!DOCTYPE html>
 
-<html class="article-header-style-1">
+<html lang="zh-CN" class="article-header-style-1">
 <head>
-
-<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-<script>
-  mermaid.initialize({ startOnLoad: true });
-</script>
-
-</script>
-
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/a11y-light.min.css">
-	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js"></script>
 	
 	<title>[题解] 逆天 Pollard Rho - 沉石鱼惊旋 的博客</title>
 	<meta charset="utf-8">
 	
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
 	
+	
 	<meta name="description" content="https:&#x2F;&#x2F;www.luogu.com.cn&#x2F;record&#x2F;156977790 对于题解中的给出的调用系统函数思路进行了 cpp 风格的封装。 原题解：https:&#x2F;&#x2F;www.luogu.com&#x2F;article&#x2F;y2bnvunz 大致思路就是调用 Linux 的 factor 函数，取出输出内容，然后格式化一下。所…">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[题解] 逆天 Pollard Rho">
-<meta property="og:url" content="http://blog.cyx2009.top/archives/pollardrho/index.html">
+<meta property="og:url" content="https://blog.cyx2009.top/archives/pollardrho/">
 <meta property="og:site_name" content="沉石鱼惊旋 的博客">
 <meta property="og:description" content="https:&#x2F;&#x2F;www.luogu.com.cn&#x2F;record&#x2F;156977790 对于题解中的给出的调用系统函数思路进行了 cpp 风格的封装。 原题解：https:&#x2F;&#x2F;www.luogu.com&#x2F;article&#x2F;y2bnvunz 大致思路就是调用 Linux 的 factor 函数，取出输出内容，然后格式化一下。所…">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://blog.cyx2009.top/assets/img/banner2.jpg">
 <meta property="article:published_time" content="2024-04-25T03:26:00.000Z">
 <meta property="article:modified_time" content="2026-06-26T12:29:50.614Z">
 <meta property="article:author" content="沉石鱼惊旋">
 <meta property="article:tag" content="乱搞">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://blog.cyx2009.top/assets/img/banner2.jpg">
+	<link rel="canonical" href="https://blog.cyx2009.top/archives/pollardrho/">
 
 	<meta name="theme-color" content="#5e72e4">
 	<meta name="theme-color-rgb" content="94,114,228">
@@ -37,27 +31,25 @@
 	<meta name="argon-enable-custom-theme-color" content="true">
 	<meta name="theme-card-radius" content="15">
 	<meta name="theme-version" content="1.0.2">
-	<link rel="icon" href="/assets/img/favicon.ico">
-	<!-- <link rel="shortcut icon" href="/assets/img/favicon.ico"> -->
-	<!-- <link rel="shortcut icon" href="https://s2.loli.net/2022/07/28/dj7Y3yrweQ2MXNb.png"> -->
+	<link rel="icon" type="image&#x2F;x-icon" sizes="256x256" href="/favicon.ico?v=cfecdcd27478">
+<link rel="icon" type="image&#x2F;png" sizes="16x16" href="/assets/img/avatar/favicon-16.png?v=c6571ec35aac">
+<link rel="icon" type="image&#x2F;png" sizes="32x32" href="/assets/img/avatar/favicon-32.png?v=807eb12e8767">
+<link rel="icon" type="image&#x2F;png" sizes="48x48" href="/assets/img/avatar/favicon-48.png?v=481eb29daef7">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
+<link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
+	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
+	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
+	<link rel="stylesheet" href="/experience.css?v=81660a602728">
+	<link rel="preconnect" href="https://fonts.loli.net">
 	
-<link rel="stylesheet" href="/assets/argon_css_merged.css">
-
+	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 	
-<link rel="stylesheet" href="/style.css">
-
-	
-<link rel="stylesheet" href="//fonts.loli.net/css?family=Open+Sans:300,400,600,700|Noto+Serif+SC:300,600&display=swap.css">
-
-	
-<script src="/assets/argon_js_merged.js"></script>
-
-	
-<script src="/assets/js/argon.min.js"></script>
-
-	
-<script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
+	<link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+	<link rel="stylesheet" href="https://fonts.loli.net/css?family=Open+Sans:300,400,600,700|Noto+Serif+SC:300,600&amp;display=swap" media="print" onload="this.media='all'">
+	<noscript><link rel="stylesheet" href="https://fonts.loli.net/css?family=Open+Sans:300,400,600,700|Noto+Serif+SC:300,600&amp;display=swap"></noscript>
+	<script src="/assets/argon-runtime.c170ab577eac.js"></script>
+	<script src="/assets/js/argon.min.js?v=39735452a395"></script>
+	<script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 	
 
@@ -168,6 +160,7 @@
 	</style>
 <meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="沉石鱼惊旋 的博客" type="application/atom+xml">
 <link rel="alternate" href="/rss2.xml" title="沉石鱼惊旋 的博客" type="application/rss+xml">
+<link id="argon-katex-style" rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css">
 </head>
 
 
@@ -194,15 +187,12 @@
 
 <body>
 <div id="toolbar">
-	<!-- <script>
-		window.open('http://img.chen2009.tk/','_blank');
-	</script> -->
 	<header class="header-global">
 		<nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light bg-primary headroom--not-bottom headroom--not-top headroom--pinned">
 			<div class="container">
 				
 					<a class="navbar-brand navbar-icon mr-lg-5" href="">
-						<img src="/assets/img/favicon.ico">
+						<img class="site-navbar-avatar" alt="沉石鱼惊旋 的博客" src="/assets/img/avatar/navbar-32.png?v=807eb12e8767" width="32" height="32" decoding="async" srcset="/assets/img/avatar/navbar-32.png?v=807eb12e8767 32w, /assets/img/avatar/navbar-64.png?v=2e92d0a478f7 64w, /assets/img/avatar/navbar-96.png?v=3097b32a3d27 96w" sizes="32px" loading="eager">
 					</a>
 				
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
@@ -222,11 +212,11 @@
 						</div>
 					</div>
 					<ul id="navbar_search_btn_mobile" class="navbar-nav align-items-lg-center ml-lg-auto">
-						<li class="nav-item" data-toggle="modal" data-target="#argon_search_modal" style="padding-left: 5px;">
-							<a class="nav-link nav-link-icon">
-								<i class="fa fa-search"></i>
+						<li class="nav-item" style="padding-left: 5px;">
+							<button type="button" class="nav-link nav-link-icon search-trigger" data-toggle="modal" data-target="#argon_search_modal" aria-label="搜索文章" title="搜索文章">
+								<i class="fa fa-search" aria-hidden="true"></i>
 								<span class="nav-link-inner--text d-lg-none">搜索</span>
-							</a>
+							</button>
 						</li>
 					</ul>
 					
@@ -267,17 +257,17 @@
 							</ul>
 						
 					<ul class="navbar-nav align-items-lg-center ml-lg-auto">
-						<li class="nav-item" data-toggle="modal" data-target="#argon_search_modal" id="navbar_search_btn_pc">
-							<a class="nav-link nav-link-icon">
-								<i class="fa fa-search"></i>
+						<li class="nav-item" id="navbar_search_btn_pc">
+							<button type="button" class="nav-link nav-link-icon search-trigger" data-toggle="modal" data-target="#argon_search_modal" aria-label="搜索文章" title="搜索文章">
+								<i class="fa fa-search" aria-hidden="true"></i>
 								<span class="nav-link-inner--text d-lg-none">搜索</span>
-							</a>
+							</button>
 						</li>
 					</ul>
 				</div>
 				
 					<a class="navbar-brand navbar-icon-mobile" href="">
-						<img src="/assets/img/favicon.ico">
+						<img class="site-navbar-avatar" alt="沉石鱼惊旋 的博客" src="/assets/img/avatar/navbar-32.png?v=807eb12e8767" width="32" height="32" decoding="async" srcset="/assets/img/avatar/navbar-32.png?v=807eb12e8767 32w, /assets/img/avatar/navbar-64.png?v=2e92d0a478f7 64w, /assets/img/avatar/navbar-96.png?v=3097b32a3d27 96w" sizes="32px" loading="eager">
 					</a>
 				
 				<div id="navbar_menu_mask" data-toggle="collapse" data-target="#navbar_global"></div>
@@ -285,25 +275,27 @@
 		</nav>
 	</header>
 </div>
-<div class="modal fade" id="argon_search_modal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+<div class="modal fade" id="argon_search_modal" tabindex="-1" role="dialog" aria-labelledby="argon_search_title" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title">搜索</h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<h5 class="modal-title" id="argon_search_title">搜索文章</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="关闭搜索">
 					<span aria-hidden="true">&times;</span>
 				</button>
 			</div>
 			<div class="modal-body">
-				<!-- TODO -->
-<div class="form-group mb-3">
+				<div class="form-group mb-3">
+	<label for="local-search-input">搜索文章、题号或关键词</label>
 	<div class="input-group input-group-alternative">
 		<div class="input-group-prepend">
-			<span class="input-group-text"><i class="fa fa-search"></i></span>
+			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text"  autocomplete="off" data-search.path="search.xml" data-config.root="/">
+		<input id="local-search-input" class="form-control" placeholder="例如 CF1209F、最短路、C++" type="search" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.1c65081edc8e.json">
 	</div>
-	<div id="local-search-result"></div>
+	<p id="local-search-status" class="mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
+	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
+	<div id="local-search-result" aria-busy="false"></div>
 </div>
 
 			</div>
@@ -327,16 +319,11 @@
 	
 	<div id="banner_container" class="banner-container container text-center">
 		
-			<div class="banner-title text-white" data-text="沉石鱼惊旋 的博客" data-interval=""><span class="banner-title-inner">&nbsp;</span>
+			<div class="banner-title text-white" data-text="沉石鱼惊旋 的博客" data-interval="500"><span class="banner-title-inner">&nbsp;</span>
 		
 		</div>
 	</div>
 	
-		<style>
-			section.banner{
-				background-image: url(/assets/img/banner.jpg) !important;
-			}
-		</style>
 	
 </section>
 
@@ -403,13 +390,13 @@
 	<button id="fabtn_back_to_top" class="btn btn-icon btn-neutral fabtn shadow-sm" type="button" aria-label="Back To Top" tooltip="回到顶部">
 		<span class="btn-inner--icon"><i class="fa fa-angle-up"></i></span>
 	</button>
-	<button id="fabtn_go_to_comment" class="btn btn-icon btn-neutral fabtn shadow-sm d-none" type="button" <-% theme.fab_show_gotocomment_button ? "" : "style='display: none;'"  aria-label="Comment" tooltip="评论">
+	<button id="fabtn_go_to_comment" class="btn btn-icon btn-neutral fabtn shadow-sm d-none" type="button"  aria-label="Comment" tooltip="评论">
 		<span class="btn-inner--icon"><i class="fa fa-comment-o"></i></span>
 	</button>
-	<button id="fabtn_toggle_darkmode" class="btn btn-icon btn-neutral fabtn shadow-sm" type="button" <-% theme.fab_show_darkmode_button ? "" : "style='display: none;'"  aria-label="Toggle Darkmode" tooltip-darkmode="夜间模式" tooltip-blackmode="暗黑模式" tooltip-lightmode="日间模式">
+	<button id="fabtn_toggle_darkmode" class="btn btn-icon btn-neutral fabtn shadow-sm" type="button" style='display: none;' aria-label="Toggle Darkmode" tooltip-darkmode="夜间模式" tooltip-blackmode="暗黑模式" tooltip-lightmode="日间模式">
 		<span class="btn-inner--icon"><i class="fa fa-moon-o"></i><i class='fa fa-lightbulb-o'></i></span>
 	</button>
-	<button id="fabtn_toggle_blog_settings_popup" class="btn btn-icon btn-neutral fabtn shadow-sm" type="button" <-% theme.fab_show_settings_button ? "" : "style='display: none;'"  aria-label="Open Blog Settings Menu" tooltip="设置">
+	<button id="fabtn_toggle_blog_settings_popup" class="btn btn-icon btn-neutral fabtn shadow-sm" type="button"  aria-label="Open Blog Settings Menu" tooltip="设置">
 		<span class="btn-inner--icon"><i class="fa fa-cog"></i></span>
 	</button>
 	<div id="fabtn_blog_settings_popup" class="card shadow-sm" style="opacity: 0;" aria-hidden="true">
@@ -499,7 +486,7 @@
 			
 			
 				<ul id='leftbar_part1_menu' class='leftbar-menu'>
-					<li class='leftbar-menu-item'><a href='/'>首页</a></li><li class='leftbar-menu-item'><a href='/archives'>归档</a></li><li class='leftbar-menu-item'><a href='/friends'>友链</a></li><li class='leftbar-menu-item'><a href='/wordcloud'>词云</a></li><li class='leftbar-menu-item'><a href='/rss2.xml'>RSS 订阅</a></li><li class='leftbar-menu-item'><a href='/atom.xml'>RSS 订阅 2</a></li><li class='leftbar-menu-item leftbar-menu-item-haschildren'><a no-pjax onclick='return false;'>实用工具</a><ul class='leftbar-menu-item leftbar-menu-subitem shadow-sm'><li class='leftbar-menu-item'><a target="_blank" rel="noopener" href='https://lab.magiconch.com/homo/'>恶臭数学分解器</a></li><li class='leftbar-menu-item'><a target="_blank" rel="noopener" href='https://lab.magiconch.com/nbnhhsh/'>缩写查询</a></li><li class='leftbar-menu-item'><a target="_blank" rel="noopener" href='https://www.luogu.com.cn/blog/IowaBattleship/latex-gong-shi-tai-quan'>$\LaTeX$ 公式大全</a></li><li class='leftbar-menu-item'><a target="_blank" rel="noopener" href='https://zh.numberempire.com/factoringcalculator.php'>因式分解</a></li><li class='leftbar-menu-item'><a target="_blank" rel="noopener" href='https://csacademy.com/app/graph_editor/'>图论绘画</a></li><li class='leftbar-menu-item'><a target="_blank" rel="noopener" href='https://codeforces.com/blog/entry/62393'>如何卡 umap</a></li><li class='leftbar-menu-item'><a target="_blank" rel="noopener" href='https://oier.baoshuo.dev/'>OIerDB（国内 OI）</a></li><li class='leftbar-menu-item'><a target="_blank" rel="noopener" href='https://cpcfinder.com/'>CPCFinder（国内 XCPC）</a></li><li class='leftbar-menu-item'><a target="_blank" rel="noopener" href='https://cphof.org/'>CPHOF（全球 CP）</a></li><li class='leftbar-menu-item'><a target="_blank" rel="noopener" href='https://vv.cicada000.work/'>VV 字幕搜索</a></li></ul></li><li class='leftbar-menu-item'><a target="_blank" rel="noopener" href='https://cyx2009.top/'>目录</a></li>
+					<li class='leftbar-menu-item'><a href='/'>首页</a></li><li class='leftbar-menu-item'><a href='/archives'>归档</a></li><li class='leftbar-menu-item'><a href='/friends'>友链</a></li><li class='leftbar-menu-item'><a href='/wordcloud'>词云</a></li><li class='leftbar-menu-item'><a href='/rss2.xml'>RSS 订阅</a></li><li class='leftbar-menu-item'><a href='/atom.xml'>RSS 订阅 2</a></li><li class='leftbar-menu-item leftbar-menu-item-haschildren'><a no-pjax onclick='return false;'>实用工具</a><ul class='leftbar-menu-item leftbar-menu-subitem shadow-sm'><li class='leftbar-menu-item'><a target="_blank" rel="noopener" href='https://lab.magiconch.com/homo/'>恶臭数学分解器</a></li><li class='leftbar-menu-item'><a target="_blank" rel="noopener" href='https://lab.magiconch.com/nbnhhsh/'>缩写查询</a></li><li class='leftbar-menu-item'><a target="_blank" rel="noopener" href='https://www.luogu.com.cn/blog/IowaBattleship/latex-gong-shi-tai-quan'><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>LaTeX</mtext></mrow><annotation encoding="application/x-tex">\LaTeX</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.89883em;vertical-align:-0.2155em;"></span><span class="mord text"><span class="mord textrm">L</span><span class="mspace" style="margin-right:-0.36em;"></span><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.68333em;"><span style="top:-2.904999em;"><span class="pstrut" style="height:2.7em;"></span><span class="mord"><span class="mord textrm mtight sizing reset-size6 size3">A</span></span></span></span></span></span><span class="mspace" style="margin-right:-0.15em;"></span><span class="mord text"><span class="mord textrm">T</span><span class="mspace" style="margin-right:-0.1667em;"></span><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.46782999999999997em;"><span style="top:-2.7845em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord textrm">E</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2155em;"><span></span></span></span></span><span class="mspace" style="margin-right:-0.125em;"></span><span class="mord textrm">X</span></span></span></span></span></span> 公式大全</a></li><li class='leftbar-menu-item'><a target="_blank" rel="noopener" href='https://zh.numberempire.com/factoringcalculator.php'>因式分解</a></li><li class='leftbar-menu-item'><a target="_blank" rel="noopener" href='https://csacademy.com/app/graph_editor/'>图论绘画</a></li><li class='leftbar-menu-item'><a target="_blank" rel="noopener" href='https://codeforces.com/blog/entry/62393'>如何卡 umap</a></li><li class='leftbar-menu-item'><a target="_blank" rel="noopener" href='https://oier.baoshuo.dev/'>OIerDB（国内 OI）</a></li><li class='leftbar-menu-item'><a target="_blank" rel="noopener" href='https://cpcfinder.com/'>CPCFinder（国内 XCPC）</a></li><li class='leftbar-menu-item'><a target="_blank" rel="noopener" href='https://cphof.org/'>CPHOF（全球 CP）</a></li><li class='leftbar-menu-item'><a target="_blank" rel="noopener" href='https://vv.cicada000.work/'>VV 字幕搜索</a></li></ul></li><li class='leftbar-menu-item'><a target="_blank" rel="noopener" href='https://cyx2009.top/'>目录</a></li>
 				</ul>
 			
 			<div class="card-body text-center leftbar-search-button">
@@ -554,7 +541,9 @@
 							</div>
 						
 						<div class="tab-pane fade text-center" id="leftbar_tab_overview" role="tabpanel" aria-labelledby="leftbar_tab_overview_btn">
-							<img id="leftbar_overview_author_image" src="/assets/img/favicon.ico" class="img-fluid rounded-circle shadow-sm" style="width: 100px;" alt="avatar">
+							
+								<picture><source type="image&#x2F;webp" srcset="/assets/img/avatar/avatar-100.webp?v=5cbc54368973 100w, /assets/img/avatar/avatar-200.webp?v=6b4cd7365c87 200w, /assets/img/avatar/avatar-256.webp?v=cbc791e9de50 256w" sizes="100px"><img id="leftbar_overview_author_image" class="img-fluid rounded-circle shadow-sm" alt="沉石鱼惊旋的头像" src="/assets/img/avatar/avatar-100.png?v=4bfc64dd98c8" width="100" height="100" decoding="async" srcset="/assets/img/avatar/avatar-100.png?v=4bfc64dd98c8 100w, /assets/img/avatar/avatar-200.png?v=4ecb6233eeac 200w, /assets/img/avatar/avatar-256.png?v=846e2fac8563 256w" sizes="100px" loading="lazy"></picture>
+							
 							<h6 id="leftbar_overview_author_name">沉石鱼惊旋</h6>
 							<nav class="site-state">
 								<div class="site-state-item site-state-posts">
@@ -760,7 +749,7 @@
 		<div class="post-donate">
 			<button class="btn donate-btn btn-danger">赞赏</button>
 			<div class="donate-qrcode card shadow-sm bg-white">
-				<img src="http://album.cyx2009.top/pay_wx.jpg">
+				<img src="https://album.cyx2009.top/pay_wx.jpg">
 			</div>
 		</div>
 	
@@ -812,7 +801,7 @@ function createRandomHeart() {
 }
 
 // 点击按钮（POST请求）
-btn.addEventListener("click", () => {
+if (btn) btn.addEventListener("click", () => {
   if (busy) return;
   busy = true;
 
@@ -898,7 +887,7 @@ btn.addEventListener("click", () => {
 				<span class="btn-inner--icon"><i class="fa fa-twitter"></i></span>
 			</button>
 		</a>
-		<a target="_blank" class="no-pjax icon-telegram" href="https://telegram.me/share/url?url=http://blog.cyx2009.top/archives/pollardrho/&text=[题解] 逆天 Pollard Rho" tooltip="分享到 Telegram">
+		<a target="_blank" class="no-pjax icon-telegram" href="https://telegram.me/share/url?url=https://blog.cyx2009.top/archives/pollardrho/&text=[题解] 逆天 Pollard Rho" tooltip="分享到 Telegram">
 			<button class="btn btn-icon btn-primary" style="background: #42a5f5;border: none;">
 				<span class="btn-inner--icon"><i class="fa fa-telegram"></i></span>
 			</button>
@@ -920,7 +909,7 @@ btn.addEventListener("click", () => {
 对于题解中的给出...`,
 	    wechatQrcodeTitle : `分享到微信`,
 	    wechatQrcodeHelper : `微信扫描二维码`,
-	    source : `http://blog.cyx2009.top/archives/pollardrho/`
+	    source : `https://blog.cyx2009.top/archives/pollardrho/`
 	});
 	$("#share_show")[0].onclick = function(){
 		$("#share_container").addClass("opened");
@@ -1035,272 +1024,35 @@ btn.addEventListener("click", () => {
   setInterval(createtime, 1000);
                           </script>
 
-                        <style>
-                            .particle {
-  position: fixed;
-  pointer-events: none;
-  background-color: currentColor;
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-}
-
-.ripple {
-  position: fixed;
-  border-radius: 50%;
-  pointer-events: none;
-  border: 2px solid rgba(255, 20, 97, 0.8);
-  transform: translate(-50%, -50%);
-  animation: ripple-effect 0.6s ease-out forwards;
-}
-
-@keyframes ripple-effect {
-  0% {
-    width: 0;
-    height: 0;
-    opacity: 0.5;
-  }
-  100% {
-    width: 50px;
-    height: 50px;
-    opacity: 0;
-  }
-}
-                        </style>
-                     <!--    <script>
-        window.onload = (() => {
-            //定义点击出现文字类
-            function ClickFrontShow() {
-                //定义所需文字和颜色
-                this.fron = ['复杂度', '枚举', '模拟', '递归 & 分治', '贪心', '排序',
-                    '前缀和 & 差分', '二分', '倍增', '构造',
-                    'DFS（搜索）', 'BFS（搜索）', '双向搜索', '启发式搜索', 'A*',
-                    '迭代加深搜索', 'IDA*', '回溯法', 'Dancing Links',
-                    'Alpha-Beta 剪枝',
-                    '记忆化搜索', '背包 DP', '区间 DP', 'DAG 上的 DP', '树形 DP',
-                    '状压 DP', '数位 DP', '插头 DP', '计数 DP', '动态 DP',
-                    '概率 DP',
-                    '字符串匹配', '字符串哈希', '字典树 (Trie)', '前缀函数与 KMP 算法',
-                    'Boyer-Moore 算法', 'Z 函数（扩展 KMP）', '自动机',
-                    'AC 自动机', '后缀数组 (SA)', '后缀自动机 (SAM)', '后缀平衡树',
-                    '广义后缀自动机', '后缀树', 'Manacher', '回文树', '序列自动机',
-                    '最小表示法', 'Lyndon 分解', 'Main-Lorentz 算法',
-                    '符号', '进位制', '位运算', '二进制集合操作', '平衡三进制', '高精度计算',
-                    '快速幂', '置换和排列', '弧度制与坐标系', '复数', '数论',
-                    '多项式与生成函数', '组合数学', '线性代数', '线性规划', '群论', '概率论',
-                    '博弈论', '牛顿迭代法', '数值积分', '傅里叶-莫茨金消元法', '序理论',
-                    '杨氏矩阵', 'Schreier–Sims 算法',
-                    'Berlekamp-Massey 算法',
-                    '栈', '队列', '链表', '哈希表', '并查集', '堆', '块状数据结构',
-                    '单调栈', '单调队列', 'ST 表', '树状数组', '线段树', '李超线段树',
-                    '区间最值操作 & 区间历史最值', '划分树', '二叉搜索树 & 平衡树', '跳表',
-                    '可持久化数据结构', '树套树', 'K-D Tree', '动态树', '析合树',
-                    'PQ 树', '手指树', '霍夫曼树',
-                    '图论相关概念', '图的存储', 'DFS（图论）', 'BFS（图论）', '树上问题',
-                    '矩阵树定理', '有向无环图', '拓扑排序', '最小生成树', '斯坦纳树',
-                    '最小树形图', '最小直径生成树', '最短路', '拆点', '差分约束', 'k 短路',
-                    '同余最短路', '连通性相关', '2-SAT', '欧拉图', '哈密顿图', '二分图',
-                    '最小环', '平面图', '图的着色', '网络流', 'Stoer-Wagner 算法',
-                    '图的匹配', 'Prufer 序列', 'LGV 引理', '弦图', '最大团搜索算法',
-                    '二维计算几何基础', '三维计算几何基础', '距离', 'Pick 定理', '三角剖分',
-                    '凸包', '扫描线', '旋转卡壳', '半平面交', '平面最近点对', '随机增量法',
-                    '反演变换', '计算几何杂项',
-                    '离散化', '双指针', '离线算法', '分数规划', '随机化', '悬线法',
-                    '计算理论基础', '字节顺序', '约瑟夫问题', '格雷码', '表达式求值',
-                    '在一台机器上规划任务', '主元素问题', 'Garsia-Wachs 算法',
-                    '15-puzzle', 'Kahan 求和', '珂朵莉树/颜色段均摊',
-                    'RMQ', '并查集应用', '括号序列', '线段树与离线询问'
-                ];
-                this.colo = ['#FF69B4', '#ff6651', 'orange', '#FF00FF',
-                    '#00FF7F', '#00BFFF', '#BA55D3'
-                ];
-                //获取body元素
-                this.elBody = document.getElementsByTagName("body")[0];
-                //初始化randomNum
-                this.randomNum = null;
-                //初始化字体inde
-                this.finde = 0;
-                //初始化className
-                this.cls = 0;
-            }
-
-            //定义初始化
-            ClickFrontShow.prototype.init = function(frontArray,
-                colorArray) {
-                //自定义颜色和字体
-                this.fron = frontArray || this.fron;
-                this.colo = colorArray || this.colo;
-
-                this.listenMouse();
-            }
-
-            //创建文字
-            ClickFrontShow.prototype.createFront = function(classname) {
-                var self = this;
-                let ospan = document.createElement('span');
-                //设置样式
-                let cssText =
-                    // "width: 100%; height: 100%; top: 0; left: 0; z-index: 99999; position: fixed;";
-                    // "position:absolute; cursor: default; transform: translate(-50%,-50%); font-weight: bold; opacity: 1; z-index: 1000; transition: 1s;width: 100%; height: 100%;pointer-events: none;";
-                    // "position:absolute; width: 40px; height: 20px; cursor: default; transform: translate(-50%,-50%); font-weight: bold; opacity: 1; z-index: 1000; transition: 1s;";
-                    "position:fixed; width: 40px; height: 20px; cursor: default; transform: translate(-50%,-50%); font-weight: bold; opacity: 1; z-index: 1000; transition: 1s;";
-                //随机字体和颜色
-                let randomFront = self.fron[Math.round(Math
-                    .random() * (self.fron.length - 1))];
-                let randomColor = self.colo[Math.round(Math
-                    .random() * (self.colo.length - 1))];
-                //字体下标增1
-                self.finde = (self.finde + 1) % self.fron.length;
-                //向body中添加元素
-                self.elBody.appendChild(ospan);
-                //绑定一个classname
-                ospan.className = String(classname);
-                //添加样式
-                ospan.style.cssText = cssText +
-                    "-moz-user-select: none;-webkit-user-select: none;-ms-user-select: none;user-select: none;"
-                ospan.style.color = randomColor;
-                ospan.innerHTML = randomFront;
-            }
-
-
-            //监听鼠标点击
-            ClickFrontShow.prototype.listenMouse = function() {
-                var self = this;
-
-                //鼠标点击事件
-                document.onclick = function(e) {
-                    //避免classname值重复导致出现bug
-                    if (self.cls === 20) {
-                        self.cls = 0;
-                    } else {
-                        self.cls += 1;
-                    }
-                    //创建文字
-                    self.createFront(self.cls);
-                    let el = document.getElementsByClassName(
-                        self.cls)[0];
-
-                    //鼠标点击位置
-
-                    el.style.left = e.clientX + 'px';
-                    el.style.top = e.clientY + 'px';
-                    // alert('x: '+el.style.left+' y: '+el.style.top);
-
-                    //过时改变
-                    setTimeout(function() {
-                        el.style.opacity = 0;
-                        el.style.top = el.offsetTop -
-                            100 + 'px';
-                    }, 100);
-                    //过时清除
-                    setTimeout(function() {
-                        self.elBody.removeChild(el);
-                    }, 2000);
-                }
-            }
-            //实例化
-            var frontShow = new ClickFrontShow();
-            //用户可在此传递参数，默认第一个参数是字体数组；
-            //第二个参数是颜色数组，必须是数组类型！
-            frontShow.init();
-        })();
-                        </script> -->
-                     <script>
-                  const colors = ['#FF1461', '#18FF92', '#5A87FF', '#FBF38C'];
-  
-  document.addEventListener('click', (e) => {
-    const ripple = document.createElement('div');
-    ripple.className = 'ripple';
-    ripple.style.left = `${e.clientX}px`;
-    ripple.style.top = `${e.clientY}px`;
-    document.body.appendChild(ripple);
-    
-    // パーティクルを8個生成
-    for (let i = 0; i < 8; i++) {
-      const particle = document.createElement('div');
-      particle.className = 'particle';
-      particle.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-      particle.style.left = `${e.clientX - 4}px`;
-      particle.style.top = `${e.clientY - 4}px`;
-      
-      // アニメーションの初期設定
-      const angle = ((i * 45 + 22.5) * Math.PI) / 180;
-      const velocity = 2 + Math.random() * 2;
-      const startTime = performance.now();
-      
-      // アニメーション実行
-      const animate = (currentTime) => {
-        const progress = (currentTime - startTime) / 600;
-        
-        if (progress >= 1) {
-          particle.remove();
-          return;
-        }
-        
-        particle.style.left = `${e.clientX - 4 + Math.cos(angle) * velocity * progress * 20}px`;
-        particle.style.top = `${e.clientY - 4 + Math.sin(angle) * velocity * progress * 20}px`;
-        particle.style.opacity = 1 - progress;
-        particle.style.transform = `scale(${1 - progress})`;
-        
-        requestAnimationFrame(animate);
-      };
-      
-      document.body.appendChild(particle);
-      requestAnimationFrame(animate);
-    }
-    
-    // 600ms後に波紋を削除
-    setTimeout(() => ripple.remove(), 600);
-  });
-                </script>
                     </footer>
                 </main>
             </div>
         </div>
+        <script>
+          if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            var bannerTitle = document.querySelector('.banner-title[data-text]');
+            if (bannerTitle) {
+              bannerTitle.querySelector('.banner-title-inner').textContent = bannerTitle.dataset.text;
+              bannerTitle.removeAttribute('data-text');
+            }
+          }
+        </script>
+        <script src="/argontheme.js?v=e25838cb917c"></script>
         
-<script src="/argontheme.js"></script>
-
+          <script src="/local-search.js?v=4ca7e902bade"></script>
         
         
-        
-            <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css">
-            <script src="//cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js"></script>
-            <script src="//cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js"></script>
-            <script>
-                document.addEventListener("DOMContentLoaded", function() {
-                    renderMathInElement(document.body, {
-                      // customised options
-                      // • auto-render specific keys, e.g.:
-                      delimiters: [
-                          {left: '$$', right: '$$', display: true},
-                          {left: '$', right: '$', display: false},
-                          {left: '\\(', right: '\\)', display: false},
-                          {left: '\\[', right: '\\]', display: true}
-                      ],
-                      // • rendering keys, e.g.:
-                      throwOnError : false
-                    });
-                });
-            </script>
+          
         
 
         
             <script>
                 var argonEnableCodeHighlight = true;
             </script>
-            
-<link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css">
-
+            <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        
-          <script src='https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js'></script>
-          <script>
-            if (window.mermaid) {
-              mermaid.initialize({theme: 'forest'});
-            }
-          </script>
-        
+        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>
@@ -1309,8 +1061,6 @@ btn.addEventListener("click", () => {
         .comment-item-text .comment-sticker.lazyload{display: none;}
     </style>
 </noscript>
-</body>
-
 
 
 <script>
@@ -1323,5 +1073,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
+</body>
 </html>
 
