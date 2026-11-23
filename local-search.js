@@ -35,7 +35,7 @@
     var cursor = 0;
     merged.forEach(function (part) {
       element.appendChild(document.createTextNode(value.slice(cursor, part[0])));
-      var mark = document.createElement('mark');
+      var mark = document.createElement('em');
       mark.className = 'search-keyword';
       mark.textContent = value.slice(part[0], part[1]);
       element.appendChild(mark);
@@ -46,6 +46,7 @@
 
   function render() {
     if (!entries) return;
+    status.classList.add('sr-only');
     results.replaceChildren();
     var query = input.value.trim().toLowerCase();
     if (!query) {
@@ -105,6 +106,7 @@
     if (entries) { render(); return Promise.resolve(entries); }
     if (pending) return pending;
     retry.hidden = true;
+    status.classList.add('sr-only');
     results.setAttribute('aria-busy', 'true');
     status.textContent = '正在加载搜索，请稍候…';
     // The filename includes the content hash: reuse the browser's HTTP cache
@@ -130,6 +132,7 @@
         return entries;
       })
       .catch(function () {
+        status.classList.remove('sr-only');
         status.textContent = '搜索加载失败。请检查网络后重新加载。';
         retry.hidden = false;
         return null;
