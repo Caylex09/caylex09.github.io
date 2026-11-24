@@ -39,8 +39,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -80,6 +80,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -292,7 +295,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -707,15 +710,15 @@
 	</header>
 
 	<div class="post-content" id="post_content">
-		<h1 id="day-3e8"><a class="markdownIt-Anchor" href="#day-3e8"></a> Day -3e8</h1>
+		<h1 id="day-3e8">Day -3e8<a class="markdownIt-Anchor" href="#day-3e8"></a></h1>
 <p>第一次打百度之星。这个软件只有 Windows 版本的？被迫切回我一年没用的 Windows 系统了。</p>
 <p>卡死了，一点 coding 体验都没有。</p>
 <p>喜提两题走人了 &gt;_&lt;</p>
-<h1 id="day-2e8"><a class="markdownIt-Anchor" href="#day-2e8"></a> Day -2e8</h1>
+<h1 id="day-2e8">Day -2e8<a class="markdownIt-Anchor" href="#day-2e8"></a></h1>
 <p>第二把，这一把撞中考，可能是晋级希望最大的。但是事实上我被汉诺塔单防若干小时。</p>
 <p>喜提三题走人了 &gt;_&lt;</p>
 <p>寄。</p>
-<h1 id="day-1e8"><a class="markdownIt-Anchor" href="#day-1e8"></a> Day -1e8</h1>
+<h1 id="day-1e8">Day -1e8<a class="markdownIt-Anchor" href="#day-1e8"></a></h1>
 <p>第三把。最后一把了，吓人。</p>
 <p>开局很不顺利啊，我 T1 挂了 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn></mrow><annotation encoding="application/x-tex">3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">3</span></span></span></span> 发。后面题不是太难？随便写写 1h 的时候就过了 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn></mrow><annotation encoding="application/x-tex">4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">4</span></span></span></span> 个题。</p>
 <p>卡卡卡卡了一会儿 T5，结果 WA 在没开 long long，有惊无险过掉了。封榜前 rk 是 110 左右，菜完了。</p>
@@ -734,11 +737,11 @@ s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
 c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
 M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.23972em;"><span></span></span></span></span></span></span></span></span>。</p>
 <p>真的太唐了。两百多名感觉也炸掉了。</p>
-<h1 id="day-5e7"><a class="markdownIt-Anchor" href="#day-5e7"></a> Day -5e7</h1>
+<h1 id="day-5e7">Day -5e7<a class="markdownIt-Anchor" href="#day-5e7"></a></h1>
 <p>好好好，出去剪头发坐着看短视频的时候 QQ 疯狂被 at。怎么百度之星出成绩了，rk 48 卡线过。</p>
-<h1 id="day-1e6"><a class="markdownIt-Anchor" href="#day-1e6"></a> Day -1e6</h1>
+<h1 id="day-1e6">Day -1e6<a class="markdownIt-Anchor" href="#day-1e6"></a></h1>
 <p>订购了 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>100</mn></mrow><annotation encoding="application/x-tex">100</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">0</span><span class="mord">0</span></span></span></span> 枚徽章。</p>
-<h1 id="day-2"><a class="markdownIt-Anchor" href="#day-2"></a> Day -2</h1>
+<h1 id="day-2">Day -2<a class="markdownIt-Anchor" href="#day-2"></a></h1>
 <p>今天是第一天报道，报道有两天，那就叫做 Day -2 吧。</p>
 <p>把板子打印了一下，虽然我不觉得我能场上使用写的不熟练的算法过题。能拿到气球就是胜利！</p>
 <p>我的包材质好像不方便把徽章挂上面，系了两根绳子用来捆徽章。</p>
@@ -746,7 +749,7 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
 <p>有需要的话可以根据这几根彩色绳子和这个徽章找我？</p>
 <p>民间开了百度之星面基群。</p>
 <p><img loading="lazy" decoding="async" src="https://cdn.luogu.com.cn/upload/image_hosting/w33ymzq1.png" alt="" /></p>
-<h1 id="day-1"><a class="markdownIt-Anchor" href="#day-1"></a> Day -1</h1>
+<h1 id="day-1">Day -1<a class="markdownIt-Anchor" href="#day-1"></a></h1>
 <p>车站全是北京南的车。坐上车开始冲业绩审核题解，审核不知道几篇就累了开摆了。摆也摆累了，睡了一觉。真累，不如 Ivan 晚上十点的卧铺睡醒就到了。</p>
 <p>一点半到的，北京南站。找到了 Anny 和 袁神，进行了一个麦当劳的吃。真的贵啊，一个汉堡 27 块，怎么敢的。</p>
 <p>然后坐了不知道几站的地铁到了天通苑。本来打算先吃东西所以没到天通苑北，虽然也没吃上。</p>
@@ -770,7 +773,7 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
 <p>打到一半看见一个不知道谁来找我，看了眼牌子原来是 青白。还好提前找别人要了 青白 盒子（）好像还看到了 紫陌 Zeeman。紫陌 老师长得太有特色了。</p>
 <p>打完试机在大厅吃饭，面了 Southern_Dynasty。打扑克，打斗地主和掼蛋。我斗地主 5 把出 3 个王炸 1 个炸，无敌了。还被 wosile rua rua 了。</p>
 <p>九华洗澡地方太逆天了，我在防滑垫上滑了。大猩猩组群主说我要在在防 AK 题上 A 了。</p>
-<h1 id="day-0"><a class="markdownIt-Anchor" href="#day-0"></a> Day 0</h1>
+<h1 id="day-0">Day 0<a class="markdownIt-Anchor" href="#day-0"></a></h1>
 <p>早上起来感觉喉咙不舒服，好冷，但是过一会儿就好了。听说昨天晚上有小朋友排练，但我没听到。</p>
 <p>早饭随便吃了点就去会场了。开摆，看 QQ。wosile 用我的 QQ 看消息，无敌了。</p>
 <p>怎么开始说可以登录了，我准考证号错误？原来大家都这样。</p>
@@ -795,7 +798,7 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
 <p>看了小星星的金之后就跑路了。打车去天通苑北，坐车去环球影城旁边的酒店。</p>
 <p>酒店旁边有烧烤，好吃，爱吃。</p>
 <p><img loading="lazy" decoding="async" src="https://cdn.luogu.com.cn/upload/image_hosting/vudan78s.png" alt="" /></p>
-<h1 id="day-114514"><a class="markdownIt-Anchor" href="#day-114514"></a> Day 114514</h1>
+<h1 id="day-114514">Day 114514<a class="markdownIt-Anchor" href="#day-114514"></a></h1>
 <p>我发现那个我不认识的让我更新 CZOJ 的老哥是 Moeebius。</p>
 
 	</div>
@@ -1014,6 +1017,56 @@ if (btn) btn.addEventListener("click", () => {
 
 	<div id="post_comment" class="card shadow-sm">
 		<div id="giscus"></div>
+<script>
+	(function () {
+		var lightTheme = "light";
+		function giscusTheme() {
+			return document.documentElement.classList.contains("darkmode") ? "dark" : lightTheme;
+		}
+		// client.js is the next sibling and has not executed yet (async), so
+		// its data-theme can be corrected before the widget first loads.
+		var loader = document.currentScript.nextElementSibling;
+		if (loader && loader.tagName === "SCRIPT" && loader.getAttribute("data-repo")) {
+			loader.setAttribute("data-theme", giscusTheme());
+		}
+		// Send the current theme to the widget. Always send: the iframe only
+		// acts on messages it receives, and it re-applies idempotently.
+		window.syncGiscusTheme = function () {
+			var frame = document.querySelector("iframe.giscus-frame");
+			if (!frame || !frame.contentWindow) return;
+			frame.contentWindow.postMessage(
+				{ giscus: { setConfig: { theme: giscusTheme() } } },
+				"https://giscus.app"
+			);
+		};
+		// The widget only processes setConfig after it has fully booted, which
+		// the iframe load event signals. emitMetadata=0 means giscus sends no
+		// messages back, so the load event is the reliable sync hook.
+		window.addEventListener("message", function (event) {
+			if (event.origin !== "https://giscus.app") return;
+			syncGiscusTheme();
+		});
+		// giscus replaces its container on re-render, so observe the comment
+		// card for the frame's appearance and hook its load event.
+		var commentCard = document.getElementById("post_comment");
+		if (commentCard) {
+			var hook = function (frame) {
+				frame.addEventListener("load", syncGiscusTheme);
+			};
+			var existing = commentCard.querySelector("iframe.giscus-frame");
+			if (existing) hook(existing);
+			new MutationObserver(function (records) {
+				records.forEach(function (record) {
+					Array.prototype.forEach.call(record.addedNodes, function (node) {
+						if (node.nodeType !== 1) return;
+						var frames = node.tagName === "IFRAME" ? [node] : node.querySelectorAll("iframe.giscus-frame");
+						Array.prototype.forEach.call(frames, hook);
+					});
+				});
+			}).observe(commentCard, { childList: true, subtree: true });
+		}
+	})();
+</script>
 <script src="https://giscus.app/client.js"
         data-repo="caylex09/blogtalk"
         data-repo-id="R_kgDOHDKqeg"
@@ -1108,7 +1161,7 @@ if (btn) btn.addEventListener("click", () => {
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

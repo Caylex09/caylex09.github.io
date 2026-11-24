@@ -35,8 +35,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -76,6 +76,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -288,7 +291,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -676,8 +679,8 @@ P2223 [HNOI2001] 软件开发
 P2917 [USACO08NOV] Toys G
 P4480 [BJWC2018] 餐巾计划问题
 
- 题目思路
-约定 p 为干净餐巾价格，m1,m2 为快洗慢洗所需要的天数，c1,c2 为快洗慢洗一个的代价，m1≤m2,c1≥c2，不满足的话自己 swap 一下即可...
+题目思路
+约定 p 为干净餐巾价格，m1,m2 为快洗慢洗所需要的天数，c1,c2 为快洗慢洗一个的代价，m1≤m2,c1≥c2，不满足的话自己 swap 一下即可。...
 			
 		
 	</div>
@@ -748,11 +751,11 @@ P4480 [BJWC2018] 餐巾计划问题
 				题目翻译
 A 和 B 正在赛跑，前 T1 分钟 A 和 B 速度分别是 A1 和 A2，之后 T2 分钟 A 和 B 速度分别是 A2 和 B2，以此类推，问 A 和 B 会相遇几次。
 相遇无数次输出 infinity。
- 题目思路
+题目思路
 什么小学奥数入门题。
 为了方便描述：
 前半段：Sa,1=T1×A1,Sb,1=T1×B1。
-后半段：Sa,2=T2×...
+后半段：Sa,2=T2×A...
 			
 		
 	</div>
@@ -823,9 +826,9 @@ A 和 B 正在赛跑，前 T1 分钟 A 和 B 速度分别是 A1 和 A2，之后 
 				题目翻译
 输入一个正整数 a(2≤a≤3500)，输出三个数 h,w,r，满足 1h+1w+1r=4a，输出任意一种符合的答案。
 保证存在一组 h,w,r≤3500 的合法解，但是你不需要一定输出类似的方案，输出中含有 ≥3500 的方案也是合法的。
- 题目思路
+题目思路
 大家都会数学，就我不会，那就来一个不太寻常的大炮打蚊子的做法。
-O(V3) 的做法显然...
+O(V3) 的做法显然不...
 			
 		
 	</div>
@@ -977,14 +980,14 @@ int main()
 			
 				希望今年能靠自己的分数打进 NOIP 吧，去年是靠的常州考点的名额。
 好，noip 应该是进了。
- 初赛
- Day -???
+初赛
+Day -???
 去机房不能开电脑，难受。
 练初赛，全靠左顾右盼法看@JwJ_2010 的。退役半年的都比我强，紫砂了。
- Day -1
+Day -1
 文化课布置了作文，难受。初赛，没看。
- Day 0
-上午坐地铁去，好像在常外站看到了个高个子的穿校服的女...
+Day 0
+上午坐地铁去，好像在常外站看到了个高个子的穿校服的女生，但事...
 			
 		
 	</div>
@@ -1124,13 +1127,13 @@ void gmn(T &amp;x, T y) { x = min...
 			
 				前言
 初中了没法打小学生比赛了。膜拜小学但是吊打我的巨佬。但是虽然初中仍然能写炸 T1 并且只能口胡到 T2。
- T1 矩形纸片
- 题目链接
+T1 矩形纸片
+题目链接
 http://czoj.com.cn/p/P1672
 来源 CZOJ。
- 题目思路
+题目思路
 题面中的 109 完全吓唬人用的。
-考虑到 1≤a,b,c,d,x,y≤1000，最暴力的方法开个 2000×2000 大小...
+考虑到 1≤a,b,c,d,x,y≤1000，最暴力的方法开个 2000×2000 大小的数组...
 			
 		
 	</div>
@@ -1203,9 +1206,9 @@ j−i≠k−j。
 
 1≤n≤4,000。
 
- 题目思路
+题目思路
 暴力枚举 i,j,k，但是 O(n3) 超时。
-考虑优化，我们枚举 i,k，可以通过前缀和预处理出这一段中 sj≠si,s...
+考虑优化，我们枚举 i,k，可以通过前缀和预处理出这一段中 sj≠si,sj...
 			
 		
 	</div>
@@ -1269,16 +1272,16 @@ j−i≠k−j。
 		
 			
 				A.Love Story
- 题目翻译
+题目翻译
 
 给出一个长度为 10 的字符串，一位一位看问它与 codeforces 差了多少字符。
 t 组数据，1≤t≤1000。
 
- 题目思路
+题目思路
 按照题意模拟，扫描一遍给出字符串，判断第 i 位与 codeforces 的第 i 位是否相同即可。
- 完整代码
+完整代码
 #include&lt;bits/stdc++.h&gt;
-using n...
+using name...
 			
 		
 	</div>
@@ -1439,7 +1442,7 @@ q 行每行 1 个整数，表示最长的“几乎递增”子序列长度。
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

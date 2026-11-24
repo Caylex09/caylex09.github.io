@@ -38,8 +38,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -79,6 +79,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -291,7 +294,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -701,9 +704,9 @@
 	</header>
 
 	<div class="post-content" id="post_content">
-		<h1 id="f2-题解链接"><a class="markdownIt-Anchor" href="#f2-题解链接"></a> F2 题解链接</h1>
+		<h1 id="f2-题解链接">F2 题解链接<a class="markdownIt-Anchor" href="#f2-题解链接"></a></h1>
 <p><a href="http://blog.cyx2009.top/archives/CF2063F2/">http://blog.cyx2009.top/archives/CF2063F2/</a></p>
-<h1 id="题目翻译"><a class="markdownIt-Anchor" href="#题目翻译"></a> 题目翻译</h1>
+<h1 id="题目翻译">题目翻译<a class="markdownIt-Anchor" href="#题目翻译"></a></h1>
 <p>我们称可以用以下操作生成的括号串为一个『合法括号串』：</p>
 <ol>
 <li>空串。</li>
@@ -720,7 +723,7 @@
 <p><strong>本题为 Easy Version。</strong></p>
 <p>多测。</p>
 <p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>≤</mo><mi>t</mi><mo>≤</mo><mn>1</mn><msup><mn>0</mn><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">1\leq t\leq 10^3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.78041em;vertical-align:-0.13597em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.7719400000000001em;vertical-align:-0.13597em;"></span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span></span></span></span>，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>≤</mo><mi>n</mi><mo separator="true">,</mo><mo>∑</mo><mi>n</mi><mo>≤</mo><mn>5000</mn></mrow><annotation encoding="application/x-tex">2\leq n,\sum n\leq 5000</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.78041em;vertical-align:-0.13597em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.00001em;vertical-align:-0.25001em;"></span><span class="mord mathnormal">n</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop op-symbol small-op" style="position:relative;top:-0.0000050000000000050004em;">∑</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">5</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span></span></span></span>，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>≤</mo><msub><mi>l</mi><mi>i</mi></msub><mo>&lt;</mo><msub><mi>r</mi><mi>i</mi></msub><mo>≤</mo><mn>2</mn><mi>n</mi></mrow><annotation encoding="application/x-tex">1\leq l_i\lt r_i\leq 2n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.78041em;vertical-align:-0.13597em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.01968em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.7859700000000001em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.02778em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mord mathnormal">n</span></span></span></span>。</p>
-<h1 id="题目思路"><a class="markdownIt-Anchor" href="#题目思路"></a> 题目思路</h1>
+<h1 id="题目思路">题目思路<a class="markdownIt-Anchor" href="#题目思路"></a></h1>
 <p>以下约定 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Cat</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><mrow><mo fence="true">(</mo><mfrac linethickness="0px"><mrow><mn>2</mn><mi>n</mi></mrow><mi>n</mi></mfrac><mo fence="true">)</mo></mrow><mo>−</mo><mrow><mo fence="true">(</mo><mfrac linethickness="0px"><mrow><mn>2</mn><mi>n</mi></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">\operatorname{Cat}(n)=\binom{2n}{n}-\binom{2n}{n+1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop"><span class="mord mathrm">C</span><span class="mord mathrm">a</span><span class="mord mathrm">t</span></span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.245118em;vertical-align:-0.35001em;"></span><span class="mord"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size1">(</span></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8951079999999999em;"><span style="top:-2.3550000000000004em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span style="top:-3.144em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span><span class="mord mathnormal mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size1">)</span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.2984390000000001em;vertical-align:-0.403331em;"></span><span class="mord"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size1">(</span></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.895108em;"><span style="top:-2.355em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span><span class="mbin mtight">+</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.144em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span><span class="mord mathnormal mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.403331em;"><span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size1">)</span></span></span></span></span></span> 表示卡特兰数第 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">n</span></span></span></span> 项。</p>
 <p>为了方便考虑，我们假定在 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo separator="true">,</mo><mn>2</mn><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(0,2n+1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">2</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span></span> 的位置初始就有一对括号。这显然不影响答案。</p>
 <p>括号串计数优先往卡特兰数上想，恰好样例中答案只有卡特兰数。一个笨笨的猜测是，我们把那些已经确定的括号遮住不看，设剩余了 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mi>k</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">2(n-k)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">2</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mclose">)</span></span></span></span> 个位置，答案是 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Cat</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mi>k</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{Cat}(n-k)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop"><span class="mord mathrm">C</span><span class="mord mathrm">a</span><span class="mord mathrm">t</span></span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mclose">)</span></span></span></span>。</p>
@@ -739,7 +742,7 @@
 <p>要找父亲括号我们要首先求出这个 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mi>k</mi></mrow><annotation encoding="application/x-tex">rk</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span></span></span></span>。刚才说括号标层是差分描述的，差分之后前缀和相当于是后缀 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">+1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">+</span><span class="mord">1</span></span></span></span> 或后缀 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">−</span><span class="mord">1</span></span></span></span>，查询单点的值。</p>
 <p>之后考虑查父亲括号。父亲括号相当于是某个前缀的最后一个值为 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mi>k</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">rk-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 的位置并且这个位置被标记成了左括号。</p>
 <p>在 F1 我们把这些操作模拟一遍就可以。单次复杂度 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">O</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathcal O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathcal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span>，总复杂度 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">O</mi><mo stretchy="false">(</mo><msup><mi>n</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathcal O(n^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathcal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>。</p>
-<h1 id="代码链接"><a class="markdownIt-Anchor" href="#代码链接"></a> 代码链接</h1>
+<h1 id="代码链接">代码链接<a class="markdownIt-Anchor" href="#代码链接"></a></h1>
 <p>代码里有一段很长的 modint 板子。</p>
 <p><a target="_blank" rel="noopener" href="https://codeforces.com/contest/2063/submission/302480835">CF submission 302480835</a></p>
 
@@ -964,6 +967,56 @@ http://blog.cyx2009.top/archives/CF2063F2/...`,
 
 	<div id="post_comment" class="card shadow-sm">
 		<div id="giscus"></div>
+<script>
+	(function () {
+		var lightTheme = "light";
+		function giscusTheme() {
+			return document.documentElement.classList.contains("darkmode") ? "dark" : lightTheme;
+		}
+		// client.js is the next sibling and has not executed yet (async), so
+		// its data-theme can be corrected before the widget first loads.
+		var loader = document.currentScript.nextElementSibling;
+		if (loader && loader.tagName === "SCRIPT" && loader.getAttribute("data-repo")) {
+			loader.setAttribute("data-theme", giscusTheme());
+		}
+		// Send the current theme to the widget. Always send: the iframe only
+		// acts on messages it receives, and it re-applies idempotently.
+		window.syncGiscusTheme = function () {
+			var frame = document.querySelector("iframe.giscus-frame");
+			if (!frame || !frame.contentWindow) return;
+			frame.contentWindow.postMessage(
+				{ giscus: { setConfig: { theme: giscusTheme() } } },
+				"https://giscus.app"
+			);
+		};
+		// The widget only processes setConfig after it has fully booted, which
+		// the iframe load event signals. emitMetadata=0 means giscus sends no
+		// messages back, so the load event is the reliable sync hook.
+		window.addEventListener("message", function (event) {
+			if (event.origin !== "https://giscus.app") return;
+			syncGiscusTheme();
+		});
+		// giscus replaces its container on re-render, so observe the comment
+		// card for the frame's appearance and hook its load event.
+		var commentCard = document.getElementById("post_comment");
+		if (commentCard) {
+			var hook = function (frame) {
+				frame.addEventListener("load", syncGiscusTheme);
+			};
+			var existing = commentCard.querySelector("iframe.giscus-frame");
+			if (existing) hook(existing);
+			new MutationObserver(function (records) {
+				records.forEach(function (record) {
+					Array.prototype.forEach.call(record.addedNodes, function (node) {
+						if (node.nodeType !== 1) return;
+						var frames = node.tagName === "IFRAME" ? [node] : node.querySelectorAll("iframe.giscus-frame");
+						Array.prototype.forEach.call(frames, hook);
+					});
+				});
+			}).observe(commentCard, { childList: true, subtree: true });
+		}
+	})();
+</script>
 <script src="https://giscus.app/client.js"
         data-repo="caylex09/blogtalk"
         data-repo-id="R_kgDOHDKqeg"
@@ -1058,7 +1111,7 @@ http://blog.cyx2009.top/archives/CF2063F2/...`,
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

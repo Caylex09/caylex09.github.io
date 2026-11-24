@@ -39,8 +39,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -80,6 +80,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -292,7 +295,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -702,14 +705,14 @@
 	</header>
 
 	<div class="post-content" id="post_content">
-		<h1 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h1>
+		<h1 id="前言">前言<a class="markdownIt-Anchor" href="#前言"></a></h1>
 <p>这是今天粉兔杯每日一题，也是根分日报例题，补一下。</p>
 <p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/blog/Amateur-threshold/pu-li-mei-xue-qian-tan-gen-hao-fen-zhi">暴力美学——浅谈根号分治 - paulzrm 的博客 - 洛谷博客</a></p>
-<h1 id="题目翻译"><a class="markdownIt-Anchor" href="#题目翻译"></a> 题目翻译</h1>
+<h1 id="题目翻译">题目翻译<a class="markdownIt-Anchor" href="#题目翻译"></a></h1>
 <p>给出两个等差数列，求在 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mi>L</mi><mo separator="true">,</mo><mi>R</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[L,R]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathnormal">L</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mclose">]</span></span></span></span> 之间的交集大小。</p>
 <p>等差数列形式为 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mi>k</mi><mo>+</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">ak+b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">b</span></span></span></span>。</p>
 <p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>≤</mo><msub><mi>a</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>a</mi><mn>2</mn></msub><mo>≤</mo><mn>2</mn><mo>×</mo><mn>1</mn><msup><mn>0</mn><mn>9</mn></msup><mo separator="true">,</mo><mo>−</mo><mn>2</mn><mo>×</mo><mn>1</mn><msup><mn>0</mn><mn>9</mn></msup><mo>≤</mo><msub><mi>b</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>b</mi><mn>2</mn></msub><mo separator="true">,</mo><mi>L</mi><mo separator="true">,</mo><mi>R</mi><mo>≤</mo><mn>2</mn><mo>×</mo><mn>1</mn><msup><mn>0</mn><mn>9</mn></msup><mo separator="true">,</mo><mi>L</mi><mo>≤</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">1\leq a_1,a_2\leq 2\times 10^9,-2\times 10^9 \leq b_1,b_2,L,R \leq 2\times 10^9,L \le R</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.78041em;vertical-align:-0.13597em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8304100000000001em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.008548em;vertical-align:-0.19444em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">9</span></span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">−</span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.950078em;vertical-align:-0.13597em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">9</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathnormal">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathnormal">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal">L</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.008548em;vertical-align:-0.19444em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">9</span></span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal">L</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span></span></span></span>。</p>
-<h1 id="题目思路"><a class="markdownIt-Anchor" href="#题目思路"></a> 题目思路</h1>
+<h1 id="题目思路">题目思路<a class="markdownIt-Anchor" href="#题目思路"></a></h1>
 <p>观察到 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">a</span></span></span></span> 大，等差数列在 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mi>L</mi><mo separator="true">,</mo><mi>R</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[L,R]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathnormal">L</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mclose">]</span></span></span></span> 之间的项数就很少。反之亦然。</p>
 <p>所以考虑根号分治。显然阈值 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>=</mo><msqrt><mrow><mn>2</mn><mo>×</mo><mn>1</mn><msup><mn>0</mn><mn>9</mn></msup></mrow></msqrt><mo>≈</mo><mn>44722</mn></mrow><annotation encoding="application/x-tex">B=\sqrt{2\times 10^9}\approx44722</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.04em;vertical-align:-0.12661100000000003em;"></span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.913389em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.740108em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">9</span></span></span></span></span></span></span></span></span></span><span style="top:-2.873389em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg width='400em' height='1.08em' viewBox='0 0 400000 1080' preserveAspectRatio='xMinYMin slice'><path d='M95,702
 c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
@@ -737,7 +740,7 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
 <hr />
 <p>实现的时候注意一下开始的位置应该是 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>max</mi><mo>⁡</mo><mo stretchy="false">{</mo><msub><mi>b</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>b</mi><mn>2</mn></msub><mo separator="true">,</mo><mi>L</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\max\{b_1,b_2,L\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop">max</span><span class="mopen">{</span><span class="mord"><span class="mord mathnormal">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathnormal">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal">L</span><span class="mclose">}</span></span></span></span>。然后自己微调一下变成等差数列中的某个数就行。</p>
 <p>开始循环的位置是 <code>ll start = (max(&#123;b1, b2, L&#125;) - b1 + a1 - 1) / a1 * a1 + b1;</code>。</p>
-<h1 id="完整代码"><a class="markdownIt-Anchor" href="#完整代码"></a> 完整代码</h1>
+<h1 id="完整代码">完整代码<a class="markdownIt-Anchor" href="#完整代码"></a></h1>
 <p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>15</mn><mtext> </mtext><mrow><mi mathvariant="monospace">m</mi><mi mathvariant="monospace">s</mi></mrow></mrow><annotation encoding="application/x-tex">15\ \tt{ms}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">5</span><span class="mspace"> </span><span class="mord"><span class="mord"><span class="mord mathtt">m</span><span class="mord mathtt">s</span></span></span></span></span></span> 是目前 CF 最优解了。正解是 exgcd。</p>
 <p><a target="_blank" rel="noopener" href="https://codeforces.com/contest/710/submission/247832379">CF submission 247832379</a></p>
 <pre><code class="highlight cpp"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span>
@@ -994,6 +997,56 @@ if (btn) btn.addEventListener("click", () => {
 
 	<div id="post_comment" class="card shadow-sm">
 		<div id="giscus"></div>
+<script>
+	(function () {
+		var lightTheme = "light";
+		function giscusTheme() {
+			return document.documentElement.classList.contains("darkmode") ? "dark" : lightTheme;
+		}
+		// client.js is the next sibling and has not executed yet (async), so
+		// its data-theme can be corrected before the widget first loads.
+		var loader = document.currentScript.nextElementSibling;
+		if (loader && loader.tagName === "SCRIPT" && loader.getAttribute("data-repo")) {
+			loader.setAttribute("data-theme", giscusTheme());
+		}
+		// Send the current theme to the widget. Always send: the iframe only
+		// acts on messages it receives, and it re-applies idempotently.
+		window.syncGiscusTheme = function () {
+			var frame = document.querySelector("iframe.giscus-frame");
+			if (!frame || !frame.contentWindow) return;
+			frame.contentWindow.postMessage(
+				{ giscus: { setConfig: { theme: giscusTheme() } } },
+				"https://giscus.app"
+			);
+		};
+		// The widget only processes setConfig after it has fully booted, which
+		// the iframe load event signals. emitMetadata=0 means giscus sends no
+		// messages back, so the load event is the reliable sync hook.
+		window.addEventListener("message", function (event) {
+			if (event.origin !== "https://giscus.app") return;
+			syncGiscusTheme();
+		});
+		// giscus replaces its container on re-render, so observe the comment
+		// card for the frame's appearance and hook its load event.
+		var commentCard = document.getElementById("post_comment");
+		if (commentCard) {
+			var hook = function (frame) {
+				frame.addEventListener("load", syncGiscusTheme);
+			};
+			var existing = commentCard.querySelector("iframe.giscus-frame");
+			if (existing) hook(existing);
+			new MutationObserver(function (records) {
+				records.forEach(function (record) {
+					Array.prototype.forEach.call(record.addedNodes, function (node) {
+						if (node.nodeType !== 1) return;
+						var frames = node.tagName === "IFRAME" ? [node] : node.querySelectorAll("iframe.giscus-frame");
+						Array.prototype.forEach.call(frames, hook);
+					});
+				});
+			}).observe(commentCard, { childList: true, subtree: true });
+		}
+	})();
+</script>
 <script src="https://giscus.app/client.js"
         data-repo="caylex09/blogtalk"
         data-repo-id="R_kgDOHDKqeg"
@@ -1088,7 +1141,7 @@ if (btn) btn.addEventListener("click", () => {
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

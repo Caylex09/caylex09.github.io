@@ -9,16 +9,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
 	
 	
-	<meta name="description" content="题目翻译 一个 01 串，找到一个它的子串，1 的个数多删所有 0，0 的个数多删所有 1。问最多删几个数。 题目思路 首先统计 01 个数是必须的。 之后，分类讨论 3 种情况。 情况1：0 的个数比 1 多。 输出 1 的个数。 情况2：1 的个数比 0 多。 输出 0 的个数。 情况 3：1 的个数和 0 的个数…">
+	<meta name="description" content="题目翻译 在某款电脑游戏里，角色初始生命 hc，初始攻击 dc。怪物初始生命 hm，初始攻击 dm。 而你有 k 次机会，将攻击力永久提升 w 或者将生命永久提升 a 。 每一轮，角色攻击怪物，怪物掉 dc 生命。怪物攻击角色，角色掉 dm 生命。 问若干轮以后，角色能否击杀怪物并且角色存活。 击杀怪物定义为：怪物生命…">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[题解] CF1633C Kill the Monster">
 <meta property="og:url" content="https://blog.cyx2009.top/archives/CF1633C/">
 <meta property="og:site_name" content="沉石鱼惊旋 的博客">
-<meta property="og:description" content="题目翻译 一个 01 串，找到一个它的子串，1 的个数多删所有 0，0 的个数多删所有 1。问最多删几个数。 题目思路 首先统计 01 个数是必须的。 之后，分类讨论 3 种情况。 情况1：0 的个数比 1 多。 输出 1 的个数。 情况2：1 的个数比 0 多。 输出 0 的个数。 情况 3：1 的个数和 0 的个数…">
+<meta property="og:description" content="题目翻译 在某款电脑游戏里，角色初始生命 hc，初始攻击 dc。怪物初始生命 hm，初始攻击 dm。 而你有 k 次机会，将攻击力永久提升 w 或者将生命永久提升 a 。 每一轮，角色攻击怪物，怪物掉 dc 生命。怪物攻击角色，角色掉 dm 生命。 问若干轮以后，角色能否击杀怪物并且角色存活。 击杀怪物定义为：怪物生命…">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://blog.cyx2009.top/assets/img/banner2.jpg">
 <meta property="article:published_time" content="2022-02-02T05:49:00.000Z">
-<meta property="article:modified_time" content="2025-02-12T04:46:26.023Z">
+<meta property="article:modified_time" content="2026-11-24T07:01:19.919Z">
 <meta property="article:author" content="沉石鱼惊旋">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://blog.cyx2009.top/assets/img/banner2.jpg">
@@ -37,8 +37,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -78,6 +78,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -290,7 +293,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -657,7 +660,7 @@
 						
 						<div class="post-meta-detail post-meta-detail-time">
 							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2022-2-2 13:49:00 | 编辑于 2025-2-12 12:46:26">2022-2-2 13:49
+							<time title="发布于 2022-2-2 13:49:00 | 编辑于 2026-11-24 15:01:19">2022-2-2 13:49
 							</time>
 						</div>
 					
@@ -684,7 +687,7 @@
 						
 						<div class="post-meta-detail post-meta-detail-words">
 							<i class="fa fa-file-word-o" aria-hidden="true"></i>
-							277 字
+							626 字
 						</div>
 					
 						
@@ -692,7 +695,7 @@
 						
 						<div class="post-meta-detail post-meta-detail-readingtime">
 							<i class="fa fa-hourglass-end" aria-hidden="true"></i>
-							1 分钟
+							2 分钟
 						</div>
 					
 		</div>
@@ -700,37 +703,63 @@
 	</header>
 
 	<div class="post-content" id="post_content">
-		<h3 id="题目翻译"><a class="markdownIt-Anchor" href="#题目翻译"></a> 题目翻译</h3>
-<p>一个 01 串，找到一个它的子串，1 的个数多删所有 0，0 的个数多删所有 1。问最多删几个数。</p>
-<h3 id="题目思路"><a class="markdownIt-Anchor" href="#题目思路"></a> 题目思路</h3>
-<p>首先统计 01 个数是必须的。</p>
-<p>之后，分类讨论 3 种情况。</p>
-<h4 id="情况10-的个数比-1-多"><a class="markdownIt-Anchor" href="#情况10-的个数比-1-多"></a> 情况1：0 的个数比 1 多。</h4>
-<p>输出 1 的个数。</p>
-<h4 id="情况21-的个数比-0-多"><a class="markdownIt-Anchor" href="#情况21-的个数比-0-多"></a> 情况2：1 的个数比 0 多。</h4>
-<p>输出 0 的个数。</p>
-<h4 id="情况-31-的个数和-0-的个数相等"><a class="markdownIt-Anchor" href="#情况-31-的个数和-0-的个数相等"></a> 情况 3：1 的个数和 0 的个数相等。</h4>
-<p>这里有个小问题。</p>
-<p>有人可能问，一样不是输出 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span> 吗？</p>
-<p>但是，重新审题。<strong>找到一个它的子串</strong>，这里划重点。</p>
-<p>也就是说，不用看整个字符串。</p>
-<p>那么我们少拿一个 0 或少拿一个 1，答案就更多了。</p>
-<p>所以，输出 0 的个数 -1。</p>
-<h3 id="题目代码"><a class="markdownIt-Anchor" href="#题目代码"></a> 题目代码</h3>
+		<h3 id="题目翻译">题目翻译<a class="markdownIt-Anchor" href="#题目翻译"></a></h3>
+<p>在某款电脑游戏里，角色初始生命 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mi>c</mi></mrow><annotation encoding="application/x-tex">hc</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">h</span><span class="mord mathnormal">c</span></span></span></span>，初始攻击 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mi>c</mi></mrow><annotation encoding="application/x-tex">dc</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">d</span><span class="mord mathnormal">c</span></span></span></span>。怪物初始生命 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mi>m</mi></mrow><annotation encoding="application/x-tex">hm</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">h</span><span class="mord mathnormal">m</span></span></span></span>，初始攻击 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mi>m</mi></mrow><annotation encoding="application/x-tex">dm</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">d</span><span class="mord mathnormal">m</span></span></span></span>。</p>
+<p>而你有 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span></span></span></span> 次机会，将攻击力<strong>永久</strong>提升 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi></mrow><annotation encoding="application/x-tex">w</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.02691em;">w</span></span></span></span> 或者将生命<strong>永久</strong>提升 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">a</span></span></span></span> 。</p>
+<p>每一轮，角色攻击怪物，怪物掉 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mi>c</mi></mrow><annotation encoding="application/x-tex">dc</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">d</span><span class="mord mathnormal">c</span></span></span></span> 生命。怪物攻击角色，角色掉 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mi>m</mi></mrow><annotation encoding="application/x-tex">dm</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">d</span><span class="mord mathnormal">m</span></span></span></span> 生命。</p>
+<p>问若干轮以后，角色能否击杀怪物并且角色存活。</p>
+<p>击杀怪物定义为：怪物生命 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≯</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\ngtr 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9115200000000001em;vertical-align:-0.20576em;"></span><span class="mrel amsrm">≯</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span>。</p>
+<p>角色存活定义为：角色生命 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">&gt;0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span>。</p>
+<h3 id="题目思路不完整">题目思路(不完整)<a class="markdownIt-Anchor" href="#题目思路不完整"></a></h3>
+<p>我们枚举这 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span></span></span></span> 次机会，分别是加攻击还是加生命。然后判断角色增加这些属性后，能否击败怪物。</p>
+<p>而且每一轮的攻击，如果角色击败了怪物，怪物不会攻击角色。也就是说，怪物可以少打一轮伤害。</p>
+<h3 id="题目代码不完整">题目代码(不完整)<a class="markdownIt-Anchor" href="#题目代码不完整"></a></h3>
 <pre><code class="highlight cpp"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>
 <span class="function"></span>&#123;
-	string s;
-	cin&gt;&gt;s;
-	<span class="type">int</span> cnt0=<span class="number">0</span>,cnt1=<span class="number">0</span>;
-	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;s.<span class="built_in">size</span>();i++)<span class="comment">//记录01个数</span>
+	<span class="type">long</span> <span class="type">long</span> hc,dc,hm,dm,k,w,a;
+	cin&gt;&gt;hc&gt;&gt;dc&gt;&gt;hm&gt;&gt;dm&gt;&gt;k&gt;&gt;w&gt;&gt;a;<span class="comment">//输入属性</span>
+	<span class="keyword">for</span>(<span class="type">long</span> <span class="type">long</span> i=<span class="number">0</span>;i&lt;=k;i++)
 	&#123;
-		<span class="keyword">if</span>(s[i]==<span class="string">&#x27;1&#x27;</span>)cnt1++;
-		<span class="keyword">else</span> cnt0++;
+		<span class="type">long</span> <span class="type">long</span> x=i,y=k-i;<span class="comment">//枚举加攻击或加生命</span>
+		<span class="type">long</span> <span class="type">long</span> rnd=<span class="built_in">ceil</span>(hm*<span class="number">1.0</span>/(dc+x*w));<span class="comment">//用怪物血量除以角色攻击得到轮数</span>
+		<span class="keyword">if</span>(dm*(rnd<span class="number">-1</span>)&lt;hc+a*y)<span class="comment">//如果怪物打出的伤害比角色生命少</span>
+		&#123;
+			<span class="built_in">puts</span>(<span class="string">&quot;YES&quot;</span>);<span class="comment">//可以通关</span>
+			<span class="keyword">return</span>;
+		&#125;
 	&#125;
-	<span class="keyword">if</span>(cnt0==cnt1)cout&lt;&lt;cnt0<span class="number">-1</span>&lt;&lt;endl;<span class="comment">//分类讨论</span>
-	<span class="keyword">else</span> cout&lt;&lt;<span class="built_in">min</span>(cnt0,cnt1)&lt;&lt;endl;
+	<span class="built_in">puts</span>(<span class="string">&quot;NO&quot;</span>);
 &#125;</code></pre>
-<p>多组数据，代码未全。请勿copy，当心踩坑！</p>
+<p>但是，看似没问题，实则会在第13个数据点错误。</p>
+<p>让我们导出看一下。</p>
+<pre><code class="highlight apache"><span class="attribute">Input</span>
+<span class="attribute">1</span>
+<span class="attribute">1</span> <span class="number">1</span>
+<span class="attribute">1000000000000000</span> <span class="number">1000000000</span>
+<span class="attribute">200000</span> <span class="number">1</span> <span class="number">10000000000</span>
+
+<span class="attribute">Output</span>
+<span class="attribute">YES</span>
+
+<span class="attribute">Answer</span>
+<span class="attribute">NO</span></code></pre>
+<p>我们进行调试，分别输出每个循环的结果。</p>
+<pre><code class="highlight makefile">1
+1 1
+1000000000000000 1000000000
+200000 1 10000000000
+<span class="section">加攻击机会数:0 加生命机会数:200000 总轮数:1000000000000000 怪物打出伤害:2003764204206896640 角色生命:2000000000000001</span>
+<span class="section">加攻击机会数:1 加生命机会数:199999 总轮数:500000000000000 怪物打出伤害:1001882101603448320 角色生命:1999990000000001</span>
+<span class="section">加攻击机会数:2 加生命机会数:199998 总轮数:333333333333334 怪物打出伤害:667921401402298880 角色生命:1999980000000001</span>
+<span class="section">加攻击机会数:3 加生命机会数:199997 总轮数:250000000000000 怪物打出伤害:-8722430986553051648 角色生命:1999970000000001</span>
+YES</code></pre>
+<p>答案竟然爆 <code>long long</code> 了。</p>
+<p>那么我们没办法了吗？错！<code>__int128</code> 了解一下？</p>
+<p>我们给总轮数换上 <code>__int128</code> 即可。</p>
+<h3 id="总结">总结<a class="markdownIt-Anchor" href="#总结"></a></h3>
+<p>思想是对于加攻击还是加生命都考虑一下，找出每种可能。</p>
+<p>注意数据范围。</p>
+<p>代码不给了，就是改个 <code>__int128</code> 的事。</p>
 
 	</div>
 <!-- <div style="text-align: center; position: relative;">
@@ -896,7 +925,7 @@ if (btn) btn.addEventListener("click", () => {
 	socialShare("#share", {
 	    title : `[题解] CF1633C Kill the Monster`,
 	    description : `题目翻译
-一个 01 串，找到一个它的子串，1 的个数多删所有 0，0 的个数多删所有 1。问最多删...`,
+在某款电脑游戏里，角色初始生命 hc，初始攻击 dc。怪物初始生命 hm，初始攻击 dm。...`,
 	    wechatQrcodeTitle : `分享到微信`,
 	    wechatQrcodeHelper : `微信扫描二维码`,
 	    source : `https://blog.cyx2009.top/archives/CF1633C/`
@@ -948,6 +977,56 @@ if (btn) btn.addEventListener("click", () => {
 
 	<div id="post_comment" class="card shadow-sm">
 		<div id="giscus"></div>
+<script>
+	(function () {
+		var lightTheme = "light";
+		function giscusTheme() {
+			return document.documentElement.classList.contains("darkmode") ? "dark" : lightTheme;
+		}
+		// client.js is the next sibling and has not executed yet (async), so
+		// its data-theme can be corrected before the widget first loads.
+		var loader = document.currentScript.nextElementSibling;
+		if (loader && loader.tagName === "SCRIPT" && loader.getAttribute("data-repo")) {
+			loader.setAttribute("data-theme", giscusTheme());
+		}
+		// Send the current theme to the widget. Always send: the iframe only
+		// acts on messages it receives, and it re-applies idempotently.
+		window.syncGiscusTheme = function () {
+			var frame = document.querySelector("iframe.giscus-frame");
+			if (!frame || !frame.contentWindow) return;
+			frame.contentWindow.postMessage(
+				{ giscus: { setConfig: { theme: giscusTheme() } } },
+				"https://giscus.app"
+			);
+		};
+		// The widget only processes setConfig after it has fully booted, which
+		// the iframe load event signals. emitMetadata=0 means giscus sends no
+		// messages back, so the load event is the reliable sync hook.
+		window.addEventListener("message", function (event) {
+			if (event.origin !== "https://giscus.app") return;
+			syncGiscusTheme();
+		});
+		// giscus replaces its container on re-render, so observe the comment
+		// card for the frame's appearance and hook its load event.
+		var commentCard = document.getElementById("post_comment");
+		if (commentCard) {
+			var hook = function (frame) {
+				frame.addEventListener("load", syncGiscusTheme);
+			};
+			var existing = commentCard.querySelector("iframe.giscus-frame");
+			if (existing) hook(existing);
+			new MutationObserver(function (records) {
+				records.forEach(function (record) {
+					Array.prototype.forEach.call(record.addedNodes, function (node) {
+						if (node.nodeType !== 1) return;
+						var frames = node.tagName === "IFRAME" ? [node] : node.querySelectorAll("iframe.giscus-frame");
+						Array.prototype.forEach.call(frames, hook);
+					});
+				});
+			}).observe(commentCard, { childList: true, subtree: true });
+		}
+	})();
+</script>
 <script src="https://giscus.app/client.js"
         data-repo="caylex09/blogtalk"
         data-repo-id="R_kgDOHDKqeg"
@@ -1042,7 +1121,7 @@ if (btn) btn.addEventListener("click", () => {
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

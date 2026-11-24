@@ -35,8 +35,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -76,6 +76,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -288,7 +291,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -691,9 +694,9 @@
 给定 n 个点 m 条边的无向图，给定 k，求一个非空点集 S 满足对于所有 S 中的点 u，u 在 S 中的邻居个数 ≥k，或者一个大小为 k 的团。
 无解输出 −1。
 多测。1≤T≤105，1≤n,m,∑n,∑m≤105，1≤k≤n。
- 题目思路
+题目思路
 首先 deg&lt;k−1 的点肯定都没用。直接类似拓扑排序的操作删掉即可。
-如果图中的团最大...
+如果图中的团最大为...
 			
 		
 	</div>
@@ -764,9 +767,9 @@
 				题意
 约定 d(x) 为 x 的因子个数，T 次询问每次给定 n,k，求 ∑i=1nd(ik)。答案对 998244353 取模。
 1≤T≤104，1≤n,k≤107。
- 题目做法
+题目做法
 若 x 可以被分解为 p1α1p2α2…psαs，则我们有 d(x)=∏i=1s(αi+1)。
-同理，xk 一定可以被分解为 p1kα1p2kα2…pskαs。所以 d...
+同理，xk 一定可以被分解为 p1kα1p2kα2…pskαs。所以 d(...
 			
 		
 	</div>
@@ -906,15 +909,15 @@
 			
 				20250204 模拟 T1
 删点 MST，3≤n,m≤5×105。
- Sub 1
+Sub 1
 n,m≤1000。
 暴力模拟。或者写正解没上数据结构优化。
- Sub 2
+Sub 2
 数据随机。哈哈我也不会。
 赛时没几个人会的档。由于随机所以造出来的树每个点度数都不多，暴力维护连通块。没写，大概就这个意思。
- Sub 3
+Sub 3
 一条链 (i,i+1,1) 然后后面随便连点边。
-M...
+MST ...
 			
 		
 	</div>
@@ -983,9 +986,9 @@ M...
 		
 			
 				没脸投题解区了，给我的博客里扔点垃圾。
- F
+F
 来说一下我的铸币做法。有两个很简单的是直接优先队列每次尝试加 (i+1,j,k),(i,j+1,k),(i,j,k+1)。做完了。还有个做法是排序然后枚举 ijk≤K，做完了。
-但是前两天刚写的 https://www.luogu.com.cn/article/gwgzmc70 我印象深刻。我直接对着这...
+但是前两天刚写的 https://www.luogu.com.cn/article/gwgzmc70 我印象深刻。我直接对着这个...
 			
 		
 	</div>
@@ -1052,8 +1055,8 @@ M...
 C 题题解是洗稿了某小群聊天记录。给大家磕头了。所以这份文章不打算投题解，抄来的洗稿之后投太不要脸了。A B 题解也写的一坨，没人看最好（）
 代码是榜前三。
 
- A
-考虑逐位直接枚举 si 然后替换成最大的严格大于 si 的 tj。没有就不替换。重复这个过程，最后能...
+A
+考虑逐位直接枚举 si 然后替换成最大的严格大于 si 的 tj。没有就不替换。重复这个过程，最后能形...
 			
 		
 	</div>
@@ -1118,11 +1121,11 @@ C 题题解是洗稿了某小群聊天记录。给大家磕头了。所以这份
 			
 				https://atcoder.jp/contests/utpc2023/tasks/utpc2023_k
 https://qoj.ac/problem/9123
- 题目翻译
+题目翻译
 求 n3 个 ai+bj+ck 中的第 k 大值。
 1≤n≤5×104，1≤k≤min⁡{n3,109}，0≤ai,bi,ci≤109。
- 题目思路
-以下内容的 k 混用了，...
+题目思路
+以下内容的 k 混用了，懒得...
 			
 		
 	</div>
@@ -1194,8 +1197,8 @@ https://qoj.ac/problem/9123
 给定 n 个点的树，每个点有点权 ai。定义 D(u,v) 表示 u→v 的简单路径的长度（即经过的点的个数）。定义 G(u,v) 表示 u→v 的简单路径经过的所有点的 gcd⁡。定义 F(u,v) 表示 D(u,v)G(u,v)。
 求 ∑i=1n∑j=i+1nF(i,j)。
 1≤n≤105，1≤ai≤105。
- 题目思路
-对于每个 g...
+题目思路
+对于每个 gc...
 			
 		
 	</div>
@@ -1265,14 +1268,14 @@ https://qoj.ac/problem/9123
 			
 				F1 题解链接
 http://blog.cyx2009.top/archives/CF2063F1/
- 题目翻译
+题目翻译
 我们称可以用以下操作生成的括号串为一个『合法括号串』：
 
 空串。
 如果串 A 是『合法括号串』，那么 (A) 也是一个『合法括号串』。
 如果串 A 和串 B 都是『合法括号串』，那么 AB 也是一个『合法括号串』。
 
-现在有一个隐藏的长...
+现在有一个隐藏的长度...
 			
 		
 	</div>
@@ -1342,14 +1345,14 @@ http://blog.cyx2009.top/archives/CF2063F1/
 			
 				F2 题解链接
 http://blog.cyx2009.top/archives/CF2063F2/
- 题目翻译
+题目翻译
 我们称可以用以下操作生成的括号串为一个『合法括号串』：
 
 空串。
 如果串 A 是『合法括号串』，那么 (A) 也是一个『合法括号串』。
 如果串 A 和串 B 都是『合法括号串』，那么 AB 也是一个『合法括号串』。
 
-现在有一个隐藏的长...
+现在有一个隐藏的长度...
 			
 		
 	</div>
@@ -1437,7 +1440,7 @@ http://blog.cyx2009.top/archives/CF2063F2/
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

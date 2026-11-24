@@ -54,8 +54,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -95,6 +95,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -307,7 +310,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -722,23 +725,23 @@
 	</header>
 
 	<div class="post-content" id="post_content">
-		<h1 id="day-998244353"><a class="markdownIt-Anchor" href="#day-998244353"></a> Day -998244353</h1>
+		<h1 id="day-998244353">Day -998244353<a class="markdownIt-Anchor" href="#day-998244353"></a></h1>
 <p>xzy 和 zyc 找我，问我打不打南京。说徐州那边可能有学校有名额，但是差一个人。</p>
 <p>于是和他们组了一队，保险起见在洛谷那边也要了打星名额。</p>
 <p>事实上，最后用的是洛谷的名额（</p>
 <p>不过更准确说是 Hydro 的名额，不过没事洛谷 Hydro 一家亲。洛谷的给了马老师他们队。</p>
 <p>最后我们的队名在自己的创意上，kkk 进一步改进了。</p>
 <p>最后确定的中文队名叫『椅何投篮，谷还是鸠？』，英文队名是『ChairbasketbalLuogu』。</p>
-<h1 id="day-3"><a class="markdownIt-Anchor" href="#day-3"></a> Day -3</h1>
+<h1 id="day-3">Day -3<a class="markdownIt-Anchor" href="#day-3"></a></h1>
 <p>和队友一起 vp 了 25 网络赛第一场，被带飞了。</p>
 <p>一直在写 F，但是被击杀了。死因是调试没删。赛后删了调试过了实在蚌埠住了。</p>
 <p>CSP 出分了，304，还不赖，应该能去 WC 了。CSP 打完正好南京站打星玩两天，爽！</p>
-<h1 id="day-2"><a class="markdownIt-Anchor" href="#day-2"></a> Day -2</h1>
+<h1 id="day-2">Day -2<a class="markdownIt-Anchor" href="#day-2"></a></h1>
 <p>今天是严格意义上的 CSP 出分，补了一下 T3 T4，发现我其实是啥比。</p>
-<h1 id="day-1"><a class="markdownIt-Anchor" href="#day-1"></a> Day -1</h1>
+<h1 id="day-1">Day -1<a class="markdownIt-Anchor" href="#day-1"></a></h1>
 <p>我发现我领不到餐券的原因是，手机号的 0 打成 9 了。</p>
 <p>打印了板子。收拾东西准备明天早上坐火车。</p>
-<h1 id="day-0"><a class="markdownIt-Anchor" href="#day-0"></a> Day 0</h1>
+<h1 id="day-0">Day 0<a class="markdownIt-Anchor" href="#day-0"></a></h1>
 <p>队友是 @<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/user/562119">xzy090626</a> 和 @<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/user/643561"><em>Mi2uk1</em></a>。</p>
 <p>早上 8:08 的火车，8:40 到的南京。本来打算直接去南航的，正好卡点去签到。但是太热了，去酒店放了一下衣服。</p>
 <p><img loading="eager" decoding="async" src="https://testingcf.jsdelivr.net/gh/Caylex09/img@main/images/2025icpcnanjing/215A71F0A245BA9B27757499B061E454.JPG" alt="" /></p>
@@ -797,7 +800,7 @@
 </ul>
 <p>晚上补了一下游记，然后睡前打了一把雀，完美对局 ++，酷。</p>
 <p><img loading="lazy" decoding="async" src="https://testingcf.jsdelivr.net/gh/Caylex09/img@main/images/2025icpcnanjing/IMG_2578.JPG" alt="" /></p>
-<h1 id="day-1-2"><a class="markdownIt-Anchor" href="#day-1-2"></a> Day 1</h1>
+<h1 id="day-1-2">Day 1<a class="markdownIt-Anchor" href="#day-1-2"></a></h1>
 <p>八点钟起床，下去吃了个早饭，碰到了杭二队伍，还有蒙古国队伍。</p>
 <p>去赛场，等待开赛。</p>
 <p>开场发现 C 是签到题，上机写了一下过了。</p>
@@ -1040,6 +1043,56 @@ xzy 和 zyc 找我，问我打不打南京。说徐州那边可能有学校有�
 
 	<div id="post_comment" class="card shadow-sm">
 		<div id="giscus"></div>
+<script>
+	(function () {
+		var lightTheme = "light";
+		function giscusTheme() {
+			return document.documentElement.classList.contains("darkmode") ? "dark" : lightTheme;
+		}
+		// client.js is the next sibling and has not executed yet (async), so
+		// its data-theme can be corrected before the widget first loads.
+		var loader = document.currentScript.nextElementSibling;
+		if (loader && loader.tagName === "SCRIPT" && loader.getAttribute("data-repo")) {
+			loader.setAttribute("data-theme", giscusTheme());
+		}
+		// Send the current theme to the widget. Always send: the iframe only
+		// acts on messages it receives, and it re-applies idempotently.
+		window.syncGiscusTheme = function () {
+			var frame = document.querySelector("iframe.giscus-frame");
+			if (!frame || !frame.contentWindow) return;
+			frame.contentWindow.postMessage(
+				{ giscus: { setConfig: { theme: giscusTheme() } } },
+				"https://giscus.app"
+			);
+		};
+		// The widget only processes setConfig after it has fully booted, which
+		// the iframe load event signals. emitMetadata=0 means giscus sends no
+		// messages back, so the load event is the reliable sync hook.
+		window.addEventListener("message", function (event) {
+			if (event.origin !== "https://giscus.app") return;
+			syncGiscusTheme();
+		});
+		// giscus replaces its container on re-render, so observe the comment
+		// card for the frame's appearance and hook its load event.
+		var commentCard = document.getElementById("post_comment");
+		if (commentCard) {
+			var hook = function (frame) {
+				frame.addEventListener("load", syncGiscusTheme);
+			};
+			var existing = commentCard.querySelector("iframe.giscus-frame");
+			if (existing) hook(existing);
+			new MutationObserver(function (records) {
+				records.forEach(function (record) {
+					Array.prototype.forEach.call(record.addedNodes, function (node) {
+						if (node.nodeType !== 1) return;
+						var frames = node.tagName === "IFRAME" ? [node] : node.querySelectorAll("iframe.giscus-frame");
+						Array.prototype.forEach.call(frames, hook);
+					});
+				});
+			}).observe(commentCard, { childList: true, subtree: true });
+		}
+	})();
+</script>
 <script src="https://giscus.app/client.js"
         data-repo="caylex09/blogtalk"
         data-repo-id="R_kgDOHDKqeg"
@@ -1134,7 +1187,7 @@ xzy 和 zyc 找我，问我打不打南京。说徐州那边可能有学校有�
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

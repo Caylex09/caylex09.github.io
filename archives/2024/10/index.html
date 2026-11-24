@@ -35,8 +35,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -76,6 +76,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -288,7 +291,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -683,9 +686,9 @@
 				题目翻译
 每个点有 ai∑j=1naj 的概率是关键点。你可以走到这个点当且仅当他的父亲节点走过了。问到达关键点的期望步数的最小值，对 998244353 取模。0 号点是根。
 1≤n≤2×105，1≤∑ai≤108，1≤ai。
- 题目思路
+题目思路
 题目等价于最小化每个点的访问顺序乘上点权。
-不妨先把概率 ×∑j=1naj 得到一个新的概率，答案除以 ∑j...
+不妨先把概率 ×∑j=1naj 得到一个新的概率，答案除以 ∑j=...
 			
 		
 	</div>
@@ -754,11 +757,11 @@
 		
 			
 				免责声明：本篇题解在比赛结束前属于私有状态，一般用户无法查看。
- A. 竹竿
+A. 竹竿
 不难发现最多只会左右调换一根竹竿。如果调换了超过一根，一定可以全调回去或者留一根，答案不劣。
 不妨枚举调换的是哪一根竹竿。
 设 li=bi,ri=ai−bi 是第 i 根竹竿的左右长度。
-枚举第 j 根竹竿调换了顺序，那么左侧就是 {lj∣j≠k} 和 rj，右侧就是 {...
+枚举第 j 根竹竿调换了顺序，那么左侧就是 {lj∣j≠k} 和 rj，右侧就是 {r...
 			
 		
 	</div>
@@ -898,9 +901,9 @@
 给出 q 次修改，每次修改给出 p,x 表示 ap←x。每次修改之后求出好的子串的数量。
 询问独立，也就是本次修改不影响下一次的序列。
 1≤n,q≤2×105，1≤ai,p,x≤n。
- 题目思路
+题目思路
 2400？1400！
-不难发现修改了这个位置，要么...
+不难发现修改了这个位置，要么是...
 			
 		
 	</div>
@@ -972,9 +975,9 @@
 给定一个长度为 n 的序列 a，你可以每次选择一个 i 满足 ai≥x 并且执行 ai←ai−x。
 现在给出 q 个询问，每次给出一个 x，查询操作之后序列的最小中位数是多少。
 1≤n,q,∑n,∑q≤105，1≤ai,x≤n。
- 题目思路
+题目思路
 把每一个 ai 都减到 &lt;x 的部分肯定不劣。
-还是套路性的二分中位数，统计 ≤mid 的个数共有...
+还是套路性的二分中位数，统计 ≤mid 的个数共有多...
 			
 		
 	</div>
@@ -1138,7 +1141,7 @@ B 先手，判断每次决斗 A 是否不会输，也就是 A 选择的数不小
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

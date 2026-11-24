@@ -35,8 +35,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -76,6 +76,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -288,7 +291,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -635,7 +638,7 @@
 						
 						<div class="post-meta-detail post-meta-detail-time">
 							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2026-11-20 20:48:00 | 编辑于 2026-11-23 18:07:00">2026-11-20 20:48
+							<time title="发布于 2026-11-20 20:48:00 | 编辑于 2026-11-24 18:01:11">2026-11-20 20:48
 							</time>
 						</div>
 					
@@ -662,7 +665,7 @@
 						
 						<div class="post-meta-detail post-meta-detail-words">
 							<i class="fa fa-file-word-o" aria-hidden="true"></i>
-							3.4k 字
+							5.6k 字
 						</div>
 					
 						
@@ -670,7 +673,7 @@
 						
 						<div class="post-meta-detail post-meta-detail-readingtime">
 							<i class="fa fa-hourglass-end" aria-hidden="true"></i>
-							14 分钟
+							23 分钟
 						</div>
 					
 		</div>
@@ -748,8 +751,8 @@ https://htoj.com.cn/cpp/oj/problem/detail?pid=22977274684288&amp;cid=22977276163
 				前言
 人类玩的太差了。
 本文为 Elegant Square - Problem - QOJ.ac 的数据范围下最优构造题解。
- 正文
-我们之前在 [笔记] 关于正交拉丁方的构造与应用 - 沉石鱼惊旋 的博客 里写到：本题使用一对正交拉丁方的构造，一组填质数一组填 Square-Free 的数，就能做到一个很优的解。在本题 n=30 时，最大元素只...
+正文
+我们之前在 [笔记] 关于正交拉丁方的构造与应用 - 沉石鱼惊旋 的博客 里写到：本题使用一对正交拉丁方的构造，一组填质数一组填 Square-Free 的数，就能做到一个很优的解。在本题 n=30 时，最大元素只有...
 			
 		
 	</div>
@@ -966,7 +969,7 @@ https://htoj.com.cn/cpp/oj/problem/detail?pid=22957280878464&amp;cid=22957355728
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

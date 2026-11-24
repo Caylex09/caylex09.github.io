@@ -37,8 +37,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -78,6 +78,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -290,7 +293,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -701,9 +704,9 @@
 
 	<div class="post-content" id="post_content">
 		<p>JSOI=信息与未来，非 JS 省选。</p>
-<h3 id="2022715"><a class="markdownIt-Anchor" href="#2022715"></a> 2022.7.15</h3>
+<h3 id="2022715">2022.7.15<a class="markdownIt-Anchor" href="#2022715"></a></h3>
 <p>群里早就约好了面基时间地点，还有一天就面基啦！</p>
-<h3 id="2022716"><a class="markdownIt-Anchor" href="#2022716"></a> 2022.7.16</h3>
+<h3 id="2022716">2022.7.16<a class="markdownIt-Anchor" href="#2022716"></a></h3>
 <p>九点半出了地铁。</p>
 <p>九点四十就开始排队了，大家太积极了。</p>
 <p>等了半个多小时，捕捉了一只野生 cyc。</p>
@@ -725,7 +728,7 @@
 <p>P6：一眼丁真，鉴定为我不会的东西。（输出俄罗斯方块摆放位置以通关，真毒瘤！<s>最后两分钟交代码，没编译就交了结果少打一个分号 CE/kk</s>。</p>
 <p>最终得分：15pts+15pts+12pts+12pts+2pts+0pts，合计 56pts。</p>
 <p>还好别人赛前问我和第一能差多少分，我说肯定不超过 50pts，<s>但 tm 谁知道 zxx 还能 ak 啊</s>，差了 44pts，差点真差了 50pts。</p>
-<h3 id="2022717"><a class="markdownIt-Anchor" href="#2022717"></a> 2022.7.17</h3>
+<h3 id="2022717">2022.7.17<a class="markdownIt-Anchor" href="#2022717"></a></h3>
 <p>中午出成绩了。</p>
 <p>全市第四，但按 NJ 的水准，排二十多个去了。</p>
 <p>我就是个废物。</p>
@@ -894,8 +897,8 @@ if (btn) btn.addEventListener("click", () => {
 	socialShare("#share", {
 	    title : `[游记] 信息与未来 2022 游记`,
 	    description : `JSOI=信息与未来，非 JS 省选。
- 2022.7.15
-群里早就约好了面基时间地点，还有一天就...`,
+2022.7.15
+群里早就约好了面基时间地点，还有一天就面...`,
 	    wechatQrcodeTitle : `分享到微信`,
 	    wechatQrcodeHelper : `微信扫描二维码`,
 	    source : `https://blog.cyx2009.top/archives/JSOI2022/`
@@ -947,6 +950,56 @@ if (btn) btn.addEventListener("click", () => {
 
 	<div id="post_comment" class="card shadow-sm">
 		<div id="giscus"></div>
+<script>
+	(function () {
+		var lightTheme = "light";
+		function giscusTheme() {
+			return document.documentElement.classList.contains("darkmode") ? "dark" : lightTheme;
+		}
+		// client.js is the next sibling and has not executed yet (async), so
+		// its data-theme can be corrected before the widget first loads.
+		var loader = document.currentScript.nextElementSibling;
+		if (loader && loader.tagName === "SCRIPT" && loader.getAttribute("data-repo")) {
+			loader.setAttribute("data-theme", giscusTheme());
+		}
+		// Send the current theme to the widget. Always send: the iframe only
+		// acts on messages it receives, and it re-applies idempotently.
+		window.syncGiscusTheme = function () {
+			var frame = document.querySelector("iframe.giscus-frame");
+			if (!frame || !frame.contentWindow) return;
+			frame.contentWindow.postMessage(
+				{ giscus: { setConfig: { theme: giscusTheme() } } },
+				"https://giscus.app"
+			);
+		};
+		// The widget only processes setConfig after it has fully booted, which
+		// the iframe load event signals. emitMetadata=0 means giscus sends no
+		// messages back, so the load event is the reliable sync hook.
+		window.addEventListener("message", function (event) {
+			if (event.origin !== "https://giscus.app") return;
+			syncGiscusTheme();
+		});
+		// giscus replaces its container on re-render, so observe the comment
+		// card for the frame's appearance and hook its load event.
+		var commentCard = document.getElementById("post_comment");
+		if (commentCard) {
+			var hook = function (frame) {
+				frame.addEventListener("load", syncGiscusTheme);
+			};
+			var existing = commentCard.querySelector("iframe.giscus-frame");
+			if (existing) hook(existing);
+			new MutationObserver(function (records) {
+				records.forEach(function (record) {
+					Array.prototype.forEach.call(record.addedNodes, function (node) {
+						if (node.nodeType !== 1) return;
+						var frames = node.tagName === "IFRAME" ? [node] : node.querySelectorAll("iframe.giscus-frame");
+						Array.prototype.forEach.call(frames, hook);
+					});
+				});
+			}).observe(commentCard, { childList: true, subtree: true });
+		}
+	})();
+</script>
 <script src="https://giscus.app/client.js"
         data-repo="caylex09/blogtalk"
         data-repo-id="R_kgDOHDKqeg"
@@ -1041,7 +1094,7 @@ if (btn) btn.addEventListener("click", () => {
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

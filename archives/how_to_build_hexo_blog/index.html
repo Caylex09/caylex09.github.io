@@ -48,8 +48,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -89,6 +89,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -301,7 +304,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -711,23 +714,23 @@
 	</header>
 
 	<div class="post-content" id="post_content">
-		<h2 id="前置条件"><a class="markdownIt-Anchor" href="#前置条件"></a> 前置条件</h2>
-<h3 id="硬件方面"><a class="markdownIt-Anchor" href="#硬件方面"></a> 硬件方面</h3>
+		<h2 id="前置条件">前置条件<a class="markdownIt-Anchor" href="#前置条件"></a></h2>
+<h3 id="硬件方面">硬件方面<a class="markdownIt-Anchor" href="#硬件方面"></a></h3>
 <p>有台电脑。</p>
 <p><s>和没说有区别吗</s></p>
-<h3 id="安装-nodejs"><a class="markdownIt-Anchor" href="#安装-nodejs"></a> 安装 Node.js</h3>
+<h3 id="安装-nodejs">安装 Node.js<a class="markdownIt-Anchor" href="#安装-nodejs"></a></h3>
 <p><a target="_blank" rel="noopener" href="https://nodejs.org">官网地址</a>。</p>
 <p>安装后在 cmd 等命令行输入</p>
 <pre><code class="highlight bash">node -v</code></pre>
 <p>和</p>
 <pre><code class="highlight bash">npm -v</code></pre>
 <p>检查版本号。</p>
-<h3 id="安装-git"><a class="markdownIt-Anchor" href="#安装-git"></a> 安装 Git</h3>
+<h3 id="安装-git">安装 Git<a class="markdownIt-Anchor" href="#安装-git"></a></h3>
 <p><a target="_blank" rel="noopener" href="https://www.git-scm.com/downloads">官网地址</a></p>
 <p>安装后在 cmd 等命令行输入</p>
 <pre><code class="highlight bash">git --version</code></pre>
 <p>检查版本号。</p>
-<h3 id="配置-hexo"><a class="markdownIt-Anchor" href="#配置-hexo"></a> 配置 Hexo</h3>
+<h3 id="配置-hexo">配置 Hexo<a class="markdownIt-Anchor" href="#配置-hexo"></a></h3>
 <p>首先，随意找一个盘，如 E盘，右键，Git Bash Here。</p>
 <p><img loading="eager" decoding="async" src="https://s1.ax1x.com/2022/05/19/ObfwSP.png" alt="" /></p>
 <p>出现这样的界面即可。</p>
@@ -745,21 +748,21 @@ hexo s</code></pre>
 <p>大概默认是长这样。</p>
 <p>可以 Ctrl+C 停止本地博客。</p>
 <p>注意，一旦停止或退出 Git Bash，本地博客将立刻停止。</p>
-<h2 id="开始部署"><a class="markdownIt-Anchor" href="#开始部署"></a> 开始部署</h2>
-<h3 id="建立仓库"><a class="markdownIt-Anchor" href="#建立仓库"></a> 建立仓库</h3>
+<h2 id="开始部署">开始部署<a class="markdownIt-Anchor" href="#开始部署"></a></h2>
+<h3 id="建立仓库">建立仓库<a class="markdownIt-Anchor" href="#建立仓库"></a></h3>
 <p>如果想使你的博客可以被访问链接而被他人看到，不是只有你自己用这台电脑看得到，那么，就需要用 Github 进行托管，并白嫖一个二级域名。</p>
 <p>也可以自己购买域名后按后文步骤进行域名绑定。</p>
-<h4 id="注册账号"><a class="markdownIt-Anchor" href="#注册账号"></a> 注册账号</h4>
+<h4 id="注册账号">注册账号<a class="markdownIt-Anchor" href="#注册账号"></a></h4>
 <p><a target="_blank" rel="noopener" href="https://github.com">GitHub</a>。</p>
 <p>点击进去，Sign up，注册结束后进入这样的页面。</p>
 <p><img loading="lazy" decoding="async" src="https://s1.ax1x.com/2022/05/19/ObjOyQ.png" alt="" /></p>
-<h4 id="创建仓库"><a class="markdownIt-Anchor" href="#创建仓库"></a> 创建仓库</h4>
+<h4 id="创建仓库">创建仓库<a class="markdownIt-Anchor" href="#创建仓库"></a></h4>
 <p>点击右上角加号，New repository，创建一个仓库来托管你的网站。</p>
 <p><img loading="lazy" decoding="async" src="https://s1.ax1x.com/2022/05/19/ObvKfK.png" alt="" /></p>
 <p>打开后，在 repository name 里填写 <code>你的注册时的用户名，也就是左边的+github.io</code>。</p>
 <p><strong>一定不能擅自更改！！！</strong></p>
 <p><img loading="lazy" decoding="async" src="https://s1.ax1x.com/2022/05/19/Obv5X4.png" alt="" /></p>
-<h3 id="生成-ssh"><a class="markdownIt-Anchor" href="#生成-ssh"></a> 生成 SSH</h3>
+<h3 id="生成-ssh">生成 SSH<a class="markdownIt-Anchor" href="#生成-ssh"></a></h3>
 <p>为啥要用 <s>Karry5307</s> SSH 呢，要把我们本地的文件，传输至你的 Github 仓库上，被 Github 托管，然后才能被访问。</p>
 <p>先在你的文件夹里 Git Bash，然后输入</p>
 <pre><code class="highlight bash">ssh</code></pre>
@@ -805,11 +808,11 @@ enter回车一次</code></pre>
 <pre><code class="highlight bash">ssh -T git@github.com</code></pre>
 <p>确认是否绑定成功，有要输入 y 的就输入。</p>
 <p>出现 Hi ...即可。</p>
-<h3 id="本地测试"><a class="markdownIt-Anchor" href="#本地测试"></a> 本地测试</h3>
+<h3 id="本地测试">本地测试<a class="markdownIt-Anchor" href="#本地测试"></a></h3>
 <p>在根目录里输入</p>
 <pre><code class="highlight bash">hexo cl &amp;&amp; hexo g &amp;&amp; hexo s</code></pre>
 <p>然后，访问 <a target="_blank" rel="noopener" href="http://localhost:4000">http://localhost:4000</a> 就可以看到你的本地博客了。</p>
-<h2 id="部署网站"><a class="markdownIt-Anchor" href="#部署网站"></a> 部署网站</h2>
+<h2 id="部署网站">部署网站<a class="markdownIt-Anchor" href="#部署网站"></a></h2>
 <p>进入根目录，在里面有个 _config.yml。</p>
 <p>最下面应该是这样的：</p>
 <pre><code class="highlight bash"><span class="comment"># Deployment</span>
@@ -844,18 +847,18 @@ git config --global user.name <span class="string">&quot;Your Name&quot;</span><
 <p>然后再次执行 <code>hexo d</code> 即可。</p>
 <p>执行完毕先去 Git 仓库看一眼有没有正确 push 上去，没有的话就是前面配置有误。配上的话等一两分钟就可以在对应的 .github.io 上看到你的网站了。</p>
 <p>之后就可以开始美化啦！</p>
-<h2 id="更改主题"><a class="markdownIt-Anchor" href="#更改主题"></a> 更改主题</h2>
+<h2 id="更改主题">更改主题<a class="markdownIt-Anchor" href="#更改主题"></a></h2>
 <p>原版很难看，可以在 <a target="_blank" rel="noopener" href="https://hexo.io/themes/">https://hexo.io/themes</a> 来看主题，我在用 <a target="_blank" rel="noopener" href="https://github.com/solstice23/hexo-theme-argon">Argon</a>。</p>
 <p>argon 作者有写操作，跟着做即可。</p>
-<h2 id="美化博客"><a class="markdownIt-Anchor" href="#美化博客"></a> 美化博客</h2>
+<h2 id="美化博客">美化博客<a class="markdownIt-Anchor" href="#美化博客"></a></h2>
 <p><s>持续更新，争取每周有一个小技巧分享！</s></p>
-<h3 id="快捷部署"><a class="markdownIt-Anchor" href="#快捷部署"></a> 快捷部署</h3>
+<h3 id="快捷部署">快捷部署<a class="markdownIt-Anchor" href="#快捷部署"></a></h3>
 <p>在一个地方，如你的桌面，创建一个后缀为 .sh 的文件，用记事本打开，输入以下内容：</p>
 <pre><code class="highlight bash"><span class="built_in">cd</span> 你的博客根目录
 hexo cl &amp;&amp; hexo g &amp;&amp; hexo d</code></pre>
 <p>自动清空+生成+部署。</p>
 <p>每次省五秒钟，一百二十次就是十分钟啊！（大雾</p>
-<h3 id="评论系统"><a class="markdownIt-Anchor" href="#评论系统"></a> 评论系统</h3>
+<h3 id="评论系统">评论系统<a class="markdownIt-Anchor" href="#评论系统"></a></h3>
 <p>可以去 <code>根目录-themes-argon-_config.yml</code> 查看。</p>
 <p>本教学为 Giscus 评论系统。</p>
 <p>先新建一个仓库，名字可以起 blogtalk 之类的。</p>
@@ -882,12 +885,12 @@ hexo cl &amp;&amp; hexo g &amp;&amp; hexo d</code></pre>
   lang: <span class="string">&#x27;zh-CN&#x27;</span></code></pre>
 <p>将其中的 <code>repo</code> 等信息更改为你显示的信息。</p>
 <p>大功告成，只需部署即可。</p>
-<h3 id="绑定域名"><a class="markdownIt-Anchor" href="#绑定域名"></a> 绑定域名</h3>
+<h3 id="绑定域名">绑定域名<a class="markdownIt-Anchor" href="#绑定域名"></a></h3>
 <p><s>详见 【置顶】如何快速白嫖顶级域名</s>。</p>
 <p>Freenom 已停止维护，故本内容已失效。</p>
-<h2 id="参考文献"><a class="markdownIt-Anchor" href="#参考文献"></a> 参考文献</h2>
+<h2 id="参考文献">参考文献<a class="markdownIt-Anchor" href="#参考文献"></a></h2>
 <p>视频好像被下架了，流汗。</p>
-<h2 id="faq"><a class="markdownIt-Anchor" href="#faq"></a> FAQ</h2>
+<h2 id="faq">FAQ<a class="markdownIt-Anchor" href="#faq"></a></h2>
 <p>有一些细节问题好像没提到啊。</p>
 <ul>
 <li><code>hexo d</code> 时有如图报错怎么办？</li>
@@ -1089,12 +1092,12 @@ if (btn) btn.addEventListener("click", () => {
 	socialShare("#share", {
 	    title : `[工程] 如何快速上手 Hexo 博客`,
 	    description : `前置条件
- 硬件方面
+硬件方面
 有台电脑。
 和没说有区别吗
- 安装 Node.js
+安装 Node.js
 官网地址。
-安装后在 cm...`,
+安装后在 cmd ...`,
 	    wechatQrcodeTitle : `分享到微信`,
 	    wechatQrcodeHelper : `微信扫描二维码`,
 	    source : `https://blog.cyx2009.top/archives/how_to_build_hexo_blog/`
@@ -1146,6 +1149,56 @@ if (btn) btn.addEventListener("click", () => {
 
 	<div id="post_comment" class="card shadow-sm">
 		<div id="giscus"></div>
+<script>
+	(function () {
+		var lightTheme = "light";
+		function giscusTheme() {
+			return document.documentElement.classList.contains("darkmode") ? "dark" : lightTheme;
+		}
+		// client.js is the next sibling and has not executed yet (async), so
+		// its data-theme can be corrected before the widget first loads.
+		var loader = document.currentScript.nextElementSibling;
+		if (loader && loader.tagName === "SCRIPT" && loader.getAttribute("data-repo")) {
+			loader.setAttribute("data-theme", giscusTheme());
+		}
+		// Send the current theme to the widget. Always send: the iframe only
+		// acts on messages it receives, and it re-applies idempotently.
+		window.syncGiscusTheme = function () {
+			var frame = document.querySelector("iframe.giscus-frame");
+			if (!frame || !frame.contentWindow) return;
+			frame.contentWindow.postMessage(
+				{ giscus: { setConfig: { theme: giscusTheme() } } },
+				"https://giscus.app"
+			);
+		};
+		// The widget only processes setConfig after it has fully booted, which
+		// the iframe load event signals. emitMetadata=0 means giscus sends no
+		// messages back, so the load event is the reliable sync hook.
+		window.addEventListener("message", function (event) {
+			if (event.origin !== "https://giscus.app") return;
+			syncGiscusTheme();
+		});
+		// giscus replaces its container on re-render, so observe the comment
+		// card for the frame's appearance and hook its load event.
+		var commentCard = document.getElementById("post_comment");
+		if (commentCard) {
+			var hook = function (frame) {
+				frame.addEventListener("load", syncGiscusTheme);
+			};
+			var existing = commentCard.querySelector("iframe.giscus-frame");
+			if (existing) hook(existing);
+			new MutationObserver(function (records) {
+				records.forEach(function (record) {
+					Array.prototype.forEach.call(record.addedNodes, function (node) {
+						if (node.nodeType !== 1) return;
+						var frames = node.tagName === "IFRAME" ? [node] : node.querySelectorAll("iframe.giscus-frame");
+						Array.prototype.forEach.call(frames, hook);
+					});
+				});
+			}).observe(commentCard, { childList: true, subtree: true });
+		}
+	})();
+</script>
 <script src="https://giscus.app/client.js"
         data-repo="caylex09/blogtalk"
         data-repo-id="R_kgDOHDKqeg"
@@ -1240,7 +1293,7 @@ if (btn) btn.addEventListener("click", () => {
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

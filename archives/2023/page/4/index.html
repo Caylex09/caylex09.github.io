@@ -35,8 +35,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -76,6 +76,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -288,7 +291,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -683,12 +686,12 @@
 				题目翻译
 输入一个长度为 n 个数字，还有 X 和 Y。
 问数组中有几个区间最大值是 X 且最小值是 Y。
- 题目思路
+题目思路
 所有数字分为 ai&gt;Y，ai=Y，ai&lt;X，ai=X，X&lt;ai&lt;Y 五种情况。
 &gt;Y 和 &lt;X 的位置一定不能选。
 选一个区间，包含至少一个 =Y，包含至少一个 =X，问有多少种方案。
 问以每个位置作为结尾，有多少个方案。
-对于每...
+对于每个...
 			
 		
 	</div>
@@ -821,9 +824,9 @@
 			
 				题目翻译
 有一个 H×W 的国际象棋棋盘，求一个车从 (x1,y1) 走到 (x2,y2) 正好用 K 步的方案数。
- 题目思路
+题目思路
 首先看到题，很显然是动态规划。fk,i,j 表示走到 (i,j) 正好 k 步的方案。但时间复杂度过高，考虑进行优化。
-我们可以不记录具体走到哪个点位，我们只需知道当前在不在起点即可。于是就有 fk,0/1/2/3 表示...
+我们可以不记录具体走到哪个点位，我们只需知道当前在不在起点即可。于是就有 fk,0/1/2/3 表示第...
 			
 		
 	</div>
@@ -893,9 +896,10 @@
 			
 				闲话
 原题 P1334 瑞瑞的木板。刚好不久前做过，赛时直接贺了自己的代码过掉的。
- 题目翻译
+题目翻译
 为方便和瑞瑞的木板联系起来，下文翻译不采用原题中的“面包”而是使用“木板”。
-有一根长度为 L 的木板，切成 n 根小木板。第 i 根小木板的长度为 li，每次切下长度为 x 的小木板需要耗费 x 的体力。允许有剩余，也就是说不保证 L=∑i=1nli。...
+有一根长度为 L 的木板，切成 n 根小木板。第 i 根小木板的长度为 li，每次切下长度为 x 的小木板需要耗费 x 的体力。允许有剩余，也就是说不保证 L=∑i=1nli。
+...
 			
 		
 	</div>
@@ -980,7 +984,7 @@
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

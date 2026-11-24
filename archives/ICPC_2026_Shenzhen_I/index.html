@@ -40,8 +40,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -81,6 +81,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -293,7 +296,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -705,7 +708,7 @@
 	<div class="post-content" id="post_content">
 		<p>省流：金牌，也拿到本赛季各赛站的第一发 AC。</p>
 <p>队友是 wrk 和 zgn。et 和 zyf 被 thu 拐走了。</p>
-<h1 id="day-1"><a class="markdownIt-Anchor" href="#day-1"></a> Day -1</h1>
+<h1 id="day-1">Day -1<a class="markdownIt-Anchor" href="#day-1"></a></h1>
 <p>报道日，上午去无锡硕放机场坐飞机。</p>
 <p>我发现我忘记打印板子了，问题不大，相信队友。</p>
 <p>起飞颠簸好吓人（？）飞机餐一般。</p>
@@ -713,7 +716,7 @@
 <p>入住酒店房间号 1318，我宣称我已严肃入住 PKU 机房。</p>
 <p>呜呜呜没人和我一起聚餐呜呜呜。</p>
 <p>严肃拷打了 muxi，点了一家叫蔡澜的餐厅的外卖。</p>
-<h1 id="day-0"><a class="markdownIt-Anchor" href="#day-0"></a> Day 0</h1>
+<h1 id="day-0">Day 0<a class="markdownIt-Anchor" href="#day-0"></a></h1>
 <p>早上酒店伙食看着很豪华，但是好像对我胃口的只有几个发糕和面包，早饭吃除了香肠的肉类还是有点变态。</p>
 <p>和 wmr 面基了嘟嘟嘟。好大一只。</p>
 <p>坐第一排，真吓人，jbls 就在前面距离 eps 米。</p>
@@ -749,7 +752,7 @@ A题，首杀！
 那不是一场依靠暴力计算或复杂技巧的胜利，而是极致思维与绝对冷静的胜利。一个不被看好的选手，一个看似简单的思路，在最绝望的僵局中，击穿了所有顶尖强队的防线。
 这一记“冷枪”当即改写了整个比赛的排名，沉石鱼惊旋也迎来了属于自己的“首杀”。它在无数OIer的心里刻下了一句话：再复杂的难题，也可能被最纯粹的思维一枪封喉。
 它轻得像一行注释，却重得像一座奖杯。</code></pre>
-<h1 id="day-1-2"><a class="markdownIt-Anchor" href="#day-1-2"></a> Day 1</h1>
+<h1 id="day-1-2">Day 1<a class="markdownIt-Anchor" href="#day-1-2"></a></h1>
 <p>上午参观港中深，还不赖。带我们参观书院的是个印尼小姐姐，这么牛啊。看外貌根本看不出来的。</p>
 <p>然后去了腾讯总部，午饭也太牛逼了，我再也不黑腾子了。我一个人炫了一万只炸虾。</p>
 <p>参观了腾子的展厅，有点牛。期间大家在所有能打开浏览器的地方打开了追忆，在所有能和 ai 互动的场景都让他思考了追忆的做法。</p>
@@ -978,6 +981,56 @@ if (btn) btn.addEventListener("click", () => {
 
 	<div id="post_comment" class="card shadow-sm">
 		<div id="giscus"></div>
+<script>
+	(function () {
+		var lightTheme = "light";
+		function giscusTheme() {
+			return document.documentElement.classList.contains("darkmode") ? "dark" : lightTheme;
+		}
+		// client.js is the next sibling and has not executed yet (async), so
+		// its data-theme can be corrected before the widget first loads.
+		var loader = document.currentScript.nextElementSibling;
+		if (loader && loader.tagName === "SCRIPT" && loader.getAttribute("data-repo")) {
+			loader.setAttribute("data-theme", giscusTheme());
+		}
+		// Send the current theme to the widget. Always send: the iframe only
+		// acts on messages it receives, and it re-applies idempotently.
+		window.syncGiscusTheme = function () {
+			var frame = document.querySelector("iframe.giscus-frame");
+			if (!frame || !frame.contentWindow) return;
+			frame.contentWindow.postMessage(
+				{ giscus: { setConfig: { theme: giscusTheme() } } },
+				"https://giscus.app"
+			);
+		};
+		// The widget only processes setConfig after it has fully booted, which
+		// the iframe load event signals. emitMetadata=0 means giscus sends no
+		// messages back, so the load event is the reliable sync hook.
+		window.addEventListener("message", function (event) {
+			if (event.origin !== "https://giscus.app") return;
+			syncGiscusTheme();
+		});
+		// giscus replaces its container on re-render, so observe the comment
+		// card for the frame's appearance and hook its load event.
+		var commentCard = document.getElementById("post_comment");
+		if (commentCard) {
+			var hook = function (frame) {
+				frame.addEventListener("load", syncGiscusTheme);
+			};
+			var existing = commentCard.querySelector("iframe.giscus-frame");
+			if (existing) hook(existing);
+			new MutationObserver(function (records) {
+				records.forEach(function (record) {
+					Array.prototype.forEach.call(record.addedNodes, function (node) {
+						if (node.nodeType !== 1) return;
+						var frames = node.tagName === "IFRAME" ? [node] : node.querySelectorAll("iframe.giscus-frame");
+						Array.prototype.forEach.call(frames, hook);
+					});
+				});
+			}).observe(commentCard, { childList: true, subtree: true });
+		}
+	})();
+</script>
 <script src="https://giscus.app/client.js"
         data-repo="caylex09/blogtalk"
         data-repo-id="R_kgDOHDKqeg"
@@ -1072,7 +1125,7 @@ if (btn) btn.addEventListener("click", () => {
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

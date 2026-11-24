@@ -35,8 +35,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -76,6 +76,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -288,7 +291,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -691,14 +694,14 @@
 给定 3×n 的 0/1 网格图，给定 q 个询问 [l,r]，查询 [l,r] 部分有几个 1 组成的联通块。
 联通是四联通。
 1≤n≤5×105，1≤q≤3×105。
- 题目思路
+题目思路
 可以离线的区间询问，尝试普通莫队。
 考虑预处理出 8×8 的表表示加了新列会增加多少的联通块。
 但是这样有问题。
 1111
 1001
 1111
-我们把最后一...
+我们把最后一列...
 			
 		
 	</div>
@@ -908,8 +911,8 @@
 给定 h×w 的网格，初始每个格子上都有一堵墙，给出 q 个操作，每次给出 (r,c) 表示操作位置，若 (r,c) 位置上有墙就破坏掉这个墙。如果没有，破坏掉这堵墙上、下、左、右四个方向各看到的第一堵墙。
 操作之后给出目前剩下的墙的个数。
 1≤h,w,h×w≤4×105，1≤q≤2×105，1≤r≤h，1≤c≤w。
- 题目思路
-考虑到每...
+题目思路
+考虑到每一...
 			
 		
 	</div>
@@ -974,13 +977,13 @@
 			
 				A
 看 a 个 1 和 b mod 2 个 2 能不能匹配。
- B
+B
 打到一半加解释，牛牛牛。
 先判断 n 是否为完全平方数，如果是的话设 m=n。看原图形分成 m×m 的图形是否满足要求。
- C
+C
 不难发现只和 r−l 有关。
 二分答案 mid 表示能增加几项，中间一共增加了 mid(mid+1)2 个元素，要满足 mid(mid+1)2≤r−l。
-...
+最后...
 			
 		
 	</div>
@@ -1120,8 +1123,8 @@
 进还是出由之前的状态决定。保证最后所有人都是出的。
 现在给定 q 个询问，查询 a,b 表示 a 在房间和 b 在房间的时间的交集大小。
 2≤n,m≤2×105，1≤pi,a,b≤n，1≤ti≤109，保证 ti 严格递增。
- 题目思路
-后文复杂度不严...
+题目思路
+后文复杂度不严格...
 			
 		
 	</div>
@@ -1263,13 +1266,13 @@
 			
 				前言
 本文是对 DennyQi 题解思想的补充做法。
- 题目翻译
+题目翻译
 n 个数 ai，每次可以选择 ai←ai×2 或者 ai←⌊ai2⌋。
 问几次操作后 ai 全部一样。
 1≤n≤105，1≤ai≤105。
- 题目思路
+题目思路
 考虑把这个操作对应到二进制上，那么就是删除一位和添加一个 0，其实就是位运算中的右移 1 位和左移 1 位。
-你不会对这些数进行很多...
+你不会对这些数进行很多次移...
 			
 		
 	</div>
@@ -1340,8 +1343,8 @@ n 个数 ai，每次可以选择 ai←ai×2 或者 ai←⌊ai2⌋。
 				题目翻译
 给定 n×m 的网格，每个格子里有一个正整数 ai,j。你需要在从 (sx,sy) 开始，执行 k 次操作。每一操作可以选择不动或者走到任意一个四联通（上下左右）的格子。操作之后，可以获得所在格子的 ai,j 的收益。
 1≤n,m≤50
- 题目思路
-可以证明，选择的路线一定是，移动若干步（可以是 0 步）然后一直停留在一个格子获得收益。假...
+题目思路
+可以证明，选择的路线一定是，移动若干步（可以是 0 步）然后一直停留在一个格子获得收益。假设...
 			
 		
 	</div>
@@ -1429,7 +1432,7 @@ n 个数 ai，每次可以选择 ai←ai×2 或者 ai←⌊ai2⌋。
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

@@ -35,8 +35,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -76,6 +76,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -288,7 +291,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -688,18 +691,18 @@
 		
 			
 				abc262_a
- 题目翻译
+题目翻译
 问第 Y 年后（包括第 Y 年）最近一次世界杯在什么时候。
- 题目思路
+题目思路
 世界杯举办的年份  mod 4 为 2。
- AC 代码
+AC 代码
 #include&lt;bits/stdc++.h&gt;
 using namespace std;
 int main()
 {
 	int a;
 	cin&gt;&gt;a;
-	cout&lt;&lt;a+(4-(a-2)%4)%...
+	cout&lt;&lt;a+(4-(a-2)%4)%4&lt;&lt;...
 			
 		
 	</div>
@@ -763,16 +766,16 @@ int main()
 		
 			
 				总计 30 题。
- 洛谷
+洛谷
 总计 17 题。
- P1002
+P1002
 没什么好说的，注意一下细节。
 如果马的掌控范围不在棋盘内，特判防 RE。
 不开 long long 见祖宗！！！
 #include&lt;bits/stdc++.h&gt;
 using namespace std;
 long long f[50][50]; 
-int dx[]={1,1,-1,-1,2,...
+int dx[]={1,1,-1,-1,2,-2...
 			
 		
 	</div>
@@ -841,18 +844,18 @@ int dx[]={1,1,-1,-1,2,...
 		
 			
 				abc261_a
- 题目翻译
+题目翻译
 问数轴上 [l1,r1] 和 [l2,r2] 重叠长度。
- 题目思路
+题目思路
 注意数轴上，不是问重叠数字个数。
 罚时带来的教训。
- AC 代码
+AC 代码
 #include&lt;bits/stdc++.h&gt;
 using namespace std;
 int main()
 {
 	int l1,r1,l2,r2,ans=0;
-	cin&gt;&gt;l1&gt;&gt;...
+	cin&gt;&gt;l1&gt;&gt;r1&gt;...
 			
 		
 	</div>
@@ -994,16 +997,16 @@ int main()
 		
 			
 				abc260_a
- 题目翻译
+题目翻译
 聊天聊过头晚开题我是什么品种的制杖。
 有一个长度为 3 的字符串 s，问 s 中只出现一次的字符是什么，没有输出 −1。
- 题目思路
+题目思路
 建一个数组存放每个小写字母出现次数，最后扫一遍。
- AC 代码
+AC 代码
 #include&lt;bits/stdc++.h&gt;
 using namespace std;
 int a['z'+1];
-in...
+int m...
 			
 		
 	</div>
@@ -1142,16 +1145,16 @@ in...
 		
 			
 				abc258_a
- 题目翻译
+题目翻译
 Atcoder 的 ABC 一般在东京时间 21:00 开始，持续 100 分钟。
 问开始后 x 分钟后，是东京时间几点？
 注意时和分有前导零。
- 题目思路
+题目思路
 随便写写，特判前导零，或者用 printf。
- AC 代码
+AC 代码
 #include&lt;bits/stdc++.h&gt;
 using namespace std;
-int ma...
+int main(...
 			
 		
 	</div>
@@ -1215,19 +1218,19 @@ int ma...
 		
 			
 				由于作者代码风格有变，头文件较长，以下代码均舍去头文件。
- abc257_a
- 题目翻译
+abc257_a
+题目翻译
 给定一个 n，生成一个字符串，内容为 n 个 A，n 个 B，一直到 n 个 Z。
 输出第 k 位。
- 题目思路
+题目思路
 直接模拟到第 n 位。
 这是最暴力的写法。
 也可以用数学知识算一下当前是哪个字符。
 我采用了最暴力的。
- AC 代码
+AC 代码
 int main()
 {
- ...
+    i...
 			
 		
 	</div>
@@ -1291,21 +1294,22 @@ int main()
 		
 			
 				abc254_a
- 题目翻译
+题目翻译
 输入一个数，输出它的后两位。
- 题目思路
- 思路一
+题目思路
+思路一
 int 读入，要特判前导零。
- 思路二
+思路二
 char 读入，直接输出。
 我写的是 int 读入。
- AC 代码
+AC 代码
 #include&lt;bits/stdc++.h&gt;
 using namespace std;
 int main()
 {
     int n;
-    cin &gt;&gt; ...
+    cin &gt;&gt; n;
+  ...
 			
 		
 	</div>
@@ -1369,11 +1373,11 @@ int main()
 		
 			
 				abc253_a
- 题目翻译
+题目翻译
 给定 a,b,c，问 b 是不是中位数。
- 题目思路
+题目思路
 排序，判断。
- AC 代码
+AC 代码
 #include&lt;bits/stdc++.h&gt;
 using namespace std;
 int main()
@@ -1381,7 +1385,7 @@ int main()
     int a, b, c, d;
     cin &gt;&gt; a &gt;&gt; b &gt;&gt; c;
     d = b;
-    if...
+    if (a...
 			
 		
 	</div>
@@ -1464,7 +1468,7 @@ int main()
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

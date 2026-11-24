@@ -37,8 +37,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -78,6 +78,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -290,7 +293,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -704,7 +707,7 @@
 <p>但是这个好像对英文水平要求比较高，我这种人做起来就有点坐牢。</p>
 <p>这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。这个真的很好玩。</p>
 <p>至于为什么这里要出现这么多个无意义废话，是因为博客摘要会渲染答案，多写一点无意义摘要就没有了。</p>
-<h1 id="introduction-to-cryptography-密码学简介"><a class="markdownIt-Anchor" href="#introduction-to-cryptography-密码学简介"></a> INTRODUCTION TO CRYPTOGRAPHY 密码学简介</h1>
+<h1 id="introduction-to-cryptography-密码学简介">INTRODUCTION TO CRYPTOGRAPHY 密码学简介<a class="markdownIt-Anchor" href="#introduction-to-cryptography-密码学简介"></a></h1>
 <p><span class="heimu">显然有若干个字符高亮了。提取之后答案是 GOLDENKEY。</span></p>
 <p>这关自己做出来了，比较简单。</p>
 <p>简介的大意为：</p>
@@ -717,52 +720,52 @@
 <p>所以，拿起纸和笔，祝你好运！</p>
 </blockquote>
 <p>而密码学的基本加密方法就是：Concealment 隐藏、Transposition 换位，Substitution 替代。</p>
-<h1 id="steganography-隐写术-room-1"><a class="markdownIt-Anchor" href="#steganography-隐写术-room-1"></a> Steganography 隐写术 Room 1</h1>
+<h1 id="steganography-隐写术-room-1">Steganography 隐写术 Room 1<a class="markdownIt-Anchor" href="#steganography-隐写术-room-1"></a></h1>
 <p>隐写术是一种较弱的形式，内容没有被加密，而是依赖于没有人发现他有问题。这种的解密过程一般要关注其对齐方式、间距、词汇选择。</p>
-<h2 id="puzzle-1"><a class="markdownIt-Anchor" href="#puzzle-1"></a> Puzzle 1</h2>
+<h2 id="puzzle-1">Puzzle 1<a class="markdownIt-Anchor" href="#puzzle-1"></a></h2>
 <p>这一关是比较简单的，<span class="heimu">注意到藏头诗的形式，提取每一行大写的首字母得到 SPYSUSPECTED</span>。</p>
-<h2 id="puzzle-2"><a class="markdownIt-Anchor" href="#puzzle-2"></a> Puzzle 2</h2>
+<h2 id="puzzle-2">Puzzle 2<a class="markdownIt-Anchor" href="#puzzle-2"></a></h2>
 <p>这一关太阴了，英语不好真做不了。首先，这是 Edgar Allan Poe 的一首叙事诗 The Raven。</p>
 <p>然后关键在于<span class="heimu">注意到有些单词拼写错误</span>，把这些<span class="heimu">拼写错误的单词（whille、foregotten、suddely、dooor、mutterred、chambere）的错误部分修正，得到了 LENORE</span>。</p>
 <p><span class="heimu">而我不知道 Tis 是什么意思，一直在加 h。彩蛋是这个名字恰好为本诗歌的叙述者一生挚爱却已死去的恋人。同时这位作者也还有一首叫做 Lenore 的诗歌</span>。</p>
-<h2 id="puzzle-3"><a class="markdownIt-Anchor" href="#puzzle-3"></a> Puzzle 3</h2>
+<h2 id="puzzle-3">Puzzle 3<a class="markdownIt-Anchor" href="#puzzle-3"></a></h2>
 <p>这一关是简单的送的。<span class="heimu">注意到两行间距不正常，凑上前查看，可以发现有两行字，正常视角下看不到，贴过去才能看到，是 INVISIBLEINK 提交即可</span>。</p>
-<h2 id="puzzle-4"><a class="markdownIt-Anchor" href="#puzzle-4"></a> Puzzle 4</h2>
+<h2 id="puzzle-4">Puzzle 4<a class="markdownIt-Anchor" href="#puzzle-4"></a></h2>
 <p>这一关还好。<span class="heimu">首先斜体是容易注意到的。TOO、ONE、FOR、FREE。</span>。直接提交无法通过，说明<span class="heimu">这些内容有别的含义</span>。</p>
 <p>考虑到<span class="heimu">谐音</span>，于是可以想到<span class="heimu">他们的谐音分别对应了 2143，提交即可通过</span>。其实文字和<span class="heimu">时间</span>强相关，考虑到<span class="heimu">时间</span>这个因素也可以往<span class="heimu">四个数字</span>等方向上思考。</p>
-<h2 id="puzzle-5"><a class="markdownIt-Anchor" href="#puzzle-5"></a> Puzzle 5</h2>
+<h2 id="puzzle-5">Puzzle 5<a class="markdownIt-Anchor" href="#puzzle-5"></a></h2>
 <p>难绷。没看出任何信息，以为<span class="heimu">问题出在缩写的若干个 'd 上</span>。实则，<span class="heimu">走进发现句号是由三个单词组成的，INPLAINSIGHT</span>。</p>
-<h2 id="puzzle-6"><a class="markdownIt-Anchor" href="#puzzle-6"></a> Puzzle 6</h2>
+<h2 id="puzzle-6">Puzzle 6<a class="markdownIt-Anchor" href="#puzzle-6"></a></h2>
 <p>这个也是神人了。虽然好像是我比较菜。<span class="heimu">把 3 个时间的 6 部分的数字，对应到字母表，得到 CHRONO</span>。</p>
 <p><span class="heimu">CHRONO 也有计时器等的含义</span>。</p>
-<h2 id="puzzle-7"><a class="markdownIt-Anchor" href="#puzzle-7"></a> Puzzle 7</h2>
+<h2 id="puzzle-7">Puzzle 7<a class="markdownIt-Anchor" href="#puzzle-7"></a></h2>
 <p>这关感觉不是很难。<span class="heimu">主要是有个墙贴了摩斯密码，做到最后了还没用到容易联想。有三种方块，猜测完整的是分隔符，然后剩下的对比一下摩斯密码，可以得到 SAMUEL</span>。</p>
 <p><span class="heimu">这个名字是以色列最后一位士师撒母耳</span>。</p>
 <p><span class="heimu">对不起，我错了，查了一下别的攻略，发现评论区指出这是摩斯密码发明人</span>。</p>
-<h2 id="puzzle-8"><a class="markdownIt-Anchor" href="#puzzle-8"></a> Puzzle 8</h2>
+<h2 id="puzzle-8">Puzzle 8<a class="markdownIt-Anchor" href="#puzzle-8"></a></h2>
 <p>这关有了提示之后，额，感觉仍然有点闹麻。</p>
 <p><span class="heimu">墙上给的二进制还没用呢</span>。</p>
 <p><span class="heimu">按照字体分组，得到了一串不知道什么东西</span>。</p>
 <p><span class="heimu">注意到有 25 个，可以拆成 5 组每组 5 个</span>。</p>
 <p><span class="heimu">然后按照 01 标号，可以得到 0b00001、0b00000、0b00010、0b01110、0b01101。把它们加上 A 的 ascii 码，得到 BACON</span>。</p>
 <p><span class="heimu">这就是培根密码，Bacon's cipher</span>。</p>
-<h1 id="transposition-换位-room-2"><a class="markdownIt-Anchor" href="#transposition-换位-room-2"></a> Transposition 换位 Room 2</h1>
+<h1 id="transposition-换位-room-2">Transposition 换位 Room 2<a class="markdownIt-Anchor" href="#transposition-换位-room-2"></a></h1>
 <p>换位密码旨在通过改变字母的位置来伪装消息。加密和解密一条消息所需的时间，以及必须交换的密钥长度，是决定使用何种密码时的重要考量因素。</p>
-<h2 id="puzzle-1-2"><a class="markdownIt-Anchor" href="#puzzle-1-2"></a> Puzzle 1</h2>
+<h2 id="puzzle-1-2">Puzzle 1<a class="markdownIt-Anchor" href="#puzzle-1-2"></a></h2>
 <p><span class="heimu">调换文字顺序不影响阅读结果。一眼看出是 CIPHER。意为密码</span>。</p>
-<h2 id="puzzle-2-2"><a class="markdownIt-Anchor" href="#puzzle-2-2"></a> Puzzle 2</h2>
+<h2 id="puzzle-2-2">Puzzle 2<a class="markdownIt-Anchor" href="#puzzle-2-2"></a></h2>
 <p><span class="heimu">栅栏密码，每个依次看，得到 THEJEWELSAREHIDDENBENEATHTHEELMTREE 即 The jewels are hidden beneath the elm tree</span>。</p>
-<h2 id="puzzle-3-2"><a class="markdownIt-Anchor" href="#puzzle-3-2"></a> Puzzle 3</h2>
+<h2 id="puzzle-3-2">Puzzle 3<a class="markdownIt-Anchor" href="#puzzle-3-2"></a></h2>
 <p><span class="heimu">Re 开头是常见单词前缀，这个是墙上文本的后缀，逆序得到 REFLECTION</span>。</p>
-<h2 id="puzzle-4-2"><a class="markdownIt-Anchor" href="#puzzle-4-2"></a> Puzzle 4</h2>
+<h2 id="puzzle-4-2">Puzzle 4<a class="markdownIt-Anchor" href="#puzzle-4-2"></a></h2>
 <p><span class="heimu">显然英文里不应该存在连续两个 X 的单词，这很诡异。所以肯定不是一行一行读过去，我们切换一下观察方向</span>。</p>
 <p><span class="heimu">发现右上角的 DRAGON 好像很好看到，说明是从左下到右上，然后从左上到右下斜着读</span>。</p>
 <p><span class="heimu">X 是空格。故答案为 ASSASSINENROUTETRUSTNOONEHIDETHEJADEDRAGON，即为 ASSASSIN EN ROUTE TRUST NO ONE HIDE THE JADE DRAGON</span>。</p>
-<h2 id="puzzle-5-2"><a class="markdownIt-Anchor" href="#puzzle-5-2"></a> Puzzle 5</h2>
+<h2 id="puzzle-5-2">Puzzle 5<a class="markdownIt-Anchor" href="#puzzle-5-2"></a></h2>
 <p><span class="heimu">这么多 Q 很不寻常，英文里开头 Q 咋说通常也带个 U 吧</span>。</p>
 <p><span class="heimu">我看到了 RTS，直觉告诉我这个应该是 STR 这个前缀但是被倒过来了</span>。</p>
 <p><span class="heimu">按 Q 分段，全部逆序，得到 STRIKEATDAWN</span>。</p>
-<h2 id="puzzle-6-2"><a class="markdownIt-Anchor" href="#puzzle-6-2"></a> Puzzle 6</h2>
+<h2 id="puzzle-6-2">Puzzle 6<a class="markdownIt-Anchor" href="#puzzle-6-2"></a></h2>
 <p><span class="heimu">长度为 32 可以拆解为 4 行 8 列</span>。</p>
 <p><span class="heimu">之后按列从上往下依次读得到 the men plan amutiny return to bristol 即 THEMENPLANAMUTINYRETURNTOBRISTOL</span>。</p>
 
@@ -981,6 +984,56 @@ if (btn) btn.addEventListener("click", () => {
 
 	<div id="post_comment" class="card shadow-sm">
 		<div id="giscus"></div>
+<script>
+	(function () {
+		var lightTheme = "light";
+		function giscusTheme() {
+			return document.documentElement.classList.contains("darkmode") ? "dark" : lightTheme;
+		}
+		// client.js is the next sibling and has not executed yet (async), so
+		// its data-theme can be corrected before the widget first loads.
+		var loader = document.currentScript.nextElementSibling;
+		if (loader && loader.tagName === "SCRIPT" && loader.getAttribute("data-repo")) {
+			loader.setAttribute("data-theme", giscusTheme());
+		}
+		// Send the current theme to the widget. Always send: the iframe only
+		// acts on messages it receives, and it re-applies idempotently.
+		window.syncGiscusTheme = function () {
+			var frame = document.querySelector("iframe.giscus-frame");
+			if (!frame || !frame.contentWindow) return;
+			frame.contentWindow.postMessage(
+				{ giscus: { setConfig: { theme: giscusTheme() } } },
+				"https://giscus.app"
+			);
+		};
+		// The widget only processes setConfig after it has fully booted, which
+		// the iframe load event signals. emitMetadata=0 means giscus sends no
+		// messages back, so the load event is the reliable sync hook.
+		window.addEventListener("message", function (event) {
+			if (event.origin !== "https://giscus.app") return;
+			syncGiscusTheme();
+		});
+		// giscus replaces its container on re-render, so observe the comment
+		// card for the frame's appearance and hook its load event.
+		var commentCard = document.getElementById("post_comment");
+		if (commentCard) {
+			var hook = function (frame) {
+				frame.addEventListener("load", syncGiscusTheme);
+			};
+			var existing = commentCard.querySelector("iframe.giscus-frame");
+			if (existing) hook(existing);
+			new MutationObserver(function (records) {
+				records.forEach(function (record) {
+					Array.prototype.forEach.call(record.addedNodes, function (node) {
+						if (node.nodeType !== 1) return;
+						var frames = node.tagName === "IFRAME" ? [node] : node.querySelectorAll("iframe.giscus-frame");
+						Array.prototype.forEach.call(frames, hook);
+					});
+				});
+			}).observe(commentCard, { childList: true, subtree: true });
+		}
+	})();
+</script>
 <script src="https://giscus.app/client.js"
         data-repo="caylex09/blogtalk"
         data-repo-id="R_kgDOHDKqeg"
@@ -1075,7 +1128,7 @@ if (btn) btn.addEventListener("click", () => {
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

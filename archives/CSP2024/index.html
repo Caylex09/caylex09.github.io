@@ -37,8 +37,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -78,6 +78,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -290,7 +293,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -705,8 +708,8 @@
 	</header>
 
 	<div class="post-content" id="post_content">
-		<h1 id="初赛"><a class="markdownIt-Anchor" href="#初赛"></a> 初赛</h1>
-<h2 id="day-1e97"><a class="markdownIt-Anchor" href="#day-1e97"></a> Day -(1e9+7)</h2>
+		<h1 id="初赛">初赛<a class="markdownIt-Anchor" href="#初赛"></a></h1>
+<h2 id="day-1e97">Day -(1e9+7)<a class="markdownIt-Anchor" href="#day-1e97"></a></h2>
 <p>好吧我其实忘了 Day -(1e9+7) 和 Day -998244353 的先后顺序。</p>
 <p>所以可能这里其实才是 Day -998244353 发生的事情。</p>
 <p>很荣幸收到了 Aya 的私信找我验初赛模拟。</p>
@@ -714,12 +717,12 @@
 <p>成功砍下 62.5 分高分。</p>
 <p>好像是验题人倒数第二还是倒数第一来着。</p>
 <p>尺子阿克，太强大。</p>
-<h2 id="day-998244353"><a class="markdownIt-Anchor" href="#day-998244353"></a> Day -998244353</h2>
+<h2 id="day-998244353">Day -998244353<a class="markdownIt-Anchor" href="#day-998244353"></a></h2>
 <p>报名了爱死组且缴费了。</p>
 <p>但我顺手把勾组报了，然后没缴费，有神秘短信私信我让我缴费。我不认识啊。可能是转学了新学校老师给我发的。</p>
-<h2 id="day-2"><a class="markdownIt-Anchor" href="#day-2"></a> Day -2</h2>
+<h2 id="day-2">Day -2<a class="markdownIt-Anchor" href="#day-2"></a></h2>
 <p>怎么要初赛了。以前在常外每周还能做初赛卷。现在只能自己复习了。</p>
-<h2 id="day-1"><a class="markdownIt-Anchor" href="#day-1"></a> Day -1</h2>
+<h2 id="day-1">Day -1<a class="markdownIt-Anchor" href="#day-1"></a></h2>
 <p>不是哥们云斗初赛解析这么多锅？</p>
 <p>常外教练老秦怎么在云斗群看见我了。让我重写一份解析。/shui</p>
 <p>顺便还把出模拟赛的钱转我了/se</p>
@@ -728,7 +731,7 @@
 <p>重新填了一下高了二十分。6。</p>
 <p>明天目标是，不涂错卡。</p>
 <p>偷偷打了一晚上雀。还没上雀士。</p>
-<h2 id="day-0"><a class="markdownIt-Anchor" href="#day-0"></a> Day 0</h2>
+<h2 id="day-0">Day 0<a class="markdownIt-Anchor" href="#day-0"></a></h2>
 <p>早上忘了睡到几点了，起来吃了个午饭打了会儿雀就走了。</p>
 <p>早上一睁眼看消息就看到粉兔在无锡一中考。原来昨天沃若发的床上照片是小粉兔。</p>
 <p>坐地铁到常州站然后火车到无锡站。</p>
@@ -779,25 +782,25 @@
 <p>ABC 掉分了雀不能掉了吧。开雀。给我从初心三大圆满干到了初心三零分。/wx/wx/wx。</p>
 <p>洗个澡 CF。这个 H 不是一眼莫队？诶我看错题了捏麻麻。哦看对之后照样莫队。不对可以 xor hash。写了一发直接过。</p>
 <p>很多人随机种子不是 random_device 或者毫秒微秒级别随机，杀杀杀。</p>
-<h2 id="day-1-2"><a class="markdownIt-Anchor" href="#day-1-2"></a> Day 1</h2>
+<h2 id="day-1-2">Day 1<a class="markdownIt-Anchor" href="#day-1-2"></a></h2>
 <p>被我叉的老哥请教我 time(0) 为什么能被叉。显然我预处理 200 个左右的时间戳缝一起就死了。</p>
 <p>怎么有群友亮出了自己被 hack 的记录。还是我干的。谢罪谢罪。</p>
-<h1 id="复赛"><a class="markdownIt-Anchor" href="#复赛"></a> 复赛</h1>
-<h2 id="day-1e97-2"><a class="markdownIt-Anchor" href="#day-1e97-2"></a> Day -(1e9+7)</h2>
+<h1 id="复赛">复赛<a class="markdownIt-Anchor" href="#复赛"></a></h1>
+<h2 id="day-1e97-2">Day -(1e9+7)<a class="markdownIt-Anchor" href="#day-1e97-2"></a></h2>
 <p>打洛谷模拟。</p>
 <p>上午入门组口胡一下感觉不难。Ivan 挂了 5 分，获得了前 3% 的好成绩。/qiang</p>
 <p>下午提高，T1 看了一眼写了个子序列自动机很快就过了。T2 不会。然后玉玉了，思考了三个小时的人生顺便睡了一会儿。睡完半小时写了下 T3，过了。大家 T3 都挂分了？</p>
-<h2 id="day-998244353-2"><a class="markdownIt-Anchor" href="#day-998244353-2"></a> Day -998244353</h2>
+<h2 id="day-998244353-2">Day -998244353<a class="markdownIt-Anchor" href="#day-998244353-2"></a></h2>
 <p>MX-J8。非常顺利。</p>
 <p><s>赛后发现锅了。我钱近似被扣光了。</s></p>
-<h2 id="day-2-2"><a class="markdownIt-Anchor" href="#day-2-2"></a> Day -2</h2>
+<h2 id="day-2-2">Day -2<a class="markdownIt-Anchor" href="#day-2-2"></a></h2>
 <p>忘了干啥了。晚上打了个 Div. 3，本来是涨信心的，结果被 G 创飞了。死因如下。</p>
 <p><img loading="eager" decoding="async" src="https://s21.ax1x.com/2024/10/27/pA0nEhd.png" alt="" /></p>
-<h2 id="day-1-3"><a class="markdownIt-Anchor" href="#day-1-3"></a> Day -1</h2>
+<h2 id="day-1-3">Day -1<a class="markdownIt-Anchor" href="#day-1-3"></a></h2>
 <p>早上很晚起了，下午去世贸。发现我没写过点双，写个模板。然后随便背了一点，仅存的三个人就开了个空岛玩（）晚饭我点了个外卖就回家打牛客了。被牛客 D 的初中数学创飞了，什么破机子，这种 std 都是带 log 的大常你还开 1e6，【暴戾语言过滤】。</p>
 <p>E 是搞笑题。F 是一个巨大无敌赤石模拟题。怎么没人过，我感觉写起来也不是很难啊？不管了不写了开摆了。</p>
 <p>赛后发现 F 的 std 锅了，乐乐乐。</p>
-<h2 id="day-0-2"><a class="markdownIt-Anchor" href="#day-0-2"></a> Day 0</h2>
+<h2 id="day-0-2">Day 0<a class="markdownIt-Anchor" href="#day-0-2"></a></h2>
 <p>牛客有验题人找我给我吐槽了出题人，D 和 F 都是大常 log 开 1e6。666。我还以为 F 有什么高超的线性。</p>
 <p>真【暴戾语言过滤】。</p>
 <p>早上十点半起了，好像还没出 J 组题。随便看看群下去吃了个饭买了一瓶红牛。</p>
@@ -822,7 +825,7 @@
 <p>终于面到了兔子。换到了徽章。兔子一上来就压力我问我 ak 没。加上出考场问了一圈人均 300+，我很慌。结果兔子也不会 T4 只是为了压力我。6。</p>
 <p>以及听我妈讲了个故事，据说小粉兔进考场是从一个很矮的闸机上跳过去的。真就兔子啊（）</p>
 <p>CSP-S 2023 告诉我不要一个题写 3h，CSP-S 2024 告诉我不要一个题暴力过了，一个假的优化写 2.5h 还以为它对完了。</p>
-<h1 id="day-6"><a class="markdownIt-Anchor" href="#day-6"></a> Day 6</h1>
+<h1 id="day-6">Day 6<a class="markdownIt-Anchor" href="#day-6"></a></h1>
 <p>故事的起源是，DP 题卡常卡红温了最后 1999ms 过了。看了眼官方题解，出题人脑子进水了 std 是 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">O</mi><mo stretchy="false">(</mo><mi>n</mi><msup><mi>k</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathcal O(nk^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathcal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span> 出 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≤</mo><mn>1</mn><msup><mn>0</mn><mn>5</mn></msup></mrow><annotation encoding="application/x-tex">n\leq 10^5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719400000000001em;vertical-align:-0.13597em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">5</span></span></span></span></span></span></span></span></span></span></span>，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>≤</mo><mn>52</mn></mrow><annotation encoding="application/x-tex">k\leq 52</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83041em;vertical-align:-0.13597em;"></span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">5</span><span class="mord">2</span></span></span></span>。字符串字符集是大写字母和小写字母纯有病。卡常卡到了接近两点钟。</p>
 <p>除去卡常的时间，想了一下自己为什么 2600 的 dp 可以挺快想到做法，怎么就过不去 CSP T3 这个 2100 的基础 dp。</p>
 <p>问了一下 Ivan 觉得这个 T3 的线性做法是不是属于比较人类智慧的。然后问着问着我想起来我代码复杂度瓶颈部分是一个很愚蠢的 case。刚准备睡觉就起来把 65pts 的部分分代码改了一下，就过了。。。。。。。。。我做法复杂度瓶颈是 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>i</mi></msub><mo>=</mo><msub><mi>a</mi><mrow><mi>i</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">a_i=a_{i-1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.638891em;vertical-align:-0.208331em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.208331em;"><span></span></span></span></span></span></span></span></span></span>，大家都特判掉了这个情况的基础贡献。哈哈。哈哈。哈哈。</p>
@@ -992,8 +995,8 @@ if (btn) btn.addEventListener("click", () => {
 	socialShare("#share", {
 	    title : `[游记] CSP 2024 游记`,
 	    description : `初赛
- Day -(1e9+7)
-好吧我其实忘了 Day -(1e9+7) 和 Day -99824...`,
+Day -(1e9+7)
+好吧我其实忘了 Day -(1e9+7) 和 Day -998244...`,
 	    wechatQrcodeTitle : `分享到微信`,
 	    wechatQrcodeHelper : `微信扫描二维码`,
 	    source : `https://blog.cyx2009.top/archives/CSP2024/`
@@ -1045,6 +1048,56 @@ if (btn) btn.addEventListener("click", () => {
 
 	<div id="post_comment" class="card shadow-sm">
 		<div id="giscus"></div>
+<script>
+	(function () {
+		var lightTheme = "light";
+		function giscusTheme() {
+			return document.documentElement.classList.contains("darkmode") ? "dark" : lightTheme;
+		}
+		// client.js is the next sibling and has not executed yet (async), so
+		// its data-theme can be corrected before the widget first loads.
+		var loader = document.currentScript.nextElementSibling;
+		if (loader && loader.tagName === "SCRIPT" && loader.getAttribute("data-repo")) {
+			loader.setAttribute("data-theme", giscusTheme());
+		}
+		// Send the current theme to the widget. Always send: the iframe only
+		// acts on messages it receives, and it re-applies idempotently.
+		window.syncGiscusTheme = function () {
+			var frame = document.querySelector("iframe.giscus-frame");
+			if (!frame || !frame.contentWindow) return;
+			frame.contentWindow.postMessage(
+				{ giscus: { setConfig: { theme: giscusTheme() } } },
+				"https://giscus.app"
+			);
+		};
+		// The widget only processes setConfig after it has fully booted, which
+		// the iframe load event signals. emitMetadata=0 means giscus sends no
+		// messages back, so the load event is the reliable sync hook.
+		window.addEventListener("message", function (event) {
+			if (event.origin !== "https://giscus.app") return;
+			syncGiscusTheme();
+		});
+		// giscus replaces its container on re-render, so observe the comment
+		// card for the frame's appearance and hook its load event.
+		var commentCard = document.getElementById("post_comment");
+		if (commentCard) {
+			var hook = function (frame) {
+				frame.addEventListener("load", syncGiscusTheme);
+			};
+			var existing = commentCard.querySelector("iframe.giscus-frame");
+			if (existing) hook(existing);
+			new MutationObserver(function (records) {
+				records.forEach(function (record) {
+					Array.prototype.forEach.call(record.addedNodes, function (node) {
+						if (node.nodeType !== 1) return;
+						var frames = node.tagName === "IFRAME" ? [node] : node.querySelectorAll("iframe.giscus-frame");
+						Array.prototype.forEach.call(frames, hook);
+					});
+				});
+			}).observe(commentCard, { childList: true, subtree: true });
+		}
+	})();
+</script>
 <script src="https://giscus.app/client.js"
         data-repo="caylex09/blogtalk"
         data-repo-id="R_kgDOHDKqeg"
@@ -1139,7 +1192,7 @@ if (btn) btn.addEventListener("click", () => {
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

@@ -35,8 +35,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -76,6 +76,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -288,7 +291,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -690,12 +693,12 @@
 				前言
 这是今天粉兔杯每日一题，也是根分日报例题，补一下。
 暴力美学——浅谈根号分治 - paulzrm 的博客 - 洛谷博客
- 题目翻译
+题目翻译
 给出两个等差数列，求在 [L,R] 之间的交集大小。
 等差数列形式为 ak+b。
 1≤a1,a2≤2×109,−2×109≤b1,b2,L,R≤2×109,L≤R。
- 题目思路
-观察到 a 大，等差数列在 [L,...
+题目思路
+观察到 a 大，等差数列在 [L,R]...
 			
 		
 	</div>
@@ -766,10 +769,10 @@
 				题目翻译
 给定 7×7 的黑白网格，问至少改多少点才能使得不出现大小为 3×3 的黑色 X 形。定义改一个点指改变这个点的颜色，黑变成白，白变成黑。
 多测，1≤t≤200。
- 题目思路
+题目思路
 显然只需要黑色改白色。
 一个不是很显然的结论是 ans≤8。
-你考虑对于网格进行红绿染色（其实就是黑白染色，但是和题意重合了）。就是 (1,1) 红色，(1,2) ...
+你考虑对于网格进行红绿染色（其实就是黑白染色，但是和题意重合了）。就是 (1,1) 红色，(1,2) 和...
 			
 		
 	</div>
@@ -839,7 +842,7 @@
 			
 				前言
 在『江莉XCPC民间算法交流枢纽』有群友扔了这题，还挺有趣的。（这里是专有名词中英文之间不加括号没事的吧？）
- 题目翻译
+题目翻译
 给定 u,v,p，保证 p 是质数，有 3 种操作：
 
 u←u+1
@@ -849,7 +852,7 @@ u←up−2
 以上操作过后均对 p 取模。
 求一种不超过 200 次操作使得 u=v 的操作方案。
 0≤u,v&lt;p,3≤p≤109+9。
- ...
+题目...
 			
 		
 	</div>
@@ -920,9 +923,9 @@ u←up−2
 				题目翻译
 n 个大数 ai，找三元组 (i,j,k) 个数满足 1≤i,j,k≤n 且 ai×aj=ak。
 n≤1000,ai≤101000。
- 题目思路
+题目思路
 显然可以直接 FFT 高精度乘法。然后喜提 TLE，因为这个 ai 位数很长并且要跑很多轮乘法。
-我们集中注意力，注意到满足 ai×aj=ak 的必要条件是对于任意模数 p 存在 (ai mod...
+我们集中注意力，注意到满足 ai×aj=ak 的必要条件是对于任意模数 p 存在 (ai mod ...
 			
 		
 	</div>
@@ -992,13 +995,13 @@ n≤1000,ai≤101000。
 			
 				闲话
 和等差数列过不去了。碰上等差数列就要调 1h。
- 题目翻译
+题目翻译
 为了方便描述，我们约定数值相同的数为同一颜色的数。
 有 n 个数，我们定义一次操作为：选择若干个同颜色数，使得他们在序列中的位置为一个等差数列。删除它们。
 操作完之后可以重排整个序列。
 有 q 个询问，每次询问给定 [l,r]，求至少几次操作能全部删除 [l,r]。
 询问互不影响。
-...
+1...
 			
 		
 	</div>
@@ -1361,13 +1364,13 @@ f_j+a(s_i-s_j)^2+b(s_i-s_j)+c
 			
 				闲话
 来点不同的大炮打蚊子的非 STL 的做法。
- 题目翻译
+题目翻译
 你有 n 个盒子，每个盒子一开始装了一个颜色为 ci 的球。
 有 q 次询问（操作），每次询问给出一对 (a,b)，要把盒子 a 的所有球转到盒子 b 里，问此时 b 里有多少颜色不同的球。
 1≤n,q≤2×105,1≤a,b,ci≤n。
- 题目思路
+题目思路
 考虑使用根号分治。
-显然的阈值为 B...
+显然的阈值为 B=n...
 			
 		
 	</div>
@@ -1455,7 +1458,7 @@ f_j+a(s_i-s_j)^2+b(s_i-s_j)+c
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

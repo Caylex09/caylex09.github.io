@@ -35,8 +35,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -76,6 +76,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -288,7 +291,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -763,10 +766,10 @@
 			
 				题目翻译
 给定 n(n≤2000) 个串，选定 k 个串，求出最大两两 LCP。
- 题目思路
+题目思路
 首先把给定串按字典序排序，保证相邻 LCP 最大。
 考虑 dp，fl,r,x 表示选择 [l,r] 中有 x 个串的最大两两 LCP。
-类似分治，转移的时候枚举相邻 LCP 最小的点 m，一定是在 m 断开最优。转移枚举左右段分选几个串，加上串的个数乘上 ...
+类似分治，转移的时候枚举相邻 LCP 最小的点 m，一定是在 m 断开最优。转移枚举左右段分选几个串，加上串的个数乘上 l...
 			
 		
 	</div>
@@ -836,9 +839,9 @@
 			
 				题目翻译
 有一个长度为 n(n≤500) 的序列，你可以砍 m(0≤m&lt;n) 刀将其分为 m+1 段，令每一段 [l,r] 的贡献为 ∑i=lr∑j=i+1rai×aj，一个序列的答案是每一段的贡献之和，求最小的答案。
- 题目思路
+题目思路
 设 fi,j 表示前 i 个位置割 j 刀的最小答案。
-转移是很显然的，枚举上一次断在哪里，fi,j←min⁡k=0i...
+转移是很显然的，枚举上一次断在哪里，fi,j←min⁡k=0i−...
 			
 		
 	</div>
@@ -908,11 +911,11 @@
 			
 				前言
 如何评价我场上 LCA 没清空 fa 数组没有 AK。
- 题目翻译
+题目翻译
 给定 n 个点的一棵树，以及 k 组点 (u,v)，表示 u→v 的简单路径包含特殊边。问至少多少边为特殊边。
 多测，1≤t≤104,∑n≤105,∑2k≤220。
- 题目思路
-k 很小，考虑状压。Si 为一个 mask 表示第 i 条边可能出现哪几条特殊边，也就是被哪几个路...
+题目思路
+k 很小，考虑状压。Si 为一个 mask 表示第 i 条边可能出现哪几条特殊边，也就是被哪几个路径包...
 			
 		
 	</div>
@@ -1128,9 +1131,9 @@ f_j+a(s_i-s_j)^2+b(s_i-s_j)+c
 			
 				题目翻译
 有一个 H×W 的国际象棋棋盘，求一个车从 (x1,y1) 走到 (x2,y2) 正好用 K 步的方案数。
- 题目思路
+题目思路
 首先看到题，很显然是动态规划。fk,i,j 表示走到 (i,j) 正好 k 步的方案。但时间复杂度过高，考虑进行优化。
-我们可以不记录具体走到哪个点位，我们只需知道当前在不在起点即可。于是就有 fk,0/1/2/3 表示...
+我们可以不记录具体走到哪个点位，我们只需知道当前在不在起点即可。于是就有 fk,0/1/2/3 表示第...
 			
 		
 	</div>
@@ -1199,16 +1202,16 @@ f_j+a(s_i-s_j)^2+b(s_i-s_j)+c
 		
 			
 				总计 30 题。
- 洛谷
+洛谷
 总计 17 题。
- P1002
+P1002
 没什么好说的，注意一下细节。
 如果马的掌控范围不在棋盘内，特判防 RE。
 不开 long long 见祖宗！！！
 #include&lt;bits/stdc++.h&gt;
 using namespace std;
 long long f[50][50]; 
-int dx[]={1,1,-1,-1,2,...
+int dx[]={1,1,-1,-1,2,-2...
 			
 		
 	</div>
@@ -1297,7 +1300,7 @@ int dx[]={1,1,-1,-1,2,...
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

@@ -35,8 +35,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -76,6 +76,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -288,7 +291,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -688,7 +691,7 @@
 			
 				前言
 当时给 cyx 分享了这个题，今天他问我要 std 和 solution。所以有了这篇文章。
- 题目翻译
+题目翻译
 一个 i 对应 k 个字符串 s1,i,s2,i,s3,i。
 现在有 k 个串 p1,p2,p3。
 有 q 次操作：
@@ -696,7 +699,7 @@
 i + c 表示往 pi 后面接一个字符 c。
 i - 表示把 pi 最后一个字符删除。
 
-每次操作后你都需要输出满足...
+每次操作后你都需要输出满足 ...
 			
 		
 	</div>
@@ -838,12 +841,12 @@ i - 表示把 pi 最后一个字符删除。
 			
 				前言
 以此纪念 1:59:14 过的 Div.2 F。
- 题目翻译
+题目翻译
 有一棵以 1 为根的有根树，一开始只有节点 1。
 有 q(1≤q≤5×105) 个操作：
 1 u 表示添加一条 u→sz+1 的边，其中 sz 为目前树的大小。
 2 u w 表示对于以 u 为根的子树，对于所有节点添加 w(−109≤w≤109) 的权重。
-q 次操作后，输出当前树...
+q 次操作后，输出当前树上...
 			
 		
 	</div>
@@ -932,7 +935,7 @@ q 次操作后，输出当前树...
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

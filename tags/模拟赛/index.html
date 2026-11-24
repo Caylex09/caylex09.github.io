@@ -35,8 +35,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -76,6 +76,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -288,7 +291,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -763,9 +766,9 @@
 最大化 u&lt;v 且 au≠av 的 (u,v) 个数。
 2≤n≤106，1≤m≤2×106。
 保证没有自环，可以有重边，图联通。
- 做法
+做法
 考虑一个边双，里面的 ai 必须相等。
-先缩边双，把图变成树。考虑树上的做...
+先缩边双，把图变成树。考虑树上的做法...
 			
 		
 	</div>
@@ -910,8 +913,8 @@
 q 次修改，每次给出 x,t 表示 sx←t。修改是永久的。在所有修改之前和每次修改后输出共 q+1 个答案。保证 t 也在字符集中。
 答案对 998244353 取模。
 3≤n≤5×104，0≤q≤5×104，m=6。
- 做法
-出现至少两次直接计数非...
+做法
+出现至少两次直接计数非常...
 			
 		
 	</div>
@@ -1130,8 +1133,8 @@ https://mna.wang...
 给定 n 个三元组 (ai,bi,ci)，将其分成 3 组。设第一组的 max⁡a=A，第二组的 max⁡b=B，第三组的 max⁡c=C，输出最小的 A+B+C。若一组内没有元素，则对应的 max⁡=0。
 多测。
 1≤t≤10，1≤n≤106，1≤∑n≤2×106，1≤ai,bi,ci≤7×108。
- 做法
-先按 a 从小到大排序，不妨称这...
+做法
+先按 a 从小到大排序，不妨称这个...
 			
 		
 	</div>
@@ -1276,7 +1279,7 @@ https://mna.wang...
 https://www.acmicpc.net/problem/23868
 https://www.becoder.com.cn/contest/5564/problem/4
 https://mna.wang/contest/2339/problem/3
- 题目...
+题目翻...
 			
 		
 	</div>
@@ -1346,7 +1349,7 @@ https://mna.wang/contest/2339/problem/3
 			
 				前言
 当时给 cyx 分享了这个题，今天他问我要 std 和 solution。所以有了这篇文章。
- 题目翻译
+题目翻译
 一个 i 对应 k 个字符串 s1,i,s2,i,s3,i。
 现在有 k 个串 p1,p2,p3。
 有 q 次操作：
@@ -1354,7 +1357,7 @@ https://mna.wang/contest/2339/problem/3
 i + c 表示往 pi 后面接一个字符 c。
 i - 表示把 pi 最后一个字符删除。
 
-每次操作后你都需要输出满足...
+每次操作后你都需要输出满足 ...
 			
 		
 	</div>
@@ -1443,7 +1446,7 @@ i - 表示把 pi 最后一个字符删除。
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

@@ -35,8 +35,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -76,6 +76,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -288,7 +291,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -683,9 +686,9 @@
 				题目翻译
 给定 n 个点的 BST（二叉搜索树），目前点权为 −1 的节点可以染色 [1,C]，问可能的 BST 个数。答案对 998,244,353 取模。
 多测，1≤t≤105,1≤∑n≤5×105,1≤C≤109。
- 题目思路
+题目思路
 BST 的一个性质是中序遍历点权单调不降。
-中序遍历的顺序之后，我们只需要对于相邻两对不为 −1 的数（我们定为 L...
+中序遍历的顺序之后，我们只需要对于相邻两对不为 −1 的数（我们定为 L ...
 			
 		
 	</div>
@@ -755,11 +758,11 @@ BST 的一个性质是中序遍历点权单调不降。
 			
 				前言
 如何评价我场上 LCA 没清空 fa 数组没有 AK。
- 题目翻译
+题目翻译
 给定 n 个点的一棵树，以及 k 组点 (u,v)，表示 u→v 的简单路径包含特殊边。问至少多少边为特殊边。
 多测，1≤t≤104,∑n≤105,∑2k≤220。
- 题目思路
-k 很小，考虑状压。Si 为一个 mask 表示第 i 条边可能出现哪几条特殊边，也就是被哪几个路...
+题目思路
+k 很小，考虑状压。Si 为一个 mask 表示第 i 条边可能出现哪几条特殊边，也就是被哪几个路径包...
 			
 		
 	</div>
@@ -830,12 +833,12 @@ k 很小，考虑状压。Si 为一个 mask 表示第 i 条边可能出现哪几
 				前言
 这是今天粉兔杯每日一题，也是根分日报例题，补一下。
 暴力美学——浅谈根号分治 - paulzrm 的博客 - 洛谷博客
- 题目翻译
+题目翻译
 给出两个等差数列，求在 [L,R] 之间的交集大小。
 等差数列形式为 ak+b。
 1≤a1,a2≤2×109,−2×109≤b1,b2,L,R≤2×109,L≤R。
- 题目思路
-观察到 a 大，等差数列在 [L,...
+题目思路
+观察到 a 大，等差数列在 [L,R]...
 			
 		
 	</div>
@@ -906,10 +909,10 @@ k 很小，考虑状压。Si 为一个 mask 表示第 i 条边可能出现哪几
 				题目翻译
 给定 7×7 的黑白网格，问至少改多少点才能使得不出现大小为 3×3 的黑色 X 形。定义改一个点指改变这个点的颜色，黑变成白，白变成黑。
 多测，1≤t≤200。
- 题目思路
+题目思路
 显然只需要黑色改白色。
 一个不是很显然的结论是 ans≤8。
-你考虑对于网格进行红绿染色（其实就是黑白染色，但是和题意重合了）。就是 (1,1) 红色，(1,2) ...
+你考虑对于网格进行红绿染色（其实就是黑白染色，但是和题意重合了）。就是 (1,1) 红色，(1,2) 和...
 			
 		
 	</div>
@@ -979,7 +982,7 @@ k 很小，考虑状压。Si 为一个 mask 表示第 i 条边可能出现哪几
 			
 				前言
 在『江莉XCPC民间算法交流枢纽』有群友扔了这题，还挺有趣的。（这里是专有名词中英文之间不加括号没事的吧？）
- 题目翻译
+题目翻译
 给定 u,v,p，保证 p 是质数，有 3 种操作：
 
 u←u+1
@@ -989,7 +992,7 @@ u←up−2
 以上操作过后均对 p 取模。
 求一种不超过 200 次操作使得 u=v 的操作方案。
 0≤u,v&lt;p,3≤p≤109+9。
- ...
+题目...
 			
 		
 	</div>
@@ -1060,9 +1063,9 @@ u←up−2
 				题目翻译
 n 个大数 ai，找三元组 (i,j,k) 个数满足 1≤i,j,k≤n 且 ai×aj=ak。
 n≤1000,ai≤101000。
- 题目思路
+题目思路
 显然可以直接 FFT 高精度乘法。然后喜提 TLE，因为这个 ai 位数很长并且要跑很多轮乘法。
-我们集中注意力，注意到满足 ai×aj=ak 的必要条件是对于任意模数 p 存在 (ai mod...
+我们集中注意力，注意到满足 ai×aj=ak 的必要条件是对于任意模数 p 存在 (ai mod ...
 			
 		
 	</div>
@@ -1137,13 +1140,13 @@ n≤1000,ai≤101000。
 			
 				蒸馍身边一群大神不会普通莫队。
 现在每天半夜不写点根号算法都睡不着。根号算法个个是优雅的算法/se
- 莫队
+莫队
 处理离线区间询问。
 名字由来是因为是莫涛整理的。
- 普通莫队
- 简介
+普通莫队
+简介
 可以较优复杂度从 [l±1,r±1] 转到 [l,r]。
-当 n,q 同阶时，若转移为 O(1)，总复杂度即为 O(nn)。同理，转移为 O(logn) 复杂度即为 O(n...
+当 n,q 同阶时，若转移为 O(1)，总复杂度即为 O(nn)。同理，转移为 O(logn) 复杂度即为 O(nnlo...
 			
 		
 	</div>
@@ -1213,13 +1216,13 @@ n≤1000,ai≤101000。
 			
 				闲话
 和等差数列过不去了。碰上等差数列就要调 1h。
- 题目翻译
+题目翻译
 为了方便描述，我们约定数值相同的数为同一颜色的数。
 有 n 个数，我们定义一次操作为：选择若干个同颜色数，使得他们在序列中的位置为一个等差数列。删除它们。
 操作完之后可以重排整个序列。
 有 q 个询问，每次询问给定 [l,r]，求至少几次操作能全部删除 [l,r]。
 询问互不影响。
-...
+1...
 			
 		
 	</div>
@@ -1446,7 +1449,7 @@ int main()
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

@@ -35,8 +35,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -76,6 +76,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -288,7 +291,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -682,13 +685,13 @@
 			
 				前言
 初中了没法打小学生比赛了。膜拜小学但是吊打我的巨佬。但是虽然初中仍然能写炸 T1 并且只能口胡到 T2。
- T1 矩形纸片
- 题目链接
+T1 矩形纸片
+题目链接
 http://czoj.com.cn/p/P1672
 来源 CZOJ。
- 题目思路
+题目思路
 题面中的 109 完全吓唬人用的。
-考虑到 1≤a,b,c,d,x,y≤1000，最暴力的方法开个 2000×2000 大小...
+考虑到 1≤a,b,c,d,x,y≤1000，最暴力的方法开个 2000×2000 大小的数组...
 			
 		
 	</div>
@@ -761,9 +764,9 @@ j−i≠k−j。
 
 1≤n≤4,000。
 
- 题目思路
+题目思路
 暴力枚举 i,j,k，但是 O(n3) 超时。
-考虑优化，我们枚举 i,k，可以通过前缀和预处理出这一段中 sj≠si,s...
+考虑优化，我们枚举 i,k，可以通过前缀和预处理出这一段中 sj≠si,sj...
 			
 		
 	</div>
@@ -827,16 +830,16 @@ j−i≠k−j。
 		
 			
 				A.Love Story
- 题目翻译
+题目翻译
 
 给出一个长度为 10 的字符串，一位一位看问它与 codeforces 差了多少字符。
 t 组数据，1≤t≤1000。
 
- 题目思路
+题目思路
 按照题意模拟，扫描一遍给出字符串，判断第 i 位与 codeforces 的第 i 位是否相同即可。
- 完整代码
+完整代码
 #include&lt;bits/stdc++.h&gt;
-using n...
+using name...
 			
 		
 	</div>
@@ -979,10 +982,10 @@ q 行每行 1 个整数，表示最长的“几乎递增”子序列长度。
 2≤n≤2×106,0≤ai≤109。
 n≡0(mod2)。
 
- 题目思路
+题目思路
 前置知识：异或的归零律、恒等律与自反 a⊕a=0,a⊕0=a,a⊕b⊕a=b。
 观察题意可得我们求出的 ai 即为 b1⊕b2⊕⋯⊕bn 再去除一个 bi。
-设 b1⊕b2⊕⋯...
+设 b1⊕b2⊕⋯⊕...
 			
 		
 	</div>
@@ -1067,7 +1070,7 @@ n≡0(mod2)。
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

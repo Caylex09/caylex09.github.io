@@ -35,8 +35,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -76,6 +76,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -288,7 +291,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -675,10 +678,10 @@
 2≤n≤2×106,0≤ai≤109。
 n≡0(mod2)。
 
- 题目思路
+题目思路
 前置知识：异或的归零律、恒等律与自反 a⊕a=0,a⊕0=a,a⊕b⊕a=b。
 观察题意可得我们求出的 ai 即为 b1⊕b2⊕⋯⊕bn 再去除一个 bi。
-设 b1⊕b2⊕⋯...
+设 b1⊕b2⊕⋯⊕...
 			
 		
 	</div>
@@ -745,10 +748,10 @@ n≡0(mod2)。
 
 一张无向图。，由 5 个点 8 条边组成。请问如何才能从点 1 出发不遗漏不重复走完所有边。
 
- 题目思路
+题目思路
 简单的一笔画问题。通过一笔画我们不难想到七桥问题，作为尝试，我们都知道一张图内拥有 0 或 2 个奇点时才可被一笔画。
 显然这张图上，奇点是 1 和 2。因为题目说了从 1 开始，所以起点为 1。
-我们考虑对这张图进行搜索，枚举之...
+我们考虑对这张图进行搜索，枚举之后...
 			
 		
 	</div>
@@ -821,10 +824,10 @@ n≡0(mod2)。
 有一个长度为 n 的序列 a，找出最长的 [l,r] 使得 al,al+1,al+2,…ar−1,ar 不重复的数字个数 ≤k。
 1≤k≤n≤5×105,ai≤106
 
- 题目思路
+题目思路
 分析一下复杂度，n 的级别显然告诉我们要做到 n2 以下。
 观察到固定左端点 l，随着 r 往右推，不重复数字的个数也是单调不降的。考虑双指针。
-我们先让 ...
+我们先让 r...
 			
 		
 	</div>
@@ -891,10 +894,10 @@ n≡0(mod2)。
 考完改了 10 个字节 335 pts，
 回家改了 2 个字节 400 pts。
 水平没长进挂分的水平进步不小。
- D.三角形个数 count
+D.三角形个数 count
 很显然 O(n2) 枚举两个角度会超时。
 考虑到题目隐藏数据范围 ai≤180，我们实际只要开桶记录每个度数出现次数，然后枚举三角形角度得到每个度数出现次数，相乘即可。
-考场的 j ...
+考场的 j 和...
 			
 		
 	</div>
@@ -964,9 +967,9 @@ n≡0(mod2)。
 			
 				题目翻译
 给定长度为 n 的序列 a，求有多少组 (l,r) 满足 ∑i=lrai=ki。
- 题目思路
+题目思路
 首先考虑，枚举 l 和 r，判断 ∑i=lr 是否为 k 的倍数。但是显然这种做法复杂度为 n2 无法通过。
-设 s 为 a 的前缀和数组，我们注意到，我们查找 sr−sl−1=ki，其实等价于找 s 中是否有 sr−ki 这个元素，那么我们只需...
+设 s 为 a 的前缀和数组，我们注意到，我们查找 sr−sl−1=ki，其实等价于找 s 中是否有 sr−ki 这个元素，那么我们只需枚...
 			
 		
 	</div>
@@ -1031,10 +1034,10 @@ n≡0(mod2)。
 			
 				题目翻译
 有一个 H×W 的矩阵，切若干次，使得每一块中 1 个数 ≤k，只能一切到底，问最少用几刀。
- 题目思路
+题目思路
 直接暴力枚举每一行每一列绝对不行，复杂度 O(2H+W)。
 我们发现 H 很小，我们可以枚举 H 在哪里切割，复杂度 O(2H)。其实最多只有 H−1 刀，为了方便描述，统一用 H。
-接着，我们对于 W 考虑贪心，每一块有尽量多的 1...
+接着，我们对于 W 考虑贪心，每一块有尽量多的 1，...
 			
 		
 	</div>
@@ -1099,13 +1102,13 @@ n≡0(mod2)。
 			
 				题目翻译
 给出 w，问造一个数组，满足选三个正好是等于所有 ⩽w 的。
- 题目思路
+题目思路
 这个 w 最多 7 位，但 &lt;w 只有 6 位。
 我们把这个数设为 abcdef‾，然后分成 ab‾、cd‾、ef‾。
 每个都有 99 种可能，加上 106，一共 298 个。
- 主要代码
+主要代码
 #include&lt;bits/stdc++.h&gt;
-using namespac...
+using namespace ...
 			
 		
 	</div>
@@ -1172,13 +1175,13 @@ using namespac...
 有 9 种数字，1,2,…9。
 数字 i 可以花 ci 的价格购买，你有 n 元。
 最后输出你购买的数字拼成的最大值。
- 题目思路
+题目思路
 我们考虑，先让位数最大。
 然后，再最大化最高位、次高位、次次高位，一直往下。
 最大位数，即为用 n 除以最便宜的价钱。
 然后，你可能会有剩余的钱。
 剩余的，我们开始置换。
-从 9 开始枚举，能换就换，并输出你...
+从 9 开始枚举，能换就换，并输出你置...
 			
 		
 	</div>
@@ -1244,12 +1247,12 @@ using namespac...
 				题目翻译
 输入一个长度为 n 个数字，还有 X 和 Y。
 问数组中有几个区间最大值是 X 且最小值是 Y。
- 题目思路
+题目思路
 所有数字分为 ai&gt;Y，ai=Y，ai&lt;X，ai=X，X&lt;ai&lt;Y 五种情况。
 &gt;Y 和 &lt;X 的位置一定不能选。
 选一个区间，包含至少一个 =Y，包含至少一个 =X，问有多少种方案。
 问以每个位置作为结尾，有多少个方案。
-对于每...
+对于每个...
 			
 		
 	</div>
@@ -1404,7 +1407,7 @@ using namespac...
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

@@ -35,8 +35,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -76,6 +76,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -288,7 +291,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -691,9 +694,9 @@
 晚上 hb 突然找了 KingPowers 让他组模拟赛。原来赛前两天也是可以有模拟的！！！
 KingPowers 看了发现是两个 NOI 模拟和两个省选模拟拼起来的。啊？
 偷偷拿到了题面。Ivan 晚上就把 T1 过了。
- Day -2
+Day -2
 八点十分起来。九点不到到的世贸，晚了半小时开模拟。
-T1 真是绝世无敌奶龙题。。。。。。。。你需...
+T1 真是绝世无敌奶龙题。。。。。。。。你需要...
 			
 		
 	</div>
@@ -759,11 +762,11 @@ T1 真是绝世无敌奶龙题。。。。。。。。你需...
 				Day -(1e9 + 7)
 注册了 THUPC 2025 的账号。加了 happybob 的团队。
 其实早就约好组队了。但是几场 CF 的 ICPC 赛制比赛都没以这个队伍的名义参加。不管了。
- Day 0
+Day 0
 早上十点钟被叫起床了。吃了点东西去世贸。和队友连麦打。
 牛魔的怎么还有一分钟有人喊开了开了。蓝的盆。
 随机开题。
-开场看了眼 M，打了个 P...
+开场看了眼 M，打了个 Py...
 			
 		
 	</div>
@@ -832,13 +835,13 @@ T1 真是绝世无敌奶龙题。。。。。。。。你需...
 		
 			
 				初赛
- Day -(1e9+7)
+Day -(1e9+7)
 好吧我其实忘了 Day -(1e9+7) 和 Day -998244353 的先后顺序。
 所以可能这里其实才是 Day -998244353 发生的事情。
 很荣幸收到了 Aya 的私信找我验初赛模拟。
 做了一下感觉选择问题不大。阅读和完善到处开花。
 成功砍下 62.5 分高分。
-好像是验题人倒数第二还是倒数第一来着...
+好像是验题人倒数第二还是倒数第一来着。...
 			
 		
 	</div>
@@ -910,12 +913,12 @@ T1 真是绝世无敌奶龙题。。。。。。。。你需...
 第一次打百度之星。这个软件只有 Windows 版本的？被迫切回我一年没用的 Windows 系统了。
 卡死了，一点 coding 体验都没有。
 喜提两题走人了 &gt;_&lt;
- Day -2e8
+Day -2e8
 第二把，这一把撞中考，可能是晋级希望最大的。但是事实上我被汉诺塔单防若干小时。
 喜提三题走人了 &gt;_&lt;
 寄。
- Day -1e8
-第三把。最后...
+Day -1e8
+第三把。最后一把...
 			
 		
 	</div>
@@ -982,10 +985,10 @@ T1 真是绝世无敌奶龙题。。。。。。。。你需...
 找的队友跑路了，在 LA 重找。
 找到了 @Cx114514 和 @xzy090626。
 由于分别是来自【常州】（我）【无锡】（Cx114514）【徐州】（xzy090626），所以队名是【黑无常，白无常，徐无常】。
- Day -2
+Day -2
 约好了要周六上午 vp 一场 gym 里的比赛试试。睡不了懒觉了呜呜呜。
- Day -1
-上午 vp...
+Day -1
+上午 vp 了...
 			
 		
 	</div>
@@ -1127,14 +1130,14 @@ JS-0187
 			
 				希望今年能靠自己的分数打进 NOIP 吧，去年是靠的常州考点的名额。
 好，noip 应该是进了。
- 初赛
- Day -???
+初赛
+Day -???
 去机房不能开电脑，难受。
 练初赛，全靠左顾右盼法看@JwJ_2010 的。退役半年的都比我强，紫砂了。
- Day -1
+Day -1
 文化课布置了作文，难受。初赛，没看。
- Day 0
-上午坐地铁去，好像在常外站看到了个高个子的穿校服的女...
+Day 0
+上午坐地铁去，好像在常外站看到了个高个子的穿校服的女生，但事...
 			
 		
 	</div>
@@ -1203,15 +1206,16 @@ JS-0187
 		
 			
 				初赛
- Day -4
+Day -4
 好耶，逃了信息课去基房四练初赛！
 看了一遍 159号程序员 的日报，认真刷了一点数学题，感觉差不多了。
- Day -3
+Day -3
 晚自习做了套 tg 组卷子，69，感觉过初赛还算稳……？
- Day -1
+Day -1
 考前一天还要 whk，呜呜呜想哭。
 下午去学校的基房搞基做了套 pj 组的初赛卷子。79.5，最高 80.5 还可以吧……？
- Day...
+Day 0
+M...
 			
 		
 	</div>
@@ -1275,15 +1279,15 @@ JS-0187
 		
 			
 				JSOI=信息与未来，非 JS 省选。
- 2022.7.15
+2022.7.15
 群里早就约好了面基时间地点，还有一天就面基啦！
- 2022.7.16
+2022.7.16
 九点半出了地铁。
 九点四十就开始排队了，大家太积极了。
 等了半个多小时，捕捉了一只野生 cyc。
 PS：可惜了，几年前的手机拍照延迟过高，大头照没拍到几张清楚的。
 又过了一会儿，同班同学也来了。
-可惜我们珂爱的佳雨小姐...
+可惜我们珂爱的佳雨小姐姐上...
 			
 		
 	</div>
@@ -1347,12 +1351,12 @@ PS：可惜了，几年前的手机拍照延迟过高，大头照没拍到几张
 		
 			
 				2022.5.12
- First
+First
 放学回家，发布一条 QQ 动态和微信朋友圈，内容为几张照片，还有一段文字：
 点赞这条动态/朋友圈，会获得jiangly和tourist保佑，一整年AK所有比赛，快来试试
 顺带一提，明天就是信息与未来的选拔赛了，所以，unsigned long long rp=0;rp--;
- Second
-背模板ing&amp;看博客in...
+Second
+背模板ing&amp;看博客ing。...
 			
 		
 	</div>
@@ -1435,7 +1439,7 @@ PS：可惜了，几年前的手机拍照延迟过高，大头照没拍到几张
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

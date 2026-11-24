@@ -37,8 +37,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -78,6 +78,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -290,7 +293,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -700,19 +703,19 @@
 	</header>
 
 	<div class="post-content" id="post_content">
-		<h1 id="初赛"><a class="markdownIt-Anchor" href="#初赛"></a> 初赛</h1>
-<h2 id="day-1e97"><a class="markdownIt-Anchor" href="#day-1e97"></a> Day -(1e9+7)</h2>
+		<h1 id="初赛">初赛<a class="markdownIt-Anchor" href="#初赛"></a></h1>
+<h2 id="day-1e97">Day -(1e9+7)<a class="markdownIt-Anchor" href="#day-1e97"></a></h2>
 <p>该从什么时候开始写呢……</p>
 <p>暑假去了代码源 NOI 集训，然后回家做了两天题，打打洛谷 NOIP 模拟赛，然后去了一下梦熊，去完梦熊回家就去了 sxz。</p>
 <p>在 sxz 给小朋友讲了若干套初赛卷子，晚上在宿舍挑灯夜战做初赛题，憋憋。</p>
 <p>关于梦熊的信息学奥赛满分之路还是啥来着的一个初赛书，我只能说，能退就退吧。槽点不想找了，因为你随便点一个题大概就是槽点。</p>
-<h2 id="day-2"><a class="markdownIt-Anchor" href="#day-2"></a> Day -2</h2>
+<h2 id="day-2">Day -2<a class="markdownIt-Anchor" href="#day-2"></a></h2>
 <p>从 sxz 回家，在环球港吃的饭。</p>
-<h2 id="day-1"><a class="markdownIt-Anchor" href="#day-1"></a> Day -1</h2>
+<h2 id="day-1">Day -1<a class="markdownIt-Anchor" href="#day-1"></a></h2>
 <p>早上睡到八点，给家长发了一条消息倒头继续睡到了八点半，然后生物钟（</p>
 <p>早上做了一下梦熊炼石，喜提被 T1 单防。然后点了个麦，吃完写了一下 T2，100+100+0+0 跑路，你都打模拟赛了不当整百人难道正赛当整百人吗？</p>
 <p>下午做了一下好像是 21 的初赛卷子，92，不赖。</p>
-<h2 id="day-0"><a class="markdownIt-Anchor" href="#day-0"></a> Day 0</h2>
+<h2 id="day-0">Day 0<a class="markdownIt-Anchor" href="#day-0"></a></h2>
 <p>上午一直迷迷糊糊的，随便看了点资料。然后有人发了初赛卷子，wtf 这么迅速吗？？？</p>
 <p>这个完善程序盐都不盐了，怎么是 ARC070F。虽然我认为在有了题解的情况下这个题很轻松。</p>
 <p>然后吃饭了去小锡监了，在车上睡了午觉。</p>
@@ -728,21 +731,21 @@
 <p>完善程序 T1 纯送，T2 稍微骗一骗但是也都不难。</p>
 <p>最后对了答案就挂这三个，那估计 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≥</mo><mn>94</mn></mrow><annotation encoding="application/x-tex">\geq 94</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719400000000001em;vertical-align:-0.13597em;"></span><span class="mrel">≥</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">9</span><span class="mord">4</span></span></span></span> 肯定有了。我觉得 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>94</mn><mo separator="true">,</mo><mn>97</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[94,97]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord">9</span><span class="mord">4</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">9</span><span class="mord">7</span><span class="mclose">]</span></span></span></span>。</p>
 <p>晚上和 qjm、madoka、carrot、北风等打雀。分别吃了 4-1-3，嘟嘟嘟。</p>
-<h2 id="day"><a class="markdownIt-Anchor" href="#day"></a> Day ???</h2>
+<h2 id="day">Day ???<a class="markdownIt-Anchor" href="#day"></a></h2>
 <p>出分了，好耶，喜提 79。</p>
 <p>哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈呃呃呃呃呃呃呃呃呃呃嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯？？？？？？？？？？？？</p>
 <p>草，什么情况啊。根本无法理解，唯一可能性是，答题卡最后多两个题，如果我最后一个大题，是倒着填五个导致中间空了两个题，恰好可以获得 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>94</mn><mo>−</mo><mn>15</mn><mo>=</mo><mn>79</mn></mrow><annotation encoding="application/x-tex">94-15=79</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">9</span><span class="mord">4</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">5</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">7</span><span class="mord">9</span></span></span></span>。</p>
 <p>哦哦哦哦哦哦啊啊啊啊啊呵呵呵呵呵呵呵。。。。。。。。</p>
-<h1 id="复赛"><a class="markdownIt-Anchor" href="#复赛"></a> 复赛</h1>
-<h2 id="day-6"><a class="markdownIt-Anchor" href="#day-6"></a> Day -6</h2>
+<h1 id="复赛">复赛<a class="markdownIt-Anchor" href="#复赛"></a></h1>
+<h2 id="day-6">Day -6<a class="markdownIt-Anchor" href="#day-6"></a></h2>
 <p>离开了北京，回家，好耶。</p>
-<h2 id="day-2-2"><a class="markdownIt-Anchor" href="#day-2-2"></a> Day -2</h2>
+<h2 id="day-2-2">Day -2<a class="markdownIt-Anchor" href="#day-2-2"></a></h2>
 <p>想起来我还开了游记，哦哦哦哦哦。是不是该写点什么。</p>
 <p>今天写了两个 jsy 模拟赛的题。晚上打算整理一下要打的板子。我其实没有很好的板子题列表，呃呃呃。下周末还得去打南京站，我确乎该重新整理一下我的模板库了。</p>
 <p>写在这篇幅太长了，我去开个新的文件吧。</p>
-<h2 id="day-1-2"><a class="markdownIt-Anchor" href="#day-1-2"></a> Day -1</h2>
+<h2 id="day-1-2">Day -1<a class="markdownIt-Anchor" href="#day-1-2"></a></h2>
 <p>打了打板子。</p>
-<h2 id="day-0-2"><a class="markdownIt-Anchor" href="#day-0-2"></a> Day 0</h2>
+<h2 id="day-0-2">Day 0<a class="markdownIt-Anchor" href="#day-0-2"></a></h2>
 <p>早上睡到八点多起床，感觉精神不错。看了看笔记吃了点饭坐车去南京。</p>
 <p>路上看到 J 组题，这个 T4 是题？我组信心赛都不敢这么组的。</p>
 <p>下午 S 入场。</p>
@@ -761,10 +764,10 @@
 <p>哦哦牛批，你妈的怎么还有 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><msub><mi>t</mi><mn>1</mn></msub><mi mathvariant="normal">∣</mi><mo mathvariant="normal">≠</mo><mi mathvariant="normal">∣</mi><msub><mi>t</mi><mn>2</mn></msub><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|t_1|\neq |t_2|</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">∣</span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">∣</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel"><span class="mrel"><span class="mord vbox"><span class="thinbox"><span class="rlap"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="inner"><span class="mrel"></span></span><span class="fix"></span></span></span></span></span><span class="mrel">=</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">∣</span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">∣</span></span></span></span> 这回事。</p>
 <p>这下这下了，T2 多个 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span></span></span></span> 但是有剪枝，还是有希望赢的。</p>
 <p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>100</mn><mo>+</mo><mo stretchy="false">[</mo><mn>80</mn><mo separator="true">,</mo><mn>100</mn><mo stretchy="false">]</mo><mo>+</mo><mo stretchy="false">[</mo><mn>0</mn><mo separator="true">,</mo><mn>100</mn><mo stretchy="false">]</mo><mo>+</mo><mn>24</mn></mrow><annotation encoding="application/x-tex">100+[80,100]+[0,100]+24</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">1</span><span class="mord">0</span><span class="mord">0</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord">8</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">1</span><span class="mord">0</span><span class="mord">0</span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">1</span><span class="mord">0</span><span class="mord">0</span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mord">4</span></span></span></span> 了。遗憾离场。T3 别卡 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><msub><mi>t</mi><mn>1</mn></msub><mi mathvariant="normal">∣</mi><mo mathvariant="normal">≠</mo><mi mathvariant="normal">∣</mi><msub><mi>t</mi><mn>2</mn></msub><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|t_1|\neq |t_2|</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">∣</span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">∣</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel"><span class="mrel"><span class="mord vbox"><span class="thinbox"><span class="rlap"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="inner"><span class="mrel"></span></span><span class="fix"></span></span></span></span></span><span class="mrel">=</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">∣</span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">∣</span></span></span></span> 吧求你了去年 NOIP T2 都没卡没读入完凭什么卡我这个/px</p>
-<h2 id="day-4"><a class="markdownIt-Anchor" href="#day-4"></a> Day 4</h2>
+<h2 id="day-4">Day 4<a class="markdownIt-Anchor" href="#day-4"></a></h2>
 <p>兄弟，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>100</mn><mo>+</mo><mn>100</mn><mo>+</mo><mn>80</mn><mo>+</mo><mn>24</mn></mrow><annotation encoding="application/x-tex">100+100+80+24</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">1</span><span class="mord">0</span><span class="mord">0</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">1</span><span class="mord">0</span><span class="mord">0</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">8</span><span class="mord">0</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mord">4</span></span></span></span>，好像赢了。</p>
 <p>WC 再见。</p>
-<h2 id="day-5"><a class="markdownIt-Anchor" href="#day-5"></a> Day 5</h2>
+<h2 id="day-5">Day 5<a class="markdownIt-Anchor" href="#day-5"></a></h2>
 <p>2025 CSP 提高级认证，相 c 亲 y 相 x 爱一家人 3 名选手 AK，领跑江苏！</p>
 <p>11 月 1 日 CSP 提高级认证在江苏各校举行，陈煜轩.zip 再次傲视群雄，3 人 AK。
 他们是陶奕潇（省锡中），张一藩（省锡中），袁瑞祺（盐城中学）。</p>
@@ -943,9 +946,9 @@ if (btn) btn.addEventListener("click", () => {
 	socialShare("#share", {
 	    title : `[游记] CSP 2025 游记`,
 	    description : `初赛
- Day -(1e9+7)
+Day -(1e9+7)
 该从什么时候开始写呢……
-暑假去了代码源 NOI 集训，然后回家做...`,
+暑假去了代码源 NOI 集训，然后回家做了...`,
 	    wechatQrcodeTitle : `分享到微信`,
 	    wechatQrcodeHelper : `微信扫描二维码`,
 	    source : `https://blog.cyx2009.top/archives/CSP2025/`
@@ -997,6 +1000,56 @@ if (btn) btn.addEventListener("click", () => {
 
 	<div id="post_comment" class="card shadow-sm">
 		<div id="giscus"></div>
+<script>
+	(function () {
+		var lightTheme = "light";
+		function giscusTheme() {
+			return document.documentElement.classList.contains("darkmode") ? "dark" : lightTheme;
+		}
+		// client.js is the next sibling and has not executed yet (async), so
+		// its data-theme can be corrected before the widget first loads.
+		var loader = document.currentScript.nextElementSibling;
+		if (loader && loader.tagName === "SCRIPT" && loader.getAttribute("data-repo")) {
+			loader.setAttribute("data-theme", giscusTheme());
+		}
+		// Send the current theme to the widget. Always send: the iframe only
+		// acts on messages it receives, and it re-applies idempotently.
+		window.syncGiscusTheme = function () {
+			var frame = document.querySelector("iframe.giscus-frame");
+			if (!frame || !frame.contentWindow) return;
+			frame.contentWindow.postMessage(
+				{ giscus: { setConfig: { theme: giscusTheme() } } },
+				"https://giscus.app"
+			);
+		};
+		// The widget only processes setConfig after it has fully booted, which
+		// the iframe load event signals. emitMetadata=0 means giscus sends no
+		// messages back, so the load event is the reliable sync hook.
+		window.addEventListener("message", function (event) {
+			if (event.origin !== "https://giscus.app") return;
+			syncGiscusTheme();
+		});
+		// giscus replaces its container on re-render, so observe the comment
+		// card for the frame's appearance and hook its load event.
+		var commentCard = document.getElementById("post_comment");
+		if (commentCard) {
+			var hook = function (frame) {
+				frame.addEventListener("load", syncGiscusTheme);
+			};
+			var existing = commentCard.querySelector("iframe.giscus-frame");
+			if (existing) hook(existing);
+			new MutationObserver(function (records) {
+				records.forEach(function (record) {
+					Array.prototype.forEach.call(record.addedNodes, function (node) {
+						if (node.nodeType !== 1) return;
+						var frames = node.tagName === "IFRAME" ? [node] : node.querySelectorAll("iframe.giscus-frame");
+						Array.prototype.forEach.call(frames, hook);
+					});
+				});
+			}).observe(commentCard, { childList: true, subtree: true });
+		}
+	})();
+</script>
 <script src="https://giscus.app/client.js"
         data-repo="caylex09/blogtalk"
         data-repo-id="R_kgDOHDKqeg"
@@ -1091,7 +1144,7 @@ if (btn) btn.addEventListener("click", () => {
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

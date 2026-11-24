@@ -37,8 +37,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -78,6 +78,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -290,7 +293,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -731,8 +734,8 @@
 <p>感觉有点厉害，昨天看了一下第一集，看了一下目录非常全，应当好好学习。</p>
 <p>于是开一篇这样的笔记当上课笔记本。</p>
 <p>不太一定是连续的人话，可能就记一点关键信息。</p>
-<h1 id="先秦文学"><a class="markdownIt-Anchor" href="#先秦文学"></a> 先秦文学</h1>
-<h2 id="先秦文学概论"><a class="markdownIt-Anchor" href="#先秦文学概论"></a> 先秦文学概论</h2>
+<h1 id="先秦文学">先秦文学<a class="markdownIt-Anchor" href="#先秦文学"></a></h1>
+<h2 id="先秦文学概论">先秦文学概论<a class="markdownIt-Anchor" href="#先秦文学概论"></a></h2>
 <p>周朝建立，政治文化变革，称为制礼作乐。礼就是在政治方面的变革。</p>
 <p>孔子说过：“夏礼吾能言之，杞不足徵也。殷礼吾能言之，宋不足徵也。足，则吾能徵之矣。”，还说过：“后虽百世可知也，以一文一质。周监二代，郁郁乎文哉。吾从周。”<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>。</p>
 <p>意思是：“夏代的礼仪制度我还能讲出来，只是夏的后代杞国没有留下足够证明这些的文献了。殷商的礼仪制度我也能讲出来，只是殷商的后宋国没有留下足够证明这些制度的文献了。如果杞、宋两国有足够的文献，我就能证明这些制度了。”和“将来即使经过百世，那增减的也是可以预知的，因为一种是重视文采，另一种是重视朴实。周代的礼仪制度是在参照了夏代和殷代的基础上制定的，多么丰富多采呀，我主张用周代的礼仪。”。</p>
@@ -760,7 +763,7 @@
 <li>鲜明的地域特征：北方《诗经》南方楚辞。齐鲁的儒家，三晋的法家后续在秦发展，源于中原但是齐地楚地最为繁盛的道家。环渤海产生了新的传说体系，就是阴阳家。而汉代以后中央政权淡化了地域特征。</li>
 <li>文学创作主体的地位也不断下移，从朝廷中的巫和史，再到贵族，再到士到各种平民。</li>
 </ul>
-<h2 id="原始歌谣与神话"><a class="markdownIt-Anchor" href="#原始歌谣与神话"></a> 原始歌谣与神话</h2>
+<h2 id="原始歌谣与神话">原始歌谣与神话<a class="markdownIt-Anchor" href="#原始歌谣与神话"></a></h2>
 <p>考察人类文学的起源与发展，最早的文学样式就是诗歌。诗歌最早以歌谣的形式出现。鲁迅认为诗歌起源于劳动，这与人类起源于劳动等思想也有关。不过考察早期诗歌，往往是和<strong>宗教祭祀</strong>有关。</p>
 <p>最早的诗就是最原始的声音，再加上一些有意义的语言。如《候人歌》仅仅四字“候人兮猗”<sup class="footnote-ref"><a href="#fn10" id="fnref10">[10]</a></sup>，四字还有两字是语气词。</p>
 <p>虽然早期诗歌往往是和<strong>宗教祭祀</strong>有关，但是内容又往往是表现<strong>劳动生活</strong>。例如《吴越春秋》中记载了一首《弹歌》：“断竹，续竹。飞土，逐宍。”<sup class="footnote-ref"><a href="#fn11" id="fnref11">[11]</a></sup>。但是很多情况下这样的诗歌是在祭祀场合去唱的。《吕氏春秋》还记载了“葛天氏之乐”：“昔葛天氏之乐，三人操牛尾，投足以歌八阕：一曰载民，二曰玄鸟，三曰遂草木，四曰奋五谷，五曰敬天常，六曰达帝功，七曰依地德，八曰总万物之极。”<sup class="footnote-ref"><a href="#fn12" id="fnref12">[12]</a></sup>第一它是乐，有表演且可能有歌词，第二它是某种仪式，表达了某种观念和愿望，第三这种观念和愿望与人们劳动有关。《礼记》中也记载伊耆氏的《蜡辞》：“土反其宅，水归其壑，昆虫毋作，草木归其泽。”<sup class="footnote-ref"><a href="#fn13" id="fnref13">[13]</a></sup>。是祈求风调雨顺农业丰收有关的。</p>
@@ -801,7 +804,7 @@
 <p>神话的主要创作方法：幻想、拟人、夸张。</p>
 <p>神话集中体现了古代人民的美好理想和英雄气概。</p>
 <p>在神话中，具有一定的故事情节，有各具特色的主人公形象，如果把散见于各书中的有关片断集中起来，可以看到，有些是相当曲折和生动的。古代神话中的形象、故事情节及叙事技巧对后代文学尤其是寓言和小说有重要影响。</p>
-<h2 id="诗经的结集与流传"><a class="markdownIt-Anchor" href="#诗经的结集与流传"></a> 《诗经》的结集与流传</h2>
+<h2 id="诗经的结集与流传">《诗经》的结集与流传<a class="markdownIt-Anchor" href="#诗经的结集与流传"></a></h2>
 <hr class="footnotes-sep" />
 <section class="footnotes">
 <ol class="footnotes-list">
@@ -1086,6 +1089,56 @@ if (btn) btn.addEventListener("click", () => {
 
 	<div id="post_comment" class="card shadow-sm">
 		<div id="giscus"></div>
+<script>
+	(function () {
+		var lightTheme = "light";
+		function giscusTheme() {
+			return document.documentElement.classList.contains("darkmode") ? "dark" : lightTheme;
+		}
+		// client.js is the next sibling and has not executed yet (async), so
+		// its data-theme can be corrected before the widget first loads.
+		var loader = document.currentScript.nextElementSibling;
+		if (loader && loader.tagName === "SCRIPT" && loader.getAttribute("data-repo")) {
+			loader.setAttribute("data-theme", giscusTheme());
+		}
+		// Send the current theme to the widget. Always send: the iframe only
+		// acts on messages it receives, and it re-applies idempotently.
+		window.syncGiscusTheme = function () {
+			var frame = document.querySelector("iframe.giscus-frame");
+			if (!frame || !frame.contentWindow) return;
+			frame.contentWindow.postMessage(
+				{ giscus: { setConfig: { theme: giscusTheme() } } },
+				"https://giscus.app"
+			);
+		};
+		// The widget only processes setConfig after it has fully booted, which
+		// the iframe load event signals. emitMetadata=0 means giscus sends no
+		// messages back, so the load event is the reliable sync hook.
+		window.addEventListener("message", function (event) {
+			if (event.origin !== "https://giscus.app") return;
+			syncGiscusTheme();
+		});
+		// giscus replaces its container on re-render, so observe the comment
+		// card for the frame's appearance and hook its load event.
+		var commentCard = document.getElementById("post_comment");
+		if (commentCard) {
+			var hook = function (frame) {
+				frame.addEventListener("load", syncGiscusTheme);
+			};
+			var existing = commentCard.querySelector("iframe.giscus-frame");
+			if (existing) hook(existing);
+			new MutationObserver(function (records) {
+				records.forEach(function (record) {
+					Array.prototype.forEach.call(record.addedNodes, function (node) {
+						if (node.nodeType !== 1) return;
+						var frames = node.tagName === "IFRAME" ? [node] : node.querySelectorAll("iframe.giscus-frame");
+						Array.prototype.forEach.call(frames, hook);
+					});
+				});
+			}).observe(commentCard, { childList: true, subtree: true });
+		}
+	})();
+</script>
 <script src="https://giscus.app/client.js"
         data-repo="caylex09/blogtalk"
         data-repo-id="R_kgDOHDKqeg"
@@ -1180,7 +1233,7 @@ if (btn) btn.addEventListener("click", () => {
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

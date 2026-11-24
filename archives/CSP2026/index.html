@@ -38,8 +38,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -79,6 +79,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -291,7 +294,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -706,7 +709,7 @@
 	</header>
 
 	<div class="post-content" id="post_content">
-		<h1 id="20260919-初赛"><a class="markdownIt-Anchor" href="#20260919-初赛"></a> 20260919 初赛</h1>
+		<h1 id="20260919-初赛">20260919 初赛<a class="markdownIt-Anchor" href="#20260919-初赛"></a></h1>
 <p>今天初赛，想起来还没开游记，开一下。今年根本没准备，就在机房陪其他老哥做了一套卷子，然后去考场路上看了会儿笔记。今天之后我再也不用背这些东西了，赢。</p>
 <p>其实我今天查了 OI Wiki 才知道快速排序怎么是这么个写法的，我之前以为的快速排序根本不是快速排序，或者说实现细节根本不同。难怪是不稳定排序，今天想了一下我一直以为的快速排序怎么其实是稳定的，吓哭了。</p>
 <p>下午等了半天 hya。严肃等到一起进去。哇我们两个是这里的所有人里 NOI 最高的甚至是唯二有 NOI 分数的有感觉吗，也是给我俩混成老资历了。怎么 zzy 也来打啊，无敌。</p>
@@ -723,7 +726,7 @@
 <p>晚上水水群然后我的发言怎么被花老师挂出去了，行，我也算知名高手了。算我厉害。</p>
 <p><img loading="eager" decoding="async" src="https://testingcf.jsdelivr.net/gh/Caylex09/img@main/images/20260919/202319880.png" alt="" /></p>
 <p><img loading="lazy" decoding="async" src="https://testingcf.jsdelivr.net/gh/Caylex09/img@main/images/20260919/e2090090721af298985640f9c032d227.jpg" alt="" /></p>
-<h1 id="20261030"><a class="markdownIt-Anchor" href="#20261030"></a> 20261030</h1>
+<h1 id="20261030">20261030<a class="markdownIt-Anchor" href="#20261030"></a></h1>
 <p>这两天在机房做了一下 UER。T4 代码中午没写完就先回家了，到家了写了一会儿过了。然后我写一半让 GPT 帮我 debug，但是雷霆大思考太久了，我自己都过了。但是怎么我都过了，然后他说的 bug，我都还没改啊。</p>
 <p>我去，我的代码真的有问题。GPT 发现我的代码实际是错的，但是拍不出来，完全红温了，直接切换 Work 开始狂暴开 agent 分析我的代码。</p>
 <p>哦什么叫我的 DP 写的错完了，但是因为只要输出全局最优解，可以证明有一个最优解算出来的 DP 值是对的。</p>
@@ -732,7 +735,7 @@
 <p>晚上想复习点板子，但是根本不想打，随便看了两眼，然后看了点做题笔记。水水群聊了点编译指令注意事项。</p>
 <p>原来我和 zqy ycx 三个苦命鸳鸯甚至还有 CSP-S 超过 NOI 的风险，没绷住。最好能超过。不过获得一个 3 开头的成绩保住晚节能打 WC 就够了。</p>
 <p>萌萌神怎么精确知道了我忘记改 Bot 明天的 RP 显示了。作弊的，是不是把我服务器黑了。</p>
-<h1 id="20261031-复赛"><a class="markdownIt-Anchor" href="#20261031-复赛"></a> 20261031 复赛</h1>
+<h1 id="20261031-复赛">20261031 复赛<a class="markdownIt-Anchor" href="#20261031-复赛"></a></h1>
 <p>早上起床略有点头昏但是问题不大。中午和 hya 吃的药膳鸡煲。鸡煲不是区（错乱）。</p>
 <p>可惜噜噜在 nfls 监考。要是在 nfls 考就可以串通噜噜作弊了（bushi）。不过 YangHao 在 nuaa，甚至监考 hya，笑。</p>
 <p>学校门口有省锡中大哥找我合影，虽然我并不认识省锡中的大多数人。</p>
@@ -751,7 +754,7 @@
 <p>太大了。WC 根本去不了了，应该也没有上 300 的风险了，晚节不保。</p>
 <p>没招了，打完南京区域赛可能得跑路去核桃待一段时间了。NOIP 再打成这样就真的报废了。</p>
 <p>不过好在高一偷了个 WC 排名挺靠前的 Ag，就算高二没的 WC 去也无所谓了。而且根据我上赛季神一把鬼一把的表现看，NOIP 我要直接拿下了（确信）。</p>
-<h1 id="20261105-复赛出分"><a class="markdownIt-Anchor" href="#20261105-复赛出分"></a> 20261105 复赛出分</h1>
+<h1 id="20261105-复赛出分">20261105 复赛出分<a class="markdownIt-Anchor" href="#20261105-复赛出分"></a></h1>
 <p>100+100+24+50，反向挂了 20。但是其实别的人比我反挂的更多，难绷。</p>
 <p>偷听了点小秘密，没有人类了。</p>
 <p>怎么出题人全他妈是认识的，无敌了。我打不了 CS 的原因就是因为 CS 群的群友出题了.jpg</p>
@@ -972,6 +975,56 @@ if (btn) btn.addEventListener("click", () => {
 
 	<div id="post_comment" class="card shadow-sm">
 		<div id="giscus"></div>
+<script>
+	(function () {
+		var lightTheme = "light";
+		function giscusTheme() {
+			return document.documentElement.classList.contains("darkmode") ? "dark" : lightTheme;
+		}
+		// client.js is the next sibling and has not executed yet (async), so
+		// its data-theme can be corrected before the widget first loads.
+		var loader = document.currentScript.nextElementSibling;
+		if (loader && loader.tagName === "SCRIPT" && loader.getAttribute("data-repo")) {
+			loader.setAttribute("data-theme", giscusTheme());
+		}
+		// Send the current theme to the widget. Always send: the iframe only
+		// acts on messages it receives, and it re-applies idempotently.
+		window.syncGiscusTheme = function () {
+			var frame = document.querySelector("iframe.giscus-frame");
+			if (!frame || !frame.contentWindow) return;
+			frame.contentWindow.postMessage(
+				{ giscus: { setConfig: { theme: giscusTheme() } } },
+				"https://giscus.app"
+			);
+		};
+		// The widget only processes setConfig after it has fully booted, which
+		// the iframe load event signals. emitMetadata=0 means giscus sends no
+		// messages back, so the load event is the reliable sync hook.
+		window.addEventListener("message", function (event) {
+			if (event.origin !== "https://giscus.app") return;
+			syncGiscusTheme();
+		});
+		// giscus replaces its container on re-render, so observe the comment
+		// card for the frame's appearance and hook its load event.
+		var commentCard = document.getElementById("post_comment");
+		if (commentCard) {
+			var hook = function (frame) {
+				frame.addEventListener("load", syncGiscusTheme);
+			};
+			var existing = commentCard.querySelector("iframe.giscus-frame");
+			if (existing) hook(existing);
+			new MutationObserver(function (records) {
+				records.forEach(function (record) {
+					Array.prototype.forEach.call(record.addedNodes, function (node) {
+						if (node.nodeType !== 1) return;
+						var frames = node.tagName === "IFRAME" ? [node] : node.querySelectorAll("iframe.giscus-frame");
+						Array.prototype.forEach.call(frames, hook);
+					});
+				});
+			}).observe(commentCard, { childList: true, subtree: true });
+		}
+	})();
+</script>
 <script src="https://giscus.app/client.js"
         data-repo="caylex09/blogtalk"
         data-repo-id="R_kgDOHDKqeg"
@@ -1066,7 +1119,7 @@ if (btn) btn.addEventListener("click", () => {
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

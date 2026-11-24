@@ -35,8 +35,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -76,6 +76,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -288,7 +291,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -742,8 +745,8 @@
 				CF2247F Paths on a Grid
 注意到限制等价于，经过的路径集合完全相同。而集合完全相同可以用哈希刻画出现集合路径的元素，路径用权值乘起来表示，集合用路径权值加起来表示，这些都是可以轻松 DP 出来的。
 然后做完了。。？显然一个等价类除了空集随便选。。。
- 模拟赛 代码源 蜗蜗的温控舱
-https://newoj.daimayuan...
+模拟赛 代码源 蜗蜗的温控舱
+https://newoj.daimayuan....
 			
 		
 	</div>
@@ -954,10 +957,10 @@ https://newoj.daimayuan...
 感觉有点厉害，昨天看了一下第一集，看了一下目录非常全，应当好好学习。
 于是开一篇这样的笔记当上课笔记本。
 不太一定是连续的人话，可能就记一点关键信息。
- 先秦文学
- 先秦文学概论
+先秦文学
+先秦文学概论
 周朝建立，政治文化变革，称为制礼作乐。礼就是在政治方面的变革。
-孔子说...
+孔子说过：...
 			
 		
 	</div>
@@ -1221,10 +1224,10 @@ https://newoj.daimayuan...
 		
 			
 				题目在 http://poj.openjudge.cn/campus2026/ 上。好像非小组成员能看但是不能提交。
- A
+A
 rt(x)={x mod 9=09x mod 9≠0x mod 9
 一个不能过的想法是维护区间长度模 ϕ(9) 的结果，可能还得单独维护 len=1 的。合并复杂度可能 63×63 了爆干净了。
-维护一个区间乘上 x 之后的情...
+维护一个区间乘上 x 之后的情况...
 			
 		
 	</div>
@@ -1293,10 +1296,11 @@ rt(x)={x mod 9=09x mod 9≠0x mod 9
 		
 			
 				大家都在打 APIO，我依旧美美偷分。
- ARC219A Similarity
+ARC219A Similarity
 https://atcoder.jp/contests/arc219/tasks/arc219_a
 限制等价于给出了 n 个被 ban 掉的答案，就是那 n 个输入字符串的逐位取反后得到的 n 个字符串。
-我们只要找到一个长度为 m 的字符串，其没有被 ban 掉即可。...
+我们只要找到一个长度为 m 的字符串，其没有被 ban 掉即可。
+...
 			
 		
 	</div>
@@ -1383,7 +1387,7 @@ https://atcoder.jp/contests/arc219/tasks/arc219_a
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

@@ -35,8 +35,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -76,6 +76,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -288,7 +291,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -671,8 +674,8 @@
 			
 				upd：我发现 BetterLyrics 把这篇文章收录到了『开发者引用 &amp; 独立博客』评价里！！！BetterLyrics 真的很好用！！！欢迎使用 https://github.com/jayfunc/BetterLyrics！！！居然真的有人会看我的博客，真的很激动。
 记录一些很有用的东西。
- 邮件
-Email 可以用 gmail，一个手机注...
+邮件
+Email 可以用 gmail，一个手机注册...
 			
 		
 	</div>
@@ -819,11 +822,11 @@ LG 14...
 		
 			
 				这里是我的原创题合集。
- P12593 沉石鱼惊旋
+P12593 沉石鱼惊旋
 备注：本题本来是随手出的题，尝试贪心发现假完了，没人会做，正好这边国赛模拟缺一个简单图论题就拿来了。开 n≤8 是照顾 Python 和 Java 运行速度，以及控难度。
 去向：洛谷 蓝桥杯国赛模拟
 链接：https://www.luogu.com.cn/problem/P12593
-题解：htt...
+题解：http...
 			
 		
 	</div>
@@ -841,7 +844,7 @@ LG 14...
 						
 						<div class="post-meta-detail post-meta-detail-time">
 							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2026-11-20 20:48:00 | 编辑于 2026-11-23 18:07:00">2026-11-20 20:48
+							<time title="发布于 2026-11-20 20:48:00 | 编辑于 2026-11-24 18:01:11">2026-11-20 20:48
 							</time>
 						</div>
 					
@@ -868,7 +871,7 @@ LG 14...
 						
 						<div class="post-meta-detail post-meta-detail-words">
 							<i class="fa fa-file-word-o" aria-hidden="true"></i>
-							3.4k 字
+							5.6k 字
 						</div>
 					
 						
@@ -876,7 +879,7 @@ LG 14...
 						
 						<div class="post-meta-detail post-meta-detail-readingtime">
 							<i class="fa fa-hourglass-end" aria-hidden="true"></i>
-							14 分钟
+							23 分钟
 						</div>
 					
 		</div>
@@ -954,8 +957,8 @@ https://htoj.com.cn/cpp/oj/problem/detail?pid=22977274684288&amp;cid=22977276163
 				前言
 人类玩的太差了。
 本文为 Elegant Square - Problem - QOJ.ac 的数据范围下最优构造题解。
- 正文
-我们之前在 [笔记] 关于正交拉丁方的构造与应用 - 沉石鱼惊旋 的博客 里写到：本题使用一对正交拉丁方的构造，一组填质数一组填 Square-Free 的数，就能做到一个很优的解。在本题 n=30 时，最大元素只...
+正文
+我们之前在 [笔记] 关于正交拉丁方的构造与应用 - 沉石鱼惊旋 的博客 里写到：本题使用一对正交拉丁方的构造，一组填质数一组填 Square-Free 的数，就能做到一个很优的解。在本题 n=30 时，最大元素只有...
 			
 		
 	</div>
@@ -1160,9 +1163,9 @@ https://htoj.com.cn/cpp/oj/problem/detail?pid=22957280878464&amp;cid=22957355728
 如图所示，一个可以自由运动的圆形线圈水平放置并通有电流 I，电流方向俯视为顺时针方向，一根固定的竖直放置直导线通有向上的电流 I，线圈将（）。
 在这个图里正确答案是线圈 y 负半轴这半边会向上（z 轴正半轴）翻，正半轴会向下翻。并且线圈会向左移动。
 
- Solution
- 左手定则判断线圈偏转方向
-先判断转动...
+Solution
+左手定则判断线圈偏转方向
+先判断转动方向...
 			
 		
 	</div>
@@ -1229,8 +1232,8 @@ https://htoj.com.cn/cpp/oj/problem/detail?pid=22957280878464&amp;cid=22957355728
 xyc 太菜比了。
 我会暴力！可持久化线段树维护 Dijkstra 过程。
 我会拆边！一条边拆成不超过 log⁡10(V) 条边，然后问题是最短路里面字典序最小的。建出最短路 DAG 之后，每次走最小的出边，每个点搜到第一次即可。
- 模拟赛 代码源 今汐的巡防分区
-https://newoj.d...
+模拟赛 代码源 今汐的巡防分区
+https://newoj.da...
 			
 		
 	</div>
@@ -1248,7 +1251,7 @@ https://newoj.d...
 						
 						<div class="post-meta-detail post-meta-detail-time">
 							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2026-9-22 20:45:00 | 编辑于 2026-10-15 9:20:44">2026-9-22 20:45
+							<time title="发布于 2026-9-22 20:45:00 | 编辑于 2026-11-24 9:26:30">2026-9-22 20:45
 							</time>
 						</div>
 					
@@ -1383,7 +1386,7 @@ https://newoj.daimayuan.top/p/5762?tid=6aaa1da0cc9d2bef7bcca7c5
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

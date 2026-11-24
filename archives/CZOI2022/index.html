@@ -37,8 +37,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -78,6 +78,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -290,7 +293,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -700,46 +703,46 @@
 	</header>
 
 	<div class="post-content" id="post_content">
-		<h3 id="2022512"><a class="markdownIt-Anchor" href="#2022512"></a> 2022.5.12</h3>
-<h4 id="first"><a class="markdownIt-Anchor" href="#first"></a> First</h4>
+		<h3 id="2022512">2022.5.12<a class="markdownIt-Anchor" href="#2022512"></a></h3>
+<h4 id="first">First<a class="markdownIt-Anchor" href="#first"></a></h4>
 <p>放学回家，发布一条 QQ 动态和微信朋友圈，内容为几张照片，还有一段文字：</p>
 <pre><code class="highlight cpp">点赞这条动态/朋友圈，会获得jiangly和tourist保佑，一整年AK所有比赛，快来试试
 顺带一提，明天就是信息与未来的选拔赛了，所以，<span class="type">unsigned</span> <span class="type">long</span> <span class="type">long</span> rp=<span class="number">0</span>;rp--;</code></pre>
-<h4 id="second"><a class="markdownIt-Anchor" href="#second"></a> Second</h4>
+<h4 id="second">Second<a class="markdownIt-Anchor" href="#second"></a></h4>
 <p>背模板ing&amp;看博客ing。</p>
-<h4 id="third"><a class="markdownIt-Anchor" href="#third"></a> Third</h4>
+<h4 id="third">Third<a class="markdownIt-Anchor" href="#third"></a></h4>
 <p>看了会儿 BFS 的博客和之前写的代码，差不多理解 BFS 的运行方法了。</p>
-<h4 id="fourth"><a class="markdownIt-Anchor" href="#fourth"></a> Fourth</h4>
+<h4 id="fourth">Fourth<a class="markdownIt-Anchor" href="#fourth"></a></h4>
 <p>背了会儿快速幂之类的重要函数。</p>
-<h4 id="fifth"><a class="markdownIt-Anchor" href="#fifth"></a> Fifth</h4>
+<h4 id="fifth">Fifth<a class="markdownIt-Anchor" href="#fifth"></a></h4>
 <p>第一次默写快速幂，错了一处。</p>
-<h4 id="sixth"><a class="markdownIt-Anchor" href="#sixth"></a> Sixth</h4>
+<h4 id="sixth">Sixth<a class="markdownIt-Anchor" href="#sixth"></a></h4>
 <p>第二次默写快速幂，全对。</p>
-<h4 id="seventh"><a class="markdownIt-Anchor" href="#seventh"></a> Seventh</h4>
+<h4 id="seventh">Seventh<a class="markdownIt-Anchor" href="#seventh"></a></h4>
 <p>第一次默写进制转换，函数写反了。</p>
-<h4 id="eighth"><a class="markdownIt-Anchor" href="#eighth"></a> Eighth</h4>
+<h4 id="eighth">Eighth<a class="markdownIt-Anchor" href="#eighth"></a></h4>
 <p>第二次默写进制转换，函数又双叒叕写反了。</p>
-<h4 id="ninth"><a class="markdownIt-Anchor" href="#ninth"></a> Ninth</h4>
+<h4 id="ninth">Ninth<a class="markdownIt-Anchor" href="#ninth"></a></h4>
 <p>第三次默写进制转换，终于对了。</p>
-<h4 id="tenth"><a class="markdownIt-Anchor" href="#tenth"></a> Tenth</h4>
+<h4 id="tenth">Tenth<a class="markdownIt-Anchor" href="#tenth"></a></h4>
 <p>第一次没背诵默写 dfs，错了很多当初写 dfs 就错的。</p>
-<h4 id="eleventh"><a class="markdownIt-Anchor" href="#eleventh"></a> Eleventh</h4>
+<h4 id="eleventh">Eleventh<a class="markdownIt-Anchor" href="#eleventh"></a></h4>
 <p>第二次默写 dfs，写对了。</p>
-<h4 id="twelfth"><a class="markdownIt-Anchor" href="#twelfth"></a> Twelfth</h4>
+<h4 id="twelfth">Twelfth<a class="markdownIt-Anchor" href="#twelfth"></a></h4>
 <p>看了一眼，凭记忆默了 bfs，全对，但是默得不太熟。</p>
-<h4 id="thirteenth"><a class="markdownIt-Anchor" href="#thirteenth"></a> Thirteenth</h4>
+<h4 id="thirteenth">Thirteenth<a class="markdownIt-Anchor" href="#thirteenth"></a></h4>
 <p>第一次默写递归版约瑟夫，全对。</p>
-<h4 id="fourteenth"><a class="markdownIt-Anchor" href="#fourteenth"></a> Fourteenth</h4>
+<h4 id="fourteenth">Fourteenth<a class="markdownIt-Anchor" href="#fourteenth"></a></h4>
 <p>第一次默写二分，其他都对。在处理 mid 时，与原来写的不一样，但是一般都对，就不管了。</p>
-<h4 id="fifteenth"><a class="markdownIt-Anchor" href="#fifteenth"></a> Fifteenth</h4>
+<h4 id="fifteenth">Fifteenth<a class="markdownIt-Anchor" href="#fifteenth"></a></h4>
 <p>dp 呢，好像之前没看到考过，就当他不考（反正我也不太熟</p>
 <p>整理常用函数和平时的错误ing。</p>
-<h3 id="2022513"><a class="markdownIt-Anchor" href="#2022513"></a> 2022.5.13</h3>
-<h4 id="first-2"><a class="markdownIt-Anchor" href="#first-2"></a> First</h4>
+<h3 id="2022513">2022.5.13<a class="markdownIt-Anchor" href="#2022513"></a></h3>
+<h4 id="first-2">First<a class="markdownIt-Anchor" href="#first-2"></a></h4>
 <p>呜呜呜好紧张。。。</p>
-<h4 id="second-2"><a class="markdownIt-Anchor" href="#second-2"></a> Second</h4>
+<h4 id="second-2">Second<a class="markdownIt-Anchor" href="#second-2"></a></h4>
 <p>做完核酸，赶紧溜去机房，先背会儿东西。</p>
-<h4 id="third-2"><a class="markdownIt-Anchor" href="#third-2"></a> Third</h4>
+<h4 id="third-2">Third<a class="markdownIt-Anchor" href="#third-2"></a></h4>
 <p>发卷了发卷了（这密码还是数学题。</p>
 <p>T1：一眼秒了。</p>
 <p>T2：有点难诶，没看懂。</p>
@@ -748,22 +751,22 @@
 <p>T5：小学数学题？送分吧？</p>
 <p>T6：神马鬼玩意儿。</p>
 <p>T7：神马鬼玩意儿。</p>
-<h4 id="t1"><a class="markdownIt-Anchor" href="#t1"></a> T1</h4>
+<h4 id="t1">T1<a class="markdownIt-Anchor" href="#t1"></a></h4>
 <p>应该有 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Θ</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\Theta(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">Θ</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span> 写法，但是太烦了。</p>
 <p>我写了个 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Θ</mi><mo stretchy="false">(</mo><mi>m</mi><mo>−</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\Theta(m-n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">Θ</span><span class="mopen">(</span><span class="mord mathnormal">m</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span> 的写法。</p>
 <hr />
 <p>PS：过了呢！</p>
-<h4 id="t2"><a class="markdownIt-Anchor" href="#t2"></a> T2</h4>
+<h4 id="t2">T2<a class="markdownIt-Anchor" href="#t2"></a></h4>
 <p>没思路。。。</p>
 <p>我手算了几个，写了特判。</p>
 <hr />
 <p>PS：<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>70</mn></mrow><annotation encoding="application/x-tex">70</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">7</span><span class="mord">0</span></span></span></span> 分，拿了 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>49</mn></mrow><annotation encoding="application/x-tex">49</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">4</span><span class="mord">9</span></span></span></span> 分。</p>
-<h4 id="t3"><a class="markdownIt-Anchor" href="#t3"></a> T3</h4>
+<h4 id="t3">T3<a class="markdownIt-Anchor" href="#t3"></a></h4>
 <p>特判是万能的！</p>
 <p>又双叒叕手算几个。</p>
 <hr />
 <p>PS：<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>80</mn></mrow><annotation encoding="application/x-tex">80</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">8</span><span class="mord">0</span></span></span></span> 分，拿了 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>12</mn></mrow><annotation encoding="application/x-tex">12</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">2</span></span></span></span> 分。</p>
-<h4 id="t4"><a class="markdownIt-Anchor" href="#t4"></a> T4</h4>
+<h4 id="t4">T4<a class="markdownIt-Anchor" href="#t4"></a></h4>
 <p>好简单诶。</p>
 <p>就是实现很烦。</p>
 <hr />
@@ -777,34 +780,34 @@
 <p>话说 <code>long double</code> 存多少位啊，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>100</mn></mrow><annotation encoding="application/x-tex">100</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">0</span><span class="mord">0</span></span></span></span> 位的数字都存下了。</p>
 <hr />
 <p>想通了，数据估计没有 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>100</mn></mrow><annotation encoding="application/x-tex">100</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">0</span><span class="mord">0</span></span></span></span> 位全是小数点前的。</p>
-<h4 id="t5"><a class="markdownIt-Anchor" href="#t5"></a> T5</h4>
+<h4 id="t5">T5<a class="markdownIt-Anchor" href="#t5"></a></h4>
 <p>小学数学题？</p>
 <p>感觉是第一次一个全程，第二次两个，判一下时间。</p>
 <hr />
 <p>PS：<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>100</mn></mrow><annotation encoding="application/x-tex">100</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">0</span><span class="mord">0</span></span></span></span> 分果然不是这么好拿的，拿了一半也还行。</p>
-<h4 id="t6"><a class="markdownIt-Anchor" href="#t6"></a> T6</h4>
+<h4 id="t6">T6<a class="markdownIt-Anchor" href="#t6"></a></h4>
 <p>不会，摆烂，写特判（</p>
 <hr />
 <p>PS：没分。</p>
-<h4 id="t7"><a class="markdownIt-Anchor" href="#t7"></a> T7</h4>
+<h4 id="t7">T7<a class="markdownIt-Anchor" href="#t7"></a></h4>
 <p>不会，摆烂，写特判（</p>
 <hr />
 <p>PS：没分。</p>
-<h4 id="fourth-2"><a class="markdownIt-Anchor" href="#fourth-2"></a> Fourth</h4>
+<h4 id="fourth-2">Fourth<a class="markdownIt-Anchor" href="#fourth-2"></a></h4>
 <p>爸爸问我多少，我说估分 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{3}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.190108em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.845108em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">3</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span>，我爸说别人模拟能 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>600</mn></mrow><annotation encoding="application/x-tex">600</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">6</span><span class="mord">0</span><span class="mord">0</span></span></span></span>，我咋考这么点分。</p>
 <p>差点想 AFO 了。。。</p>
-<h4 id="fifth-2"><a class="markdownIt-Anchor" href="#fifth-2"></a> Fifth</h4>
+<h4 id="fifth-2">Fifth<a class="markdownIt-Anchor" href="#fifth-2"></a></h4>
 <p>玩了一晚上。。。</p>
-<h3 id="2022514"><a class="markdownIt-Anchor" href="#2022514"></a> 2022.5.14</h3>
-<h4 id="first-3"><a class="markdownIt-Anchor" href="#first-3"></a> First</h4>
+<h3 id="2022514">2022.5.14<a class="markdownIt-Anchor" href="#2022514"></a></h3>
+<h4 id="first-3">First<a class="markdownIt-Anchor" href="#first-3"></a></h4>
 <p>八点半，同学给我 QQ 发消息，才起床，看了眼 XB 区名单出来了，我第一。</p>
 <p>激动死了。</p>
-<h4 id="second-3"><a class="markdownIt-Anchor" href="#second-3"></a> Second</h4>
+<h4 id="second-3">Second<a class="markdownIt-Anchor" href="#second-3"></a></h4>
 <p>炫耀分数ing。</p>
-<h4 id="third-3"><a class="markdownIt-Anchor" href="#third-3"></a> Third</h4>
+<h4 id="third-3">Third<a class="markdownIt-Anchor" href="#third-3"></a></h4>
 <p>CZ 某知名老师跟我爸聊天，说留个手机号，有学校想谈谈。</p>
 <p>难道前十进 cfs 是真的？</p>
-<h4 id="fourth-3"><a class="markdownIt-Anchor" href="#fourth-3"></a> Fourth</h4>
+<h4 id="fourth-3">Fourth<a class="markdownIt-Anchor" href="#fourth-3"></a></h4>
 <p>中午，大部分地区出分了。</p>
 <pre><code class="highlight cpp">主城区高于<span class="number">200</span>分的有:
 钟楼<span class="number">277</span>
@@ -820,13 +823,13 @@
 天宁<span class="number">201</span>
 天宁<span class="number">200</span></code></pre>
 <p>PS：新北 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>261</mn></mrow><annotation encoding="application/x-tex">261</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mord">6</span><span class="mord">1</span></span></span></span> 是我啦。</p>
-<h4 id="fifth-3"><a class="markdownIt-Anchor" href="#fifth-3"></a> Fifth</h4>
+<h4 id="fifth-3">Fifth<a class="markdownIt-Anchor" href="#fifth-3"></a></h4>
 <p>lzx 和 pbc 都说和我一样高。</p>
 <p>迷幻的分数。</p>
-<h4 id="sixth-2"><a class="markdownIt-Anchor" href="#sixth-2"></a> Sixth</h4>
+<h4 id="sixth-2">Sixth<a class="markdownIt-Anchor" href="#sixth-2"></a></h4>
 <p>貌似 WJ 的也出来了。</p>
 <p>我好像是全市 rk.3。</p>
-<h4 id="seventh-2"><a class="markdownIt-Anchor" href="#seventh-2"></a> Seventh</h4>
+<h4 id="seventh-2">Seventh<a class="markdownIt-Anchor" href="#seventh-2"></a></h4>
 <p>怎么讲评还有人骂脏话啊/fn</p>
 <p>举报了举报了。</p>
 <hr />
@@ -996,8 +999,8 @@ if (btn) btn.addEventListener("click", () => {
 	socialShare("#share", {
 	    title : `[游记] CZOI 2022 游记`,
 	    description : `2022.5.12
- First
-放学回家，发布一条 QQ 动态和微信朋友圈，内容为几张照片，还有一...`,
+First
+放学回家，发布一条 QQ 动态和微信朋友圈，内容为几张照片，还有一段...`,
 	    wechatQrcodeTitle : `分享到微信`,
 	    wechatQrcodeHelper : `微信扫描二维码`,
 	    source : `https://blog.cyx2009.top/archives/CZOI2022/`
@@ -1049,6 +1052,56 @@ if (btn) btn.addEventListener("click", () => {
 
 	<div id="post_comment" class="card shadow-sm">
 		<div id="giscus"></div>
+<script>
+	(function () {
+		var lightTheme = "light";
+		function giscusTheme() {
+			return document.documentElement.classList.contains("darkmode") ? "dark" : lightTheme;
+		}
+		// client.js is the next sibling and has not executed yet (async), so
+		// its data-theme can be corrected before the widget first loads.
+		var loader = document.currentScript.nextElementSibling;
+		if (loader && loader.tagName === "SCRIPT" && loader.getAttribute("data-repo")) {
+			loader.setAttribute("data-theme", giscusTheme());
+		}
+		// Send the current theme to the widget. Always send: the iframe only
+		// acts on messages it receives, and it re-applies idempotently.
+		window.syncGiscusTheme = function () {
+			var frame = document.querySelector("iframe.giscus-frame");
+			if (!frame || !frame.contentWindow) return;
+			frame.contentWindow.postMessage(
+				{ giscus: { setConfig: { theme: giscusTheme() } } },
+				"https://giscus.app"
+			);
+		};
+		// The widget only processes setConfig after it has fully booted, which
+		// the iframe load event signals. emitMetadata=0 means giscus sends no
+		// messages back, so the load event is the reliable sync hook.
+		window.addEventListener("message", function (event) {
+			if (event.origin !== "https://giscus.app") return;
+			syncGiscusTheme();
+		});
+		// giscus replaces its container on re-render, so observe the comment
+		// card for the frame's appearance and hook its load event.
+		var commentCard = document.getElementById("post_comment");
+		if (commentCard) {
+			var hook = function (frame) {
+				frame.addEventListener("load", syncGiscusTheme);
+			};
+			var existing = commentCard.querySelector("iframe.giscus-frame");
+			if (existing) hook(existing);
+			new MutationObserver(function (records) {
+				records.forEach(function (record) {
+					Array.prototype.forEach.call(record.addedNodes, function (node) {
+						if (node.nodeType !== 1) return;
+						var frames = node.tagName === "IFRAME" ? [node] : node.querySelectorAll("iframe.giscus-frame");
+						Array.prototype.forEach.call(frames, hook);
+					});
+				});
+			}).observe(commentCard, { childList: true, subtree: true });
+		}
+	})();
+</script>
 <script src="https://giscus.app/client.js"
         data-repo="caylex09/blogtalk"
         data-repo-id="R_kgDOHDKqeg"
@@ -1143,7 +1196,7 @@ if (btn) btn.addEventListener("click", () => {
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

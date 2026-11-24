@@ -35,8 +35,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -76,6 +76,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -288,7 +291,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -754,9 +757,9 @@
 				前言
 2025.04.07 晚。被 cz 拷打让我看一眼这个题讨论区。经过我的手算和代码验证，我們的數據並非確有問題。考虑到这个题可能目前网上没有任何一份正确题解，遂写此文。
 强烈谴责套数据特判过题来写错误题解的行为。
- 做法
+做法
 这个数据范围很小啊，我们可以枚举这个骰子的所有面，然后判断要求的 n 个限制对应的 3 个面是否出现。
-考虑怎么判断三个面...
+考虑怎么判断三个面是...
 			
 		
 	</div>
@@ -1039,8 +1042,8 @@ https://greasyfork.org/zh-CN/scripts/530997 或 https://gf.qytechs.cn/zh-CN/scri
 你需要在 [0,s] 的数轴上移动。不能超出这个范围。初始步长是 k。初始默认方向是 0→s。即 p 走一步走到 p+k。转弯一次会令 k←max⁡{k−1,1}。转弯一次是从 p 走一步走到 p−k，以此类推。
 问到达 s 时最后的 k 最大是几。
 多测，1≤t≤100，1≤s≤109，1≤k≤1000，1≤∑k≤2000。
- 做法
-s 很...
+做法
+s 很大...
 			
 		
 	</div>
@@ -1185,9 +1188,9 @@ s 很...
 最大化 u&lt;v 且 au≠av 的 (u,v) 个数。
 2≤n≤106，1≤m≤2×106。
 保证没有自环，可以有重边，图联通。
- 做法
+做法
 考虑一个边双，里面的 ai 必须相等。
-先缩边双，把图变成树。考虑树上的做...
+先缩边双，把图变成树。考虑树上的做法...
 			
 		
 	</div>
@@ -1417,7 +1420,7 @@ s 很...
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

@@ -37,8 +37,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -78,6 +78,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -290,7 +293,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -713,7 +716,7 @@
 </ul>
 </blockquote>
 <p>尽管 RSS 现在已经没有太多人（？）使用了，但是考虑到洛谷专栏并没有完善的订阅推荐系统（曾经发布洛谷博客会在犇犇通知），故记此文章作为简易教程。</p>
-<h1 id="安装-rss-插件"><a class="markdownIt-Anchor" href="#安装-rss-插件"></a> 安装 RSS 插件</h1>
+<h1 id="安装-rss-插件">安装 RSS 插件<a class="markdownIt-Anchor" href="#安装-rss-插件"></a></h1>
 <p>这里推荐使用 <a target="_blank" rel="noopener" href="https://feeder.co/">https://feeder.co/</a>。</p>
 <p>需要注册一个账号使用。支持第三方例如 Google 登录。没有 Google 的话注册一个就好。</p>
 <p>界面是英文的，左下角有小齿轮，点开可以设置语言。</p>
@@ -727,7 +730,7 @@
 </ul>
 <p>考虑到 Chrome 插件对于部分用户不是能很轻易下载，可以在 <a target="_blank" rel="noopener" href="https://crxdl.com/">https://crxdl.com/</a> 搜索 <code>pnjaodmkngahhkoihejjehlcdlnohgmp</code> 或进入 <a target="_blank" rel="noopener" href="https://crxdl.com/download-temporary/pnjaodmkngahhkoihejjehlcdlnohgmp/7.9.0?expires=1741107332&amp;signature=7cb9160b6c0c2d6bdd71d62f5e6770cadd4d0988fe1e23d7f550ccaf6536c831">https://crxdl.com/download-temporary/pnjaodmkngahhkoihejjehlcdlnohgmp/7.9.0?expires=1741107332&amp;signature=7cb9160b6c0c2d6bdd71d62f5e6770cadd4d0988fe1e23d7f550ccaf6536c831</a> 下载这款插件，然后安装到 Chrome 浏览器。下载之后的安装具体可以看 <a target="_blank" rel="noopener" href="https://crxdl.com/topic/0008-pc-chrome-crx.html">https://crxdl.com/topic/0008-pc-chrome-crx.html</a> 这篇指南。</p>
 <p>之后将浏览器固定到浏览器导航栏旁。</p>
-<h1 id="订阅-rss"><a class="markdownIt-Anchor" href="#订阅-rss"></a> 订阅 RSS</h1>
+<h1 id="订阅-rss">订阅 RSS<a class="markdownIt-Anchor" href="#订阅-rss"></a></h1>
 <p>洛谷没有直接提供 RSS，但是在 RSSHub 上已经有提供了洛谷专栏的 RSS。具体可见 <a target="_blank" rel="noopener" href="https://docs.rsshub.app/routes/programming#%E7%94%A8%E6%88%B7%E6%96%87%E7%AB%A0-1">https://docs.rsshub.app/routes/programming#用户文章-1</a>。</p>
 <p>如果在没有安装插件的情况下直接访问 <a target="_blank" rel="noopener" href="https://rsshub.app/luogu/user/article/1">https://rsshub.app/luogu/user/article/1</a> 这个链接，会看到 xml 文件。如果安装了上述插件，可以看到一个网页里面有 kkksc03 的所有文章。点击上方的 Follow 即可订阅。</p>
 <p>同理，访问 <a target="_blank" rel="noopener" href="https://rsshub.app/luogu/user/article/:uid">https://rsshub.app/luogu/user/article/:uid</a> 即为用户编号为 <code>:uid</code> 的 RSS。例如本文作者用户编号 516346，那么访问 <a target="_blank" rel="noopener" href="https://rsshub.app/luogu/user/article/516346">https://rsshub.app/luogu/user/article/516346</a> 就可以订阅我的文章更新。</p>
@@ -953,6 +956,56 @@ RSS 指 Really Simple Syndication（真正简易联合）；...`,
 
 	<div id="post_comment" class="card shadow-sm">
 		<div id="giscus"></div>
+<script>
+	(function () {
+		var lightTheme = "light";
+		function giscusTheme() {
+			return document.documentElement.classList.contains("darkmode") ? "dark" : lightTheme;
+		}
+		// client.js is the next sibling and has not executed yet (async), so
+		// its data-theme can be corrected before the widget first loads.
+		var loader = document.currentScript.nextElementSibling;
+		if (loader && loader.tagName === "SCRIPT" && loader.getAttribute("data-repo")) {
+			loader.setAttribute("data-theme", giscusTheme());
+		}
+		// Send the current theme to the widget. Always send: the iframe only
+		// acts on messages it receives, and it re-applies idempotently.
+		window.syncGiscusTheme = function () {
+			var frame = document.querySelector("iframe.giscus-frame");
+			if (!frame || !frame.contentWindow) return;
+			frame.contentWindow.postMessage(
+				{ giscus: { setConfig: { theme: giscusTheme() } } },
+				"https://giscus.app"
+			);
+		};
+		// The widget only processes setConfig after it has fully booted, which
+		// the iframe load event signals. emitMetadata=0 means giscus sends no
+		// messages back, so the load event is the reliable sync hook.
+		window.addEventListener("message", function (event) {
+			if (event.origin !== "https://giscus.app") return;
+			syncGiscusTheme();
+		});
+		// giscus replaces its container on re-render, so observe the comment
+		// card for the frame's appearance and hook its load event.
+		var commentCard = document.getElementById("post_comment");
+		if (commentCard) {
+			var hook = function (frame) {
+				frame.addEventListener("load", syncGiscusTheme);
+			};
+			var existing = commentCard.querySelector("iframe.giscus-frame");
+			if (existing) hook(existing);
+			new MutationObserver(function (records) {
+				records.forEach(function (record) {
+					Array.prototype.forEach.call(record.addedNodes, function (node) {
+						if (node.nodeType !== 1) return;
+						var frames = node.tagName === "IFRAME" ? [node] : node.querySelectorAll("iframe.giscus-frame");
+						Array.prototype.forEach.call(frames, hook);
+					});
+				});
+			}).observe(commentCard, { childList: true, subtree: true });
+		}
+	})();
+</script>
 <script src="https://giscus.app/client.js"
         data-repo="caylex09/blogtalk"
         data-repo-id="R_kgDOHDKqeg"
@@ -1047,7 +1100,7 @@ RSS 指 Really Simple Syndication（真正简易联合）；...`,
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

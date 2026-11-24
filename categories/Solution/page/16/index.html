@@ -35,8 +35,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -76,6 +76,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -288,7 +291,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -689,13 +692,13 @@
 			
 				题目翻译
 给出 w，问造一个数组，满足选三个正好是等于所有 ⩽w 的。
- 题目思路
+题目思路
 这个 w 最多 7 位，但 &lt;w 只有 6 位。
 我们把这个数设为 abcdef‾，然后分成 ab‾、cd‾、ef‾。
 每个都有 99 种可能，加上 106，一共 298 个。
- 主要代码
+主要代码
 #include&lt;bits/stdc++.h&gt;
-using namespac...
+using namespace ...
 			
 		
 	</div>
@@ -762,13 +765,13 @@ using namespac...
 有 9 种数字，1,2,…9。
 数字 i 可以花 ci 的价格购买，你有 n 元。
 最后输出你购买的数字拼成的最大值。
- 题目思路
+题目思路
 我们考虑，先让位数最大。
 然后，再最大化最高位、次高位、次次高位，一直往下。
 最大位数，即为用 n 除以最便宜的价钱。
 然后，你可能会有剩余的钱。
 剩余的，我们开始置换。
-从 9 开始枚举，能换就换，并输出你...
+从 9 开始枚举，能换就换，并输出你置...
 			
 		
 	</div>
@@ -834,12 +837,12 @@ using namespac...
 				题目翻译
 输入一个长度为 n 个数字，还有 X 和 Y。
 问数组中有几个区间最大值是 X 且最小值是 Y。
- 题目思路
+题目思路
 所有数字分为 ai&gt;Y，ai=Y，ai&lt;X，ai=X，X&lt;ai&lt;Y 五种情况。
 &gt;Y 和 &lt;X 的位置一定不能选。
 选一个区间，包含至少一个 =Y，包含至少一个 =X，问有多少种方案。
 问以每个位置作为结尾，有多少个方案。
-对于每...
+对于每个...
 			
 		
 	</div>
@@ -972,9 +975,9 @@ using namespac...
 			
 				题目翻译
 有一个 H×W 的国际象棋棋盘，求一个车从 (x1,y1) 走到 (x2,y2) 正好用 K 步的方案数。
- 题目思路
+题目思路
 首先看到题，很显然是动态规划。fk,i,j 表示走到 (i,j) 正好 k 步的方案。但时间复杂度过高，考虑进行优化。
-我们可以不记录具体走到哪个点位，我们只需知道当前在不在起点即可。于是就有 fk,0/1/2/3 表示...
+我们可以不记录具体走到哪个点位，我们只需知道当前在不在起点即可。于是就有 fk,0/1/2/3 表示第...
 			
 		
 	</div>
@@ -1044,9 +1047,10 @@ using namespac...
 			
 				闲话
 原题 P1334 瑞瑞的木板。刚好不久前做过，赛时直接贺了自己的代码过掉的。
- 题目翻译
+题目翻译
 为方便和瑞瑞的木板联系起来，下文翻译不采用原题中的“面包”而是使用“木板”。
-有一根长度为 L 的木板，切成 n 根小木板。第 i 根小木板的长度为 li，每次切下长度为 x 的小木板需要耗费 x 的体力。允许有剩余，也就是说不保证 L=∑i=1nli。...
+有一根长度为 L 的木板，切成 n 根小木板。第 i 根小木板的长度为 li，每次切下长度为 x 的小木板需要耗费 x 的体力。允许有剩余，也就是说不保证 L=∑i=1nli。
+...
 			
 		
 	</div>
@@ -1112,9 +1116,10 @@ using namespac...
 				题目翻译
 我们定义前缀或的意思是 ori=ori−1or⁡ai。
 重排数组 a，使得它的前缀或数组的字典序最大。
- 题目思路
+题目思路
 通过观察和思考可得，第一位一定放 max⁡1≤i≤n{ai} 才能让第一位最大，接着保证字典序最大。
-那么我们考虑，对于之后每一位的答案，我们都去和前面的进行比较，看看哪一个才是这一位该放的最大的答案。这一点是很容易想到的。...
+那么我们考虑，对于之后每一位的答案，我们都去和前面的进行比较，看看哪一个才是这一位该放的最大的答案。这一点是很容易想到的。
+...
 			
 		
 	</div>
@@ -1180,13 +1185,13 @@ using namespac...
 				题目翻译
 问当前字符后的第一个 g 与它的距离最大是多少。
 当前字符可能有很多个。
- 题目思路
+题目思路
 我们把目前找到的当前字符的位置记录下来，找到最早的，记录一下时间差，取个最大。
 但显然我们不能对每一个去找，必须几个打包一找。
 我用 queue 模拟题意，详情见代码。
 由于当前的可能要到下一个循环才能看见 g，所以要循环两次。
 时间复杂度 O(n)。
-...
+题...
 			
 		
 	</div>
@@ -1341,10 +1346,10 @@ using namespac...
 本来能 400 pts 的，T3 边界写错扣十分，这个问题不大，加个判断就过了。T4 真的扣的分真伤，打错了两个数字废了。
 痛失 U 盘！
 比赛点评：一道送分一道板，一道模拟一道原。
- 四则混合运算
+四则混合运算
 题目很简单，扫描两遍字符串，第一遍处理乘除符号，第二遍处理加减符号。
 时间复杂度 O(∣S∣)。
-插一句题外话，像这种题最好不要偷懒在字符串...
+插一句题外话，像这种题最好不要偷懒在字符串中...
 			
 		
 	</div>
@@ -1432,7 +1437,7 @@ using namespac...
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

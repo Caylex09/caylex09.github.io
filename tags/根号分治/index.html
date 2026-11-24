@@ -35,8 +35,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -76,6 +76,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -288,7 +291,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -689,11 +692,11 @@
 				题目翻译
 给定长度为 n 的 01 串，求有多少个区间 [l,r] 满足 [l,r] 中 1 的个数整除 r−l+1。
 1≤n≤2×105
- 题目思路
+题目思路
 设 si 表示 [1,i] 的 1 的个数。
 那么我们就是求 si−sj∣i−j 的 (i,j) 个数，其中 0≤j&lt;i≤n。
 那么我们有 ksi−i=ksj−j。
-一个很暴力的想法是枚举这些 k ...
+一个很暴力的想法是枚举这些 k 然...
 			
 		
 	</div>
@@ -765,9 +768,9 @@
 给定 n 个点 m 条边的无向图，给定 k，求一个非空点集 S 满足对于所有 S 中的点 u，u 在 S 中的邻居个数 ≥k，或者一个大小为 k 的团。
 无解输出 −1。
 多测。1≤T≤105，1≤n,m,∑n,∑m≤105，1≤k≤n。
- 题目思路
+题目思路
 首先 deg&lt;k−1 的点肯定都没用。直接类似拓扑排序的操作删掉即可。
-如果图中的团最大...
+如果图中的团最大为...
 			
 		
 	</div>
@@ -840,8 +843,8 @@
 进还是出由之前的状态决定。保证最后所有人都是出的。
 现在给定 q 个询问，查询 a,b 表示 a 在房间和 b 在房间的时间的交集大小。
 2≤n,m≤2×105，1≤pi,a,b≤n，1≤ti≤109，保证 ti 严格递增。
- 题目思路
-后文复杂度不严...
+题目思路
+后文复杂度不严格...
 			
 		
 	</div>
@@ -986,8 +989,8 @@
 对于所有 k∈[l,r] 求出将 s 分成 k 段后每段的 LCP 最大值。
 LCP 是最长公共前缀。
 1≤n≤2×105,1≤l≤r≤n。多测。1≤∑n≤2×105。
- 题目思路
-这一问需要求出很多 l,r。那么对于这类问题，往往是 i 的答案可以推导出 i+1 的答案，或者有一部分答案是一...
+题目思路
+这一问需要求出很多 l,r。那么对于这类问题，往往是 i 的答案可以推导出 i+1 的答案，或者有一部分答案是一样...
 			
 		
 	</div>
@@ -1058,12 +1061,12 @@ LCP 是最长公共前缀。
 				前言
 这是今天粉兔杯每日一题，也是根分日报例题，补一下。
 暴力美学——浅谈根号分治 - paulzrm 的博客 - 洛谷博客
- 题目翻译
+题目翻译
 给出两个等差数列，求在 [L,R] 之间的交集大小。
 等差数列形式为 ak+b。
 1≤a1,a2≤2×109,−2×109≤b1,b2,L,R≤2×109,L≤R。
- 题目思路
-观察到 a 大，等差数列在 [L,...
+题目思路
+观察到 a 大，等差数列在 [L,R]...
 			
 		
 	</div>
@@ -1133,13 +1136,13 @@ LCP 是最长公共前缀。
 			
 				闲话
 来点不同的大炮打蚊子的非 STL 的做法。
- 题目翻译
+题目翻译
 你有 n 个盒子，每个盒子一开始装了一个颜色为 ci 的球。
 有 q 次询问（操作），每次询问给出一对 (a,b)，要把盒子 a 的所有球转到盒子 b 里，问此时 b 里有多少颜色不同的球。
 1≤n,q≤2×105,1≤a,b,ci≤n。
- 题目思路
+题目思路
 考虑使用根号分治。
-显然的阈值为 B...
+显然的阈值为 B=n...
 			
 		
 	</div>
@@ -1228,7 +1231,7 @@ LCP 是最长公共前缀。
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

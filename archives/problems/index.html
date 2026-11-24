@@ -37,8 +37,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -78,6 +78,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -290,7 +293,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -701,22 +704,22 @@
 
 	<div class="post-content" id="post_content">
 		<p>这里是我的原创题合集。</p>
-<h1 id="p12593-沉石鱼惊旋"><a class="markdownIt-Anchor" href="#p12593-沉石鱼惊旋"></a> P12593 沉石鱼惊旋</h1>
+<h1 id="p12593-沉石鱼惊旋">P12593 沉石鱼惊旋<a class="markdownIt-Anchor" href="#p12593-沉石鱼惊旋"></a></h1>
 <p>备注：本题本来是随手出的题，尝试贪心发现假完了，没人会做，正好这边国赛模拟缺一个简单图论题就拿来了。开 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≤</mo><mn>8</mn></mrow><annotation encoding="application/x-tex">n\leq 8</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719400000000001em;vertical-align:-0.13597em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">8</span></span></span></span> 是照顾 Python 和 Java 运行速度，以及控难度。</p>
 <p>去向：洛谷 蓝桥杯国赛模拟</p>
 <p>链接：<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P12593">https://www.luogu.com.cn/problem/P12593</a></p>
 <p>题解：<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/article/3wm20g1e">https://www.luogu.com.cn/article/3wm20g1e</a> / <a  href="/archives/P12593/">P12593</a></p>
-<h1 id="bd202512-gcd-maximum"><a class="markdownIt-Anchor" href="#bd202512-gcd-maximum"></a> BD202512 GCD Maximum</h1>
+<h1 id="bd202512-gcd-maximum">BD202512 GCD Maximum<a class="markdownIt-Anchor" href="#bd202512-gcd-maximum"></a></h1>
 <p>备注：这个题有点诈骗的。作为签到感觉很好玩。polygon id = 433295。本来说是任意构造，直接倒着输出就可以了，很美，但是说 matiji 不能有 SPJ，所以有了个最小字典序版本。当时我在学校学文化课，Cfz 帮我改成了这样子的没有多测的题面（</p>
 <p>去向：百度之星 2025 初赛 第二场</p>
 <p>链接：<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P14986">https://www.luogu.com.cn/problem/P14986</a> / <a target="_blank" rel="noopener" href="https://qoj.ac/problem/16489">https://qoj.ac/problem/16489</a> / <a target="_blank" rel="noopener" href="https://www.matiji.net/exam/brushquestion/12/4698/91E0C8915821F2C440B65EABFE649804">https://www.matiji.net/exam/brushquestion/12/4698/91E0C8915821F2C440B65EABFE649804</a></p>
 <p>题解：<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/article/4i68oo7a">https://www.luogu.com.cn/article/4i68oo7a</a> / <a  href="/archives/P14986/">P14986</a></p>
-<h1 id="jsy2-b-我们苏生自最初的泪滴tear"><a class="markdownIt-Anchor" href="#jsy2-b-我们苏生自最初的泪滴tear"></a> JSY2 B. 我们苏生自最初的泪滴（tear）</h1>
+<h1 id="jsy2-b-我们苏生自最初的泪滴tear">JSY2 B. 我们苏生自最初的泪滴（tear）<a class="markdownIt-Anchor" href="#jsy2-b-我们苏生自最初的泪滴tear"></a></h1>
 <p>备注：一开始是有人给我扔了个不可做题，我发现不可做题哪怕是排列都很难。最后是排列我做到了一个很快的线性，jsy 做了一会儿会了个很牛的搜子容斥，但是不会算复杂度，zak 也不会。然后本来说要投 CTT，但是当时误以为 xst 要打（xst 看过）所以没投，投 uoj 然后 gzy 又说这个题 zr 出过 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><msup><mn>0</mn><mn>10</mn></msup></mrow><annotation encoding="application/x-tex">10^{10}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span><span class="mord mtight">0</span></span></span></span></span></span></span></span></span></span></span></span> 的筛子。最后瞎写了写，发现 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><msup><mn>0</mn><mn>18</mn></msup></mrow><annotation encoding="application/x-tex">10^{18}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span><span class="mord mtight">8</span></span></span></span></span></span></span></span></span></span></span></span> 跑的很快，只要 20ms 不到，就 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn></mrow><annotation encoding="application/x-tex">10</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">0</span></span></span></span> 组多测投到云斗了。</p>
 <p>去向：云斗学院 2026 省选计划系列模拟赛 #3</p>
 <p>链接：<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P15367">https://www.luogu.com.cn/problem/P15367</a> / <a target="_blank" rel="noopener" href="https://www.yundouxueyuan.com/p/jsy2">https://www.yundouxueyuan.com/p/jsy2</a></p>
 <p>题解：<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/article/5cmm3pjo">https://www.luogu.com.cn/article/5cmm3pjo</a> / <a  href="/archives/P15367/">P15367</a></p>
-<h1 id="three-colors"><a class="markdownIt-Anchor" href="#three-colors"></a> Three Colors</h1>
+<h1 id="three-colors">Three Colors<a class="markdownIt-Anchor" href="#three-colors"></a></h1>
 <p>备注：和 zyf 打模拟赛的时候做到的，原题是 <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P3590">P3590 [POI 2015 R2] 三座塔 Three towers</a> 和 <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P12765">P12765 [POI 2018 R3] 三座塔 2 Three towers 2</a>，加了个多次询问。</p>
 <p>去向：2026“钉耙编程”中国大学生算法设计暑期联赛（6）</p>
 <p>链接：<a target="_blank" rel="noopener" href="https://acm.hdu.edu.cn/contest/problem?cid=1234&amp;pid=1004">https://acm.hdu.edu.cn/contest/problem?cid=1234&amp;pid=1004</a></p>
@@ -908,8 +911,8 @@ if (btn) btn.addEventListener("click", () => {
 	socialShare("#share", {
 	    title : `『置顶』[闲话] 我的那些原创题`,
 	    description : `这里是我的原创题合集。
- P12593 沉石鱼惊旋
-备注：本题本来是随手出的题，尝试贪心发现假完了，...`,
+P12593 沉石鱼惊旋
+备注：本题本来是随手出的题，尝试贪心发现假完了，没...`,
 	    wechatQrcodeTitle : `分享到微信`,
 	    wechatQrcodeHelper : `微信扫描二维码`,
 	    source : `https://blog.cyx2009.top/archives/problems/`
@@ -961,6 +964,56 @@ if (btn) btn.addEventListener("click", () => {
 
 	<div id="post_comment" class="card shadow-sm">
 		<div id="giscus"></div>
+<script>
+	(function () {
+		var lightTheme = "light";
+		function giscusTheme() {
+			return document.documentElement.classList.contains("darkmode") ? "dark" : lightTheme;
+		}
+		// client.js is the next sibling and has not executed yet (async), so
+		// its data-theme can be corrected before the widget first loads.
+		var loader = document.currentScript.nextElementSibling;
+		if (loader && loader.tagName === "SCRIPT" && loader.getAttribute("data-repo")) {
+			loader.setAttribute("data-theme", giscusTheme());
+		}
+		// Send the current theme to the widget. Always send: the iframe only
+		// acts on messages it receives, and it re-applies idempotently.
+		window.syncGiscusTheme = function () {
+			var frame = document.querySelector("iframe.giscus-frame");
+			if (!frame || !frame.contentWindow) return;
+			frame.contentWindow.postMessage(
+				{ giscus: { setConfig: { theme: giscusTheme() } } },
+				"https://giscus.app"
+			);
+		};
+		// The widget only processes setConfig after it has fully booted, which
+		// the iframe load event signals. emitMetadata=0 means giscus sends no
+		// messages back, so the load event is the reliable sync hook.
+		window.addEventListener("message", function (event) {
+			if (event.origin !== "https://giscus.app") return;
+			syncGiscusTheme();
+		});
+		// giscus replaces its container on re-render, so observe the comment
+		// card for the frame's appearance and hook its load event.
+		var commentCard = document.getElementById("post_comment");
+		if (commentCard) {
+			var hook = function (frame) {
+				frame.addEventListener("load", syncGiscusTheme);
+			};
+			var existing = commentCard.querySelector("iframe.giscus-frame");
+			if (existing) hook(existing);
+			new MutationObserver(function (records) {
+				records.forEach(function (record) {
+					Array.prototype.forEach.call(record.addedNodes, function (node) {
+						if (node.nodeType !== 1) return;
+						var frames = node.tagName === "IFRAME" ? [node] : node.querySelectorAll("iframe.giscus-frame");
+						Array.prototype.forEach.call(frames, hook);
+					});
+				});
+			}).observe(commentCard, { childList: true, subtree: true });
+		}
+	})();
+</script>
 <script src="https://giscus.app/client.js"
         data-repo="caylex09/blogtalk"
         data-repo-id="R_kgDOHDKqeg"
@@ -1055,7 +1108,7 @@ if (btn) btn.addEventListener("click", () => {
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

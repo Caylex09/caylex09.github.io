@@ -35,8 +35,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -76,6 +76,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -288,7 +291,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -760,8 +763,8 @@
 这题太曲折了。最后的官方 Editorial 是我重写的。
 https://codeforces.com/blog/entry/136455
 并非本文抄袭官方题解，是官方题解抄袭本文。
- 题目翻译
-给定长度为 n 的字符串 s 和长度为 m 的字符串 t。对于每个 k∈[1,n)，问 s 的长度为 k 的前缀和 s 的长度为 n−k 的后缀这...
+题目翻译
+给定长度为 n 的字符串 s 和长度为 m 的字符串 t。对于每个 k∈[1,n)，问 s 的长度为 k 的前缀和 s 的长度为 n−k 的后缀这两...
 			
 		
 	</div>
@@ -908,8 +911,8 @@ B 先手，判断每次决斗 A 是否不会输，也就是 A 选择的数不小
 对于所有 k∈[l,r] 求出将 s 分成 k 段后每段的 LCP 最大值。
 LCP 是最长公共前缀。
 1≤n≤2×105,1≤l≤r≤n。多测。1≤∑n≤2×105。
- 题目思路
-这一问需要求出很多 l,r。那么对于这类问题，往往是 i 的答案可以推导出 i+1 的答案，或者有一部分答案是一...
+题目思路
+这一问需要求出很多 l,r。那么对于这类问题，往往是 i 的答案可以推导出 i+1 的答案，或者有一部分答案是一样...
 			
 		
 	</div>
@@ -983,8 +986,8 @@ LCP 是最长公共前缀。
 LCP 是最长公共前缀。
 1≤n≤2×105,1≤l≤r≤n。多测。1≤∑n≤2×105。
 在 Easy Version 中，满足 l=r。
- 题目思路
-也就是 Easy Version 只要求出一个 k 对应的...
+题目思路
+也就是 Easy Version 只要求出一个 k 对应的解...
 			
 		
 	</div>
@@ -1055,9 +1058,9 @@ LCP 是最长公共前缀。
 				题目翻译
 n 个大数 ai，找三元组 (i,j,k) 个数满足 1≤i,j,k≤n 且 ai×aj=ak。
 n≤1000,ai≤101000。
- 题目思路
+题目思路
 显然可以直接 FFT 高精度乘法。然后喜提 TLE，因为这个 ai 位数很长并且要跑很多轮乘法。
-我们集中注意力，注意到满足 ai×aj=ak 的必要条件是对于任意模数 p 存在 (ai mod...
+我们集中注意力，注意到满足 ai×aj=ak 的必要条件是对于任意模数 p 存在 (ai mod ...
 			
 		
 	</div>
@@ -1146,7 +1149,7 @@ n≤1000,ai≤101000。
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

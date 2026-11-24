@@ -37,8 +37,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -78,6 +78,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -290,7 +293,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -705,31 +708,31 @@
 	</header>
 
 	<div class="post-content" id="post_content">
-		<h1 id="day-7"><a class="markdownIt-Anchor" href="#day-7"></a> Day -7</h1>
+		<h1 id="day-7">Day -7<a class="markdownIt-Anchor" href="#day-7"></a></h1>
 <p>JS-0187</p>
 <p>不敢相信自己省排原来这么前。本来以为 200 开外就算好的了。</p>
 <p>晚上打了把 ABC。D 没仔细算直接暴力结果复杂度假的 TLE 一发。然后火速 E 过掉 perf 1 Dan 了。</p>
 <p>开 F。发现 F 就是个沙比并查集啊，一个集合内都是可以构造的，不同集合合并的时候启发式一下就行，至多合并 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mi>log</mi><mo>⁡</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">n\log n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal">n</span></span></span></span> 次。觉得很对。但是路径压缩写错了。</p>
 <p>结果吃了 6 发，20:50 能过的拖到了 21:20，还掉分了，豁达。</p>
 <p>豁达豁达豁达豁达豁达豁达豁达豁达豁达豁达豁达豁达豁达豁达豁达豁达豁达豁达豁达豁达豁达豁达豁达豁达豁达豁达</p>
-<h1 id="day-6"><a class="markdownIt-Anchor" href="#day-6"></a> Day -6</h1>
+<h1 id="day-6">Day -6<a class="markdownIt-Anchor" href="#day-6"></a></h1>
 <p>发生了啥事啊，我不知道啊。</p>
-<h1 id="day-5"><a class="markdownIt-Anchor" href="#day-5"></a> Day -5</h1>
+<h1 id="day-5">Day -5<a class="markdownIt-Anchor" href="#day-5"></a></h1>
 <p>生了一周病，请了一周假。第一天上学。</p>
-<h1 id="day-4"><a class="markdownIt-Anchor" href="#day-4"></a> Day -4</h1>
+<h1 id="day-4">Day -4<a class="markdownIt-Anchor" href="#day-4"></a></h1>
 <p>要考试了/ng</p>
-<h1 id="day-3"><a class="markdownIt-Anchor" href="#day-3"></a> Day -3</h1>
+<h1 id="day-3">Day -3<a class="markdownIt-Anchor" href="#day-3"></a></h1>
 <p>期中考试。</p>
 <p>语文选择题有一题很有争议，D 苏轼被贬家人很愉快？？？答案还不是选这个错误？？？</p>
 <p>物理还行，8A 都简单，而且是期中，但是横波纵波算反了/ng</p>
 <p>政治提前 5min 写完了。</p>
-<h1 id="day-2"><a class="markdownIt-Anchor" href="#day-2"></a> Day -2</h1>
+<h1 id="day-2">Day -2<a class="markdownIt-Anchor" href="#day-2"></a></h1>
 <p>上午数学。好好好选择第八题有错，算了半天，浪费我时间打乱我节奏是吧。差点没写完/fn/fn/fn</p>
 <p>下午英语，六选四同学们在我停课期间做过，班级同学人均 AK，我错了一个，很难过。</p>
 <p>历史感觉最正常了，但是史料类型七上第一节课讲的实在记不得了，感觉史料要丢几分。选择题出的很好。有一题书上怎么我没找到，我那节课也没上，这下寄了。</p>
 <p>更搞笑的是怎么考完有人给我送整活准考证的？</p>
 <p><img loading="eager" decoding="async" src="https://cdn.luogu.com.cn/upload/image_hosting/svmlw58x.png" alt="" /></p>
-<h1 id="day-1"><a class="markdownIt-Anchor" href="#day-1"></a> Day -1</h1>
+<h1 id="day-1">Day -1<a class="markdownIt-Anchor" href="#day-1"></a></h1>
 <p>大家都去秋游了，我去不了，好难过。</p>
 <p>如果秋游和今年秋游一样在 nj 的话我就可以去玩一天然后正好打车去酒店，<s>还剩一趟车票钱。</s></p>
 <p>原来我起床的时候同学们都上车了啊，就我还在被窝里看平板。</p>
@@ -754,7 +757,7 @@
 <p>聊到九点左右我就和 irris 一起润了。</p>
 <p>线上三个魔怔哥，线下聊一个多小时天移动距离不超过一米的。</p>
 <p>现实里唯唯诺诺，网络上重拳出击！</p>
-<h1 id="day-0"><a class="markdownIt-Anchor" href="#day-0"></a> Day 0</h1>
+<h1 id="day-0">Day 0<a class="markdownIt-Anchor" href="#day-0"></a></h1>
 <p>六点半起的。</p>
 <p>酒店里吃了点早饭就润去南航了，七点就到了。</p>
 <p>门口保安让我刷身份证，然后顺着指示牌走。我看指示牌指了一条小路，跑去转了一圈，没人。又转一圈，还是没人。教练说 7：30 到，我以为 8:00 开考，我 7:15 还没看见大队伍很慌啊。然后过了一会儿发现是工作人员没来，看了眼准考证 8:30 开考，乐。</p>
@@ -989,6 +992,56 @@ JS-0187
 
 	<div id="post_comment" class="card shadow-sm">
 		<div id="giscus"></div>
+<script>
+	(function () {
+		var lightTheme = "light";
+		function giscusTheme() {
+			return document.documentElement.classList.contains("darkmode") ? "dark" : lightTheme;
+		}
+		// client.js is the next sibling and has not executed yet (async), so
+		// its data-theme can be corrected before the widget first loads.
+		var loader = document.currentScript.nextElementSibling;
+		if (loader && loader.tagName === "SCRIPT" && loader.getAttribute("data-repo")) {
+			loader.setAttribute("data-theme", giscusTheme());
+		}
+		// Send the current theme to the widget. Always send: the iframe only
+		// acts on messages it receives, and it re-applies idempotently.
+		window.syncGiscusTheme = function () {
+			var frame = document.querySelector("iframe.giscus-frame");
+			if (!frame || !frame.contentWindow) return;
+			frame.contentWindow.postMessage(
+				{ giscus: { setConfig: { theme: giscusTheme() } } },
+				"https://giscus.app"
+			);
+		};
+		// The widget only processes setConfig after it has fully booted, which
+		// the iframe load event signals. emitMetadata=0 means giscus sends no
+		// messages back, so the load event is the reliable sync hook.
+		window.addEventListener("message", function (event) {
+			if (event.origin !== "https://giscus.app") return;
+			syncGiscusTheme();
+		});
+		// giscus replaces its container on re-render, so observe the comment
+		// card for the frame's appearance and hook its load event.
+		var commentCard = document.getElementById("post_comment");
+		if (commentCard) {
+			var hook = function (frame) {
+				frame.addEventListener("load", syncGiscusTheme);
+			};
+			var existing = commentCard.querySelector("iframe.giscus-frame");
+			if (existing) hook(existing);
+			new MutationObserver(function (records) {
+				records.forEach(function (record) {
+					Array.prototype.forEach.call(record.addedNodes, function (node) {
+						if (node.nodeType !== 1) return;
+						var frames = node.tagName === "IFRAME" ? [node] : node.querySelectorAll("iframe.giscus-frame");
+						Array.prototype.forEach.call(frames, hook);
+					});
+				});
+			}).observe(commentCard, { childList: true, subtree: true });
+		}
+	})();
+</script>
 <script src="https://giscus.app/client.js"
         data-repo="caylex09/blogtalk"
         data-repo-id="R_kgDOHDKqeg"
@@ -1083,7 +1136,7 @@ JS-0187
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

@@ -37,8 +37,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -78,6 +78,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -290,7 +293,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -707,13 +710,13 @@
 	<div class="post-content" id="post_content">
 		<p>希望今年能靠自己的分数打进 NOIP 吧，去年是靠的常州考点的名额。</p>
 <p>好，noip 应该是进了。</p>
-<h1 id="初赛"><a class="markdownIt-Anchor" href="#初赛"></a> 初赛</h1>
-<h2 id="day-"><a class="markdownIt-Anchor" href="#day-"></a> Day -???</h2>
+<h1 id="初赛">初赛<a class="markdownIt-Anchor" href="#初赛"></a></h1>
+<h2 id="day-">Day -???<a class="markdownIt-Anchor" href="#day-"></a></h2>
 <p>去机房不能开电脑，难受。</p>
 <p>练初赛，全靠左顾右盼法看@<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/user/526163">JwJ_2010</a> 的。退役半年的都比我强，紫砂了。</p>
-<h2 id="day-1"><a class="markdownIt-Anchor" href="#day-1"></a> Day -1</h2>
+<h2 id="day-1">Day -1<a class="markdownIt-Anchor" href="#day-1"></a></h2>
 <p>文化课布置了作文，难受。初赛，没看。</p>
-<h2 id="day-0"><a class="markdownIt-Anchor" href="#day-0"></a> Day 0</h2>
+<h2 id="day-0">Day 0<a class="markdownIt-Anchor" href="#day-0"></a></h2>
 <p>上午坐地铁去，好像在常外站看到了个高个子的穿校服的女生，但事实上好像不是去考初赛的。</p>
 <p>地铁上死命看初赛知识点，主定理是在车上看会的。</p>
 <p>到了，在博爱路站下车，看到了@<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/user/268980">xiayuhao__2009</a>。走过去竟然要走 800m，啥破地方啊/fn</p>
@@ -742,31 +745,31 @@
 <p>S 依旧很简单，但仍然是对完答案就萎了。</p>
 <p>稍微看了下大概错了多少，比预想差一点。估计 60 上下，没仔细算。</p>
 <p>然后一直摆到开学。</p>
-<h2 id="day-3"><a class="markdownIt-Anchor" href="#day-3"></a> Day 3</h2>
+<h2 id="day-3">Day 3<a class="markdownIt-Anchor" href="#day-3"></a></h2>
 <p>学校信息课。教练教了怎么用 NOI Linux。</p>
 <p>妈的我预估 J 最低 75 怎么有人和教练说我 J 只有 70 的，教练还特地问我。</p>
-<h2 id="day-5"><a class="markdownIt-Anchor" href="#day-5"></a> Day 5</h2>
+<h2 id="day-5">Day 5<a class="markdownIt-Anchor" href="#day-5"></a></h2>
 <p>怎么还要用 NOI Linux 练习去年做的卷子。哦这套啊想起来了考得很差的。怎么今年一小时阿克不了，难过。</p>
-<h2 id="day-6"><a class="markdownIt-Anchor" href="#day-6"></a> Day 6</h2>
+<h2 id="day-6">Day 6<a class="markdownIt-Anchor" href="#day-6"></a></h2>
 <p>出分数线了，听说是特派员周末要下班了，所以周五得发，发完跑路了。</p>
 <p>分数线挺低的。看来机位超多。</p>
-<h1 id="复赛"><a class="markdownIt-Anchor" href="#复赛"></a> 复赛</h1>
-<h2 id="day-15-21"><a class="markdownIt-Anchor" href="#day-15-21"></a> Day [-15,-21]</h2>
+<h1 id="复赛">复赛<a class="markdownIt-Anchor" href="#复赛"></a></h1>
+<h2 id="day-15-21">Day [-15,-21]<a class="markdownIt-Anchor" href="#day-15-21"></a></h2>
 <p>在 hba 训练。被模拟赛创死。</p>
 <p>但是拍到了很多人的丑照（</p>
 <p>原来大家管互相拍照叫对拍！</p>
-<h2 id="day-14"><a class="markdownIt-Anchor" href="#day-14"></a> Day -14</h2>
+<h2 id="day-14">Day -14<a class="markdownIt-Anchor" href="#day-14"></a></h2>
 <p>停课力。</p>
 <p>但是国庆作业有一项没看要求，我还要重做/ng</p>
 <p>在机房补了前两天学校里的入门组模拟赛，380，死因不看数据范围下意识以为多测保障了 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∑</mo><mi>n</mi><mo>≤</mo><mn>1</mn><msup><mn>0</mn><mn>6</mn></msup></mrow><annotation encoding="application/x-tex">\sum n\leq 10^6</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.00001em;vertical-align:-0.25001em;"></span><span class="mop op-symbol small-op" style="position:relative;top:-0.0000050000000000050004em;">∑</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">6</span></span></span></span></span></span></span></span></span></span></span>。</p>
-<h2 id="day-9"><a class="markdownIt-Anchor" href="#day-9"></a> Day -9</h2>
+<h2 id="day-9">Day -9<a class="markdownIt-Anchor" href="#day-9"></a></h2>
 <p>最近几天都是在机房度过的。但是下周有模考，逃过一劫！</p>
-<h2 id="day-1-2"><a class="markdownIt-Anchor" href="#day-1-2"></a> Day -1</h2>
+<h2 id="day-1-2">Day -1<a class="markdownIt-Anchor" href="#day-1-2"></a></h2>
 <p>板子大赛。</p>
 <p>写完自己会的发现是 rk.3，晚上看掉 rk.11 了。所以手速在实力的差距面前只是摆设。</p>
-<h2 id="day-0-2"><a class="markdownIt-Anchor" href="#day-0-2"></a> Day 0</h2>
+<h2 id="day-0-2">Day 0<a class="markdownIt-Anchor" href="#day-0-2"></a></h2>
 <p>【省流】J 赢麻了，S 输麻了！</p>
-<h3 id="morning"><a class="markdownIt-Anchor" href="#morning"></a> Morning</h3>
+<h3 id="morning">Morning<a class="markdownIt-Anchor" href="#morning"></a></h3>
 <p>提供一个 J 自己写的题解。</p>
 <p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/blog/cayaxi09/csp-j-2023-ti-xie">https://www.luogu.com.cn/blog/cayaxi09/csp-j-2023-ti-xie</a></p>
 <p>好像去晚了，到的时候已经有考场的人进去了。</p>
@@ -796,14 +799,14 @@
 <p>最后 10 分钟火速改掉。</p>
 <p>结束啦。</p>
 <p>怎么收个卷收这么久。fk。</p>
-<h3 id="noon"><a class="markdownIt-Anchor" href="#noon"></a> Noon</h3>
+<h3 id="noon">Noon<a class="markdownIt-Anchor" href="#noon"></a></h3>
 <p>去老地方吃了个饭，吃完火速回 scz 面基。</p>
 <p>@<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/user/400269">Shiota_Kaede</a> 还是那么漂亮，JY 小姐姐嘿嘿。</p>
 <p>@<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/user/419487">irris</a> 看到 irris 力。</p>
 <p>和 JY 小姐姐还有 irris 合了一张影/tiao</p>
 <p>和 @<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/user/183722">EasonTao</a> @<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/user/398789">Anny1225</a> 也合照了，拜谢未来江苏省队和未来江苏女队。</p>
 <p>在等进考场还看见了好多无锡 OIer。拜谢。</p>
-<h3 id="afternoon"><a class="markdownIt-Anchor" href="#afternoon"></a> Afternoon</h3>
+<h3 id="afternoon">Afternoon<a class="markdownIt-Anchor" href="#afternoon"></a></h3>
 <p>进考场！</p>
 <p>还是打了对拍程序，虽然上午下午都没用上。草。</p>
 <p>T1 水啊。</p>
@@ -821,7 +824,7 @@
 <p>别问 S 组怎么写这么少，因为 T3 写了一坤时还挂了根本没有好说的。</p>
 <p>菜死了。还好 J 在小图灵和洛谷测都 AK 了，应该没问题。还好 J AK 了，S 寄得太惨也有个安慰。</p>
 <p>妈的，今年不会蹭不上蓝勾吧。</p>
-<h2 id="day-8"><a class="markdownIt-Anchor" href="#day-8"></a> Day 8</h2>
+<h2 id="day-8">Day 8<a class="markdownIt-Anchor" href="#day-8"></a></h2>
 <p>上午发现别的地方出成绩了，急急急，江苏别的地方也发了，急急急。</p>
 <p>负责人在干啥啊？？？建议下次负责人写我，我 24h 在线。</p>
 <p>找教练，教练说没发下来，看来负责人真的在睡觉。</p>
@@ -1003,7 +1006,7 @@ if (btn) btn.addEventListener("click", () => {
 	    title : `[游记] CSP 2023 游记`,
 	    description : `希望今年能靠自己的分数打进 NOIP 吧，去年是靠的常州考点的名额。
 好，noip 应该是进了。
- ...`,
+初...`,
 	    wechatQrcodeTitle : `分享到微信`,
 	    wechatQrcodeHelper : `微信扫描二维码`,
 	    source : `https://blog.cyx2009.top/archives/CSP2023/`
@@ -1055,6 +1058,56 @@ if (btn) btn.addEventListener("click", () => {
 
 	<div id="post_comment" class="card shadow-sm">
 		<div id="giscus"></div>
+<script>
+	(function () {
+		var lightTheme = "light";
+		function giscusTheme() {
+			return document.documentElement.classList.contains("darkmode") ? "dark" : lightTheme;
+		}
+		// client.js is the next sibling and has not executed yet (async), so
+		// its data-theme can be corrected before the widget first loads.
+		var loader = document.currentScript.nextElementSibling;
+		if (loader && loader.tagName === "SCRIPT" && loader.getAttribute("data-repo")) {
+			loader.setAttribute("data-theme", giscusTheme());
+		}
+		// Send the current theme to the widget. Always send: the iframe only
+		// acts on messages it receives, and it re-applies idempotently.
+		window.syncGiscusTheme = function () {
+			var frame = document.querySelector("iframe.giscus-frame");
+			if (!frame || !frame.contentWindow) return;
+			frame.contentWindow.postMessage(
+				{ giscus: { setConfig: { theme: giscusTheme() } } },
+				"https://giscus.app"
+			);
+		};
+		// The widget only processes setConfig after it has fully booted, which
+		// the iframe load event signals. emitMetadata=0 means giscus sends no
+		// messages back, so the load event is the reliable sync hook.
+		window.addEventListener("message", function (event) {
+			if (event.origin !== "https://giscus.app") return;
+			syncGiscusTheme();
+		});
+		// giscus replaces its container on re-render, so observe the comment
+		// card for the frame's appearance and hook its load event.
+		var commentCard = document.getElementById("post_comment");
+		if (commentCard) {
+			var hook = function (frame) {
+				frame.addEventListener("load", syncGiscusTheme);
+			};
+			var existing = commentCard.querySelector("iframe.giscus-frame");
+			if (existing) hook(existing);
+			new MutationObserver(function (records) {
+				records.forEach(function (record) {
+					Array.prototype.forEach.call(record.addedNodes, function (node) {
+						if (node.nodeType !== 1) return;
+						var frames = node.tagName === "IFRAME" ? [node] : node.querySelectorAll("iframe.giscus-frame");
+						Array.prototype.forEach.call(frames, hook);
+					});
+				});
+			}).observe(commentCard, { childList: true, subtree: true });
+		}
+	})();
+</script>
 <script src="https://giscus.app/client.js"
         data-repo="caylex09/blogtalk"
         data-repo-id="R_kgDOHDKqeg"
@@ -1149,7 +1202,7 @@ if (btn) btn.addEventListener("click", () => {
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

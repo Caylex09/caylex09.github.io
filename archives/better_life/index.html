@@ -37,8 +37,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -78,6 +78,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -290,7 +293,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -702,11 +705,11 @@
 	<div class="post-content" id="post_content">
 		<p>upd：我发现 BetterLyrics 把这篇文章收录到了『开发者引用 &amp; 独立博客』评价里！！！BetterLyrics 真的很好用！！！欢迎使用 <a target="_blank" rel="noopener" href="https://github.com/jayfunc/BetterLyrics">https://github.com/jayfunc/BetterLyrics</a>！！！居然真的有人会看我的博客，真的很激动。</p>
 <p>记录一些很有用的东西。</p>
-<h1 id="邮件"><a class="markdownIt-Anchor" href="#邮件"></a> 邮件</h1>
+<h1 id="邮件">邮件<a class="markdownIt-Anchor" href="#邮件"></a></h1>
 <p>Email 可以用 gmail，一个手机注册两个号，手机上清掉浏览数据开梯子注册成功率更高。</p>
 <p>然后给邮箱设置一下回复，就是别的邮箱收到的发到统一邮箱里，然后也可以设置发信用什么邮箱。</p>
 <p>最后，下载那个网页应用 gmail，设置开机自启动，然后设置里面打开 Windows 通知就可以享受到邮件提醒了。手机上下载 gmail 不开梯子也能收到提醒。</p>
-<h1 id="音乐"><a class="markdownIt-Anchor" href="#音乐"></a> 音乐</h1>
+<h1 id="音乐">音乐<a class="markdownIt-Anchor" href="#音乐"></a></h1>
 <p>平台版权太烦了，Spotify 本地播放即可。</p>
 <p>网易云的下载下来，可以用 <a target="_blank" rel="noopener" href="https://github.com/AthBe1337/ncmdump-web">AthBe1337/ncmdump-web: 适用于Web页面的网易云加密格式NCM解密工具，直接在前端转换，无需后端交互。</a> 这个工具。直接访问 <a target="_blank" rel="noopener" href="https://tools.athbe.cn/ncm/">NCM 解密工具</a> 即可。然后导入到 Spotify 里就好了。</p>
 <p>QQ 音乐有点麻烦，首先得下载到本地，获得 .mflac 格式，然后用 <a target="_blank" rel="noopener" href="https://github.com/Acooldog/QQMusic-mflac-to-flac">Acooldog/QQMusic-mflac-to-flac</a> 这个工具转成 .flac。然后你导入 Spotify 会发现缺失了专辑图片，很丑。为了解决这个问题，我们先运行 <code>clear_images.py</code>：</p>
@@ -1085,7 +1088,7 @@ MUSIC_DIR = <span class="string">&quot;C:\\Users\\Administrator\\Music&quot;</sp
     <span class="keyword">if</span> sys.platform == <span class="string">&quot;win32&quot;</span>:
 
         os.system(<span class="string">&quot;pause&quot;</span>)</code></pre>
-<h1 id="博客"><a class="markdownIt-Anchor" href="#博客"></a> 博客</h1>
+<h1 id="博客">博客<a class="markdownIt-Anchor" href="#博客"></a></h1>
 <p>我用的 Hexo+Argon 搭建的。本地之前用 Typora，现在用 Obsidian 书写博客。</p>
 <p>有一些要解决的东西，比如 Admonition 语法支持，新建 script 文件然后使用 <code>admonition.js</code>：</p>
 <pre><code class="highlight javascript"><span class="meta">&#x27;use strict&#x27;</span>;
@@ -1549,7 +1552,7 @@ hexo.<span class="property">extend</span>.<span class="property">filter</span>.<
   <span class="comment">// 兜底：注入到 &lt;/body&gt; 前</span>
   <span class="keyword">return</span> str.<span class="title function_">replace</span>(<span class="string">&#x27;&lt;/body&gt;&#x27;</span>, block + <span class="string">&#x27;\n&lt;/body&gt;&#x27;</span>);
 &#125;);</code></pre>
-<h1 id="写代码oi"><a class="markdownIt-Anchor" href="#写代码oi"></a> 写代码（OI）</h1>
+<h1 id="写代码oi">写代码（OI）<a class="markdownIt-Anchor" href="#写代码oi"></a></h1>
 <p>OI 选手可以使用 WSL2+VSCode 编程模拟赛场环境。</p>
 <p>但是我这种懒逼有的时候油猴脚本开发也在 WSL 下面写了，这个时候会因为神秘错误导致网络连不上 Github（例如表现为 Copilot 无响应），打开梯子的允许局域网接入，然后配合下述代码添加到 <code>.bashrc</code> 里：</p>
 <pre><code class="highlight bash"><span class="comment"># 自动获取宿主机 IP</span>
@@ -1999,7 +2002,7 @@ run</code></pre>
     g++ <span class="variable">$1</span>.cpp -o <span class="variable">$1</span> -O2 -std=c++20 -fsanitize=address,undefined -Wall -Wextra -Wshadow -Wconversion -DLOCAL_DEBUG
 
 &#125;</code></pre>
-<h1 id="github-学生认证"><a class="markdownIt-Anchor" href="#github-学生认证"></a> Github 学生认证</h1>
+<h1 id="github-学生认证">Github 学生认证<a class="markdownIt-Anchor" href="#github-学生认证"></a></h1>
 <p>这个很难搞，但是可以伪造。</p>
 <pre><code class="highlight none">Student Verification Report
 *****************************************
@@ -2229,6 +2232,56 @@ if (btn) btn.addEventListener("click", () => {
 
 	<div id="post_comment" class="card shadow-sm">
 		<div id="giscus"></div>
+<script>
+	(function () {
+		var lightTheme = "light";
+		function giscusTheme() {
+			return document.documentElement.classList.contains("darkmode") ? "dark" : lightTheme;
+		}
+		// client.js is the next sibling and has not executed yet (async), so
+		// its data-theme can be corrected before the widget first loads.
+		var loader = document.currentScript.nextElementSibling;
+		if (loader && loader.tagName === "SCRIPT" && loader.getAttribute("data-repo")) {
+			loader.setAttribute("data-theme", giscusTheme());
+		}
+		// Send the current theme to the widget. Always send: the iframe only
+		// acts on messages it receives, and it re-applies idempotently.
+		window.syncGiscusTheme = function () {
+			var frame = document.querySelector("iframe.giscus-frame");
+			if (!frame || !frame.contentWindow) return;
+			frame.contentWindow.postMessage(
+				{ giscus: { setConfig: { theme: giscusTheme() } } },
+				"https://giscus.app"
+			);
+		};
+		// The widget only processes setConfig after it has fully booted, which
+		// the iframe load event signals. emitMetadata=0 means giscus sends no
+		// messages back, so the load event is the reliable sync hook.
+		window.addEventListener("message", function (event) {
+			if (event.origin !== "https://giscus.app") return;
+			syncGiscusTheme();
+		});
+		// giscus replaces its container on re-render, so observe the comment
+		// card for the frame's appearance and hook its load event.
+		var commentCard = document.getElementById("post_comment");
+		if (commentCard) {
+			var hook = function (frame) {
+				frame.addEventListener("load", syncGiscusTheme);
+			};
+			var existing = commentCard.querySelector("iframe.giscus-frame");
+			if (existing) hook(existing);
+			new MutationObserver(function (records) {
+				records.forEach(function (record) {
+					Array.prototype.forEach.call(record.addedNodes, function (node) {
+						if (node.nodeType !== 1) return;
+						var frames = node.tagName === "IFRAME" ? [node] : node.querySelectorAll("iframe.giscus-frame");
+						Array.prototype.forEach.call(frames, hook);
+					});
+				});
+			}).observe(commentCard, { childList: true, subtree: true });
+		}
+	})();
+</script>
 <script src="https://giscus.app/client.js"
         data-repo="caylex09/blogtalk"
         data-repo-id="R_kgDOHDKqeg"
@@ -2323,7 +2376,7 @@ if (btn) btn.addEventListener("click", () => {
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

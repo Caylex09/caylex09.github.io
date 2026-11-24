@@ -35,8 +35,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -76,6 +76,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -288,7 +291,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -765,10 +768,10 @@ void gmn(T &amp;x, T y) { x = min...
 考完改了 10 个字节 335 pts，
 回家改了 2 个字节 400 pts。
 水平没长进挂分的水平进步不小。
- D.三角形个数 count
+D.三角形个数 count
 很显然 O(n2) 枚举两个角度会超时。
 考虑到题目隐藏数据范围 ai≤180，我们实际只要开桶记录每个度数出现次数，然后枚举三角形角度得到每个度数出现次数，相乘即可。
-考场的 j ...
+考场的 j 和...
 			
 		
 	</div>
@@ -928,10 +931,10 @@ void gmn(T &amp;x, T y) { x = min...
 本来能 400 pts 的，T3 边界写错扣十分，这个问题不大，加个判断就过了。T4 真的扣的分真伤，打错了两个数字废了。
 痛失 U 盘！
 比赛点评：一道送分一道板，一道模拟一道原。
- 四则混合运算
+四则混合运算
 题目很简单，扫描两遍字符串，第一遍处理乘除符号，第二遍处理加减符号。
 时间复杂度 O(∣S∣)。
-插一句题外话，像这种题最好不要偷懒在字符串...
+插一句题外话，像这种题最好不要偷懒在字符串中...
 			
 		
 	</div>
@@ -1177,6 +1180,87 @@ struct node
 	<article class="post card bg-white shadow-sm border-0 post-preview">
 	<header class="post-header text-center">
 		
+		<a class="post-title" href="/archives/20220812_mock/">[题解] 20220812 | CSP2022 考前模拟赛 做题笔记</a>
+		<div class="post-meta">
+			
+						
+						<div class="post-meta-detail post-meta-detail-time">
+							<i class="fa fa-clock-o" aria-hidden="true"></i>
+							<time title="发布于 2022-8-23 19:52:00 | 编辑于 2026-6-26 20:25:24">2022-8-23 19:52
+							</time>
+						</div>
+					
+						
+							<div class="post-meta-devide">|</div>
+						
+						<div class="post-meta-detail post-meta-detail-categories">
+							<i class="fa fa-bookmark-o" aria-hidden="true"></i>
+							<a class="post-meta-detail-catagory-link" href="/categories/Solution/">Solution</a>
+						</div>
+					
+						
+							<!-- <div class="post-meta-devide">|</div> -->
+						
+						<!-- <div class="post-meta-detail post-meta-detail-words">
+							<i class="fa fa-book" aria-hidden="true"></i>
+							<span id="busuanzi_container_page_pv">
+								阅读<span id="busuanzi_value_page_pv"></span>次
+							</span>
+						</div> -->
+					
+						
+							<div class="post-meta-devide">|</div>
+						
+						<div class="post-meta-detail post-meta-detail-words">
+							<i class="fa fa-file-word-o" aria-hidden="true"></i>
+							3.7k 字
+						</div>
+					
+						
+							<div class="post-meta-devide">|</div>
+						
+						<div class="post-meta-detail post-meta-detail-readingtime">
+							<i class="fa fa-hourglass-end" aria-hidden="true"></i>
+							21 分钟
+						</div>
+					
+		</div>
+		
+	</header>
+
+	<div class="post-content">
+		
+			
+				呜呜呜卞宇轩等巨佬出的太毒瘤了呜呜呜
+cube
+模拟。
+真就模拟。
+好好想咋模拟。
+不然和我一样瞎写。
+我瞎写写了 7 KB 的模拟。
+我太菜了只会这种一点一点转。
+不像 爬不？立刻！ 巨佬一样 5 min 爆切。
+#include&lt;bits/stdc++.h&gt;
+using namespace std;
+int t;
+int a[130];
+boo...
+			
+		
+	</div>
+
+	
+		<div class="post-tags">
+			<i class="fa fa-tags" aria-hidden="true"></i>
+			<a class="tag badge badge-secondary post-meta-detail-tag -none-link" href="/tags/%E6%A8%A1%E6%8B%9F%E8%B5%9B/" rel="tag">模拟赛</a>
+		</div>
+	
+</article>
+
+
+	<article class="post card bg-white shadow-sm border-0 post-preview">
+	<header class="post-header text-center">
+		
 		<a class="post-title" href="/archives/20220819_mock/">[题解] 20220819 | CSP2022 考前模拟赛 做题笔记</a>
 		<div class="post-meta">
 			
@@ -1236,87 +1320,6 @@ struct node
 #define endl '\n'
 #define S(x) scanf("%lld",&amp;x);
 #define ...
-			
-		
-	</div>
-
-	
-		<div class="post-tags">
-			<i class="fa fa-tags" aria-hidden="true"></i>
-			<a class="tag badge badge-secondary post-meta-detail-tag -none-link" href="/tags/%E6%A8%A1%E6%8B%9F%E8%B5%9B/" rel="tag">模拟赛</a>
-		</div>
-	
-</article>
-
-
-	<article class="post card bg-white shadow-sm border-0 post-preview">
-	<header class="post-header text-center">
-		
-		<a class="post-title" href="/archives/20220812_mock/">[题解] 20220812 | CSP2022 考前模拟赛 做题笔记</a>
-		<div class="post-meta">
-			
-						
-						<div class="post-meta-detail post-meta-detail-time">
-							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2022-8-23 19:52:00 | 编辑于 2026-6-26 20:25:24">2022-8-23 19:52
-							</time>
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-categories">
-							<i class="fa fa-bookmark-o" aria-hidden="true"></i>
-							<a class="post-meta-detail-catagory-link" href="/categories/Solution/">Solution</a>
-						</div>
-					
-						
-							<!-- <div class="post-meta-devide">|</div> -->
-						
-						<!-- <div class="post-meta-detail post-meta-detail-words">
-							<i class="fa fa-book" aria-hidden="true"></i>
-							<span id="busuanzi_container_page_pv">
-								阅读<span id="busuanzi_value_page_pv"></span>次
-							</span>
-						</div> -->
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-words">
-							<i class="fa fa-file-word-o" aria-hidden="true"></i>
-							3.7k 字
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-readingtime">
-							<i class="fa fa-hourglass-end" aria-hidden="true"></i>
-							21 分钟
-						</div>
-					
-		</div>
-		
-	</header>
-
-	<div class="post-content">
-		
-			
-				呜呜呜卞宇轩等巨佬出的太毒瘤了呜呜呜
- cube
-模拟。
-真就模拟。
-好好想咋模拟。
-不然和我一样瞎写。
-我瞎写写了 7 KB 的模拟。
-我太菜了只会这种一点一点转。
-不像 爬不？立刻！ 巨佬一样 5 min 爆切。
-#include&lt;bits/stdc++.h&gt;
-using namespace std;
-int t;
-int a[130];
-bo...
 			
 		
 	</div>
@@ -1484,7 +1487,7 @@ int main()
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

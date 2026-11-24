@@ -35,8 +35,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -76,6 +76,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -288,7 +291,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -684,10 +687,10 @@
 本来能 400 pts 的，T3 边界写错扣十分，这个问题不大，加个判断就过了。T4 真的扣的分真伤，打错了两个数字废了。
 痛失 U 盘！
 比赛点评：一道送分一道板，一道模拟一道原。
- 四则混合运算
+四则混合运算
 题目很简单，扫描两遍字符串，第一遍处理乘除符号，第二遍处理加减符号。
 时间复杂度 O(∣S∣)。
-插一句题外话，像这种题最好不要偷懒在字符串...
+插一句题外话，像这种题最好不要偷懒在字符串中...
 			
 		
 	</div>
@@ -759,12 +762,12 @@
 在英语中，大多数单词复数是在末尾加 s。
 给你一个单词，输出他的复数形式。
 保证单词复数形式只需加 s。
- 题目思路
+题目思路
 输入单词后直接输出这个单词再输出 s 即可。
 注意早期 AT 题目是需要行末输出换行否则不能 AC，所以再输出一个 endl 或者转义 \n。
- 完整代码
+完整代码
 #include&lt;bits/stdc++.h&gt;
-using nam...
+using names...
 			
 		
 	</div>
@@ -984,13 +987,13 @@ printf("%d %d\n",t/n%n+1,t%n+1); 即可，复杂度 O(1)。
 			
 				前言
 CSP-J 模拟赛教练放的一道原题，赛时 AC 了听同学说洛谷有，回来写题解。
- 题目思路
- 如何找到正方形的四个顶点
+题目思路
+如何找到正方形的四个顶点
 最简单的最容易思考到的方法：O(n4) 或 O(n3) 枚举四个顶点。
 但由于 n≤3000，肯定超时，复杂度肯定要控制在 O(n2) 左右。
 O(n2) 意味着枚举两个点，我们来观察一下这两个点与另外两个点的位置关系。
 
-...
+如图...
 			
 		
 	</div>
@@ -1159,7 +1162,7 @@ struct node
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

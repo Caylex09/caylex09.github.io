@@ -35,8 +35,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -76,6 +76,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -288,7 +291,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -671,9 +674,9 @@
 			
 				题目翻译
 我们定义对于所有 i (3≤i≤n)， pi−2+pi−1≠pi  这样的数列称之为 反斐波那契数列 ，给定一个 n ，请输出 n 个长度为 n 的不同的反斐波那契数列。
- 题目思路
+题目思路
 只要 pi−2 和 pi−1 中任意一个数大于 pi ，那么肯定为反斐波那契数列。
-所以构造一个降序的数列，然后每次把最后一个数往前挪，肯定能构成一个反斐波...
+所以构造一个降序的数列，然后每次把最后一个数往前挪，肯定能构成一个反斐波那...
 			
 		
 	</div>
@@ -738,11 +741,11 @@
 			
 				题目翻译
 输入一个字符串，可不可以在任意一位插入 A，使这个字符串变为 AKIHABARA。
- 题目思路
+题目思路
 AKIHABARA 中只出现了 4 次 A ，所以，我们枚举所有可能，每个位置都可以有 选 或 不选 两种可能，所以一共只有 24 种可能，十分少。
 我们只要分别枚举 没有 A、一个 A、两个 A、三个 A、四个 A 的情况即可。
- 题目代码
-...
+题目代码
+//...
 			
 		
 	</div>
@@ -807,7 +810,7 @@ AKIHABARA 中只出现了 4 次 A ，所以，我们枚举所有可能，每个�
 			
 				题目翻译
 给定两个数 a 和 b ，求能同时整除 a 和 b 的数的个数，且这些数需要两两互质。
- 题目分析
+题目分析
 两两互质，也就说明有以下几种情况：
 
 均为不同的质数。
@@ -818,7 +821,7 @@ AKIHABARA 中只出现了 4 次 A ，所以，我们枚举所有可能，每个�
 较大数是质数。
 ……
 
-这是常见的情况，其实还有很多。那么我们肯定不能全写到程序里。我们只选择第 1 个性质：均为...
+这是常见的情况，其实还有很多。那么我们肯定不能全写到程序里。我们只选择第 1 个性质：均为不...
 			
 		
 	</div>
@@ -836,7 +839,7 @@ AKIHABARA 中只出现了 4 次 A ，所以，我们枚举所有可能，每个�
 						
 						<div class="post-meta-detail post-meta-detail-time">
 							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2022-2-2 13:49:00 | 编辑于 2025-2-12 12:46:26">2022-2-2 13:49
+							<time title="发布于 2022-2-2 13:49:00 | 编辑于 2026-11-24 15:01:19">2022-2-2 13:49
 							</time>
 						</div>
 					
@@ -863,7 +866,7 @@ AKIHABARA 中只出现了 4 次 A ，所以，我们枚举所有可能，每个�
 						
 						<div class="post-meta-detail post-meta-detail-words">
 							<i class="fa fa-file-word-o" aria-hidden="true"></i>
-							277 字
+							626 字
 						</div>
 					
 						
@@ -871,7 +874,7 @@ AKIHABARA 中只出现了 4 次 A ，所以，我们枚举所有可能，每个�
 						
 						<div class="post-meta-detail post-meta-detail-readingtime">
 							<i class="fa fa-hourglass-end" aria-hidden="true"></i>
-							1 分钟
+							2 分钟
 						</div>
 					
 		</div>
@@ -882,16 +885,12 @@ AKIHABARA 中只出现了 4 次 A ，所以，我们枚举所有可能，每个�
 		
 			
 				题目翻译
-一个 01 串，找到一个它的子串，1 的个数多删所有 0，0 的个数多删所有 1。问最多删几个数。
- 题目思路
-首先统计 01 个数是必须的。
-之后，分类讨论 3 种情况。
- 情况1：0 的个数比 1 多。
-输出 1 的个数。
- 情况2：1 的个数比 0 多。
-输出 0 的个数。
- 情况 3：1 的个数和 0 的个数相等。
-这里有个小问题...
+在某款电脑游戏里，角色初始生命 hc，初始攻击 dc。怪物初始生命 hm，初始攻击 dm。
+而你有 k 次机会，将攻击力永久提升 w 或者将生命永久提升 a 。
+每一轮，角色攻击怪物，怪物掉 dc 生命。怪物攻击角色，角色掉 dm 生命。
+问若干轮以后，角色能否击杀怪物并且角色存活。
+击杀怪物定义为：怪物生命 ≯0。
+角色存活定义为：角色...
 			
 		
 	</div>
@@ -909,7 +908,7 @@ AKIHABARA 中只出现了 4 次 A ，所以，我们枚举所有可能，每个�
 						
 						<div class="post-meta-detail post-meta-detail-time">
 							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2022-2-2 13:48:00 | 编辑于 2025-2-12 12:46:03">2022-2-2 13:48
+							<time title="发布于 2022-2-2 13:48:00 | 编辑于 2026-11-24 15:00:39">2022-2-2 13:48
 							</time>
 						</div>
 					
@@ -956,15 +955,16 @@ AKIHABARA 中只出现了 4 次 A ，所以，我们枚举所有可能，每个�
 			
 				题目翻译
 一个 01 串，找到一个它的子串，1 的个数多删所有 0，0 的个数多删所有 1。问最多删几个数。
- 题目思路
+题目思路
 首先统计 01 个数是必须的。
 之后，分类讨论 3 种情况。
- 情况1：0 的个数比 1 多。
+情况1：0 的个数比 1 多。
 输出 1 的个数。
- 情况2：1 的个数比 0 多。
+情况2：1 的个数比 0 多。
 输出 0 的个数。
- 情况 3：1 的个数和 0 的个数相等。
-这里有个小问题...
+情况 3：1 的个数和 0 的个数相等。
+这里有个小问题。
+有人...
 			
 		
 	</div>
@@ -1030,8 +1030,8 @@ AKIHABARA 中只出现了 4 次 A ，所以，我们枚举所有可能，每个�
 				题目翻译
 A 和 B 两个人，在 n×m 的教室找位置。A 想和 B 坐得近，B 想和 A 坐得远，由 A 先选位置，请问对于所有情况，A 与 B 之间的距离各是多少？
 补充：距离的定义为：ai1,j1 与 ai2,j2 距离为 ∣i1−i2∣+∣j1−j2∣
- 题目思路
-A 会选什么位置，我们不用考虑，因为题目求所有情况，不是最优或最坏，所以只需...
+题目思路
+A 会选什么位置，我们不用考虑，因为题目求所有情况，不是最优或最坏，所以只需考...
 			
 		
 	</div>
@@ -1097,8 +1097,8 @@ A 会选什么位置，我们不用考虑，因为题目求所有情况，不是
 				题目翻译：
 有 n×n 大小的棋盘，一共放 k 辆车，使得这个棋盘稳定。
 稳定的概念是：所有的车移动至相邻四格（上下左右）不会出现一行一列有 ≥2 辆车。
- 做题思路:
-我们可以考虑，移动之后没有同一行一列有多辆车，那么就让它移动之后还是只有它一辆车，换句话说，每辆车之间至少空一行和一列，也就是在对角线上放是最优想法。如果对角线放不下 k 辆车了，...
+做题思路:
+我们可以考虑，移动之后没有同一行一列有多辆车，那么就让它移动之后还是只有它一辆车，换句话说，每辆车之间至少空一行和一列，也就是在对角线上放是最优想法。如果对角线放不下 k 辆车了，无...
 			
 		
 	</div>
@@ -1163,8 +1163,8 @@ A 会选什么位置，我们不用考虑，因为题目求所有情况，不是
 			
 				题目翻译：
 有 n 个数，每个数为 ai  ，你可以每次选 2 个数 a 和 b ，把 a 高度 −1 ，把 b 高度 +1。在经历无限次操作后，求 max(a)−min(a) 的值。
- 题目思路：
-其实就是求平均数，如果求出的和是 n 的倍数，那么意味数组 a 中的每个值相等且均为正整数，那么相差都为 0。反之不是 n 的倍数，那么总会有数多出 ...
+题目思路：
+其实就是求平均数，如果求出的和是 n 的倍数，那么意味数组 a 中的每个值相等且均为正整数，那么相差都为 0。反之不是 n 的倍数，那么总会有数多出 1...
 			
 		
 	</div>
@@ -1300,13 +1300,13 @@ A 会选什么位置，我们不用考虑，因为题目求所有情况，不是
 洛谷；
 CodeForces。
 
- 题目分析：
+题目分析：
 这题有 3 大要点：
 
 平均价一样 2.5 分钟，只需满足尽量披萨数与人数差尽量小。
 6,8,10 可以凑出所有大于等于 6 的偶数。
 转化一下：3,4,5 可以凑出所有大于等于 3 的整数，因为 3,4 凑不出的最大数为 5，具体见洛谷 P3951。
-语言特性：大部分编程语言做除法都是...
+语言特性：大部分编程语言做除法都是向...
 			
 		
 	</div>
@@ -1393,7 +1393,7 @@ CodeForces。
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

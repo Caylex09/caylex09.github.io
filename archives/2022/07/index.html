@@ -35,8 +35,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -76,6 +76,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -288,7 +291,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -681,18 +684,18 @@
 		
 			
 				abc262_a
- 题目翻译
+题目翻译
 问第 Y 年后（包括第 Y 年）最近一次世界杯在什么时候。
- 题目思路
+题目思路
 世界杯举办的年份  mod 4 为 2。
- AC 代码
+AC 代码
 #include&lt;bits/stdc++.h&gt;
 using namespace std;
 int main()
 {
 	int a;
 	cin&gt;&gt;a;
-	cout&lt;&lt;a+(4-(a-2)%4)%...
+	cout&lt;&lt;a+(4-(a-2)%4)%4&lt;&lt;...
 			
 		
 	</div>
@@ -756,16 +759,16 @@ int main()
 		
 			
 				总计 30 题。
- 洛谷
+洛谷
 总计 17 题。
- P1002
+P1002
 没什么好说的，注意一下细节。
 如果马的掌控范围不在棋盘内，特判防 RE。
 不开 long long 见祖宗！！！
 #include&lt;bits/stdc++.h&gt;
 using namespace std;
 long long f[50][50]; 
-int dx[]={1,1,-1,-1,2,...
+int dx[]={1,1,-1,-1,2,-2...
 			
 		
 	</div>
@@ -834,18 +837,18 @@ int dx[]={1,1,-1,-1,2,...
 		
 			
 				abc261_a
- 题目翻译
+题目翻译
 问数轴上 [l1,r1] 和 [l2,r2] 重叠长度。
- 题目思路
+题目思路
 注意数轴上，不是问重叠数字个数。
 罚时带来的教训。
- AC 代码
+AC 代码
 #include&lt;bits/stdc++.h&gt;
 using namespace std;
 int main()
 {
 	int l1,r1,l2,r2,ans=0;
-	cin&gt;&gt;l1&gt;&gt;...
+	cin&gt;&gt;l1&gt;&gt;r1&gt;...
 			
 		
 	</div>
@@ -987,16 +990,16 @@ int main()
 		
 			
 				abc260_a
- 题目翻译
+题目翻译
 聊天聊过头晚开题我是什么品种的制杖。
 有一个长度为 3 的字符串 s，问 s 中只出现一次的字符是什么，没有输出 −1。
- 题目思路
+题目思路
 建一个数组存放每个小写字母出现次数，最后扫一遍。
- AC 代码
+AC 代码
 #include&lt;bits/stdc++.h&gt;
 using namespace std;
 int a['z'+1];
-in...
+int m...
 			
 		
 	</div>
@@ -1060,15 +1063,15 @@ in...
 		
 			
 				JSOI=信息与未来，非 JS 省选。
- 2022.7.15
+2022.7.15
 群里早就约好了面基时间地点，还有一天就面基啦！
- 2022.7.16
+2022.7.16
 九点半出了地铁。
 九点四十就开始排队了，大家太积极了。
 等了半个多小时，捕捉了一只野生 cyc。
 PS：可惜了，几年前的手机拍照延迟过高，大头照没拍到几张清楚的。
 又过了一会儿，同班同学也来了。
-可惜我们珂爱的佳雨小姐...
+可惜我们珂爱的佳雨小姐姐上...
 			
 		
 	</div>
@@ -1207,16 +1210,16 @@ PS：可惜了，几年前的手机拍照延迟过高，大头照没拍到几张
 		
 			
 				abc258_a
- 题目翻译
+题目翻译
 Atcoder 的 ABC 一般在东京时间 21:00 开始，持续 100 分钟。
 问开始后 x 分钟后，是东京时间几点？
 注意时和分有前导零。
- 题目思路
+题目思路
 随便写写，特判前导零，或者用 printf。
- AC 代码
+AC 代码
 #include&lt;bits/stdc++.h&gt;
 using namespace std;
-int ma...
+int main(...
 			
 		
 	</div>
@@ -1301,7 +1304,7 @@ int ma...
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

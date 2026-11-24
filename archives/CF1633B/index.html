@@ -18,7 +18,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://blog.cyx2009.top/assets/img/banner2.jpg">
 <meta property="article:published_time" content="2022-02-02T05:48:00.000Z">
-<meta property="article:modified_time" content="2025-02-12T04:46:03.441Z">
+<meta property="article:modified_time" content="2026-11-24T07:00:39.971Z">
 <meta property="article:author" content="沉石鱼惊旋">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://blog.cyx2009.top/assets/img/banner2.jpg">
@@ -37,8 +37,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -78,6 +78,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -290,7 +293,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -657,7 +660,7 @@
 						
 						<div class="post-meta-detail post-meta-detail-time">
 							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2022-2-2 13:48:00 | 编辑于 2025-2-12 12:46:03">2022-2-2 13:48
+							<time title="发布于 2022-2-2 13:48:00 | 编辑于 2026-11-24 15:00:39">2022-2-2 13:48
 							</time>
 						</div>
 					
@@ -700,23 +703,23 @@
 	</header>
 
 	<div class="post-content" id="post_content">
-		<h3 id="题目翻译"><a class="markdownIt-Anchor" href="#题目翻译"></a> 题目翻译</h3>
+		<h3 id="题目翻译">题目翻译<a class="markdownIt-Anchor" href="#题目翻译"></a></h3>
 <p>一个 01 串，找到一个它的子串，1 的个数多删所有 0，0 的个数多删所有 1。问最多删几个数。</p>
-<h3 id="题目思路"><a class="markdownIt-Anchor" href="#题目思路"></a> 题目思路</h3>
+<h3 id="题目思路">题目思路<a class="markdownIt-Anchor" href="#题目思路"></a></h3>
 <p>首先统计 01 个数是必须的。</p>
 <p>之后，分类讨论 3 种情况。</p>
-<h4 id="情况10-的个数比-1-多"><a class="markdownIt-Anchor" href="#情况10-的个数比-1-多"></a> 情况1：0 的个数比 1 多。</h4>
+<h4 id="情况10-的个数比-1-多">情况1：0 的个数比 1 多。<a class="markdownIt-Anchor" href="#情况10-的个数比-1-多"></a></h4>
 <p>输出 1 的个数。</p>
-<h4 id="情况21-的个数比-0-多"><a class="markdownIt-Anchor" href="#情况21-的个数比-0-多"></a> 情况2：1 的个数比 0 多。</h4>
+<h4 id="情况21-的个数比-0-多">情况2：1 的个数比 0 多。<a class="markdownIt-Anchor" href="#情况21-的个数比-0-多"></a></h4>
 <p>输出 0 的个数。</p>
-<h4 id="情况-31-的个数和-0-的个数相等"><a class="markdownIt-Anchor" href="#情况-31-的个数和-0-的个数相等"></a> 情况 3：1 的个数和 0 的个数相等。</h4>
+<h4 id="情况-31-的个数和-0-的个数相等">情况 3：1 的个数和 0 的个数相等。<a class="markdownIt-Anchor" href="#情况-31-的个数和-0-的个数相等"></a></h4>
 <p>这里有个小问题。</p>
 <p>有人可能问，一样不是输出 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span> 吗？</p>
 <p>但是，重新审题。<strong>找到一个它的子串</strong>，这里划重点。</p>
 <p>也就是说，不用看整个字符串。</p>
 <p>那么我们少拿一个 0 或少拿一个 1，答案就更多了。</p>
 <p>所以，输出 0 的个数 -1。</p>
-<h3 id="题目代码"><a class="markdownIt-Anchor" href="#题目代码"></a> 题目代码</h3>
+<h3 id="题目代码">题目代码<a class="markdownIt-Anchor" href="#题目代码"></a></h3>
 <pre><code class="highlight cpp"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>
 <span class="function"></span>&#123;
 	string s;
@@ -948,6 +951,56 @@ if (btn) btn.addEventListener("click", () => {
 
 	<div id="post_comment" class="card shadow-sm">
 		<div id="giscus"></div>
+<script>
+	(function () {
+		var lightTheme = "light";
+		function giscusTheme() {
+			return document.documentElement.classList.contains("darkmode") ? "dark" : lightTheme;
+		}
+		// client.js is the next sibling and has not executed yet (async), so
+		// its data-theme can be corrected before the widget first loads.
+		var loader = document.currentScript.nextElementSibling;
+		if (loader && loader.tagName === "SCRIPT" && loader.getAttribute("data-repo")) {
+			loader.setAttribute("data-theme", giscusTheme());
+		}
+		// Send the current theme to the widget. Always send: the iframe only
+		// acts on messages it receives, and it re-applies idempotently.
+		window.syncGiscusTheme = function () {
+			var frame = document.querySelector("iframe.giscus-frame");
+			if (!frame || !frame.contentWindow) return;
+			frame.contentWindow.postMessage(
+				{ giscus: { setConfig: { theme: giscusTheme() } } },
+				"https://giscus.app"
+			);
+		};
+		// The widget only processes setConfig after it has fully booted, which
+		// the iframe load event signals. emitMetadata=0 means giscus sends no
+		// messages back, so the load event is the reliable sync hook.
+		window.addEventListener("message", function (event) {
+			if (event.origin !== "https://giscus.app") return;
+			syncGiscusTheme();
+		});
+		// giscus replaces its container on re-render, so observe the comment
+		// card for the frame's appearance and hook its load event.
+		var commentCard = document.getElementById("post_comment");
+		if (commentCard) {
+			var hook = function (frame) {
+				frame.addEventListener("load", syncGiscusTheme);
+			};
+			var existing = commentCard.querySelector("iframe.giscus-frame");
+			if (existing) hook(existing);
+			new MutationObserver(function (records) {
+				records.forEach(function (record) {
+					Array.prototype.forEach.call(record.addedNodes, function (node) {
+						if (node.nodeType !== 1) return;
+						var frames = node.tagName === "IFRAME" ? [node] : node.querySelectorAll("iframe.giscus-frame");
+						Array.prototype.forEach.call(frames, hook);
+					});
+				});
+			}).observe(commentCard, { childList: true, subtree: true });
+		}
+	})();
+</script>
 <script src="https://giscus.app/client.js"
         data-repo="caylex09/blogtalk"
         data-repo-id="R_kgDOHDKqeg"
@@ -1042,7 +1095,7 @@ if (btn) btn.addEventListener("click", () => {
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

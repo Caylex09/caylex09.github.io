@@ -35,8 +35,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -76,6 +76,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -288,7 +291,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -683,9 +686,9 @@
 				题目翻译
 给定 n 个点 m 条边的图，定义边权为边连接的端点点权之和。你可以为点权赋值 0 或 1，求同时存在至少一条边权为 0 的边，存在至少一条边权为 1 的边，存在至少一条边权为 2 的边的方案数。
 1≤n≤40，0≤m≤n(n−1)2。
- 题目思路
+题目思路
 m=0 显然答案为 0，是个 corner case 要判掉。
-考虑先把答案容斥出来。设 ...
+考虑先把答案容斥出来。设 S...
 			
 		
 	</div>
@@ -759,13 +762,13 @@ m=0 显然答案为 0，是个 corner case 要判掉。
 		
 			
 				初赛
- Day -(1e9+7)
+Day -(1e9+7)
 好吧我其实忘了 Day -(1e9+7) 和 Day -998244353 的先后顺序。
 所以可能这里其实才是 Day -998244353 发生的事情。
 很荣幸收到了 Aya 的私信找我验初赛模拟。
 做了一下感觉选择问题不大。阅读和完善到处开花。
 成功砍下 62.5 分高分。
-好像是验题人倒数第二还是倒数第一来着...
+好像是验题人倒数第二还是倒数第一来着。...
 			
 		
 	</div>
@@ -832,9 +835,9 @@ m=0 显然答案为 0，是个 corner case 要判掉。
 给定长度为 n 的字符串 s，将其分成 m 个非空子串。定义一种划分方式的『代表』，是这 m 个子串种，字典序最小的那个子串。
 求所有分割方式中，所有『代表』按字典序从大到小排的第 k 个『代表』。
 1≤n,m≤1000，1≤k≤1018。
- 题目思路
+题目思路
 首先可以套路性地二分答案。但是二分字符串不太好做，考虑先把所有子串给找出来排序。
-直接...
+直接截...
 			
 		
 	</div>
@@ -988,14 +991,14 @@ By Ivan
 给定 3×n 的 0/1 网格图，给定 q 个询问 [l,r]，查询 [l,r] 部分有几个 1 组成的联通块。
 联通是四联通。
 1≤n≤5×105，1≤q≤3×105。
- 题目思路
+题目思路
 可以离线的区间询问，尝试普通莫队。
 考虑预处理出 8×8 的表表示加了新列会增加多少的联通块。
 但是这样有问题。
 1111
 1001
 1111
-我们把最后一...
+我们把最后一列...
 			
 		
 	</div>
@@ -1205,8 +1208,8 @@ By Ivan
 给定 h×w 的网格，初始每个格子上都有一堵墙，给出 q 个操作，每次给出 (r,c) 表示操作位置，若 (r,c) 位置上有墙就破坏掉这个墙。如果没有，破坏掉这堵墙上、下、左、右四个方向各看到的第一堵墙。
 操作之后给出目前剩下的墙的个数。
 1≤h,w,h×w≤4×105，1≤q≤2×105，1≤r≤h，1≤c≤w。
- 题目思路
-考虑到每...
+题目思路
+考虑到每一...
 			
 		
 	</div>
@@ -1271,13 +1274,13 @@ By Ivan
 			
 				A
 看 a 个 1 和 b mod 2 个 2 能不能匹配。
- B
+B
 打到一半加解释，牛牛牛。
 先判断 n 是否为完全平方数，如果是的话设 m=n。看原图形分成 m×m 的图形是否满足要求。
- C
+C
 不难发现只和 r−l 有关。
 二分答案 mid 表示能增加几项，中间一共增加了 mid(mid+1)2 个元素，要满足 mid(mid+1)2≤r−l。
-...
+最后...
 			
 		
 	</div>
@@ -1362,7 +1365,7 @@ By Ivan
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>

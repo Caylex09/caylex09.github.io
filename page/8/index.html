@@ -35,8 +35,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/avatar/apple-touch-icon.png?v=cda98e63efc1">
 <link rel="manifest" href="/site.webmanifest?v=2f56cfbdcba2">
 	<link rel="stylesheet" href="/assets/argon_css_merged.css?v=623ef087dc52">
-	<link rel="stylesheet" href="/style.css?v=3ef2015134cc">
-	<link rel="stylesheet" href="/experience.css?v=5cfe9cfc4f54">
+	<link rel="stylesheet" href="/style.css?v=ac85b7715643">
+	<link rel="stylesheet" href="/experience.css?v=df8463ef01a7">
 	<link rel="preconnect" href="https://fonts.loli.net">
 	
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -76,6 +76,9 @@
 			}else{
 				$("html").removeClass("darkmode");
 			}
+			// The giscus comment iframe picks up palette changes only via a
+			// postMessage API, so toggle it together with the site theme.
+			if (typeof window.syncGiscusTheme == "function") window.syncGiscusTheme();
 			$(window).trigger("scroll");
 		}
 		function toggleDarkmode(){
@@ -288,7 +291,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
 		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.2d60d80ad0be.json">
+		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text" maxlength="200" autocomplete="off" aria-describedby="local-search-status" aria-controls="local-search-result" data-search-url="/search.ceae8650476b.json">
 	</div>
 	<p id="local-search-status" class="sr-only mt-3 mb-2" role="status" aria-live="polite">输入关键词，查找文章标题与正文。</p>
 	<button id="local-search-retry" class="btn btn-primary btn-sm" type="button" hidden>重新加载搜索</button>
@@ -673,9 +676,9 @@
 定义 g(x) 为 max⁡{k2∣k∈N∧k2≤x}，定义 f(x) 为 max⁡{k2∣k∈N∧k2&gt;x}。称 x 是好的当且仅当 x−g(x)&lt;f(x)−x。
 给定 n 个数 ai，求最小的 k 使得对于所有 i，ai+k 都是好的。
 1≤n≤106，1≤ai≤2×106。
- 做法
+做法
 约定 V=an≤2×106。
-先把这个不等式解一下，就...
+先把这个不等式解一下，就是...
 			
 		
 	</div>
@@ -748,8 +751,8 @@
 q 次修改，每次给出 x,t 表示 sx←t。修改是永久的。在所有修改之前和每次修改后输出共 q+1 个答案。保证 t 也在字符集中。
 答案对 998244353 取模。
 3≤n≤5×104，0≤q≤5×104，m=6。
- 做法
-出现至少两次直接计数非...
+做法
+出现至少两次直接计数非常...
 			
 		
 	</div>
@@ -1182,14 +1185,14 @@ RSS 简介 | 菜鸟教程
 		
 			
 				2025 省选游记：没去，只是有个同名同姓。关于有人拍到了我这件事，我还没想好怎么编。
- Day -4
+Day -4
 生病了。今天刚生病。省选前 eps 天生病我也是无敌了哈哈。明年别生病就好。
- Day -3
+Day -3
 生病了。
- Day -2
+Day -2
 病好了。传奇快男。
- Day -1
-打了一下 HBOI 的模拟，T1 这个 O(n2) 暴力一眼啊。i 宝觉得的暴力合并和我说...
+Day -1
+打了一下 HBOI 的模拟，T1 这个 O(n2) 暴力一眼啊。i 宝觉得的暴力合并和我说的不是一...
 			
 		
 	</div>
@@ -1256,8 +1259,8 @@ RSS 简介 | 菜鸟教程
 给定 n 个三元组 (ai,bi,ci)，将其分成 3 组。设第一组的 max⁡a=A，第二组的 max⁡b=B，第三组的 max⁡c=C，输出最小的 A+B+C。若一组内没有元素，则对应的 max⁡=0。
 多测。
 1≤t≤10，1≤n≤106，1≤∑n≤2×106，1≤ai,bi,ci≤7×108。
- 做法
-先按 a 从小到大排序，不妨称这...
+做法
+先按 a 从小到大排序，不妨称这个...
 			
 		
 	</div>
@@ -1421,7 +1424,7 @@ using namespace ...
             <link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css?v=096ff4bdfe5c">
         
 
-        <script id="argon-experience" src="/experience.js?v=6c7740c51578" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
+        <script id="argon-experience" src="/experience.js?v=dc2dbc6d6d9b" data-mermaid-src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.min.js"></script>
     </div>
 </div>
 <noscript>
