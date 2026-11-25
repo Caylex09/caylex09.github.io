@@ -6,7 +6,7 @@
   <link href="https://blog.cyx2009.top/atom.xml" rel="self"/>
   
   <link href="https://blog.cyx2009.top/"/>
-  <updated>2026-11-24T10:01:11.587Z</updated>
+  <updated>2026-11-25T03:11:47.907Z</updated>
   <id>https://blog.cyx2009.top/</id>
   
   <author>
@@ -17,11 +17,28 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>[&#x95f2;&#x8bdd;] 2026-11-25 &#x9c9c;&#x82b1; | &#x3c9; = 2.25</title>
+    <link href="https://blog.cyx2009.top/archives/omega2.25/"/>
+    <id>https://blog.cyx2009.top/archives/omega2.25/</id>
+    <published>2026-11-25T01:22:00.000Z</published>
+    <updated>2026-11-25T03:11:47.907Z</updated>
+    
+    
+    <summary type="html">&#x4ece;&#x524d;&#x6709;&#x4e09;&#x4e2a;&#x5b66;&#x754c;&#x670b;&#x53cb;&#x5728;&#x5496;&#x5561;&#x9986;&#x95f2;&#x804a;&#x3002; &#x7532;&#x7a81;&#x7136;&#x611f;&#x6168;&#xff1a;&#x201c;&#x4f60;&#x8bf4;&#x7535;&#x89c6;&#x4e0a;&#x7684;&#x6570;&#x5b66;&#x795e;&#x7ae5;&#x4e5f;&#x662f;&#x5947;&#x602a;&#xff0c;&#x6311;&#x6218;&#x6781;&#x9650;&#x8bb0;&#x5fc6;&#x529b;&#x6c38;&#x8fdc;&#x53ea;&#x4f1a;&#x80cc; &#x3c0; &#x7684;&#x5c0f;&#x6570;&#x70b9;&#x540e;&#x4e00;&#x4e07;&#x4f4d;&#xff0c;&#x600e;&#x4e48;&#x4ece;&#x6765;&#x6ca1;&#x89c1;&#x4eba;&#x80cc;&#x8fc7;&#x81ea;&#x7136;&#x5e38;&#x6570; e &#x5462;&#xff1f;&#x201d; &#x4e59;&#x7aef;&#x8d77;&#x5496;&#x5561;&#xff0c;&#x6311;&#x4e86;&#x6311;&#x7709;&#xff1a;&#x201c;&#x80cc; e &#x7b97;&#x4ec0;&#x4e48;&#x672c;&#x4e8b;&#xff1f;&#x5f00;&#x5934; 2.718281828 &#x8ddf;&#x590d;&#x8bfb;&#x673a;&#x4f3c;&#x7684;&#xff0c;&#x6beb;&#x65e0;&#x60ac;&#x5ff5;&#x3002;&#x8981;&#x6211;&#x8bf4;&#xff0c;&#x771f;&#x60f3;&#x5728;&#x6570;&#x5b66;&#x5708;&#x5c01;&#x795e;&#xff0c;&#x5c31;&#x8be5;&#x53bb;&#x80cc;&#x77e9;&#x9635;&#x4e58;&#x6cd5;&#x7684;&#x590d;&#x6742;&#x5ea6;&#x6307;&#x6570; &#x2026;</summary>
+    
+    
+    
+    <category term="Essay" scheme="https://blog.cyx2009.top/categories/Essay/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>[&#x9898;&#x89e3;] &#x6742;&#x9898;&#x9009;&#x8bb2; 19</title>
     <link href="https://blog.cyx2009.top/archives/potpourri_19/"/>
     <id>https://blog.cyx2009.top/archives/potpourri_19/</id>
     <published>2026-11-20T12:48:00.000Z</published>
-    <updated>2026-11-24T10:01:11.587Z</updated>
+    <updated>2026-11-25T03:16:06.480Z</updated>
     
     
     <summary type="html">HTOJ GP30352 &#x4fee;&#x8def; (street) https://htoj.com.cn/cpp/oj/problem/detail?pid=22977274684288&amp;cid=22977276163840&amp;gid=22935790336000&amp;tab=1 &#x628a;&#x64cd;&#x4f5c;&#x5199;&#x6210; (a,b&#x2212;a) &#x524d;&#x8005;&#x662f;&#x9700;&#x6c42;&#x540e;&#x8005;&#x662f;&#x589e;&#x91cf;&#x3002;&#x90a3;&#x4e48; (N&#x2026;</summary>
@@ -106,7 +123,7 @@
     <link href="https://blog.cyx2009.top/archives/potpourri_17/"/>
     <id>https://blog.cyx2009.top/archives/potpourri_17/</id>
     <published>2026-10-09T11:32:00.000Z</published>
-    <updated>2026-11-03T01:09:53.837Z</updated>
+    <updated>2026-11-24T14:02:45.495Z</updated>
     
     
     <summary type="html">CF1209F Koala and Notebook xyc &#x592a;&#x83dc;&#x6bd4;&#x4e86;&#x3002; &#x6211;&#x4f1a;&#x66b4;&#x529b;&#xff01;&#x53ef;&#x6301;&#x4e45;&#x5316;&#x7ebf;&#x6bb5;&#x6811;&#x7ef4;&#x62a4; Dijkstra &#x8fc7;&#x7a0b;&#x3002; &#x6211;&#x4f1a;&#x62c6;&#x8fb9;&#xff01;&#x4e00;&#x6761;&#x8fb9;&#x62c6;&#x6210;&#x4e0d;&#x8d85;&#x8fc7; log&#x2061;10(V) &#x6761;&#x8fb9;&#xff0c;&#x7136;&#x540e;&#x95ee;&#x9898;&#x662f;&#x6700;&#x77ed;&#x8def;&#x91cc;&#x9762;&#x5b57;&#x5178;&#x5e8f;&#x6700;&#x5c0f;&#x7684;&#x3002;&#x5efa;&#x51fa;&#x6700;&#x77ed;&#x8def; DAG &#x4e4b;&#x540e;&#xff0c;&#x6bcf;&#x6b21;&#x8d70;&#x6700;&#x5c0f;&#x7684;&#x51fa;&#x8fb9;&#xff0c;&#x6bcf;&#x4e2a;&#x70b9;&#x641c;&#x5230;&#x7b2c;&#x4e00;&#x6b21;&#x5373;&#x53ef;&#x3002; &#x6a21;&#x62df;&#x8d5b; &#x4ee3;&#x7801;&#x6e90; &#x4eca;&#x6c50;&#x7684;&#x5de1;&#x9632;&#x5206;&#x533a; h&#x2026;</summary>
@@ -342,29 +359,6 @@
     <category term="Invitation" scheme="https://blog.cyx2009.top/tags/Invitation/"/>
     
     <category term="&#x897f;&#x5b89;" scheme="https://blog.cyx2009.top/tags/%E8%A5%BF%E5%AE%89/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>[&#x6e38;&#x8bb0;] 2026 ICPC &#x6df1;&#x5733; &#x9080;&#x8bf7;&#x8d5b; &#x6e38;&#x8bb0;</title>
-    <link href="https://blog.cyx2009.top/archives/ICPC_2026_Shenzhen_I/"/>
-    <id>https://blog.cyx2009.top/archives/ICPC_2026_Shenzhen_I/</id>
-    <published>2026-04-10T07:56:00.000Z</published>
-    <updated>2026-05-03T05:51:40.237Z</updated>
-    
-    
-    <summary type="html">&#x7701;&#x6d41;&#xff1a;&#x91d1;&#x724c;&#xff0c;&#x4e5f;&#x62ff;&#x5230;&#x672c;&#x8d5b;&#x5b63;&#x5404;&#x8d5b;&#x7ad9;&#x7684;&#x7b2c;&#x4e00;&#x53d1; AC&#x3002; &#x961f;&#x53cb;&#x662f; wrk &#x548c; zgn&#x3002;et &#x548c; zyf &#x88ab; thu &#x62d0;&#x8d70;&#x4e86;&#x3002; Day -1 &#x62a5;&#x9053;&#x65e5;&#xff0c;&#x4e0a;&#x5348;&#x53bb;&#x65e0;&#x9521;&#x7855;&#x653e;&#x673a;&#x573a;&#x5750;&#x98de;&#x673a;&#x3002; &#x6211;&#x53d1;&#x73b0;&#x6211;&#x5fd8;&#x8bb0;&#x6253;&#x5370;&#x677f;&#x5b50;&#x4e86;&#xff0c;&#x95ee;&#x9898;&#x4e0d;&#x5927;&#xff0c;&#x76f8;&#x4fe1;&#x961f;&#x53cb;&#x3002; &#x8d77;&#x98de;&#x98a0;&#x7c38;&#x597d;&#x5413;&#x4eba;&#xff08;&#xff1f;&#xff09;&#x98de;&#x673a;&#x9910;&#x4e00;&#x822c;&#x3002; &#x5feb;&#x4e0b;&#x964d;&#x7684;&#x65f6;&#x5019;&#x8033;&#x6735;&#x804b;&#x4e86;&#x534a;&#x5929;&#xff0c;&#x4e0b;&#x98de;&#x673a;&#x6253;&#x4e86;&#x4e2a;&#x55dd;&#x5c31;&#x597d;&#x4e86;&#x3002; &#x5165;&#x4f4f;&#x9152;&#x5e97;&#x623f;&#x95f4;&#x53f7; 1318&#x2026;</summary>
-    
-    
-    
-    <category term="Essay" scheme="https://blog.cyx2009.top/categories/Essay/"/>
-    
-    
-    <category term="ICPC" scheme="https://blog.cyx2009.top/tags/ICPC/"/>
-    
-    <category term="Invitation" scheme="https://blog.cyx2009.top/tags/Invitation/"/>
-    
-    <category term="&#x6df1;&#x5733;" scheme="https://blog.cyx2009.top/tags/%E6%B7%B1%E5%9C%B3/"/>
     
   </entry>
   
